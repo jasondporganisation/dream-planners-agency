@@ -1,0 +1,146 @@
+{
+ "identity": {
+  "name": "GreatLink Global Equity Fund",
+  "category_ge": "Global Equity",
+  "asset_class": "Equity",
+  "ms_category": "Global Equity Large Cap",
+  "sec_id": "F0HKG07068",
+  "fund_code": "F07",
+  "composite_id": "F0HKG07068_F07",
+  "isin": null,
+  "ge_fund_page_url": "https://www.greateasternlife.com/sg/en/personal-insurance/our-products/wealth-accumulation/investment-linked-funds/greatlink-funds.html",
+  "fund_centre_detail_url": "https://www.greateasternlife.com/sg/en/personal-insurance/our-products/wealth-accumulation/investment-linked-funds/ilp-fund-centre.html#/detail?id=F0HKG07068_F07"
+ },
+ "key_facts": {
+  "manager": "Great Eastern Life",
+  "underlying_fund": "Gs Global Core Eq Io Acc Usd Snap (from top holding; fact sheet has official name)",
+  "inception_date": "2000-08-01",
+  "fund_size": {
+   "value": 182012398.0,
+   "currency": "SGD",
+   "as_at": "2026-07-31"
+  },
+  "currency": "SGD",
+  "management_fee_pct": 1.6,
+  "expense_ratio_pct": 1.75,
+  "risk_classification": "4 - Higher Risk",
+  "eligibility": {
+   "cash": true,
+   "cpf_oa": false,
+   "cpf_sa": false,
+   "srs": true
+  },
+  "bid_price": 2.568,
+  "offer_price": 2.704,
+  "price_date": "2026-08-20",
+  "price_status": "Confirmed",
+  "investment_objective": "To seek long-term capital appreciation by investing primarily in equity securities of companies that are domiciled anywhere in the world.",
+  "benchmark_name": "MSCI World NR USD"
+ },
+ "returns": {
+  "as_at": "2026-08-20",
+  "basis": "bid-to-bid, SGD, net of fund management fee, excluding policy charges",
+  "ret_ytd_cum": 9.50959,
+  "ret_1m_cum": 0.50881,
+  "ret_3m_cum": 2.80224,
+  "ret_6m_cum": 7.94451,
+  "ret_1y_cum": 20.62001,
+  "ret_3y_ann": 18.97117,
+  "ret_5y_ann": 8.88313,
+  "ret_10y_ann": 10.85874,
+  "ret_si_ann": 3.53,
+  "ret_3y_cum": 68.39,
+  "ret_5y_cum": 53.04,
+  "ret_10y_cum": 180.35,
+  "ret_si_cum": null,
+  "calendar_year": {
+   "2025": 14.39024,
+   "2024": 24.77176,
+   "2023": 21.16519,
+   "2022": -21.8894,
+   "2021": 24.1774,
+   "2020": 10.68884,
+   "2019": 19.94302,
+   "2018": -8.91003,
+   "2017": 14.22925,
+   "2016": 10.1197
+  },
+  "benchmark": {
+   "note": "not in API \u2014 parse from fact sheet performance table (3M/6M/1Y/3Y*/5Y*/10Y*/SI*)"
+  }
+ },
+ "allocations": {
+  "as_at": "2026-06-30",
+  "asset": {
+   "Stock": 99.02,
+   "Cash": 0.95,
+   "Other": 0.03
+  },
+  "geographic": {
+   "United States": 72.85,
+   "Japan": 7.98,
+   "Canada": 4.08,
+   "France": 3.95,
+   "Switzerland": 2.73,
+   "United Kingdom": 2.37,
+   "Germany": 2.25,
+   "Sweden": 0.94,
+   "Netherlands": 0.84,
+   "Others": 2.0
+  },
+  "sector": {
+   "Technology": 30.68,
+   "Financial Services": 14.73,
+   "Industrials": 12.49,
+   "Consumer Cyclical": 10.5,
+   "Healthcare": 9.54,
+   "Communication Services": 7.92,
+   "Consumer Defensive": 4.82,
+   "Energy": 3.67,
+   "Basic Materials": 2.6,
+   "Utilities": 1.82,
+   "Real Estate": 1.24
+  },
+  "top_holdings": [
+   {
+    "name": "Gs Global Core Eq Io Acc Usd Snap",
+    "weight": 99.42
+   },
+   {
+    "name": "Singapore Dollar",
+    "weight": 0.58
+   },
+   {
+    "name": "Usd/Sgd Fwd 20260701",
+    "weight": 0.09
+   },
+   {
+    "name": "Us Dollar",
+    "weight": 0.0
+   },
+   {
+    "name": "Sgd/Usd Fwd 20260701",
+    "weight": -0.09
+   }
+  ]
+ },
+ "documents": {
+  "factsheet_url": "https://doc.morningstar.com/Document/532a298f0a1ad11f916eed125a6e02da.msdoc/?key=023d247708a47993ed8467e955ed1f06d56f71215c0d4940cfd29d8eacbd50f5",
+  "factsheet_as_at": "2026-06-30",
+  "factsheet_local": "factsheets/greatlink-global-equity-fund.pdf",
+  "phs_url": "https://doc.morningstar.com/Document/a7c2cf4df059c23d515cb1870087ac49.msdoc/?key=023d247708a47993ed8467e955ed1f06d56f71215c0d4940cfd29d8eacbd50f5",
+  "prospectus_url": "https://doc.morningstar.com/Document/d9265d720dc65b747a4ddb1f2f1269fa.msdoc/?key=023d247708a47993ed8467e955ed1f06d56f71215c0d4940cfd29d8eacbd50f5",
+  "annual_report_url": "https://doc.morningstar.com/Document/78c851b1d2e2ff8ebb908dac08de4c2b.msdoc/?key=023d247708a47993ed8467e955ed1f06d56f71215c0d4940cfd29d8eacbd50f5",
+  "semi_annual_report_url": "https://doc.morningstar.com/Document/503a5407f885bbc9af0fc3cbce186d03.msdoc/?key=023d247708a47993ed8467e955ed1f06d56f71215c0d4940cfd29d8eacbd50f5"
+ },
+ "bookkeeping": {
+  "fetched_at": "2026-08-23T15:06:27+00:00",
+  "sources": {
+   "returns": "typesense screener /api/multi_search",
+   "cum 3y/5y/10y": "recomputed from /fund-center-api/api/v2/timeseries NAV",
+   "key_facts/allocations/docs/calendar": "/fund-center-api/ge/v4/funds",
+   "bid/offer": "/bin/corp-site/fund-prices.json",
+   "category": "GE greatlink-funds.html headings"
+  }
+ }
+}
