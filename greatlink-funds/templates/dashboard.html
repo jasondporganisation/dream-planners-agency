@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GreatLink Fund Comparison Tool</title>
+<style>
+  :root{
+    --page:#f9f9f7; --surface:#fcfcfb; --ink:#0b0b0b; --ink2:#52514e; --muted:#898781;
+    --grid:#e1e0d9; --baseline:#c3c2b7; --ring:rgba(11,11,11,.10);
+    --accent:#1f3a52; --accent-ink:#ffffff;
+    --pos:#006300; --neg:#d03b3b;
+    --s1:#2a78d6; --s2:#eb6834; --s3:#1baf7a; --s4:#eda100; --s5:#e87ba4;
+    --warnbg:#fff4d6; --warnink:#6b4e00; --samplebg:#e8f0fe; --sampleink:#1a4a9c;
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0}
+  body{background:var(--page);color:var(--ink);
+       font:15px/1.55 system-ui,-apple-system,"Segoe UI",sans-serif}
+  header{background:var(--surface);border-bottom:1px solid var(--grid);
+         padding:14px 22px;display:flex;flex-wrap:wrap;gap:10px;align-items:baseline}
+  header h1{margin:0;font-size:21px;letter-spacing:-.01em}
+  header .asat{color:var(--ink2);font-size:13px}
+  header .spacer{flex:1}
+  .banner{padding:9px 22px;font-size:13.5px}
+  .banner.sample{background:var(--samplebg);color:var(--sampleink)}
+  .banner.stale{background:var(--warnbg);color:var(--warnink)}
+  main{max-width:1440px;margin:0 auto;padding:14px 22px 120px}
+  h2{font-size:16px;margin:22px 0 8px}
+  .muted{color:var(--muted)} .small{font-size:12.5px}
+
+  /* leaders strip */
+  .leaders{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:10px;margin:10px 0 16px}
+  .leader{background:var(--surface);border:1px solid var(--grid);border-radius:10px;padding:10px 12px}
+  .leader .cat{font-size:11.5px;text-transform:uppercase;letter-spacing:.05em;color:var(--muted);margin-bottom:4px}
+  .leader .row{display:flex;justify-content:space-between;gap:8px;font-size:12.5px;margin-top:2px}
+  .leader .row b{font-weight:600}
+  .leader .val{font-variant-numeric:tabular-nums;white-space:nowrap}
+
+  /* controls */
+  .controls{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:6px 0 10px}
+  .controls input[type=search],.controls select{padding:8px 10px;border:1px solid var(--grid);
+    border-radius:8px;background:var(--surface);font:inherit;color:inherit}
+  .controls input[type=search]{min-width:230px}
+  .chip{display:inline-flex;align-items:center;gap:5px;padding:6px 11px;border:1px solid var(--grid);
+    border-radius:999px;background:var(--surface);cursor:pointer;user-select:none;font-size:13px}
+  .chip.on{background:var(--accent);color:var(--accent-ink);border-color:var(--accent)}
+  .toggle{display:inline-flex;align-items:center;gap:6px;padding:7px 11px;border:1px solid var(--grid);
+    border-radius:8px;background:var(--surface);cursor:pointer;user-select:none;font-size:13px}
+  .toggle input{accent-color:var(--accent)}
+  button{font:inherit;cursor:pointer;border-radius:8px}
+  .btn{background:var(--accent);color:var(--accent-ink);border:none;padding:9px 16px}
+  .btn:disabled{opacity:.4;cursor:not-allowed}
+  .btn2{background:var(--surface);border:1px solid var(--grid);color:var(--ink);padding:8px 13px}
+  .fsbtn{background:var(--surface);border:1px solid var(--grid);padding:5px 10px;font-size:12.5px;white-space:nowrap}
+  .fsbtn[disabled]{opacity:.45}
+
+  /* overview table */
+  .tablewrap{overflow-x:auto;background:var(--surface);border:1px solid var(--grid);border-radius:10px}
+  table{border-collapse:collapse;width:100%}
+  #fundTable{min-width:1080px}
+  th,td{padding:9px 10px;border-bottom:1px solid var(--grid);text-align:right;white-space:nowrap;
+        font-variant-numeric:tabular-nums}
+  th{position:sticky;top:0;background:var(--surface);z-index:1;font-size:11.5px;color:var(--ink2);
+     text-transform:uppercase;letter-spacing:.04em;cursor:pointer;user-select:none}
+  th.nosort{cursor:default}
+  th.name,td.name{text-align:left}
+  td.name{white-space:normal;min-width:230px;font-weight:600;cursor:pointer;max-width:330px}
+  td.name .cat{display:block;font-weight:400;font-size:12px;color:var(--muted)}
+  tbody tr:hover{background:#f2f4f1}
+  tbody tr:last-child td{border-bottom:none}
+  .rank{display:inline-block;min-width:22px;text-align:center;border-radius:6px;font-size:12px;
+        padding:1px 4px;color:var(--ink2);background:var(--page);border:1px solid var(--grid)}
+  .rank.top{background:var(--accent);border-color:var(--accent);color:var(--accent-ink);font-weight:600}
+  .retcell{position:relative;min-width:88px}
+  .retcell .v{position:relative;z-index:1}
+  .retcell .bar{position:absolute;top:20%;bottom:20%;border-radius:3px;opacity:.16;z-index:0}
+  .pos{color:var(--pos)} .neg{color:var(--neg)}
+  .na{color:var(--muted);font-size:12px;white-space:normal}
+  .internal{background:#faf7ef}
+  body.client-view .internal{display:none}
+  #matchCount{font-size:13px;color:var(--ink2)}
+
+  /* compare */
+  #compareBar{position:sticky;bottom:0;left:0;right:0;background:var(--surface);
+    border-top:1px solid var(--grid);padding:10px 22px;display:none;gap:10px;align-items:center;z-index:5}
+  #compareBar.show{display:flex;flex-wrap:wrap}
+  #compareSection{background:var(--surface);border:1px solid var(--grid);border-radius:10px;
+    padding:18px 20px;margin-top:20px}
+  #compareSection h2{margin-top:0}
+  .legend{display:flex;flex-wrap:wrap;gap:14px;margin:6px 0 10px;font-size:13px}
+  .legend .key{display:inline-flex;align-items:center;gap:6px}
+  .legend .sw{width:11px;height:11px;border-radius:3px;display:inline-block}
+  #chartwrap{overflow-x:auto}
+  #cmpChart{display:block}
+  #cmpTableWrap table{min-width:520px}
+  #cmpTableWrap th:first-child,#cmpTableWrap td:first-child{text-align:left;white-space:normal}
+  .allocgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px;margin-top:8px}
+  .allocblock h4{margin:6px 0}
+  .hbar{display:grid;grid-template-columns:minmax(90px,42%) 1fr 52px;gap:8px;align-items:center;
+        font-size:12.5px;margin:3px 0}
+  .hbar .track{height:12px;border-radius:3px;background:var(--page);position:relative}
+  .hbar .fill{position:absolute;left:0;top:0;bottom:0;border-radius:3px;background:var(--s1)}
+  .hbar .num{text-align:right;font-variant-numeric:tabular-nums}
+  .hbar .lbl{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+
+  /* detail panel */
+  #overlay{position:fixed;inset:0;background:rgba(0,0,0,.34);display:none;z-index:20}
+  #overlay.show{display:block}
+  #detail{position:fixed;top:0;right:0;bottom:0;width:min(760px,96vw);background:var(--surface);
+    box-shadow:-6px 0 24px rgba(0,0,0,.18);z-index:21;transform:translateX(102%);
+    transition:transform .22s ease;overflow-y:auto;padding:20px 24px 60px}
+  #detail.show{transform:none}
+  #detail h2{font-size:19px;margin:2px 0 2px}
+  #detail .close{position:absolute;top:12px;right:14px;border:none;background:none;font-size:22px;
+    color:var(--ink2);padding:6px}
+  .facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:6px 18px;margin:12px 0}
+  .facts div{font-size:13.5px}
+  .facts .k{color:var(--muted);font-size:11.5px;text-transform:uppercase;letter-spacing:.04em;display:block}
+  .docbtns{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0}
+  #detail table{width:100%}
+  #detail th,#detail td{padding:6px 8px;font-size:13px}
+  #detail th:first-child,#detail td:first-child{text-align:left}
+
+  footer.disc{position:fixed;left:0;right:0;bottom:0;background:var(--surface);
+    border-top:1px solid var(--grid);padding:7px 22px;font-size:11px;color:var(--muted);z-index:4}
+  #fullDisclaimer{display:none}
+
+  @media (max-width:700px){
+    header h1{font-size:18px}
+    main{padding:10px 12px 130px}
+    th,td{padding:7px 6px;font-size:13px}
+  }
+  @media print{
+    body{background:#fff}
+    body.printing-compare header,body.printing-compare .banner,body.printing-compare .leaders,
+    body.printing-compare .controls,body.printing-compare .tablewrap,
+    body.printing-compare #compareBar,body.printing-compare footer.disc,
+    body.printing-compare .no-print,body.printing-compare h2.overview{display:none!important}
+    #compareSection{border:none;padding:0}
+    #fullDisclaimer{display:block;font-size:10.5px;color:#333;margin-top:14px;
+      border-top:1px solid #999;padding-top:8px}
+  }
+</style>
+</head>
+<body>
+<header>
+  <h1>GreatLink Fund Comparison Tool</h1>
+  <span class="asat" id="asatLine"></span>
+  <span class="spacer"></span>
+  <label class="toggle"><input type="checkbox" id="clientView"> Client view</label>
+</header>
+<div id="sampleBanner" class="banner sample" hidden>
+  <strong>SAMPLE DATA</strong> — placeholder figures for layout only, not real fund performance.
+  Run <code>python refresh.py</code> to load live Great Eastern / Morningstar data.
+</div>
+<div id="staleBanner" class="banner stale" hidden></div>
+
+<main>
+  <div class="leaders" id="leaders"></div>
+
+  <div class="controls">
+    <input type="search" id="search" placeholder="Search funds…">
+    <span id="catChips"></span>
+    <select id="riskFilter"><option value="">All risk levels</option></select>
+    <label class="toggle"><input type="checkbox" id="fOA"> CPF-OA</label>
+    <label class="toggle"><input type="checkbox" id="fSA"> CPF-SA</label>
+    <label class="toggle"><input type="checkbox" id="fSRS"> SRS</label>
+    <span id="matchCount"></span>
+  </div>
+
+  <h2 class="overview" style="margin-top:4px">All GreatLink funds</h2>
+  <div class="tablewrap">
+    <table id="fundTable">
+      <thead><tr id="headRow"></tr></thead>
+      <tbody id="tbody"></tbody>
+    </table>
+  </div>
+
+  <section id="compareSection" hidden>
+    <h2>Side-by-side comparison</h2>
+    <div class="legend" id="cmpLegend"></div>
+    <div id="chartwrap"></div>
+    <h4 style="margin:16px 0 6px">Key facts and returns</h4>
+    <div class="tablewrap" id="cmpTableWrap"></div>
+    <div class="allocgrid" id="cmpAlloc"></div>
+    <p class="no-print" style="margin:14px 0 4px">
+      <button class="btn" id="copyBtn">Copy table</button>
+      <button class="btn" id="printBtn">Print / Save as PDF</button>
+      <button class="btn2" id="closeCmp">Close</button>
+      <span id="copyDone" class="muted small"></span>
+    </p>
+    <div id="fullDisclaimer"></div>
+  </section>
+</main>
+
+<div id="compareBar">
+  <span id="cmpCount"></span>
+  <button class="btn" id="compareBtn" disabled>Compare</button>
+  <button class="btn2" id="clearSel">Clear</button>
+</div>
+
+<div id="overlay"></div>
+<aside id="detail" aria-label="Fund detail"><div id="detailBody"></div></aside>
+
+<footer class="disc"><span id="shortDisc"></span></footer>
+
+<script>
+window.FUND_DATA = /*__FUND_DATA_JSON__*/null;
+</script>
+<script>
+(function(){
+'use strict';
+var DATA = window.FUND_DATA;
+if(!DATA||!DATA.funds){document.body.innerHTML='<p style="padding:24px">No embedded data — run python refresh.py (or build_dashboard.py).</p>';return;}
+var FUNDS = DATA.funds;
+var STALE_DAYS = 45;
+var SERIES = ['#2a78d6','#eb6834','#1baf7a','#eda100','#e87ba4'];
+var DISCLAIMER = 'Past performance is not necessarily indicative of future performance. '
+  +'Returns are bid-to-bid in the fund currency, net of fund management fees, and exclude policy charges. '
+  +'Fund values may rise or fall. This is an internal reference tool for Great Eastern financial representatives; '
+  +'it is not an offer or a recommendation, and clients must be given the official fund fact sheet, product '
+  +'highlights sheet and product summary. Source: Great Eastern Life / Morningstar.';
+var PERIODS = [
+  {key:'ret_ytd',  label:'YTD'},
+  {key:'ret_1y',   label:'1Y'},
+  {key:'ret_3y_ann',label:'3Y (ann.)', years:3},
+  {key:'ret_5y_ann',label:'5Y (ann.)', years:5},
+  {key:'ret_10y_ann',label:'10Y (ann.)', years:10},
+  {key:'ret_si_ann',label:'Since inception (ann.)'}
+];
+var MONTHS=['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+
+/* ---------- helpers ---------- */
+function esc(s){return String(s==null?'':s).replace(/[&<>"']/g,function(c){
+  return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c];});}
+function fmtDate(iso){if(!iso)return '—';var p=String(iso).split('-');
+  return p.length===3? (+p[2])+' '+MONTHS[+p[1]-1]+' '+p[0] : iso;}
+function monthYear(iso){if(!iso)return '';var p=String(iso).split('-');
+  return p.length>=2? MONTHS[+p[1]-1]+' '+p[0] : iso;}
+function ret(f,key){return f.returns?f.returns[key]:null;}
+function tooYoung(f,years){
+  if(!years||!f.inception_date)return false;
+  var inc=new Date(f.inception_date), asat=new Date(DATA.as_at||Date.now());
+  return (asat-inc)/(365.25*864e5) < years;
+}
+function fmtPct(v,f,years){
+  if(v==null||isNaN(v)){
+    if(f&&years&&tooYoung(f,years))
+      return '<span class="na">n/a – launched '+esc(monthYear(f.inception_date))+'</span>';
+    return '<span class="na">n/a</span>';
+  }
+  var cls=v>0?'pos':(v<0?'neg':'');
+  return '<span class="'+cls+'">'+(v>0?'+':'')+v.toFixed(2)+'</span>';
+}
+function fmtNum(v,dp){return (v==null||isNaN(v))?'<span class="na">n/a</span>':Number(v).toFixed(dp);}
+function plainPct(v){return (v==null||isNaN(v))?'n/a':((v>0?'+':'')+v.toFixed(2)+'%');}
+function retCell(f,key,years,maxAbs){
+  var v=ret(f,key);
+  if(v==null) return '<td class="retcell">'+fmtPct(v,f,years)+'</td>';
+  var w=Math.min(100,Math.abs(v)/maxAbs*100);
+  var bar = '<span class="bar" style="right:0;width:'+w
+    +'%;background:var(--'+(v>=0?'pos':'neg')+')"></span>';
+  return '<td class="retcell">'+bar+'<span class="v">'+fmtPct(v)+'</span></td>';
+}
+function factsheetButtons(f,compact){
+  var d=f.docs||{}, out=[];
+  if(d.factsheet_local){
+    out.push('<button class="fsbtn" data-open="'+esc(d.factsheet_local)+'">Fact sheet</button>');
+    if(d.factsheet_url) out.push('<a class="small" href="'+esc(d.factsheet_url)+'" target="_blank" rel="noopener">online</a>');
+  } else if(d.factsheet_url){
+    out.push('<a class="fsbtn" style="text-decoration:none;color:inherit" href="'+esc(d.factsheet_url)+'" target="_blank" rel="noopener">Fact sheet</a>');
+  } else {
+    out.push('<button class="fsbtn" disabled title="No fact sheet found in the last refresh">Fact sheet</button>');
+  }
+  return out.join(' ');
+}
+
+/* ---------- state ---------- */
+var state={search:'',cats:{},risk:'',oa:false,sa:false,srs:false,
+           sortKey:'ret_ytd',sortDir:-1,selected:[],detail:null};
+
+var COLS=[
+ {key:'rank',label:'#',nosort:true},
+ {key:'sel',label:'',nosort:true},
+ {key:'name',label:'Fund',cls:'name',val:function(f){return f.name||'';}},
+ {key:'risk',label:'Risk',val:function(f){return f.risk_class||'';},
+  render:function(f){return '<span class="small">'+esc(shortRisk(f.risk_class))+'</span>';}},
+ {key:'ret_ytd',label:'YTD %',ret:true},
+ {key:'ret_1y',label:'1Y %',ret:true},
+ {key:'ret_3y_ann',label:'3Y % ann.',ret:true,years:3},
+ {key:'ret_5y_ann',label:'5Y % ann.',ret:true,years:5},
+ {key:'ret_10y_ann',label:'10Y % ann.',ret:true,years:10},
+ {key:'ret_si_ann',label:'SI % ann.',ret:true},
+ {key:'bid_price',label:'Bid',val:function(f){return f.bid_price;},
+  render:function(f){return fmtNum(f.bid_price,4);}},
+ {key:'fund_size_m',label:'Size (M)',val:function(f){return f.fund_size_m;},
+  render:function(f){return fmtNum(f.fund_size_m,0);}},
+ {key:'mgmt_fee_pct',label:'Fee %',val:function(f){return f.mgmt_fee_pct;},
+  render:function(f){return fmtNum(f.mgmt_fee_pct,2);}},
+ {key:'fs',label:'Docs',nosort:true,render:function(f){return factsheetButtons(f,true);}},
+ {key:'src',label:'Source',nosort:true,internal:true,
+  render:function(f){return '<span class="small muted">'+esc((f.sources&&f.sources.returns)||'—')
+    +'<br>'+esc(f.fund_id||'')+'</span>';}},
+ {key:'notes',label:'Notes',nosort:true,internal:true,
+  render:function(f){return '<span class="small muted">'+esc((f.missing_fields&&f.missing_fields.length)?('missing: '+f.missing_fields.join(', ')):'')+'</span>';}}
+];
+COLS.forEach(function(c){
+  if(c.ret){c.val=function(f){return ret(f,c.key);};}
+});
+function shortRisk(r){return r?String(r).replace(/\s*[–-]\s*(broadly diversified|narrowly focused)/i,''):'—';}
+
+/* ---------- filtering & sorting ---------- */
+function visible(){
+  var q=state.search.toLowerCase();
+  var anyCat=Object.keys(state.cats).some(function(k){return state.cats[k];});
+  return FUNDS.filter(function(f){
+    if(anyCat&&!state.cats[f.category])return false;
+    if(state.risk&&shortRisk(f.risk_class)!==state.risk)return false;
+    var e=f.eligibility||{};
+    if(state.oa&&e.cpf_oa!==true)return false;
+    if(state.sa&&e.cpf_sa!==true)return false;
+    if(state.srs&&e.srs!==true)return false;
+    if(q&&(f.name||'').toLowerCase().indexOf(q)<0)return false;
+    return true;
+  }).sort(function(a,b){
+    var col=COLS.find(function(c){return c.key===state.sortKey;});
+    if(!col||!col.val)return 0;
+    var va=col.val(a),vb=col.val(b);
+    if(va==null&&vb==null)return 0;
+    if(va==null)return 1;
+    if(vb==null)return -1;
+    return (va<vb?-1:va>vb?1:0)*state.sortDir;
+  });
+}
+
+/* ---------- overview render ---------- */
+function renderHead(){
+  document.getElementById('headRow').innerHTML=COLS.map(function(c){
+    var cls=[c.cls||'',c.internal?'internal':'',c.nosort?'nosort':''].join(' ');
+    var arrow=state.sortKey===c.key?(state.sortDir>0?' ▲':' ▼'):'';
+    return '<th class="'+cls+'" data-col="'+c.key+'">'+esc(c.label)+arrow+'</th>';
+  }).join('');
+}
+function renderBody(){
+  var funds=visible();
+  var maxAbs=1;
+  funds.forEach(function(f){PERIODS.forEach(function(p){
+    var v=ret(f,p.key); if(v!=null)maxAbs=Math.max(maxAbs,Math.abs(v));});});
+  var rows=funds.map(function(f,i){
+    var cells=COLS.map(function(c){
+      if(c.key==='rank')return '<td class="internal-safe"><span class="rank'+(i<3?' top':'')+'">'+(i+1)+'</span></td>';
+      if(c.key==='sel'){var ck=state.selected.indexOf(f.fund_id)>=0?' checked':'';
+        var dis=(!ck&&state.selected.length>=5)?' disabled':'';
+        return '<td><input type="checkbox" data-sel="'+esc(f.fund_id)+'"'+ck+dis+'></td>';}
+      if(c.key==='name')return '<td class="name" data-open-detail="'+esc(f.fund_id)+'">'
+        +esc(f.name)+'<span class="cat">'+esc(f.category||'')+'</span></td>';
+      if(c.ret)return retCell(f,c.key,c.years,maxAbs);
+      var cls=c.internal?'internal':'';
+      return '<td class="'+cls+'">'+(c.render?c.render(f):esc(c.val(f)))+'</td>';
+    }).join('');
+    return '<tr>'+cells+'</tr>';
+  }).join('');
+  document.getElementById('tbody').innerHTML=rows||'<tr><td colspan="'+COLS.length+'" style="text-align:left">No funds match the current filters.</td></tr>';
+  document.getElementById('matchCount').textContent=funds.length+' of '+FUNDS.length+' funds';
+  renderCompareBar();
+}
+function renderLeaders(){
+  var cats={};
+  FUNDS.forEach(function(f){(cats[f.category]=cats[f.category]||[]).push(f);});
+  document.getElementById('leaders').innerHTML=Object.keys(cats).map(function(cat){
+    function best(key){return cats[cat].reduce(function(a,f){
+      var v=ret(f,key);return v!=null&&(a==null||v>ret(a,key))?f:a;},null);}
+    var by=best('ret_ytd'),b5=best('ret_5y_ann');
+    function row(lbl,f,key){
+      if(!f||ret(f,key)==null)return '<div class="row"><span>'+lbl+'</span><span class="na">n/a</span></div>';
+      return '<div class="row"><span>'+lbl+' <b>'+esc(f.name.replace(/^GreatLink /,''))+'</b></span>'
+        +'<span class="val">'+fmtPct(ret(f,key))+'</span></div>';
+    }
+    return '<div class="leader"><div class="cat">'+esc(cat)+'</div>'
+      +row('Best YTD:',by,'ret_ytd')+row('Best 5Y:',b5,'ret_5y_ann')+'</div>';
+  }).join('');
+}
+function renderBanners(){
+  document.getElementById('asatLine').textContent='Data as at '+fmtDate(DATA.as_at);
+  document.getElementById('sampleBanner').hidden=!DATA.sample;
+  var stale=document.getElementById('staleBanner');
+  if(DATA.as_at){
+    var age=Math.floor((Date.now()-new Date(DATA.as_at).getTime())/864e5);
+    if(age>STALE_DAYS){stale.hidden=false;
+      stale.innerHTML='⚠️ This data is <strong>'+age+' days old</strong> (as at '+fmtDate(DATA.as_at)
+        +'). Run <code>python refresh.py</code> before showing it to a client.';}
+  }
+  document.getElementById('shortDisc').textContent=DISCLAIMER;
+  document.getElementById('fullDisclaimer').textContent=DISCLAIMER
+    +' Data as at '+fmtDate(DATA.as_at)+'. Generated '+(DATA.generated_at||'')+'.';
+}
+
+/* ---------- compare ---------- */
+function selFunds(){return state.selected.map(function(id){
+  return FUNDS.find(function(f){return f.fund_id===id;});}).filter(Boolean);}
+function renderCompareBar(){
+  var bar=document.getElementById('compareBar');
+  bar.className=state.selected.length?'show':'';
+  document.getElementById('cmpCount').textContent=state.selected.length+' selected (2–5 to compare)';
+  document.getElementById('compareBtn').disabled=state.selected.length<2;
+}
+function renderCompare(){
+  var funds=selFunds();
+  if(funds.length<2)return;
+  var sec=document.getElementById('compareSection');
+  document.getElementById('cmpLegend').innerHTML=funds.map(function(f,i){
+    return '<span class="key"><span class="sw" style="background:'+SERIES[i]+'"></span>'
+      +esc(f.name.replace(/^GreatLink /,''))+'</span>';}).join('');
+  document.getElementById('chartwrap').innerHTML=barChart(funds);
+  document.getElementById('cmpTableWrap').innerHTML=cmpTable(funds);
+  document.getElementById('cmpAlloc').innerHTML=funds.map(function(f,i){
+    var a=f.allocation_asset||[];
+    return '<div class="allocblock"><h4 style="color:var(--ink)">'
+      +'<span class="sw" style="display:inline-block;width:10px;height:10px;border-radius:3px;background:'+SERIES[i]+';margin-right:6px"></span>'
+      +esc(f.name.replace(/^GreatLink /,''))+'</h4>'
+      +(a.length?hbars(a,SERIES[i]):'<span class="na">No allocation data</span>')+'</div>';
+  }).join('');
+  sec.hidden=false;
+  sec.scrollIntoView({behavior:'smooth'});
+}
+function hbars(rows,color){
+  var max=Math.max.apply(null,rows.map(function(r){return r.pct;}))||1;
+  return rows.map(function(r){
+    return '<div class="hbar"><span class="lbl" title="'+esc(r.label)+'">'+esc(r.label)+'</span>'
+      +'<span class="track"><span class="fill" style="width:'+(r.pct/max*100)+'%;background:'+(color||'var(--s1)')+'"></span></span>'
+      +'<span class="num">'+r.pct.toFixed(1)+'%</span></div>';
+  }).join('');
+}
+function barChart(funds){
+  var W=Math.max(640,PERIODS.length*(funds.length*26+40)), H=300;
+  var padL=46,padR=10,padT=14,padB=46;
+  var vals=[];
+  funds.forEach(function(f){PERIODS.forEach(function(p){
+    var v=ret(f,p.key); if(v!=null)vals.push(v);});});
+  if(!vals.length)return '<p class="na">No return data to chart.</p>';
+  var lo=Math.min(0,Math.min.apply(null,vals)), hi=Math.max(0,Math.max.apply(null,vals));
+  var span=(hi-lo)||1; lo-=span*.06; hi+=span*.06;
+  function y(v){return padT+(hi-v)/(hi-lo)*(H-padT-padB);}
+  var s=['<svg id="cmpChart" width="'+W+'" height="'+H+'" viewBox="0 0 '+W+' '+H+'" role="img" aria-label="Grouped bar chart of returns per period per fund">'];
+  // clean tick steps: 1/2/2.5/5 x 10^n
+  var rough=(hi-lo)/4, mag=Math.pow(10,Math.floor(Math.log(rough)/Math.LN10));
+  var step=[1,2,2.5,5,10].map(function(m){return m*mag;})
+    .filter(function(st){return st>=rough;})[0]||rough;
+  for(var gv=Math.ceil(lo/step)*step; gv<=hi; gv+=step){
+    var gy=y(gv);
+    s.push('<line x1="'+padL+'" x2="'+(W-padR)+'" y1="'+gy+'" y2="'+gy+'" stroke="#e1e0d9" stroke-width="1"/>');
+    s.push('<text x="'+(padL-6)+'" y="'+(gy+4)+'" text-anchor="end" font-size="11" fill="#898781">'
+      +(step<1?gv.toFixed(1):gv.toFixed(0))+'%</text>');
+  }
+  var y0=y(0);
+  s.push('<line x1="'+padL+'" x2="'+(W-padR)+'" y1="'+y0+'" y2="'+y0+'" stroke="#c3c2b7" stroke-width="1"/>');
+  var groupW=(W-padL-padR)/PERIODS.length;
+  var barW=Math.min(22,(groupW-16)/funds.length-2);
+  PERIODS.forEach(function(p,pi){
+    var gx=padL+groupW*pi;
+    var total=funds.length*(barW+2)-2;
+    var x0=gx+(groupW-total)/2;
+    funds.forEach(function(f,fi){
+      var v=ret(f,p.key);
+      var x=x0+fi*(barW+2);
+      if(v==null){
+        s.push('<text x="'+(x+barW/2)+'" y="'+(y0-4)+'" text-anchor="middle" font-size="9" fill="#898781">n/a</text>');
+        return;
+      }
+      var yTop=Math.min(y(v),y0), h=Math.max(1.5,Math.abs(y(v)-y0)), r=Math.min(4,h);
+      // 4px rounded data-end, square at the zero baseline
+      var path = v>=0
+        ? 'M'+x+' '+(yTop+h)+' V'+(yTop+r)+' Q'+x+' '+yTop+' '+(x+r)+' '+yTop+' H'+(x+barW-r)
+          +' Q'+(x+barW)+' '+yTop+' '+(x+barW)+' '+(yTop+r)+' V'+(yTop+h)+' Z'
+        : 'M'+x+' '+yTop+' V'+(yTop+h-r)+' Q'+x+' '+(yTop+h)+' '+(x+r)+' '+(yTop+h)+' H'+(x+barW-r)
+          +' Q'+(x+barW)+' '+(yTop+h)+' '+(x+barW)+' '+(yTop+h-r)+' V'+yTop+' Z';
+      s.push('<path d="'+path+'" fill="'+SERIES[fi]+'"><title>'
+        +esc(f.name)+' — '+p.label+': '+plainPct(v)+'</title></path>');
+    });
+    s.push('<text x="'+(gx+groupW/2)+'" y="'+(H-padB+18)+'" text-anchor="middle" font-size="11.5" fill="#52514e">'+p.label+'</text>');
+  });
+  s.push('</svg>');
+  return s.join('');
+}
+function cmpRows(funds){
+  var rows=[['Metric'].concat(funds.map(function(f){return f.name.replace(/^GreatLink /,'');}))];
+  rows.push(['Category'].concat(funds.map(function(f){return f.category||'—';})));
+  rows.push(['Risk'].concat(funds.map(function(f){return f.risk_class||'—';})));
+  PERIODS.forEach(function(p){
+    rows.push([p.label+' %'].concat(funds.map(function(f){return plainPct(ret(f,p.key));})));
+  });
+  rows.push(['Bid price'].concat(funds.map(function(f){return f.bid_price!=null?f.bid_price.toFixed(4):'n/a';})));
+  rows.push(['Fund size (M)'].concat(funds.map(function(f){return f.fund_size_m!=null?f.fund_size_m.toFixed(0):'n/a';})));
+  rows.push(['Mgmt fee %'].concat(funds.map(function(f){return f.mgmt_fee_pct!=null?f.mgmt_fee_pct.toFixed(2):'n/a';})));
+  rows.push(['Inception'].concat(funds.map(function(f){return fmtDate(f.inception_date);})));
+  var years={};
+  funds.forEach(function(f){Object.keys(f.calendar_year_returns||{}).forEach(function(y){years[y]=1;});});
+  Object.keys(years).sort().reverse().slice(0,10).forEach(function(yr){
+    rows.push([yr+' %'].concat(funds.map(function(f){
+      return plainPct((f.calendar_year_returns||{})[yr]);})));
+  });
+  return rows;
+}
+function cmpTable(funds){
+  var rows=cmpRows(funds);
+  var head='<tr>'+rows[0].map(function(c,i){return '<th'+(i?'':' style="text-align:left"')+'>'+esc(c)+'</th>';}).join('')+'</tr>';
+  var body=rows.slice(1).map(function(r){
+    return '<tr>'+r.map(function(c,i){
+      if(i===0)return '<td>'+esc(c)+'</td>';
+      var cls=/^\+/.test(c)?'pos':(/^-/.test(c)?'neg':'');
+      return '<td class="'+cls+'">'+esc(c)+'</td>';
+    }).join('')+'</tr>';
+  }).join('');
+  return '<table><thead>'+head+'</thead><tbody>'+body+'</tbody></table>';
+}
+function copyTable(){
+  var rows=cmpRows(selFunds());
+  var widths=rows[0].map(function(_,i){
+    return Math.max.apply(null,rows.map(function(r){return String(r[i]).length;}));});
+  var text=rows.map(function(r){
+    return r.map(function(c,i){
+      var s=String(c);
+      return i===0? s+Array(widths[0]-s.length+1).join(' ')
+                  : Array(widths[i]-s.length+1).join(' ')+s;
+    }).join('  ');
+  }).join('\n');
+  text+='\n\nData as at '+fmtDate(DATA.as_at)+'. '+DISCLAIMER;
+  function done(){document.getElementById('copyDone').textContent='Copied ✓';
+    setTimeout(function(){document.getElementById('copyDone').textContent='';},2500);}
+  if(navigator.clipboard&&navigator.clipboard.writeText){
+    navigator.clipboard.writeText(text).then(done,function(){fallbackCopy(text);done();});
+  }else{fallbackCopy(text);done();}
+}
+function fallbackCopy(text){
+  var ta=document.createElement('textarea');ta.value=text;document.body.appendChild(ta);
+  ta.select();try{document.execCommand('copy');}catch(e){}document.body.removeChild(ta);
+}
+
+/* ---------- detail panel ---------- */
+function detailHTML(f){
+  var e=f.eligibility||{};
+  function yn(v){return v===true?'Yes':(v===false?'No':'—');}
+  var trailing='<table><thead><tr><th>Period</th><th>Fund %</th>'
+    +(Object.keys(f.benchmark_returns||{}).length?'<th>Benchmark %</th>':'')+'</tr></thead><tbody>'
+    +[['YTD','ret_ytd'],['1 month','ret_1m'],['3 month','ret_3m'],['6 month','ret_6m'],
+      ['1 year','ret_1y'],['3 year (ann.)','ret_3y_ann',3],['3 year (cum.)','ret_3y_cum',3],
+      ['5 year (ann.)','ret_5y_ann',5],['5 year (cum.)','ret_5y_cum',5],
+      ['10 year (ann.)','ret_10y_ann',10],['Since inception (ann.)','ret_si_ann']]
+      .filter(function(r){return !/cum/.test(r[1])||ret(f,r[1])!=null;})
+      .map(function(r){
+        var b=(f.benchmark_returns||{})[r[1]];
+        return '<tr><td>'+r[0]+'</td><td>'+fmtPct(ret(f,r[1]),f,r[2])+'</td>'
+          +(Object.keys(f.benchmark_returns||{}).length?'<td>'+fmtPct(b)+'</td>':'')+'</tr>';
+      }).join('')+'</tbody></table>';
+  var years=Object.keys(f.calendar_year_returns||{}).sort().reverse().slice(0,10);
+  var calendar=years.length
+    ?'<table><thead><tr><th>Year</th><th>Fund %</th></tr></thead><tbody>'
+      +years.map(function(y){return '<tr><td>'+y+'</td><td>'+fmtPct(f.calendar_year_returns[y])+'</td></tr>';}).join('')
+      +'</tbody></table>'
+    :'<p class="na">No calendar-year data.</p>';
+  function allocBlock(title,rows){
+    return rows&&rows.length?'<h4>'+title+'</h4>'+hbars(rows):'';
+  }
+  var holdings=(f.top_holdings||[]).length
+    ?'<h4>Top 10 holdings</h4><table><thead><tr><th>Holding</th><th>Weight %</th></tr></thead><tbody>'
+      +f.top_holdings.map(function(h){return '<tr><td>'+esc(h.name)+'</td><td>'+h.pct.toFixed(2)+'</td></tr>';}).join('')
+      +'</tbody></table>':'';
+  var d=f.docs||{};
+  var docs='<div class="docbtns">'
+    +(d.factsheet_local
+      ?'<button class="btn" data-open="'+esc(d.factsheet_local)+'">Open Fund Fact Sheet</button>'
+       +(d.factsheet_url?'<a class="btn2" style="text-decoration:none" href="'+esc(d.factsheet_url)+'" target="_blank" rel="noopener">Online copy</a>':'')
+      :(d.factsheet_url
+        ?'<a class="btn" style="text-decoration:none" href="'+esc(d.factsheet_url)+'" target="_blank" rel="noopener">Open Fund Fact Sheet (online)</a>'
+        :'<button class="btn" disabled>No fact sheet found</button>'))
+    +(d.phs_url?'<a class="btn2" style="text-decoration:none" href="'+esc(d.phs_url)+'" target="_blank" rel="noopener">Product Highlights Sheet</a>':'')
+    +'<a class="btn2" style="text-decoration:none" href="'+esc(f.fundcentre_url||f.ge_page_url||'#')+'" target="_blank" rel="noopener">View on Great Eastern site</a>'
+    +'</div>'
+    +(d.factsheet_as_at?'<p class="small muted">Fact sheet as at '+fmtDate(d.factsheet_as_at)+'</p>':'');
+  return '<button class="close" data-close>&times;</button>'
+    +'<h2>'+esc(f.name)+'</h2>'
+    +'<p class="muted small">'+esc(f.category||'')+' · '+esc(f.risk_class||'risk n/a')+'</p>'
+    +(f.objective?'<p style="font-size:14px">'+esc(f.objective)+'</p>':'')
+    +docs
+    +'<div class="facts">'
+    +'<div><span class="k">Manager</span>'+esc(f.manager||'—')+'</div>'
+    +'<div><span class="k">Inception</span>'+fmtDate(f.inception_date)+'</div>'
+    +'<div><span class="k">Fund size</span>'+(f.fund_size_m!=null?f.fund_size_m.toFixed(0)+'M':'—')+'</div>'
+    +'<div><span class="k">Currency</span>'+esc(f.currency||'—')+'</div>'
+    +'<div><span class="k">Mgmt fee</span>'+(f.mgmt_fee_pct!=null?f.mgmt_fee_pct.toFixed(2)+'%':'—')+'</div>'
+    +'<div><span class="k">Bid / Offer</span>'+(f.bid_price!=null?f.bid_price.toFixed(4):'—')
+      +' / '+(f.offer_price!=null?f.offer_price.toFixed(4):'—')
+      +(f.price_date?' <span class="muted small">('+fmtDate(f.price_date)+')</span>':'')+'</div>'
+    +'<div><span class="k">CPF-OA</span>'+yn(e.cpf_oa)+'</div>'
+    +'<div><span class="k">CPF-SA</span>'+yn(e.cpf_sa)+'</div>'
+    +'<div><span class="k">SRS</span>'+yn(e.srs)+'</div>'
+    +(f.benchmark_name?'<div><span class="k">Benchmark</span>'+esc(f.benchmark_name)+'</div>':'')
+    +'</div>'
+    +'<h4>Returns</h4>'+trailing
+    +'<h4 style="margin-top:14px">Calendar-year returns</h4>'+calendar
+    +allocBlock('Asset allocation',f.allocation_asset)
+    +allocBlock('Geographic allocation',f.allocation_geo)
+    +allocBlock('Sector allocation',f.allocation_sector)
+    +holdings
+    +'<p class="small muted internal" style="margin-top:14px">Internal: id '+esc(f.fund_id||'')
+      +' · source '+esc((f.sources&&f.sources.returns)||'—')
+      +((f.missing_fields||[]).length?' · missing: '+esc(f.missing_fields.join(', ')):'')+'</p>';
+}
+function openDetail(id){
+  var f=FUNDS.find(function(x){return x.fund_id===id;});
+  if(!f)return;
+  document.getElementById('detailBody').innerHTML=detailHTML(f);
+  document.getElementById('overlay').classList.add('show');
+  document.getElementById('detail').classList.add('show');
+}
+function closeDetail(){
+  document.getElementById('overlay').classList.remove('show');
+  document.getElementById('detail').classList.remove('show');
+}
+
+/* ---------- events ---------- */
+document.getElementById('search').addEventListener('input',function(e){state.search=e.target.value;renderBody();});
+document.getElementById('riskFilter').addEventListener('change',function(e){state.risk=e.target.value;renderBody();});
+['fOA','fSA','fSRS'].forEach(function(id,i){
+  document.getElementById(id).addEventListener('change',function(e){
+    state[['oa','sa','srs'][i]]=e.target.checked;renderBody();});
+});
+document.getElementById('clientView').addEventListener('change',function(e){
+  document.body.classList.toggle('client-view',e.target.checked);});
+document.getElementById('catChips').addEventListener('click',function(e){
+  var chip=e.target.closest('.chip');if(!chip)return;
+  state.cats[chip.dataset.cat]=!state.cats[chip.dataset.cat];
+  chip.classList.toggle('on');renderBody();});
+document.getElementById('headRow').addEventListener('click',function(e){
+  var th=e.target.closest('th');if(!th||th.classList.contains('nosort'))return;
+  var key=th.dataset.col;
+  var col=COLS.find(function(c){return c.key===key;});
+  if(!col||col.nosort||!col.val)return;
+  if(state.sortKey===key)state.sortDir*=-1;
+  else{state.sortKey=key;state.sortDir=col.ret?-1:1;}
+  renderHead();renderBody();});
+document.getElementById('tbody').addEventListener('click',function(e){
+  var sel=e.target.closest('input[data-sel]');
+  if(sel){var id=sel.dataset.sel,ix=state.selected.indexOf(id);
+    if(ix>=0)state.selected.splice(ix,1);
+    else if(state.selected.length<5)state.selected.push(id);
+    renderBody();return;}
+  var open=e.target.closest('[data-open]');
+  if(open){window.open(open.dataset.open,'_blank');return;}
+  var nm=e.target.closest('td[data-open-detail]');
+  if(nm)openDetail(nm.dataset.openDetail);
+});
+document.getElementById('compareBtn').addEventListener('click',renderCompare);
+document.getElementById('clearSel').addEventListener('click',function(){
+  state.selected=[];document.getElementById('compareSection').hidden=true;renderBody();});
+document.getElementById('closeCmp').addEventListener('click',function(){
+  document.getElementById('compareSection').hidden=true;});
+document.getElementById('copyBtn').addEventListener('click',copyTable);
+document.getElementById('printBtn').addEventListener('click',function(){
+  document.body.classList.add('printing-compare');
+  window.print();
+  document.body.classList.remove('printing-compare');});
+document.getElementById('overlay').addEventListener('click',closeDetail);
+document.getElementById('detail').addEventListener('click',function(e){
+  if(e.target.closest('[data-close]'))closeDetail();
+  var open=e.target.closest('[data-open]');
+  if(open)window.open(open.dataset.open,'_blank');
+});
+document.addEventListener('keydown',function(e){if(e.key==='Escape')closeDetail();});
+
+/* ---------- init ---------- */
+(function init(){
+  var cats=[],risks=[];
+  FUNDS.forEach(function(f){
+    if(f.category&&cats.indexOf(f.category)<0)cats.push(f.category);
+    var r=shortRisk(f.risk_class);
+    if(r!=='—'&&risks.indexOf(r)<0)risks.push(r);
+  });
+  document.getElementById('catChips').innerHTML=cats.map(function(c){
+    return '<span class="chip" data-cat="'+esc(c)+'">'+esc(c)+'</span>';}).join(' ');
+  var rf=document.getElementById('riskFilter');
+  risks.sort().forEach(function(r){var o=document.createElement('option');o.value=r;o.textContent=r;rf.appendChild(o);});
+  renderBanners();renderLeaders();renderHead();renderBody();
+})();
+})();
+</script>
+</body>
+</html>

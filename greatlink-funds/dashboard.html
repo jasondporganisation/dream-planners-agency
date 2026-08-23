@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GreatLink Fund Comparison Tool</title>
+<style>
+  :root{
+    --page:#f9f9f7; --surface:#fcfcfb; --ink:#0b0b0b; --ink2:#52514e; --muted:#898781;
+    --grid:#e1e0d9; --baseline:#c3c2b7; --ring:rgba(11,11,11,.10);
+    --accent:#1f3a52; --accent-ink:#ffffff;
+    --pos:#006300; --neg:#d03b3b;
+    --s1:#2a78d6; --s2:#eb6834; --s3:#1baf7a; --s4:#eda100; --s5:#e87ba4;
+    --warnbg:#fff4d6; --warnink:#6b4e00; --samplebg:#e8f0fe; --sampleink:#1a4a9c;
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0}
+  body{background:var(--page);color:var(--ink);
+       font:15px/1.55 system-ui,-apple-system,"Segoe UI",sans-serif}
+  header{background:var(--surface);border-bottom:1px solid var(--grid);
+         padding:14px 22px;display:flex;flex-wrap:wrap;gap:10px;align-items:baseline}
+  header h1{margin:0;font-size:21px;letter-spacing:-.01em}
+  header .asat{color:var(--ink2);font-size:13px}
+  header .spacer{flex:1}
+  .banner{padding:9px 22px;font-size:13.5px}
+  .banner.sample{background:var(--samplebg);color:var(--sampleink)}
+  .banner.stale{background:var(--warnbg);color:var(--warnink)}
+  main{max-width:1440px;margin:0 auto;padding:14px 22px 120px}
+  h2{font-size:16px;margin:22px 0 8px}
+  .muted{color:var(--muted)} .small{font-size:12.5px}
+
+  /* leaders strip */
+  .leaders{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:10px;margin:10px 0 16px}
+  .leader{background:var(--surface);border:1px solid var(--grid);border-radius:10px;padding:10px 12px}
+  .leader .cat{font-size:11.5px;text-transform:uppercase;letter-spacing:.05em;color:var(--muted);margin-bottom:4px}
+  .leader .row{display:flex;justify-content:space-between;gap:8px;font-size:12.5px;margin-top:2px}
+  .leader .row b{font-weight:600}
+  .leader .val{font-variant-numeric:tabular-nums;white-space:nowrap}
+
+  /* controls */
+  .controls{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:6px 0 10px}
+  .controls input[type=search],.controls select{padding:8px 10px;border:1px solid var(--grid);
+    border-radius:8px;background:var(--surface);font:inherit;color:inherit}
+  .controls input[type=search]{min-width:230px}
+  .chip{display:inline-flex;align-items:center;gap:5px;padding:6px 11px;border:1px solid var(--grid);
+    border-radius:999px;background:var(--surface);cursor:pointer;user-select:none;font-size:13px}
+  .chip.on{background:var(--accent);color:var(--accent-ink);border-color:var(--accent)}
+  .toggle{display:inline-flex;align-items:center;gap:6px;padding:7px 11px;border:1px solid var(--grid);
+    border-radius:8px;background:var(--surface);cursor:pointer;user-select:none;font-size:13px}
+  .toggle input{accent-color:var(--accent)}
+  button{font:inherit;cursor:pointer;border-radius:8px}
+  .btn{background:var(--accent);color:var(--accent-ink);border:none;padding:9px 16px}
+  .btn:disabled{opacity:.4;cursor:not-allowed}
+  .btn2{background:var(--surface);border:1px solid var(--grid);color:var(--ink);padding:8px 13px}
+  .fsbtn{background:var(--surface);border:1px solid var(--grid);padding:5px 10px;font-size:12.5px;white-space:nowrap}
+  .fsbtn[disabled]{opacity:.45}
+
+  /* overview table */
+  .tablewrap{overflow-x:auto;background:var(--surface);border:1px solid var(--grid);border-radius:10px}
+  table{border-collapse:collapse;width:100%}
+  #fundTable{min-width:1080px}
+  th,td{padding:9px 10px;border-bottom:1px solid var(--grid);text-align:right;white-space:nowrap;
+        font-variant-numeric:tabular-nums}
+  th{position:sticky;top:0;background:var(--surface);z-index:1;font-size:11.5px;color:var(--ink2);
+     text-transform:uppercase;letter-spacing:.04em;cursor:pointer;user-select:none}
+  th.nosort{cursor:default}
+  th.name,td.name{text-align:left}
+  td.name{white-space:normal;min-width:230px;font-weight:600;cursor:pointer;max-width:330px}
+  td.name .cat{display:block;font-weight:400;font-size:12px;color:var(--muted)}
+  tbody tr:hover{background:#f2f4f1}
+  tbody tr:last-child td{border-bottom:none}
+  .rank{display:inline-block;min-width:22px;text-align:center;border-radius:6px;font-size:12px;
+        padding:1px 4px;color:var(--ink2);background:var(--page);border:1px solid var(--grid)}
+  .rank.top{background:var(--accent);border-color:var(--accent);color:var(--accent-ink);font-weight:600}
+  .retcell{position:relative;min-width:88px}
+  .retcell .v{position:relative;z-index:1}
+  .retcell .bar{position:absolute;top:20%;bottom:20%;border-radius:3px;opacity:.16;z-index:0}
+  .pos{color:var(--pos)} .neg{color:var(--neg)}
+  .na{color:var(--muted);font-size:12px;white-space:normal}
+  .internal{background:#faf7ef}
+  body.client-view .internal{display:none}
+  #matchCount{font-size:13px;color:var(--ink2)}
+
+  /* compare */
+  #compareBar{position:sticky;bottom:0;left:0;right:0;background:var(--surface);
+    border-top:1px solid var(--grid);padding:10px 22px;display:none;gap:10px;align-items:center;z-index:5}
+  #compareBar.show{display:flex;flex-wrap:wrap}
+  #compareSection{background:var(--surface);border:1px solid var(--grid);border-radius:10px;
+    padding:18px 20px;margin-top:20px}
+  #compareSection h2{margin-top:0}
+  .legend{display:flex;flex-wrap:wrap;gap:14px;margin:6px 0 10px;font-size:13px}
+  .legend .key{display:inline-flex;align-items:center;gap:6px}
+  .legend .sw{width:11px;height:11px;border-radius:3px;display:inline-block}
+  #chartwrap{overflow-x:auto}
+  #cmpChart{display:block}
+  #cmpTableWrap table{min-width:520px}
+  #cmpTableWrap th:first-child,#cmpTableWrap td:first-child{text-align:left;white-space:normal}
+  .allocgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px;margin-top:8px}
+  .allocblock h4{margin:6px 0}
+  .hbar{display:grid;grid-template-columns:minmax(90px,42%) 1fr 52px;gap:8px;align-items:center;
+        font-size:12.5px;margin:3px 0}
+  .hbar .track{height:12px;border-radius:3px;background:var(--page);position:relative}
+  .hbar .fill{position:absolute;left:0;top:0;bottom:0;border-radius:3px;background:var(--s1)}
+  .hbar .num{text-align:right;font-variant-numeric:tabular-nums}
+  .hbar .lbl{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+
+  /* detail panel */
+  #overlay{position:fixed;inset:0;background:rgba(0,0,0,.34);display:none;z-index:20}
+  #overlay.show{display:block}
+  #detail{position:fixed;top:0;right:0;bottom:0;width:min(760px,96vw);background:var(--surface);
+    box-shadow:-6px 0 24px rgba(0,0,0,.18);z-index:21;transform:translateX(102%);
+    transition:transform .22s ease;overflow-y:auto;padding:20px 24px 60px}
+  #detail.show{transform:none}
+  #detail h2{font-size:19px;margin:2px 0 2px}
+  #detail .close{position:absolute;top:12px;right:14px;border:none;background:none;font-size:22px;
+    color:var(--ink2);padding:6px}
+  .facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:6px 18px;margin:12px 0}
+  .facts div{font-size:13.5px}
+  .facts .k{color:var(--muted);font-size:11.5px;text-transform:uppercase;letter-spacing:.04em;display:block}
+  .docbtns{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0}
+  #detail table{width:100%}
+  #detail th,#detail td{padding:6px 8px;font-size:13px}
+  #detail th:first-child,#detail td:first-child{text-align:left}
+
+  footer.disc{position:fixed;left:0;right:0;bottom:0;background:var(--surface);
+    border-top:1px solid var(--grid);padding:7px 22px;font-size:11px;color:var(--muted);z-index:4}
+  #fullDisclaimer{display:none}
+
+  @media (max-width:700px){
+    header h1{font-size:18px}
+    main{padding:10px 12px 130px}
+    th,td{padding:7px 6px;font-size:13px}
+  }
+  @media print{
+    body{background:#fff}
+    body.printing-compare header,body.printing-compare .banner,body.printing-compare .leaders,
+    body.printing-compare .controls,body.printing-compare .tablewrap,
+    body.printing-compare #compareBar,body.printing-compare footer.disc,
+    body.printing-compare .no-print,body.printing-compare h2.overview{display:none!important}
+    #compareSection{border:none;padding:0}
+    #fullDisclaimer{display:block;font-size:10.5px;color:#333;margin-top:14px;
+      border-top:1px solid #999;padding-top:8px}
+  }
+</style>
+</head>
+<body>
+<header>
+  <h1>GreatLink Fund Comparison Tool</h1>
+  <span class="asat" id="asatLine"></span>
+  <span class="spacer"></span>
+  <label class="toggle"><input type="checkbox" id="clientView"> Client view</label>
+</header>
+<div id="sampleBanner" class="banner sample" hidden>
+  <strong>SAMPLE DATA</strong> — placeholder figures for layout only, not real fund performance.
+  Run <code>python refresh.py</code> to load live Great Eastern / Morningstar data.
+</div>
+<div id="staleBanner" class="banner stale" hidden></div>
+
+<main>
+  <div class="leaders" id="leaders"></div>
+
+  <div class="controls">
+    <input type="search" id="search" placeholder="Search funds…">
+    <span id="catChips"></span>
+    <select id="riskFilter"><option value="">All risk levels</option></select>
+    <label class="toggle"><input type="checkbox" id="fOA"> CPF-OA</label>
+    <label class="toggle"><input type="checkbox" id="fSA"> CPF-SA</label>
+    <label class="toggle"><input type="checkbox" id="fSRS"> SRS</label>
+    <span id="matchCount"></span>
+  </div>
+
+  <h2 class="overview" style="margin-top:4px">All GreatLink funds</h2>
+  <div class="tablewrap">
+    <table id="fundTable">
+      <thead><tr id="headRow"></tr></thead>
+      <tbody id="tbody"></tbody>
+    </table>
+  </div>
+
+  <section id="compareSection" hidden>
+    <h2>Side-by-side comparison</h2>
+    <div class="legend" id="cmpLegend"></div>
+    <div id="chartwrap"></div>
+    <h4 style="margin:16px 0 6px">Key facts and returns</h4>
+    <div class="tablewrap" id="cmpTableWrap"></div>
+    <div class="allocgrid" id="cmpAlloc"></div>
+    <p class="no-print" style="margin:14px 0 4px">
+      <button class="btn" id="copyBtn">Copy table</button>
+      <button class="btn" id="printBtn">Print / Save as PDF</button>
+      <button class="btn2" id="closeCmp">Close</button>
+      <span id="copyDone" class="muted small"></span>
+    </p>
+    <div id="fullDisclaimer"></div>
+  </section>
+</main>
+
+<div id="compareBar">
+  <span id="cmpCount"></span>
+  <button class="btn" id="compareBtn" disabled>Compare</button>
+  <button class="btn2" id="clearSel">Clear</button>
+</div>
+
+<div id="overlay"></div>
+<aside id="detail" aria-label="Fund detail"><div id="detailBody"></div></aside>
+
+<footer class="disc"><span id="shortDisc"></span></footer>
+
+<script>
+window.FUND_DATA = {"as_at": "2026-07-31", "generated_at": "2026-08-23T00:00:00+00:00", "sample": true, "convention": "Returns are bid-to-bid in the fund currency, net of fund management fees, excluding policy-level charges.", "funds": [{"fund_id": "SAMPLE_GEQ", "name": "GreatLink Global Equity Fund", "category": "Global Equity", "ge_page_url": "https://www.greateasternlife.com/sg/en/personal-insurance/our-products/wealth-accumulation/investment-linked-funds/greatlink-funds.html", "fundcentre_url": "https://www.greateasternlife.com/sg/en/personal-insurance/our-products/wealth-accumulation/investment-linked-funds/ilp-fund-centre.html#/detail?id=SAMPLE_GEQ", "manager": "Sample Global Managers", "underlying_fund": null, "inception_date": "1999-07-01", "fund_size_m": 380, "currency": "SGD", "mgmt_fee_pct": 1.5, "risk_class": "Higher risk – broadly diversified", "eligibility": {"cpf_oa": false, "cpf_sa": false, "srs": true, "cash": true}, "bid_price": 2.1, "offer_price": null, "price_date": "2026-07-31", "returns": {"ret_ytd": 7.8, "ret_1m": 1.2, "ret_3m": 3.4, "ret_6m": 5.9, "ret_1y": 12.4, "ret_3y_ann": 11.6, "ret_3y_cum": 39.0, "ret_5y_ann": 9.8, "ret_5y_cum": 59.6, "ret_10y_ann": 8.2, "ret_si_ann": 4.4, "ret_si_cum": null}, "benchmark_name": "MSCI World Index (sample)", "benchmark_returns": {"ret_ytd": 8.1, "ret_1y": 13.0, "ret_3y_ann": 12.1, "ret_5y_ann": 10.4, "ret_10y_ann": 8.8}, "calendar_year_returns": {"2016": 6.1, "2017": 18.2, "2018": -7.4, "2019": 24.5, "2020": 14.2, "2021": 20.3, "2022": -18.4, "2023": 19.8, "2024": 15.6, "2025": 10.9}, "calendar_year_benchmark": {}, "allocation_asset": [{"label": "Equities", "pct": 97.6}, {"label": "Cash", "pct": 2.4}], "allocation_geo": [{"label": "United States", "pct": 62.1}, {"label": "Europe ex UK", "pct": 13.4}, {"label": "Japan", "pct": 6.2}, {"label": "United Kingdom", "pct": 3.8}, {"label": "Emerging Markets", "pct": 8.9}, {"label": "Others", "pct": 5.6}], "allocation_sector": [{"label": "Information Technology", "pct": 26.4}, {"label": "Financials", "pct": 15.2}, {"label": "Health Care", "pct": 11.8}, {"label": "Consumer Discretionary", "pct": 10.6}, {"label": "Industrials", "pct": 10.1}, {"label": "Others", "pct": 25.9}], "top_holdings": [{"name": "Sample Holding 1", "pct": 4.8}, {"name": "Sample Holding 2", "pct": 3.9}, {"name": "Sample Holding 3", "pct": 3.1}, {"name": "Sample Holding 4", "pct": 2.7}, {"name": "Sample Holding 5", "pct": 2.4}, {"name": "Sample Holding 6", "pct": 2.1}, {"name": "Sample Holding 7", "pct": 1.9}, {"name": "Sample Holding 8", "pct": 1.8}, {"name": "Sample Holding 9", "pct": 1.6}, {"name": "Sample Holding 10", "pct": 1.5}], "objective": "SAMPLE objective text — replaced by the scraped fund objective after the first refresh.", "docs": {"factsheet_url": null, "factsheet_local": null, "factsheet_as_at": null, "phs_url": null, "other": []}, "sources": {"returns": "SAMPLE", "fetched_at": "2026-08-23T00:00:00+00:00"}, "missing_fields": []}, {"fund_id": "F0HKG07069_F19", "name": "GreatLink Global Equity Alpha Fund", "category": "Global Equity", "ge_page_url": "https://www.greateasternlife.com/sg/en/personal-insurance/our-products/wealth-accumulation/investment-linked-funds/greatlink-funds.html", "fundcentre_url": "https://www.greateasternlife.com/sg/en/personal-insurance/our-products/wealth-accumulation/investment-linked-funds/ilp-fund-centre.html#/detail?id=F0HKG07069_F19", "manager": "Sample Asset Management (placeholder)", "underlying_fund": null, "inception_date": "2007-05-02", "fund_size_m": 290, "currency": "SGD", "mgmt_fee_pct": 1.5, "risk_class": "Higher risk – broadly diversified", "eligibility": {"cpf_oa": false, "cpf_sa": false, "srs": true, "cash": true}, "bid_price": 1.95, "offer_price": null, "price_date": "2026-07-31", "returns": {"ret_ytd": 8.4, "ret_1m": 1.4, "ret_3m": 3.8, "ret_6m": 6.3, "ret_1y": 13.1, "ret_3y_ann": 12.2, "ret_3y_cum": 41.2, "ret_5y_ann": 10.4, "ret_5y_cum": 64.0, "ret_10y_ann": 8.9, "ret_si_ann": 5.6, "ret_si_cum": null}, "benchmark_name": "MSCI World Index (sample)", "benchmark_returns": {"ret_ytd": 8.1, "ret_1y": 13.0, "ret_3y_ann": 12.1, "ret_5y_ann": 10.4}, "calendar_year_returns": {"2016": 7.0, "2017": 19.4, "2018": -8.1, "2019": 26.0, "2020": 15.0, "2021": 21.8, "2022": -17.2, "2023": 21.4, "2024": 16.8, "2025": 11.5}, "calendar_year_benchmark": {}, "allocation_asset": [], "allocation_geo": [], "allocation_sector": [], "top_holdings": [], "objective": "SAMPLE objective text — replaced by the scraped fund objective after the first refresh.", "docs": {"factsheet_url": null, "factsheet_local": null, "factsheet_as_at": null, "phs_url": null, "other": []}, "sources": {"returns": "SAMPLE", "fetched_at": "2026-08-23T00:00:00+00:00"}, "missing_fields": []}, {"fund_id": "SAMPLE_TECH", "name": "GreatLink Global Technology Fund", "category": "Global Equity", "ge_page_url": "https://www.greateasternlife.com/sg/en/personal-insurance/our-products/wealth-accumulation/investment-linked-funds/greatlink-funds.html", "fundcentre_url": "https://www.greateasternlife.com/sg/en/personal-insurance/our-products/wealth-accumulation/investment-linked-funds/ilp-fund-centre.html#/detail?id=SAMPLE_TECH", "manager": "Sample Asset Management (placeholder)", "underlying_fund": null, "inception_date": "2000-01-15", "fund_size_m": 340, "currency": "SGD", "mgmt_fee_pct": 1.5, "risk_class": "Higher risk – narrowly focused", "eligibility": {"cpf_oa": false, "cpf_sa": false, "srs": true, "cash": true}, "bid_price": 1.35, "offer_price": null, "price_date": "2026-07-31", "returns": {"ret_ytd": 12.6, "ret_1m": 2.1, "ret_3m": 5.6, "ret_6m": 9.8, "ret_1y": 18.9, "ret_3y_ann": 19.4, "ret_3y_cum": 70.2, "ret_5y_ann": 14.1, "ret_5y_cum": 93.4, "ret_10y_ann": 13.8, "ret_si_ann": 1.2, "ret_si_cum": null}, "benchmark_name": null, "benchmark_returns": {}, "calendar_year_returns": {"2016": 9.8, "2017": 36.1, "2018": -9.2, "2019": 42.0, "2020": 38.4, "2021": 24.5, "2022": -33.1, "2023": 42.7, "2024": 28.3, "2025": 16.4}, "calendar_year_benchmark": {}, "allocation_asset": [], "allocation_geo": [], "allocation_sector": [{"label": "Software", "pct": 34.2}, {"label": "Semiconductors", "pct": 27.8}, {"label": "Hardware", "pct": 14.6}, {"label": "Internet & Media", "pct": 13.9}, {"label": "Others", "pct": 9.5}], "top_holdings": [], "objective": "SAMPLE objective text — replaced by the scraped fund objective after the first refresh.", "docs": {"factsheet_url": null, "factsheet_local": null, "factsheet_as_at": null, "phs_url": null, "other": []}, "sources": {"returns": "SAMPLE", "fetched_at": "2026-08-23T00:00:00+00:00"}, "missing_fields": []}, {"fund_id": "F00001DUL4_F224", "name": "GreatLink Global Disruptive Innovation Fund", "category": "Global Equity", "ge_page_url": "https://www.greateasternlife.com/sg/en/personal-insurance/our-products/wealth-accumulation/investment-linked-funds/greatlink-funds.html", "fundcentre_url": "https://www.greateasternlife.com/sg/en/personal-insurance/our-products/wealth-accumulation/investment-linked-funds/ilp-fund-centre.html#/detail?id=F00001DUL4_F224", "manager": "Sample Asset Management (placeholder)", "underlying_fund": null, "inception_date": "2021-03-15", "fund_size_m": 120, "currency": "SGD", "mgmt_fee_pct": 1.6, "risk_class": "Higher risk – narrowly focused", "eligibility": {"cpf_oa": false, "cpf_sa": false, "srs": true, "cash": true}, "bid_price": 0.88, "offer_price": null, "price_date": "2026-07-31", "returns": {"ret_ytd": 10.9, "ret_1m": 1.8, "ret_3m": 4.9, "ret_6m": 8.4, "ret_1y": 16.2, "ret_3y_ann": 8.7, "ret_3y_cum": 28.4, "ret_5y_ann": null, "ret_5y_cum": null, "ret_10y_ann": null, "ret_si_ann": -2.3, "ret_si_cum": null}, "benchmark_name": null, "benchmark_returns": {}, "calendar_year_returns": {"2022": -29.6, "2023": 18.4, "2024": 12.1, "2025": 9.7}, "calendar_year_benchmark": {}, "allocation_asset": [], "allocation_geo": [], "allocation_sector": [], "top_holdings": [], "objective": "SAMPLE objective text — replaced by the scraped fund objective after the first refresh.", "docs": {"factsheet_url": null, "factsheet_local": null, "factsheet_as_at": null, "phs_url": null, "other": []}, "sources": {"returns": "SAMPLE", "fetched_at": "2026-08-23T00:00:00+00:00"}, "missing_fields": []}, {"fund_id": "SAMPLE_APEQ", "name": "GreatLink Asia Pacific Equity Fund", "category": "Regional Equity", "ge_page_url": "https://www.greateasternlife.com/sg/en/personal-insurance/our-products/wealth-accumulation/investment-linked-funds/greatlink-funds.html", "fundcentre_url": "https://www.greateasternlife.com/sg/en/personal-insurance/our-products/wealth-accumulation/investment-linked-funds/ilp-fund-centre.html#/detail?id=SAMPLE_APEQ", "manager": "Sample Asset Management (placeholder)", "underlying_fund": null, "inception_date": "1999-04-26", "fund_size_m": 270, "currency": "SGD", "mgmt_fee_pct": 1.5, "risk_class": "Higher risk – broadly diversified", "eligibility": {"cpf_oa": false, "cpf_sa": false, "srs": true, "cash": true}, "bid_price": 2.4, "offer_price": null, "price_date": "2026-07-31", "returns": {"ret_ytd": 10.2, "ret_1m": 1.6, "ret_3m": 4.2, "ret_6m": 7.7, "ret_1y": 15.6, "ret_3y_ann": 6.8, "ret_3y_cum": 21.8, "ret_5y_ann": 5.1, "ret_5y_cum": 28.2, "ret_10y_ann": 6.2, "ret_si_ann": 5.4, "ret_si_cum": null}, "benchmark_name": null, "benchmark_returns": {}, "calendar_year_returns": {"2016": 5.7, "2017": 29.8, "2018": -10.4, "2019": 15.6, "2020": 18.2, "2021": -1.8, "2022": -15.4, "2023": 6.2, "2024": 12.7, "2025": 13.8}, "calendar_year_benchmark": {}, "allocation_asset": [], "allocation_geo": [{"label": "China", "pct": 24.6}, {"label": "Taiwan", "pct": 16.8}, {"label": "India", "pct": 15.2}, {"label": "Korea", "pct": 12.4}, {"label": "Singapore", "pct": 8.1}, {"label": "Others", "pct": 22.9}], "allocation_sector": [], "top_holdings": [], "objective": "SAMPLE objective text — replaced by the scraped fund objective after the first refresh.", "docs": {"factsheet_url": null, "factsheet_local": null, "factsheet_as_at": null, "phs_url": null, "other": []}, "sources": {"returns": "SAMPLE", "fetched_at": "2026-08-23T00:00:00+00:00"}, "missing_fields": []}, {"fund_id": "SAMPLE_GEM", "name": "GreatLink Global Emerging Markets Equity Fund", "category": "Regional Equity", "ge_page_url": "https://www.greateasternlife.com/sg/en/personal-insurance/our-products/wealth-accumulation/investment-linked-funds/greatlink-funds.html", "fundcentre_url": "https://www.greateasternlife.com/sg/en/personal-insurance/our-products/wealth-accumulation/investment-linked-funds/ilp-fund-centre.html#/detail?id=SAMPLE_GEM", "manager": "Sample Asset Management (placeholder)", "underlying_fund": null, "inception_date": "2005-08-01", "fund_size_m": 140, "currency": "SGD", "mgmt_fee_pct": 1.5, "risk_class": "Higher risk – broadly diversified", "eligibility": {"cpf_oa": false, "cpf_sa": false, "srs": true, "cash": true}, "bid_price": 1.1, "offer_price": null, "price_date": "2026-07-31", "returns": {"ret_ytd": 9.1, "ret_1m": 1.3, "ret_3m": 3.9, "ret_6m": 6.8, "ret_1y": 13.8, "ret_3y_ann": 4.9, "ret_3y_cum": 15.4, "ret_5y_ann": 3.6, "ret_5y_cum": 19.3, "ret_10y_ann": 4.8, "ret_si_ann": 4.2, "ret_si_cum": null}, "benchmark_name": null, "benchmark_returns": {}, "calendar_year_returns": {"2016": 9.4, "2017": 32.1, "2018": -14.2, "2019": 17.8, "2020": 15.1, "2021": -3.4, "2022": -19.8, "2023": 8.1, "2024": 10.4, "2025": 12.2}, "calendar_year_benchmark": {}, "allocation_asset": [], "allocation_geo": [], "allocation_sector": [], "top_holdings": [], "objective": "SAMPLE objective text — replaced by the scraped fund objective after the first refresh.", "docs": {"factsheet_url": null, "factsheet_local": null, "factsheet_as_at": null, "phs_url": null, "other": []}, "sources": {"returns": "SAMPLE", "fetched_at": "2026-08-23T00:00:00+00:00"}, "missing_fields": []}, {"fund_id": "SAMPLE_SGEQ", "name": "GreatLink Singapore Equities Fund", "category": "Single Country Equity", "ge_page_url": "https://www.greateasternlife.com/sg/en/personal-insurance/our-products/wealth-accumulation/investment-linked-funds/greatlink-funds.html", "fundcentre_url": "https://www.greateasternlife.com/sg/en/personal-insurance/our-products/wealth-accumulation/investment-linked-funds/ilp-fund-centre.html#/detail?id=SAMPLE_SGEQ", "manager": "Sample Asset Management (placeholder)", "underlying_fund": null, "inception_date": "1999-04-26", "fund_size_m": 410, "currency": "SGD", "mgmt_fee_pct": 1.0, "risk_class": "Higher risk – narrowly focused", "eligibility": {"cpf_oa": true, "cpf_sa": false, "srs": true, "cash": true}, "bid_price": 2.85, "offer_price": null, "price_date": "2026-07-31", "returns": {"ret_ytd": 9.5, "ret_1m": 1.1, "ret_3m": 3.6, "ret_6m": 6.9, "ret_1y": 14.2, "ret_3y_ann": 8.1, "ret_3y_cum": 26.3, "ret_5y_ann": 7.3, "ret_5y_cum": 42.2, "ret_10y_ann": 5.6, "ret_si_ann": 5.0, "ret_si_cum": null}, "benchmark_name": "Straits Times Index (sample)", "benchmark_returns": {"ret_ytd": 9.9, "ret_1y": 14.8, "ret_3y_ann": 8.6, "ret_5y_ann": 7.8}, "calendar_year_returns": {"2016": 1.8, "2017": 20.4, "2018": -7.2, "2019": 8.4, "2020": -9.1, "2021": 12.1, "2022": 5.4, "2023": 2.8, "2024": 17.5, "2025": 11.2}, "calendar_year_benchmark": {}, "allocation_asset": [], "allocation_geo": [], "allocation_sector": [], "top_holdings": [{"name": "Sample SG Bank A", "pct": 9.8}, {"name": "Sample SG Bank B", "pct": 9.1}, {"name": "Sample SG Bank C", "pct": 8.4}, {"name": "Sample Telco", "pct": 5.2}, {"name": "Sample REIT A", "pct": 4.1}, {"name": "Sample Conglomerate", "pct": 3.8}, {"name": "Sample REIT B", "pct": 3.2}, {"name": "Sample Airline", "pct": 2.9}, {"name": "Sample Agri Group", "pct": 2.6}, {"name": "Sample Property Co", "pct": 2.4}], "objective": "SAMPLE objective text — replaced by the scraped fund objective after the first refresh.", "docs": {"factsheet_url": null, "factsheet_local": null, "factsheet_as_at": null, "phs_url": null, "other": []}, "sources": {"returns": "SAMPLE", "fetched_at": "2026-08-23T00:00:00+00:00"}, "missing_fields": []}, {"fund_id": "SAMPLE_JPN", "name": "GreatLink Lion Japan Growth Fund", "category": "Single Country Equity", "ge_page_url": "https://www.greateasternlife.com/sg/en/personal-insurance/our-products/wealth-accumulation/investment-linked-funds/greatlink-funds.html", "fundcentre_url": "https://www.greateasternlife.com/sg/en/personal-insurance/our-products/wealth-accumulation/investment-linked-funds/ilp-fund-centre.html#/detail?id=SAMPLE_JPN", "manager": "Sample Asset Management (placeholder)", "underlying_fund": null, "inception_date": "2006-04-01", "fund_size_m": 90, "currency": "SGD", "mgmt_fee_pct": 1.5, "risk_class": "Higher risk – narrowly focused", "eligibility": {"cpf_oa": false, "cpf_sa": false, "srs": true, "cash": true}, "bid_price": 1.05, "offer_price": null, "price_date": "2026-07-31", "returns": {"ret_ytd": 6.4, "ret_1m": 0.9, "ret_3m": 2.8, "ret_6m": 4.9, "ret_1y": 9.8, "ret_3y_ann": 9.4, "ret_3y_cum": 30.9, "ret_5y_ann": 7.1, "ret_5y_cum": 40.9, "ret_10y_ann": 5.9, "ret_si_ann": 2.1, "ret_si_cum": null}, "benchmark_name": null, "benchmark_returns": {}, "calendar_year_returns": {"2016": 2.1, "2017": 18.9, "2018": -12.4, "2019": 19.2, "2020": 8.8, "2021": 4.2, "2022": -10.1, "2023": 22.4, "2024": 14.8, "2025": 7.9}, "calendar_year_benchmark": {}, "allocation_asset": [], "allocation_geo": [], "allocation_sector": [], "top_holdings": [], "objective": "SAMPLE objective text — replaced by the scraped fund objective after the first refresh.", "docs": {"factsheet_url": null, "factsheet_local": null, "factsheet_as_at": null, "phs_url": null, "other": []}, "sources": {"returns": "SAMPLE", "fetched_at": "2026-08-23T00:00:00+00:00"}, "missing_fields": []}, {"fund_id": "SAMPLE_SUPREME", "name": "GreatLink Global Supreme Fund", "category": "Mixed Asset", "ge_page_url": "https://www.greateasternlife.com/sg/en/personal-insurance/our-products/wealth-accumulation/investment-linked-funds/greatlink-funds.html", "fundcentre_url": "https://www.greateasternlife.com/sg/en/personal-insurance/our-products/wealth-accumulation/investment-linked-funds/ilp-fund-centre.html#/detail?id=SAMPLE_SUPREME", "manager": "Sample Asset Management (placeholder)", "underlying_fund": null, "inception_date": "1999-07-01", "fund_size_m": 520, "currency": "SGD", "mgmt_fee_pct": 1.25, "risk_class": "Medium to high risk – broadly diversified", "eligibility": {"cpf_oa": true, "cpf_sa": false, "srs": true, "cash": true}, "bid_price": 1.75, "offer_price": null, "price_date": "2026-07-31", "returns": {"ret_ytd": 6.1, "ret_1m": 0.9, "ret_3m": 2.7, "ret_6m": 4.6, "ret_1y": 9.4, "ret_3y_ann": 7.2, "ret_3y_cum": 23.2, "ret_5y_ann": 6.0, "ret_5y_cum": 33.8, "ret_10y_ann": 5.3, "ret_si_ann": 4.1, "ret_si_cum": null}, "benchmark_name": null, "benchmark_returns": {}, "calendar_year_returns": {"2016": 4.9, "2017": 13.8, "2018": -5.9, "2019": 15.4, "2020": 10.2, "2021": 10.8, "2022": -14.9, "2023": 10.4, "2024": 9.1, "2025": 7.2}, "calendar_year_benchmark": {}, "allocation_asset": [{"label": "Equities", "pct": 58.4}, {"label": "Fixed Income", "pct": 36.2}, {"label": "Cash", "pct": 5.4}], "allocation_geo": [], "allocation_sector": [], "top_holdings": [], "objective": "SAMPLE objective text — replaced by the scraped fund objective after the first refresh.", "docs": {"factsheet_url": null, "factsheet_local": null, "factsheet_as_at": null, "phs_url": null, "other": []}, "sources": {"returns": "SAMPLE", "fetched_at": "2026-08-23T00:00:00+00:00"}, "missing_fields": []}, {"fund_id": "SAMPLE_LSB", "name": "GreatLink Lifestyle Balanced Portfolio", "category": "Mixed Asset", "ge_page_url": "https://www.greateasternlife.com/sg/en/personal-insurance/our-products/wealth-accumulation/investment-linked-funds/greatlink-funds.html", "fundcentre_url": "https://www.greateasternlife.com/sg/en/personal-insurance/our-products/wealth-accumulation/investment-linked-funds/ilp-fund-centre.html#/detail?id=SAMPLE_LSB", "manager": "Sample Asset Management (placeholder)", "underlying_fund": null, "inception_date": "2002-08-01", "fund_size_m": 610, "currency": "SGD", "mgmt_fee_pct": 1.0, "risk_class": "Medium risk – broadly diversified", "eligibility": {"cpf_oa": false, "cpf_sa": false, "srs": true, "cash": true}, "bid_price": 1.62, "offer_price": null, "price_date": "2026-07-31", "returns": {"ret_ytd": 5.4, "ret_1m": 0.8, "ret_3m": 2.4, "ret_6m": 4.1, "ret_1y": 8.2, "ret_3y_ann": 6.1, "ret_3y_cum": 19.4, "ret_5y_ann": 5.2, "ret_5y_cum": 28.8, "ret_10y_ann": 4.7, "ret_si_ann": 4.3, "ret_si_cum": null}, "benchmark_name": null, "benchmark_returns": {}, "calendar_year_returns": {"2016": 4.2, "2017": 12.1, "2018": -4.8, "2019": 13.2, "2020": 9.4, "2021": 8.9, "2022": -12.2, "2023": 8.8, "2024": 8.4, "2025": 6.5}, "calendar_year_benchmark": {}, "allocation_asset": [{"label": "Equities", "pct": 50.8}, {"label": "Fixed Income", "pct": 44.1}, {"label": "Cash", "pct": 5.1}], "allocation_geo": [], "allocation_sector": [], "top_holdings": [], "objective": "SAMPLE objective text — replaced by the scraped fund objective after the first refresh.", "docs": {"factsheet_url": null, "factsheet_local": null, "factsheet_as_at": null, "phs_url": null, "other": []}, "sources": {"returns": "SAMPLE", "fetched_at": "2026-08-23T00:00:00+00:00"}, "missing_fields": []}, {"fund_id": "SAMPLE_USIG", "name": "GreatLink US Income and Growth (Dis) Fund", "category": "Mixed Asset", "ge_page_url": "https://www.greateasternlife.com/sg/en/personal-insurance/our-products/wealth-accumulation/investment-linked-funds/greatlink-funds.html", "fundcentre_url": "https://www.greateasternlife.com/sg/en/personal-insurance/our-products/wealth-accumulation/investment-linked-funds/ilp-fund-centre.html#/detail?id=SAMPLE_USIG", "manager": "Sample Asset Management (placeholder)", "underlying_fund": null, "inception_date": "2015-09-01", "fund_size_m": 180, "currency": "SGD", "mgmt_fee_pct": 1.25, "risk_class": "Medium to high risk – narrowly focused", "eligibility": {"cpf_oa": false, "cpf_sa": false, "srs": true, "cash": true}, "bid_price": 0.92, "offer_price": null, "price_date": "2026-07-31", "returns": {"ret_ytd": 5.2, "ret_1m": 0.7, "ret_3m": 2.2, "ret_6m": 3.8, "ret_1y": 8.7, "ret_3y_ann": 7.9, "ret_3y_cum": 25.6, "ret_5y_ann": 6.4, "ret_5y_cum": 36.4, "ret_10y_ann": 5.8, "ret_si_ann": 5.1, "ret_si_cum": null}, "benchmark_name": null, "benchmark_returns": {}, "calendar_year_returns": {"2018": 16.2, "2019": 6.4, "2020": 10.8, "2021": 12.4, "2022": -13.6, "2023": 11.2, "2024": 9.8, "2025": 7.6}, "calendar_year_benchmark": {}, "allocation_asset": [], "allocation_geo": [], "allocation_sector": [], "top_holdings": [], "objective": "SAMPLE — this fund's fact sheet URL is a real Morningstar document link, kept to demonstrate the online fallback button.", "docs": {"factsheet_url": "https://doc.morningstar.com/document/af60a8f894f9c8f0afc6adf67c1cf3e9.msdoc/?clientid=imassg&key=32545d22b2a6e612", "factsheet_local": null, "factsheet_as_at": "2026-07-31", "phs_url": null, "other": []}, "sources": {"returns": "SAMPLE", "fetched_at": "2026-08-23T00:00:00+00:00"}, "missing_fields": []}, {"fund_id": "SAMPLE_SDB", "name": "GreatLink Short Duration Bond Fund", "category": "Money Markets and Bonds", "ge_page_url": "https://www.greateasternlife.com/sg/en/personal-insurance/our-products/wealth-accumulation/investment-linked-funds/greatlink-funds.html", "fundcentre_url": "https://www.greateasternlife.com/sg/en/personal-insurance/our-products/wealth-accumulation/investment-linked-funds/ilp-fund-centre.html#/detail?id=SAMPLE_SDB", "manager": "Sample Asset Management (placeholder)", "underlying_fund": null, "inception_date": "2000-03-15", "fund_size_m": 480, "currency": "SGD", "mgmt_fee_pct": 0.55, "risk_class": "Low to medium risk – broadly diversified", "eligibility": {"cpf_oa": true, "cpf_sa": true, "srs": true, "cash": true}, "bid_price": 1.55, "offer_price": null, "price_date": "2026-07-31", "returns": {"ret_ytd": 2.4, "ret_1m": 0.3, "ret_3m": 1.1, "ret_6m": 1.8, "ret_1y": 4.2, "ret_3y_ann": 3.1, "ret_3y_cum": 9.6, "ret_5y_ann": 2.2, "ret_5y_cum": 11.5, "ret_10y_ann": 2.0, "ret_si_ann": 2.4, "ret_si_cum": null}, "benchmark_name": null, "benchmark_returns": {}, "calendar_year_returns": {"2016": 2.6, "2017": 2.1, "2018": 1.4, "2019": 3.8, "2020": 3.1, "2021": -0.5, "2022": -2.1, "2023": 4.5, "2024": 3.9, "2025": 3.3}, "calendar_year_benchmark": {}, "allocation_asset": [{"label": "Government Bonds", "pct": 28.4}, {"label": "Corporate Bonds", "pct": 63.1}, {"label": "Cash", "pct": 8.5}], "allocation_geo": [], "allocation_sector": [], "top_holdings": [], "objective": "SAMPLE objective text — replaced by the scraped fund objective after the first refresh.", "docs": {"factsheet_url": null, "factsheet_local": null, "factsheet_as_at": null, "phs_url": null, "other": []}, "sources": {"returns": "SAMPLE", "fetched_at": "2026-08-23T00:00:00+00:00"}, "missing_fields": []}, {"fund_id": "SAMPLE_GB", "name": "GreatLink Global Bond Fund", "category": "Money Markets and Bonds", "ge_page_url": "https://www.greateasternlife.com/sg/en/personal-insurance/our-products/wealth-accumulation/investment-linked-funds/greatlink-funds.html", "fundcentre_url": "https://www.greateasternlife.com/sg/en/personal-insurance/our-products/wealth-accumulation/investment-linked-funds/ilp-fund-centre.html#/detail?id=SAMPLE_GB", "manager": "Sample Asset Management (placeholder)", "underlying_fund": null, "inception_date": "1999-07-01", "fund_size_m": 320, "currency": "SGD", "mgmt_fee_pct": 0.85, "risk_class": "Low to medium risk – broadly diversified", "eligibility": {"cpf_oa": true, "cpf_sa": true, "srs": true, "cash": true}, "bid_price": 1.42, "offer_price": null, "price_date": "2026-07-31", "returns": {"ret_ytd": 3.1, "ret_1m": 0.4, "ret_3m": 1.3, "ret_6m": 2.2, "ret_1y": 4.8, "ret_3y_ann": 1.2, "ret_3y_cum": 3.6, "ret_5y_ann": -0.4, "ret_5y_cum": -2.0, "ret_10y_ann": 1.1, "ret_si_ann": 2.6, "ret_si_cum": null}, "benchmark_name": null, "benchmark_returns": {}, "calendar_year_returns": {"2016": 3.4, "2017": 2.8, "2018": 0.4, "2019": 6.1, "2020": 7.2, "2021": -2.4, "2022": -12.8, "2023": 4.1, "2024": 1.7, "2025": 5.2}, "calendar_year_benchmark": {}, "allocation_asset": [], "allocation_geo": [], "allocation_sector": [], "top_holdings": [], "objective": "SAMPLE objective text — replaced by the scraped fund objective after the first refresh.", "docs": {"factsheet_url": null, "factsheet_local": null, "factsheet_as_at": null, "phs_url": null, "other": []}, "sources": {"returns": "SAMPLE", "fetched_at": "2026-08-23T00:00:00+00:00"}, "missing_fields": []}, {"fund_id": "SAMPLE_CASH", "name": "GreatLink Cash Fund", "category": "Money Markets and Bonds", "ge_page_url": "https://www.greateasternlife.com/sg/en/personal-insurance/our-products/wealth-accumulation/investment-linked-funds/greatlink-funds.html", "fundcentre_url": "https://www.greateasternlife.com/sg/en/personal-insurance/our-products/wealth-accumulation/investment-linked-funds/ilp-fund-centre.html#/detail?id=SAMPLE_CASH", "manager": "Sample Asset Management (placeholder)", "underlying_fund": null, "inception_date": "1999-04-26", "fund_size_m": 250, "currency": "SGD", "mgmt_fee_pct": 0.3, "risk_class": "Lower risk – broadly diversified", "eligibility": {"cpf_oa": true, "cpf_sa": true, "srs": true, "cash": true}, "bid_price": 1.3, "offer_price": null, "price_date": "2026-07-31", "returns": {"ret_ytd": 1.8, "ret_1m": 0.2, "ret_3m": 0.8, "ret_6m": 1.3, "ret_1y": 3.1, "ret_3y_ann": 2.6, "ret_3y_cum": 8.0, "ret_5y_ann": 1.9, "ret_5y_cum": 9.9, "ret_10y_ann": 1.4, "ret_si_ann": 1.5, "ret_si_cum": null}, "benchmark_name": null, "benchmark_returns": {}, "calendar_year_returns": {"2016": 0.8, "2017": 0.9, "2018": 1.1, "2019": 1.4, "2020": 0.6, "2021": 0.2, "2022": 0.8, "2023": 3.2, "2024": 3.4, "2025": 2.7}, "calendar_year_benchmark": {}, "allocation_asset": [], "allocation_geo": [], "allocation_sector": [], "top_holdings": [], "objective": "SAMPLE objective text — replaced by the scraped fund objective after the first refresh.", "docs": {"factsheet_url": null, "factsheet_local": null, "factsheet_as_at": null, "phs_url": null, "other": []}, "sources": {"returns": "SAMPLE", "fetched_at": "2026-08-23T00:00:00+00:00"}, "missing_fields": []}, {"fund_id": "SAMPLE_GOLD", "name": "GreatLink Singapore Physical Gold Fund", "category": "Commodities", "ge_page_url": "https://www.greateasternlife.com/sg/en/personal-insurance/our-products/wealth-accumulation/investment-linked-funds/greatlink-funds.html", "fundcentre_url": "https://www.greateasternlife.com/sg/en/personal-insurance/our-products/wealth-accumulation/investment-linked-funds/ilp-fund-centre.html#/detail?id=SAMPLE_GOLD", "manager": "Sample Asset Management (placeholder)", "underlying_fund": null, "inception_date": "2023-11-01", "fund_size_m": 95, "currency": "SGD", "mgmt_fee_pct": 0.75, "risk_class": "Higher risk – narrowly focused", "eligibility": {"cpf_oa": false, "cpf_sa": false, "srs": true, "cash": true}, "bid_price": 1.28, "offer_price": null, "price_date": "2026-07-31", "returns": {"ret_ytd": 18.4, "ret_1m": 2.4, "ret_3m": 7.1, "ret_6m": 12.2, "ret_1y": 24.6, "ret_3y_ann": null, "ret_3y_cum": null, "ret_5y_ann": null, "ret_5y_cum": null, "ret_10y_ann": null, "ret_si_ann": 21.2, "ret_si_cum": null}, "benchmark_name": null, "benchmark_returns": {}, "calendar_year_returns": {"2024": 26.1, "2025": 22.4}, "calendar_year_benchmark": {}, "allocation_asset": [{"label": "Physical Gold", "pct": 98.9}, {"label": "Cash", "pct": 1.1}], "allocation_geo": [], "allocation_sector": [], "top_holdings": [], "objective": "SAMPLE — young fund: 3Y/5Y/10Y left null to demonstrate the 'n/a – launched MMM YYYY' rendering.", "docs": {"factsheet_url": null, "factsheet_local": null, "factsheet_as_at": null, "phs_url": null, "other": []}, "sources": {"returns": "SAMPLE", "fetched_at": "2026-08-23T00:00:00+00:00"}, "missing_fields": []}]};
+</script>
+<script>
+(function(){
+'use strict';
+var DATA = window.FUND_DATA;
+if(!DATA||!DATA.funds){document.body.innerHTML='<p style="padding:24px">No embedded data — run python refresh.py (or build_dashboard.py).</p>';return;}
+var FUNDS = DATA.funds;
+var STALE_DAYS = 45;
+var SERIES = ['#2a78d6','#eb6834','#1baf7a','#eda100','#e87ba4'];
+var DISCLAIMER = 'Past performance is not necessarily indicative of future performance. '
+  +'Returns are bid-to-bid in the fund currency, net of fund management fees, and exclude policy charges. '
+  +'Fund values may rise or fall. This is an internal reference tool for Great Eastern financial representatives; '
+  +'it is not an offer or a recommendation, and clients must be given the official fund fact sheet, product '
+  +'highlights sheet and product summary. Source: Great Eastern Life / Morningstar.';
+var PERIODS = [
+  {key:'ret_ytd',  label:'YTD'},
+  {key:'ret_1y',   label:'1Y'},
+  {key:'ret_3y_ann',label:'3Y (ann.)', years:3},
+  {key:'ret_5y_ann',label:'5Y (ann.)', years:5},
+  {key:'ret_10y_ann',label:'10Y (ann.)', years:10},
+  {key:'ret_si_ann',label:'Since inception (ann.)'}
+];
+var MONTHS=['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+
+/* ---------- helpers ---------- */
+function esc(s){return String(s==null?'':s).replace(/[&<>"']/g,function(c){
+  return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c];});}
+function fmtDate(iso){if(!iso)return '—';var p=String(iso).split('-');
+  return p.length===3? (+p[2])+' '+MONTHS[+p[1]-1]+' '+p[0] : iso;}
+function monthYear(iso){if(!iso)return '';var p=String(iso).split('-');
+  return p.length>=2? MONTHS[+p[1]-1]+' '+p[0] : iso;}
+function ret(f,key){return f.returns?f.returns[key]:null;}
+function tooYoung(f,years){
+  if(!years||!f.inception_date)return false;
+  var inc=new Date(f.inception_date), asat=new Date(DATA.as_at||Date.now());
+  return (asat-inc)/(365.25*864e5) < years;
+}
+function fmtPct(v,f,years){
+  if(v==null||isNaN(v)){
+    if(f&&years&&tooYoung(f,years))
+      return '<span class="na">n/a – launched '+esc(monthYear(f.inception_date))+'</span>';
+    return '<span class="na">n/a</span>';
+  }
+  var cls=v>0?'pos':(v<0?'neg':'');
+  return '<span class="'+cls+'">'+(v>0?'+':'')+v.toFixed(2)+'</span>';
+}
+function fmtNum(v,dp){return (v==null||isNaN(v))?'<span class="na">n/a</span>':Number(v).toFixed(dp);}
+function plainPct(v){return (v==null||isNaN(v))?'n/a':((v>0?'+':'')+v.toFixed(2)+'%');}
+function retCell(f,key,years,maxAbs){
+  var v=ret(f,key);
+  if(v==null) return '<td class="retcell">'+fmtPct(v,f,years)+'</td>';
+  var w=Math.min(100,Math.abs(v)/maxAbs*100);
+  var bar = '<span class="bar" style="right:0;width:'+w
+    +'%;background:var(--'+(v>=0?'pos':'neg')+')"></span>';
+  return '<td class="retcell">'+bar+'<span class="v">'+fmtPct(v)+'</span></td>';
+}
+function factsheetButtons(f,compact){
+  var d=f.docs||{}, out=[];
+  if(d.factsheet_local){
+    out.push('<button class="fsbtn" data-open="'+esc(d.factsheet_local)+'">Fact sheet</button>');
+    if(d.factsheet_url) out.push('<a class="small" href="'+esc(d.factsheet_url)+'" target="_blank" rel="noopener">online</a>');
+  } else if(d.factsheet_url){
+    out.push('<a class="fsbtn" style="text-decoration:none;color:inherit" href="'+esc(d.factsheet_url)+'" target="_blank" rel="noopener">Fact sheet</a>');
+  } else {
+    out.push('<button class="fsbtn" disabled title="No fact sheet found in the last refresh">Fact sheet</button>');
+  }
+  return out.join(' ');
+}
+
+/* ---------- state ---------- */
+var state={search:'',cats:{},risk:'',oa:false,sa:false,srs:false,
+           sortKey:'ret_ytd',sortDir:-1,selected:[],detail:null};
+
+var COLS=[
+ {key:'rank',label:'#',nosort:true},
+ {key:'sel',label:'',nosort:true},
+ {key:'name',label:'Fund',cls:'name',val:function(f){return f.name||'';}},
+ {key:'risk',label:'Risk',val:function(f){return f.risk_class||'';},
+  render:function(f){return '<span class="small">'+esc(shortRisk(f.risk_class))+'</span>';}},
+ {key:'ret_ytd',label:'YTD %',ret:true},
+ {key:'ret_1y',label:'1Y %',ret:true},
+ {key:'ret_3y_ann',label:'3Y % ann.',ret:true,years:3},
+ {key:'ret_5y_ann',label:'5Y % ann.',ret:true,years:5},
+ {key:'ret_10y_ann',label:'10Y % ann.',ret:true,years:10},
+ {key:'ret_si_ann',label:'SI % ann.',ret:true},
+ {key:'bid_price',label:'Bid',val:function(f){return f.bid_price;},
+  render:function(f){return fmtNum(f.bid_price,4);}},
+ {key:'fund_size_m',label:'Size (M)',val:function(f){return f.fund_size_m;},
+  render:function(f){return fmtNum(f.fund_size_m,0);}},
+ {key:'mgmt_fee_pct',label:'Fee %',val:function(f){return f.mgmt_fee_pct;},
+  render:function(f){return fmtNum(f.mgmt_fee_pct,2);}},
+ {key:'fs',label:'Docs',nosort:true,render:function(f){return factsheetButtons(f,true);}},
+ {key:'src',label:'Source',nosort:true,internal:true,
+  render:function(f){return '<span class="small muted">'+esc((f.sources&&f.sources.returns)||'—')
+    +'<br>'+esc(f.fund_id||'')+'</span>';}},
+ {key:'notes',label:'Notes',nosort:true,internal:true,
+  render:function(f){return '<span class="small muted">'+esc((f.missing_fields&&f.missing_fields.length)?('missing: '+f.missing_fields.join(', ')):'')+'</span>';}}
+];
+COLS.forEach(function(c){
+  if(c.ret){c.val=function(f){return ret(f,c.key);};}
+});
+function shortRisk(r){return r?String(r).replace(/\s*[–-]\s*(broadly diversified|narrowly focused)/i,''):'—';}
+
+/* ---------- filtering & sorting ---------- */
+function visible(){
+  var q=state.search.toLowerCase();
+  var anyCat=Object.keys(state.cats).some(function(k){return state.cats[k];});
+  return FUNDS.filter(function(f){
+    if(anyCat&&!state.cats[f.category])return false;
+    if(state.risk&&shortRisk(f.risk_class)!==state.risk)return false;
+    var e=f.eligibility||{};
+    if(state.oa&&e.cpf_oa!==true)return false;
+    if(state.sa&&e.cpf_sa!==true)return false;
+    if(state.srs&&e.srs!==true)return false;
+    if(q&&(f.name||'').toLowerCase().indexOf(q)<0)return false;
+    return true;
+  }).sort(function(a,b){
+    var col=COLS.find(function(c){return c.key===state.sortKey;});
+    if(!col||!col.val)return 0;
+    var va=col.val(a),vb=col.val(b);
+    if(va==null&&vb==null)return 0;
+    if(va==null)return 1;
+    if(vb==null)return -1;
+    return (va<vb?-1:va>vb?1:0)*state.sortDir;
+  });
+}
+
+/* ---------- overview render ---------- */
+function renderHead(){
+  document.getElementById('headRow').innerHTML=COLS.map(function(c){
+    var cls=[c.cls||'',c.internal?'internal':'',c.nosort?'nosort':''].join(' ');
+    var arrow=state.sortKey===c.key?(state.sortDir>0?' ▲':' ▼'):'';
+    return '<th class="'+cls+'" data-col="'+c.key+'">'+esc(c.label)+arrow+'</th>';
+  }).join('');
+}
+function renderBody(){
+  var funds=visible();
+  var maxAbs=1;
+  funds.forEach(function(f){PERIODS.forEach(function(p){
+    var v=ret(f,p.key); if(v!=null)maxAbs=Math.max(maxAbs,Math.abs(v));});});
+  var rows=funds.map(function(f,i){
+    var cells=COLS.map(function(c){
+      if(c.key==='rank')return '<td class="internal-safe"><span class="rank'+(i<3?' top':'')+'">'+(i+1)+'</span></td>';
+      if(c.key==='sel'){var ck=state.selected.indexOf(f.fund_id)>=0?' checked':'';
+        var dis=(!ck&&state.selected.length>=5)?' disabled':'';
+        return '<td><input type="checkbox" data-sel="'+esc(f.fund_id)+'"'+ck+dis+'></td>';}
+      if(c.key==='name')return '<td class="name" data-open-detail="'+esc(f.fund_id)+'">'
+        +esc(f.name)+'<span class="cat">'+esc(f.category||'')+'</span></td>';
+      if(c.ret)return retCell(f,c.key,c.years,maxAbs);
+      var cls=c.internal?'internal':'';
+      return '<td class="'+cls+'">'+(c.render?c.render(f):esc(c.val(f)))+'</td>';
+    }).join('');
+    return '<tr>'+cells+'</tr>';
+  }).join('');
+  document.getElementById('tbody').innerHTML=rows||'<tr><td colspan="'+COLS.length+'" style="text-align:left">No funds match the current filters.</td></tr>';
+  document.getElementById('matchCount').textContent=funds.length+' of '+FUNDS.length+' funds';
+  renderCompareBar();
+}
+function renderLeaders(){
+  var cats={};
+  FUNDS.forEach(function(f){(cats[f.category]=cats[f.category]||[]).push(f);});
+  document.getElementById('leaders').innerHTML=Object.keys(cats).map(function(cat){
+    function best(key){return cats[cat].reduce(function(a,f){
+      var v=ret(f,key);return v!=null&&(a==null||v>ret(a,key))?f:a;},null);}
+    var by=best('ret_ytd'),b5=best('ret_5y_ann');
+    function row(lbl,f,key){
+      if(!f||ret(f,key)==null)return '<div class="row"><span>'+lbl+'</span><span class="na">n/a</span></div>';
+      return '<div class="row"><span>'+lbl+' <b>'+esc(f.name.replace(/^GreatLink /,''))+'</b></span>'
+        +'<span class="val">'+fmtPct(ret(f,key))+'</span></div>';
+    }
+    return '<div class="leader"><div class="cat">'+esc(cat)+'</div>'
+      +row('Best YTD:',by,'ret_ytd')+row('Best 5Y:',b5,'ret_5y_ann')+'</div>';
+  }).join('');
+}
+function renderBanners(){
+  document.getElementById('asatLine').textContent='Data as at '+fmtDate(DATA.as_at);
+  document.getElementById('sampleBanner').hidden=!DATA.sample;
+  var stale=document.getElementById('staleBanner');
+  if(DATA.as_at){
+    var age=Math.floor((Date.now()-new Date(DATA.as_at).getTime())/864e5);
+    if(age>STALE_DAYS){stale.hidden=false;
+      stale.innerHTML='⚠️ This data is <strong>'+age+' days old</strong> (as at '+fmtDate(DATA.as_at)
+        +'). Run <code>python refresh.py</code> before showing it to a client.';}
+  }
+  document.getElementById('shortDisc').textContent=DISCLAIMER;
+  document.getElementById('fullDisclaimer').textContent=DISCLAIMER
+    +' Data as at '+fmtDate(DATA.as_at)+'. Generated '+(DATA.generated_at||'')+'.';
+}
+
+/* ---------- compare ---------- */
+function selFunds(){return state.selected.map(function(id){
+  return FUNDS.find(function(f){return f.fund_id===id;});}).filter(Boolean);}
+function renderCompareBar(){
+  var bar=document.getElementById('compareBar');
+  bar.className=state.selected.length?'show':'';
+  document.getElementById('cmpCount').textContent=state.selected.length+' selected (2–5 to compare)';
+  document.getElementById('compareBtn').disabled=state.selected.length<2;
+}
+function renderCompare(){
+  var funds=selFunds();
+  if(funds.length<2)return;
+  var sec=document.getElementById('compareSection');
+  document.getElementById('cmpLegend').innerHTML=funds.map(function(f,i){
+    return '<span class="key"><span class="sw" style="background:'+SERIES[i]+'"></span>'
+      +esc(f.name.replace(/^GreatLink /,''))+'</span>';}).join('');
+  document.getElementById('chartwrap').innerHTML=barChart(funds);
+  document.getElementById('cmpTableWrap').innerHTML=cmpTable(funds);
+  document.getElementById('cmpAlloc').innerHTML=funds.map(function(f,i){
+    var a=f.allocation_asset||[];
+    return '<div class="allocblock"><h4 style="color:var(--ink)">'
+      +'<span class="sw" style="display:inline-block;width:10px;height:10px;border-radius:3px;background:'+SERIES[i]+';margin-right:6px"></span>'
+      +esc(f.name.replace(/^GreatLink /,''))+'</h4>'
+      +(a.length?hbars(a,SERIES[i]):'<span class="na">No allocation data</span>')+'</div>';
+  }).join('');
+  sec.hidden=false;
+  sec.scrollIntoView({behavior:'smooth'});
+}
+function hbars(rows,color){
+  var max=Math.max.apply(null,rows.map(function(r){return r.pct;}))||1;
+  return rows.map(function(r){
+    return '<div class="hbar"><span class="lbl" title="'+esc(r.label)+'">'+esc(r.label)+'</span>'
+      +'<span class="track"><span class="fill" style="width:'+(r.pct/max*100)+'%;background:'+(color||'var(--s1)')+'"></span></span>'
+      +'<span class="num">'+r.pct.toFixed(1)+'%</span></div>';
+  }).join('');
+}
+function barChart(funds){
+  var W=Math.max(640,PERIODS.length*(funds.length*26+40)), H=300;
+  var padL=46,padR=10,padT=14,padB=46;
+  var vals=[];
+  funds.forEach(function(f){PERIODS.forEach(function(p){
+    var v=ret(f,p.key); if(v!=null)vals.push(v);});});
+  if(!vals.length)return '<p class="na">No return data to chart.</p>';
+  var lo=Math.min(0,Math.min.apply(null,vals)), hi=Math.max(0,Math.max.apply(null,vals));
+  var span=(hi-lo)||1; lo-=span*.06; hi+=span*.06;
+  function y(v){return padT+(hi-v)/(hi-lo)*(H-padT-padB);}
+  var s=['<svg id="cmpChart" width="'+W+'" height="'+H+'" viewBox="0 0 '+W+' '+H+'" role="img" aria-label="Grouped bar chart of returns per period per fund">'];
+  // clean tick steps: 1/2/2.5/5 x 10^n
+  var rough=(hi-lo)/4, mag=Math.pow(10,Math.floor(Math.log(rough)/Math.LN10));
+  var step=[1,2,2.5,5,10].map(function(m){return m*mag;})
+    .filter(function(st){return st>=rough;})[0]||rough;
+  for(var gv=Math.ceil(lo/step)*step; gv<=hi; gv+=step){
+    var gy=y(gv);
+    s.push('<line x1="'+padL+'" x2="'+(W-padR)+'" y1="'+gy+'" y2="'+gy+'" stroke="#e1e0d9" stroke-width="1"/>');
+    s.push('<text x="'+(padL-6)+'" y="'+(gy+4)+'" text-anchor="end" font-size="11" fill="#898781">'
+      +(step<1?gv.toFixed(1):gv.toFixed(0))+'%</text>');
+  }
+  var y0=y(0);
+  s.push('<line x1="'+padL+'" x2="'+(W-padR)+'" y1="'+y0+'" y2="'+y0+'" stroke="#c3c2b7" stroke-width="1"/>');
+  var groupW=(W-padL-padR)/PERIODS.length;
+  var barW=Math.min(22,(groupW-16)/funds.length-2);
+  PERIODS.forEach(function(p,pi){
+    var gx=padL+groupW*pi;
+    var total=funds.length*(barW+2)-2;
+    var x0=gx+(groupW-total)/2;
+    funds.forEach(function(f,fi){
+      var v=ret(f,p.key);
+      var x=x0+fi*(barW+2);
+      if(v==null){
+        s.push('<text x="'+(x+barW/2)+'" y="'+(y0-4)+'" text-anchor="middle" font-size="9" fill="#898781">n/a</text>');
+        return;
+      }
+      var yTop=Math.min(y(v),y0), h=Math.max(1.5,Math.abs(y(v)-y0)), r=Math.min(4,h);
+      // 4px rounded data-end, square at the zero baseline
+      var path = v>=0
+        ? 'M'+x+' '+(yTop+h)+' V'+(yTop+r)+' Q'+x+' '+yTop+' '+(x+r)+' '+yTop+' H'+(x+barW-r)
+          +' Q'+(x+barW)+' '+yTop+' '+(x+barW)+' '+(yTop+r)+' V'+(yTop+h)+' Z'
+        : 'M'+x+' '+yTop+' V'+(yTop+h-r)+' Q'+x+' '+(yTop+h)+' '+(x+r)+' '+(yTop+h)+' H'+(x+barW-r)
+          +' Q'+(x+barW)+' '+(yTop+h)+' '+(x+barW)+' '+(yTop+h-r)+' V'+yTop+' Z';
+      s.push('<path d="'+path+'" fill="'+SERIES[fi]+'"><title>'
+        +esc(f.name)+' — '+p.label+': '+plainPct(v)+'</title></path>');
+    });
+    s.push('<text x="'+(gx+groupW/2)+'" y="'+(H-padB+18)+'" text-anchor="middle" font-size="11.5" fill="#52514e">'+p.label+'</text>');
+  });
+  s.push('</svg>');
+  return s.join('');
+}
+function cmpRows(funds){
+  var rows=[['Metric'].concat(funds.map(function(f){return f.name.replace(/^GreatLink /,'');}))];
+  rows.push(['Category'].concat(funds.map(function(f){return f.category||'—';})));
+  rows.push(['Risk'].concat(funds.map(function(f){return f.risk_class||'—';})));
+  PERIODS.forEach(function(p){
+    rows.push([p.label+' %'].concat(funds.map(function(f){return plainPct(ret(f,p.key));})));
+  });
+  rows.push(['Bid price'].concat(funds.map(function(f){return f.bid_price!=null?f.bid_price.toFixed(4):'n/a';})));
+  rows.push(['Fund size (M)'].concat(funds.map(function(f){return f.fund_size_m!=null?f.fund_size_m.toFixed(0):'n/a';})));
+  rows.push(['Mgmt fee %'].concat(funds.map(function(f){return f.mgmt_fee_pct!=null?f.mgmt_fee_pct.toFixed(2):'n/a';})));
+  rows.push(['Inception'].concat(funds.map(function(f){return fmtDate(f.inception_date);})));
+  var years={};
+  funds.forEach(function(f){Object.keys(f.calendar_year_returns||{}).forEach(function(y){years[y]=1;});});
+  Object.keys(years).sort().reverse().slice(0,10).forEach(function(yr){
+    rows.push([yr+' %'].concat(funds.map(function(f){
+      return plainPct((f.calendar_year_returns||{})[yr]);})));
+  });
+  return rows;
+}
+function cmpTable(funds){
+  var rows=cmpRows(funds);
+  var head='<tr>'+rows[0].map(function(c,i){return '<th'+(i?'':' style="text-align:left"')+'>'+esc(c)+'</th>';}).join('')+'</tr>';
+  var body=rows.slice(1).map(function(r){
+    return '<tr>'+r.map(function(c,i){
+      if(i===0)return '<td>'+esc(c)+'</td>';
+      var cls=/^\+/.test(c)?'pos':(/^-/.test(c)?'neg':'');
+      return '<td class="'+cls+'">'+esc(c)+'</td>';
+    }).join('')+'</tr>';
+  }).join('');
+  return '<table><thead>'+head+'</thead><tbody>'+body+'</tbody></table>';
+}
+function copyTable(){
+  var rows=cmpRows(selFunds());
+  var widths=rows[0].map(function(_,i){
+    return Math.max.apply(null,rows.map(function(r){return String(r[i]).length;}));});
+  var text=rows.map(function(r){
+    return r.map(function(c,i){
+      var s=String(c);
+      return i===0? s+Array(widths[0]-s.length+1).join(' ')
+                  : Array(widths[i]-s.length+1).join(' ')+s;
+    }).join('  ');
+  }).join('\n');
+  text+='\n\nData as at '+fmtDate(DATA.as_at)+'. '+DISCLAIMER;
+  function done(){document.getElementById('copyDone').textContent='Copied ✓';
+    setTimeout(function(){document.getElementById('copyDone').textContent='';},2500);}
+  if(navigator.clipboard&&navigator.clipboard.writeText){
+    navigator.clipboard.writeText(text).then(done,function(){fallbackCopy(text);done();});
+  }else{fallbackCopy(text);done();}
+}
+function fallbackCopy(text){
+  var ta=document.createElement('textarea');ta.value=text;document.body.appendChild(ta);
+  ta.select();try{document.execCommand('copy');}catch(e){}document.body.removeChild(ta);
+}
+
+/* ---------- detail panel ---------- */
+function detailHTML(f){
+  var e=f.eligibility||{};
+  function yn(v){return v===true?'Yes':(v===false?'No':'—');}
+  var trailing='<table><thead><tr><th>Period</th><th>Fund %</th>'
+    +(Object.keys(f.benchmark_returns||{}).length?'<th>Benchmark %</th>':'')+'</tr></thead><tbody>'
+    +[['YTD','ret_ytd'],['1 month','ret_1m'],['3 month','ret_3m'],['6 month','ret_6m'],
+      ['1 year','ret_1y'],['3 year (ann.)','ret_3y_ann',3],['3 year (cum.)','ret_3y_cum',3],
+      ['5 year (ann.)','ret_5y_ann',5],['5 year (cum.)','ret_5y_cum',5],
+      ['10 year (ann.)','ret_10y_ann',10],['Since inception (ann.)','ret_si_ann']]
+      .filter(function(r){return !/cum/.test(r[1])||ret(f,r[1])!=null;})
+      .map(function(r){
+        var b=(f.benchmark_returns||{})[r[1]];
+        return '<tr><td>'+r[0]+'</td><td>'+fmtPct(ret(f,r[1]),f,r[2])+'</td>'
+          +(Object.keys(f.benchmark_returns||{}).length?'<td>'+fmtPct(b)+'</td>':'')+'</tr>';
+      }).join('')+'</tbody></table>';
+  var years=Object.keys(f.calendar_year_returns||{}).sort().reverse().slice(0,10);
+  var calendar=years.length
+    ?'<table><thead><tr><th>Year</th><th>Fund %</th></tr></thead><tbody>'
+      +years.map(function(y){return '<tr><td>'+y+'</td><td>'+fmtPct(f.calendar_year_returns[y])+'</td></tr>';}).join('')
+      +'</tbody></table>'
+    :'<p class="na">No calendar-year data.</p>';
+  function allocBlock(title,rows){
+    return rows&&rows.length?'<h4>'+title+'</h4>'+hbars(rows):'';
+  }
+  var holdings=(f.top_holdings||[]).length
+    ?'<h4>Top 10 holdings</h4><table><thead><tr><th>Holding</th><th>Weight %</th></tr></thead><tbody>'
+      +f.top_holdings.map(function(h){return '<tr><td>'+esc(h.name)+'</td><td>'+h.pct.toFixed(2)+'</td></tr>';}).join('')
+      +'</tbody></table>':'';
+  var d=f.docs||{};
+  var docs='<div class="docbtns">'
+    +(d.factsheet_local
+      ?'<button class="btn" data-open="'+esc(d.factsheet_local)+'">Open Fund Fact Sheet</button>'
+       +(d.factsheet_url?'<a class="btn2" style="text-decoration:none" href="'+esc(d.factsheet_url)+'" target="_blank" rel="noopener">Online copy</a>':'')
+      :(d.factsheet_url
+        ?'<a class="btn" style="text-decoration:none" href="'+esc(d.factsheet_url)+'" target="_blank" rel="noopener">Open Fund Fact Sheet (online)</a>'
+        :'<button class="btn" disabled>No fact sheet found</button>'))
+    +(d.phs_url?'<a class="btn2" style="text-decoration:none" href="'+esc(d.phs_url)+'" target="_blank" rel="noopener">Product Highlights Sheet</a>':'')
+    +'<a class="btn2" style="text-decoration:none" href="'+esc(f.fundcentre_url||f.ge_page_url||'#')+'" target="_blank" rel="noopener">View on Great Eastern site</a>'
+    +'</div>'
+    +(d.factsheet_as_at?'<p class="small muted">Fact sheet as at '+fmtDate(d.factsheet_as_at)+'</p>':'');
+  return '<button class="close" data-close>&times;</button>'
+    +'<h2>'+esc(f.name)+'</h2>'
+    +'<p class="muted small">'+esc(f.category||'')+' · '+esc(f.risk_class||'risk n/a')+'</p>'
+    +(f.objective?'<p style="font-size:14px">'+esc(f.objective)+'</p>':'')
+    +docs
+    +'<div class="facts">'
+    +'<div><span class="k">Manager</span>'+esc(f.manager||'—')+'</div>'
+    +'<div><span class="k">Inception</span>'+fmtDate(f.inception_date)+'</div>'
+    +'<div><span class="k">Fund size</span>'+(f.fund_size_m!=null?f.fund_size_m.toFixed(0)+'M':'—')+'</div>'
+    +'<div><span class="k">Currency</span>'+esc(f.currency||'—')+'</div>'
+    +'<div><span class="k">Mgmt fee</span>'+(f.mgmt_fee_pct!=null?f.mgmt_fee_pct.toFixed(2)+'%':'—')+'</div>'
+    +'<div><span class="k">Bid / Offer</span>'+(f.bid_price!=null?f.bid_price.toFixed(4):'—')
+      +' / '+(f.offer_price!=null?f.offer_price.toFixed(4):'—')
+      +(f.price_date?' <span class="muted small">('+fmtDate(f.price_date)+')</span>':'')+'</div>'
+    +'<div><span class="k">CPF-OA</span>'+yn(e.cpf_oa)+'</div>'
+    +'<div><span class="k">CPF-SA</span>'+yn(e.cpf_sa)+'</div>'
+    +'<div><span class="k">SRS</span>'+yn(e.srs)+'</div>'
+    +(f.benchmark_name?'<div><span class="k">Benchmark</span>'+esc(f.benchmark_name)+'</div>':'')
+    +'</div>'
+    +'<h4>Returns</h4>'+trailing
+    +'<h4 style="margin-top:14px">Calendar-year returns</h4>'+calendar
+    +allocBlock('Asset allocation',f.allocation_asset)
+    +allocBlock('Geographic allocation',f.allocation_geo)
+    +allocBlock('Sector allocation',f.allocation_sector)
+    +holdings
+    +'<p class="small muted internal" style="margin-top:14px">Internal: id '+esc(f.fund_id||'')
+      +' · source '+esc((f.sources&&f.sources.returns)||'—')
+      +((f.missing_fields||[]).length?' · missing: '+esc(f.missing_fields.join(', ')):'')+'</p>';
+}
+function openDetail(id){
+  var f=FUNDS.find(function(x){return x.fund_id===id;});
+  if(!f)return;
+  document.getElementById('detailBody').innerHTML=detailHTML(f);
+  document.getElementById('overlay').classList.add('show');
+  document.getElementById('detail').classList.add('show');
+}
+function closeDetail(){
+  document.getElementById('overlay').classList.remove('show');
+  document.getElementById('detail').classList.remove('show');
+}
+
+/* ---------- events ---------- */
+document.getElementById('search').addEventListener('input',function(e){state.search=e.target.value;renderBody();});
+document.getElementById('riskFilter').addEventListener('change',function(e){state.risk=e.target.value;renderBody();});
+['fOA','fSA','fSRS'].forEach(function(id,i){
+  document.getElementById(id).addEventListener('change',function(e){
+    state[['oa','sa','srs'][i]]=e.target.checked;renderBody();});
+});
+document.getElementById('clientView').addEventListener('change',function(e){
+  document.body.classList.toggle('client-view',e.target.checked);});
+document.getElementById('catChips').addEventListener('click',function(e){
+  var chip=e.target.closest('.chip');if(!chip)return;
+  state.cats[chip.dataset.cat]=!state.cats[chip.dataset.cat];
+  chip.classList.toggle('on');renderBody();});
+document.getElementById('headRow').addEventListener('click',function(e){
+  var th=e.target.closest('th');if(!th||th.classList.contains('nosort'))return;
+  var key=th.dataset.col;
+  var col=COLS.find(function(c){return c.key===key;});
+  if(!col||col.nosort||!col.val)return;
+  if(state.sortKey===key)state.sortDir*=-1;
+  else{state.sortKey=key;state.sortDir=col.ret?-1:1;}
+  renderHead();renderBody();});
+document.getElementById('tbody').addEventListener('click',function(e){
+  var sel=e.target.closest('input[data-sel]');
+  if(sel){var id=sel.dataset.sel,ix=state.selected.indexOf(id);
+    if(ix>=0)state.selected.splice(ix,1);
+    else if(state.selected.length<5)state.selected.push(id);
+    renderBody();return;}
+  var open=e.target.closest('[data-open]');
+  if(open){window.open(open.dataset.open,'_blank');return;}
+  var nm=e.target.closest('td[data-open-detail]');
+  if(nm)openDetail(nm.dataset.openDetail);
+});
+document.getElementById('compareBtn').addEventListener('click',renderCompare);
+document.getElementById('clearSel').addEventListener('click',function(){
+  state.selected=[];document.getElementById('compareSection').hidden=true;renderBody();});
+document.getElementById('closeCmp').addEventListener('click',function(){
+  document.getElementById('compareSection').hidden=true;});
+document.getElementById('copyBtn').addEventListener('click',copyTable);
+document.getElementById('printBtn').addEventListener('click',function(){
+  document.body.classList.add('printing-compare');
+  window.print();
+  document.body.classList.remove('printing-compare');});
+document.getElementById('overlay').addEventListener('click',closeDetail);
+document.getElementById('detail').addEventListener('click',function(e){
+  if(e.target.closest('[data-close]'))closeDetail();
+  var open=e.target.closest('[data-open]');
+  if(open)window.open(open.dataset.open,'_blank');
+});
+document.addEventListener('keydown',function(e){if(e.key==='Escape')closeDetail();});
+
+/* ---------- init ---------- */
+(function init(){
+  var cats=[],risks=[];
+  FUNDS.forEach(function(f){
+    if(f.category&&cats.indexOf(f.category)<0)cats.push(f.category);
+    var r=shortRisk(f.risk_class);
+    if(r!=='—'&&risks.indexOf(r)<0)risks.push(r);
+  });
+  document.getElementById('catChips').innerHTML=cats.map(function(c){
+    return '<span class="chip" data-cat="'+esc(c)+'">'+esc(c)+'</span>';}).join(' ');
+  var rf=document.getElementById('riskFilter');
+  risks.sort().forEach(function(r){var o=document.createElement('option');o.value=r;o.textContent=r;rf.appendChild(o);});
+  renderBanners();renderLeaders();renderHead();renderBody();
+})();
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,11 @@
+.venv/
+__pycache__/
+*.pyc
+data/funds.json
+data/funds.csv
+data/endpoints.json
+data/refresh_report.md
+data/discovery_report.md
+data/discovery_samples/
+data/history/*.json
+factsheets/*.pdf
