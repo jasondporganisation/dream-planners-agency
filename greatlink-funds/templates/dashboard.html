@@ -136,10 +136,17 @@
   @media print{
     body{background:#fff}
     body.printing-compare header,body.printing-compare .banner,body.printing-compare .leaders,
-    body.printing-compare .controls,body.printing-compare .tablewrap,
+    body.printing-compare .controls,body.printing-compare .overview-wrap,
     body.printing-compare #compareBar,body.printing-compare footer.disc,
     body.printing-compare .no-print,body.printing-compare h2.overview{display:none!important}
     #compareSection{border:none;padding:0}
+    #chartwrap{overflow:visible}
+    #cmpChart{width:100%;height:auto;max-height:300px}
+    #cmpTableWrap{border:none;overflow:visible}
+    #cmpTableWrap table{min-width:0;font-size:11px}
+    #cmpTableWrap th,#cmpTableWrap td{padding:4px 6px}
+    #cmpTableWrap td:first-child,#cmpTableWrap th:first-child{white-space:nowrap}
+    .allocgrid{break-inside:avoid}
     #fullDisclaimer{display:block;font-size:10.5px;color:#333;margin-top:14px;
       border-top:1px solid #999;padding-top:8px}
   }
@@ -175,7 +182,7 @@
   </div>
 
   <h2 class="overview" style="margin-top:4px">All GreatLink funds</h2>
-  <div class="tablewrap">
+  <div class="tablewrap overview-wrap">
     <table id="fundTable">
       <thead><tr id="headRow"></tr></thead>
       <tbody id="tbody"></tbody>
@@ -227,12 +234,12 @@ var DISCLAIMER = 'Past performance is not necessarily indicative of future perfo
   +'it is not an offer or a recommendation, and clients must be given the official fund fact sheet, product '
   +'highlights sheet and product summary. Source: Great Eastern Life / Morningstar.';
 var PERIODS = [
-  {key:'ret_ytd',  label:'YTD'},
-  {key:'ret_1y',   label:'1Y'},
+  {key:'ret_ytd',  label:'YTD', years:1},
+  {key:'ret_1y',   label:'1Y', years:1},
   {key:'ret_3y_ann',label:'3Y (ann.)', years:3},
   {key:'ret_5y_ann',label:'5Y (ann.)', years:5},
   {key:'ret_10y_ann',label:'10Y (ann.)', years:10},
-  {key:'ret_si_ann',label:'Since inception (ann.)'}
+  {key:'ret_si_ann',label:'Since inception (ann.)', years:1}
 ];
 var MONTHS=['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
 
@@ -285,7 +292,15 @@ function factsheetButtons(f,compact){
 /* ---------- state ---------- */
 var state={search:'',cats:{},risk:'',oa:false,sa:false,srs:false,
            sortKey:'ret_ytd',sortDir:-1,selected:[],detail:null,
-           fsSource:(function(){try{return localStorage.getItem('gl_fsSource')||'local';}catch(e){return 'local';}})()};
+           fsSource:(function(){
+             var saved=null;try{saved=localStorage.getItem('gl_fsSource');}catch(e){}
+             if(saved)return saved;
+             // Default to the local PDFs only when this file is still inside the folder it was built in
+             // (i.e. factsheets/ is next to it). A copy that was emailed or moved defaults to online links.
+             var here='';try{here=decodeURIComponent(location.pathname);}catch(e){}
+             var dir=here.replace(/[\\/][^\\/]*$/,'');
+             return (DATA.build_dir&&dir&&dir.replace(/\\/g,'/')===String(DATA.build_dir).replace(/\\/g,'/'))?'local':'online';
+           })()};
 
 var COLS=[
  {key:'rank',label:'#',nosort:true},
@@ -293,12 +308,12 @@ var COLS=[
  {key:'name',label:'Fund',cls:'name',val:function(f){return f.name||'';}},
  {key:'risk',label:'Risk',val:function(f){return f.risk_class||'';},
   render:function(f){return '<span class="small">'+esc(shortRisk(f.risk_class))+'</span>';}},
- {key:'ret_ytd',label:'YTD %',ret:true},
- {key:'ret_1y',label:'1Y %',ret:true},
+ {key:'ret_ytd',label:'YTD %',ret:true,years:1},
+ {key:'ret_1y',label:'1Y %',ret:true,years:1},
  {key:'ret_3y_ann',label:'3Y % ann.',ret:true,years:3},
  {key:'ret_5y_ann',label:'5Y % ann.',ret:true,years:5},
  {key:'ret_10y_ann',label:'10Y % ann.',ret:true,years:10},
- {key:'ret_si_ann',label:'SI % ann.',ret:true},
+ {key:'ret_si_ann',label:'SI % ann.',ret:true,years:1},
  {key:'bid_price',label:'Bid',val:function(f){return f.bid_price;},
   render:function(f){return fmtNum(f.bid_price,3);}},
  {key:'fund_size_m',label:'Size (M)',val:function(f){return f.fund_size_m;},
@@ -356,7 +371,9 @@ function renderBody(){
     var v=ret(f,p.key); if(v!=null)maxAbs=Math.max(maxAbs,Math.abs(v));});});
   var rows=funds.map(function(f,i){
     var cells=COLS.map(function(c){
-      if(c.key==='rank')return '<td class="internal-safe"><span class="rank'+(i<3?' top':'')+'">'+(i+1)+'</span></td>';
+      if(c.key==='rank'){var sortCol=COLS.find(function(x){return x.key===state.sortKey;});
+        var accent=sortCol&&sortCol.ret&&state.sortDir<0&&i<3;
+        return '<td><span class="rank'+(accent?' top':'')+'">'+(i+1)+'</span></td>';}
       if(c.key==='sel'){var ck=state.selected.indexOf(f.fund_id)>=0?' checked':'';
         var dis=(!ck&&state.selected.length>=5)?' disabled':'';
         return '<td><input type="checkbox" data-sel="'+esc(f.fund_id)+'"'+ck+dis+'></td>';}
@@ -415,7 +432,7 @@ function renderCompareBar(){
   document.getElementById('cmpCount').textContent=state.selected.length+' selected (2–5 to compare)';
   document.getElementById('compareBtn').disabled=state.selected.length<2;
 }
-function renderCompare(){
+function renderCompare(noScroll){
   var funds=selFunds();
   if(funds.length<2)return;
   var sec=document.getElementById('compareSection');
@@ -432,13 +449,13 @@ function renderCompare(){
       +(a.length?hbars(a,SERIES[i]):'<span class="na">No allocation data</span>')+'</div>';
   }).join('');
   sec.hidden=false;
-  sec.scrollIntoView({behavior:'smooth'});
+  if(noScroll!==true)sec.scrollIntoView({behavior:'smooth'});
 }
 function hbars(rows,color){
-  var max=Math.max.apply(null,rows.map(function(r){return r.pct;}))||1;
+  var max=Math.max.apply(null,rows.map(function(r){return Math.abs(r.pct);}))||1;
   return rows.map(function(r){
     return '<div class="hbar"><span class="lbl" title="'+esc(r.label)+'">'+esc(r.label)+'</span>'
-      +'<span class="track"><span class="fill" style="width:'+(r.pct/max*100)+'%;background:'+(color||'var(--s1)')+'"></span></span>'
+      +'<span class="track"><span class="fill" style="width:'+Math.min(100,Math.abs(r.pct)/max*100)+'%;background:'+(color||'var(--s1)')+(r.pct<0?';opacity:.45':'')+'"></span></span>'
       +'<span class="num">'+r.pct.toFixed(1)+'%</span></div>';
   }).join('');
 }
@@ -500,6 +517,8 @@ function cmpRows(funds){
   PERIODS.forEach(function(p){
     rows.push([p.label+' %'].concat(funds.map(function(f){return plainPct(ret(f,p.key));})));
   });
+  if(funds.some(function(f){return ret(f,'ret_si_ann')==null&&ret(f,'ret_si_cum')!=null;}))
+    rows.push(['Since inception (cum., funds < 1 yr) %'].concat(funds.map(function(f){return ret(f,'ret_si_ann')==null?plainPct(ret(f,'ret_si_cum')):'—';})));
   rows.push(['Bid price'].concat(funds.map(function(f){return f.bid_price!=null?f.bid_price.toFixed(3):'n/a';})));
   rows.push(['Fund size (M)'].concat(funds.map(function(f){return f.fund_size_m!=null?f.fund_size_m.toFixed(0):'n/a';})));
   rows.push(['Mgmt fee %'].concat(funds.map(function(f){return f.mgmt_fee_pct!=null?f.mgmt_fee_pct.toFixed(2):'n/a';})));
@@ -553,16 +572,17 @@ function detailHTML(f){
   function yn(v){return v===true?'Yes':(v===false?'No':'—');}
   var trailing='<table><thead><tr><th>Period</th><th>Fund %</th></tr></thead><tbody>'
     +[['YTD','ret_ytd'],['1 month','ret_1m'],['3 month','ret_3m'],['6 month','ret_6m'],
-      ['1 year','ret_1y'],['3 year (ann.)','ret_3y_ann',3],['3 year (cum.)','ret_3y_cum',3],
+      ['1 year','ret_1y',1],['3 year (ann.)','ret_3y_ann',3],['3 year (cum.)','ret_3y_cum',3],
       ['5 year (ann.)','ret_5y_ann',5],['5 year (cum.)','ret_5y_cum',5],
-      ['10 year (ann.)','ret_10y_ann',10],['10 year (cum.)','ret_10y_cum',10],['Since inception (ann.)','ret_si_ann']]
-      .filter(function(r){return !/cum/.test(r[1])||ret(f,r[1])!=null;})
+      ['10 year (ann.)','ret_10y_ann',10],['10 year (cum.)','ret_10y_cum',10],['Since inception (ann.)','ret_si_ann',1],['Since inception (cum.)','ret_si_cum']]
+      .filter(function(r){return !/cum/.test(r[1])||ret(f,r[1])!=null||(r[1]==='ret_si_cum'&&ret(f,'ret_si_ann')==null);})
       .map(function(r){
         return '<tr><td>'+r[0]+'</td><td>'+fmtPct(ret(f,r[1]),f,r[2])+'</td></tr>';
       }).join('')+'</tbody></table>';
   var fsr=f.factsheet_returns||{}, br=f.benchmark_returns||{};
   var fsPeriods=[['3 month','ret_3m'],['6 month','ret_6m'],['1 year','ret_1y'],['3 year (ann.)','ret_3y_ann'],
                  ['5 year (ann.)','ret_5y_ann'],['10 year (ann.)','ret_10y_ann'],['Since inception (ann.)','ret_si_ann']];
+  if(fsr.ret_si_cum!=null||br.ret_si_cum!=null)fsPeriods[6]=['Since inception (cumulative)','ret_si_cum'];
   if(fsr.ret_sr_ann!=null||br.ret_sr_ann!=null)fsPeriods.push(['Since restructuring (ann.)','ret_sr_ann']);
   var fsTable=(Object.keys(fsr).length||Object.keys(br).length)
     ?'<h4 style="margin-top:14px">Fund vs benchmark — official fact sheet'
@@ -615,7 +635,7 @@ function detailHTML(f){
     +(f.ms_category?'<div><span class="k">Morningstar category</span>'+esc(f.ms_category)+'</div>':'')
     +'<div><span class="k">Bid / Offer</span>'+(f.bid_price!=null?f.bid_price.toFixed(3):'—')
       +' / '+(f.offer_price!=null?f.offer_price.toFixed(3):'—')
-      +(f.price_date?' <span class="muted small">('+fmtDate(f.price_date)+')</span>':'')+'</div>'
+      +(f.price_date?' <span class="muted small">('+fmtDate(f.price_date)+(f.offer_price_date&&f.offer_price_date!==f.price_date?'; offer '+fmtDate(f.offer_price_date):'')+')</span>':'')+'</div>'
     +'<div><span class="k">CPF-OA</span>'+yn(e.cpf_oa)+'</div>'
     +'<div><span class="k">CPF-SA</span>'+yn(e.cpf_sa)+'</div>'
     +'<div><span class="k">SRS</span>'+yn(e.srs)+'</div>'
@@ -674,7 +694,10 @@ document.getElementById('tbody').addEventListener('click',function(e){
   if(sel){var id=sel.dataset.sel,ix=state.selected.indexOf(id);
     if(ix>=0)state.selected.splice(ix,1);
     else if(state.selected.length<5)state.selected.push(id);
-    renderBody();return;}
+    renderBody();
+    var cs=document.getElementById('compareSection');
+    if(!cs.hidden){if(state.selected.length>=2)renderCompare(true);else cs.hidden=true;}
+    return;}
   var open=e.target.closest('[data-open]');
   if(open){window.open(open.dataset.open,'_blank');return;}
   var nm=e.target.closest('td[data-open-detail]');
@@ -689,7 +712,8 @@ document.getElementById('copyBtn').addEventListener('click',copyTable);
 document.getElementById('printBtn').addEventListener('click',function(){
   document.body.classList.add('printing-compare');
   window.print();
-  document.body.classList.remove('printing-compare');});
+  setTimeout(function(){document.body.classList.remove('printing-compare');},1500);});
+window.addEventListener('afterprint',function(){document.body.classList.remove('printing-compare');});
 document.getElementById('overlay').addEventListener('click',closeDetail);
 document.getElementById('detail').addEventListener('click',function(e){
   if(e.target.closest('[data-close]'))closeDetail();

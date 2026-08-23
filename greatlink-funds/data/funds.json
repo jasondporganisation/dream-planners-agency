@@ -4,7 +4,7 @@
   "factsheets_as_at_range": [
     "2026-06-30"
   ],
-  "generated_at": "2026-08-23T15:31:32+00:00",
+  "generated_at": "2026-08-23T16:31:58+00:00",
   "sample": false,
   "convention": "Returns are bid-to-bid in the fund currency (SGD), net of fund management fees, excluding policy-level charges. YTD, 1M, 3M, 6M and 1Y are cumulative; 3Y, 5Y, 10Y and since-inception are annualised unless labelled cumulative.",
   "fund_count": 40,
@@ -37,6 +37,7 @@
       "bid_price": 1.124,
       "offer_price": 1.184,
       "price_date": "2026-08-20",
+      "offer_price_date": "2026-08-20",
       "price_status": "Confirmed",
       "returns": {
         "ret_ytd": 5.6391,
@@ -50,7 +51,8 @@
         "ret_5y_cum": null,
         "ret_10y_ann": null,
         "ret_10y_cum": null,
-        "ret_si_ann": 0.63
+        "ret_si_ann": 4.05,
+        "ret_si_cum": 18.32
       },
       "returns_as_at": "2026-08-20",
       "benchmark_name": null,
@@ -145,12 +147,13 @@
         "semi_annual_report_url": "https://doc.morningstar.com/Document/503a5407f885bbc9af0fc3cbce186d03.msdoc/?key=023d247708a47993ed8467e955ed1f06d56f71215c0d4940cfd29d8eacbd50f5"
       },
       "sources": {
-        "fetched_at": "2026-08-23T15:23:44+00:00",
+        "fetched_at": "2026-08-23T16:23:49+00:00",
         "returns": "Fund Centre screener",
         "eligibility": "Fund Centre screener (FundingSource)",
         "facts": "Fund Centre detail (v4/funds)",
         "allocations": "Fund Centre detail (Morningstar portfolio data)",
         "cumulative_returns": "computed from Fund Centre total-return history",
+        "since_inception": "computed from total-return history starting 2022-05-24",
         "offer_price": "GE fund-prices.json",
         "benchmark_returns": "fact sheet PDF (as at 2026-06-30)"
       },
@@ -171,6 +174,11 @@
           "ret_3y_ann": {
             "factsheet": 11.05,
             "nav_at_factsheet_date": 11.05,
+            "diff_pp": 0.0
+          },
+          "ret_si_ann": {
+            "factsheet": 4.41,
+            "nav_at_factsheet_date": 4.41,
             "diff_pp": 0.0
           }
         }
@@ -209,6 +217,7 @@
       "bid_price": 2.749,
       "offer_price": 2.894,
       "price_date": "2026-08-20",
+      "offer_price_date": "2026-08-20",
       "price_status": "Confirmed",
       "returns": {
         "ret_ytd": 7.00662,
@@ -222,7 +231,8 @@
         "ret_5y_cum": 51.04,
         "ret_10y_ann": 11.49525,
         "ret_10y_cum": 196.87,
-        "ret_si_ann": 4.01
+        "ret_si_ann": 4.45,
+        "ret_si_cum": 189.37
       },
       "returns_as_at": "2026-08-20",
       "benchmark_name": "MSCI World NR USD",
@@ -380,12 +390,13 @@
         "semi_annual_report_url": "https://doc.morningstar.com/Document/503a5407f885bbc9af0fc3cbce186d03.msdoc/?key=023d247708a47993ed8467e955ed1f06d56f71215c0d4940cfd29d8eacbd50f5"
       },
       "sources": {
-        "fetched_at": "2026-08-23T15:23:44+00:00",
+        "fetched_at": "2026-08-23T16:23:49+00:00",
         "returns": "Fund Centre screener",
         "eligibility": "Fund Centre screener (FundingSource)",
         "facts": "Fund Centre detail (v4/funds)",
         "allocations": "Fund Centre detail (Morningstar portfolio data)",
         "cumulative_returns": "computed from Fund Centre total-return history",
+        "since_inception": "computed from total-return history starting 2002-03-25",
         "offer_price": "GE fund-prices.json",
         "benchmark_returns": "fact sheet PDF (as at 2026-06-30)"
       },
@@ -418,6 +429,11 @@
           "ret_10y_ann": {
             "factsheet": 11.84,
             "nav_at_factsheet_date": 11.84,
+            "diff_pp": 0.0
+          },
+          "ret_si_ann": {
+            "factsheet": 4.33,
+            "nav_at_factsheet_date": 4.33,
             "diff_pp": 0.0
           }
         }
@@ -452,6 +468,7 @@
       "bid_price": 2.568,
       "offer_price": 2.704,
       "price_date": "2026-08-20",
+      "offer_price_date": "2026-08-20",
       "price_status": "Confirmed",
       "returns": {
         "ret_ytd": 9.50959,
@@ -465,7 +482,8 @@
         "ret_5y_cum": 53.04,
         "ret_10y_ann": 10.85874,
         "ret_10y_cum": 180.35,
-        "ret_si_ann": 3.53
+        "ret_si_ann": 3.89,
+        "ret_si_cum": 170.32
       },
       "returns_as_at": "2026-08-20",
       "benchmark_name": "MSCI World NR USD",
@@ -635,12 +653,13 @@
         "semi_annual_report_url": "https://doc.morningstar.com/Document/503a5407f885bbc9af0fc3cbce186d03.msdoc/?key=023d247708a47993ed8467e955ed1f06d56f71215c0d4940cfd29d8eacbd50f5"
       },
       "sources": {
-        "fetched_at": "2026-08-23T15:23:44+00:00",
+        "fetched_at": "2026-08-23T16:23:49+00:00",
         "returns": "Fund Centre screener",
         "eligibility": "Fund Centre screener (FundingSource)",
         "facts": "Fund Centre detail (v4/funds)",
         "allocations": "Fund Centre detail (Morningstar portfolio data)",
         "cumulative_returns": "computed from Fund Centre total-return history",
+        "since_inception": "computed from total-return history starting 2000-08-01",
         "offer_price": "GE fund-prices.json",
         "benchmark_returns": "fact sheet PDF (as at 2026-06-30)",
         "underlying_fund": "fact sheet PDF"
@@ -675,6 +694,11 @@
             "factsheet": 11.25,
             "nav_at_factsheet_date": 11.25,
             "diff_pp": 0.0
+          },
+          "ret_si_ann": {
+            "factsheet": 3.88,
+            "nav_at_factsheet_date": 3.88,
+            "diff_pp": 0.0
           }
         }
       },
@@ -708,6 +732,7 @@
       "bid_price": 2.551,
       "offer_price": 2.686,
       "price_date": "2026-08-20",
+      "offer_price_date": "2026-08-20",
       "price_status": "Confirmed",
       "returns": {
         "ret_ytd": 4.97942,
@@ -721,7 +746,8 @@
         "ret_5y_cum": 28.77,
         "ret_10y_ann": 9.60012,
         "ret_10y_cum": 150.1,
-        "ret_si_ann": 3.91
+        "ret_si_ann": 4.13,
+        "ret_si_cum": 168.53
       },
       "returns_as_at": "2026-08-20",
       "benchmark_name": "MSCI World NR USD",
@@ -901,12 +927,13 @@
         "semi_annual_report_url": "https://doc.morningstar.com/Document/503a5407f885bbc9af0fc3cbce186d03.msdoc/?key=023d247708a47993ed8467e955ed1f06d56f71215c0d4940cfd29d8eacbd50f5"
       },
       "sources": {
-        "fetched_at": "2026-08-23T15:23:44+00:00",
+        "fetched_at": "2026-08-23T16:23:49+00:00",
         "returns": "Fund Centre screener",
         "eligibility": "Fund Centre screener (FundingSource)",
         "facts": "Fund Centre detail (v4/funds)",
         "allocations": "Fund Centre detail (Morningstar portfolio data)",
         "cumulative_returns": "computed from Fund Centre total-return history",
+        "since_inception": "computed from total-return history starting 2002-03-25",
         "offer_price": "GE fund-prices.json",
         "benchmark_returns": "fact sheet PDF (as at 2026-06-30)",
         "underlying_fund": "fact sheet PDF"
@@ -941,6 +968,11 @@
             "factsheet": 10.39,
             "nav_at_factsheet_date": 10.39,
             "diff_pp": 0.0
+          },
+          "ret_si_ann": {
+            "factsheet": 4.24,
+            "nav_at_factsheet_date": 4.24,
+            "diff_pp": 0.0
           }
         }
       },
@@ -974,6 +1006,7 @@
       "bid_price": 0.822,
       "offer_price": 0.866,
       "price_date": "2026-08-20",
+      "offer_price_date": "2026-08-20",
       "price_status": "Confirmed",
       "returns": {
         "ret_ytd": 10.78167,
@@ -987,7 +1020,8 @@
         "ret_5y_cum": -2.9,
         "ret_10y_ann": 2.67653,
         "ret_10y_cum": 30.23,
-        "ret_si_ann": 3.08
+        "ret_si_ann": 3.22,
+        "ret_si_cum": 95.86
       },
       "returns_as_at": "2026-08-20",
       "benchmark_name": "FTSE EPRA Nareit Developed NR USD",
@@ -1149,12 +1183,13 @@
         "semi_annual_report_url": "https://doc.morningstar.com/Document/503a5407f885bbc9af0fc3cbce186d03.msdoc/?key=023d247708a47993ed8467e955ed1f06d56f71215c0d4940cfd29d8eacbd50f5"
       },
       "sources": {
-        "fetched_at": "2026-08-23T15:23:44+00:00",
+        "fetched_at": "2026-08-23T16:23:49+00:00",
         "returns": "Fund Centre screener",
         "eligibility": "Fund Centre screener (FundingSource)",
         "facts": "Fund Centre detail (v4/funds)",
         "allocations": "Fund Centre detail (Morningstar portfolio data)",
         "cumulative_returns": "computed from Fund Centre total-return history",
+        "since_inception": "computed from total-return history starting 2005-06-08",
         "offer_price": "GE fund-prices.json",
         "benchmark_returns": "fact sheet PDF (as at 2026-06-30)"
       },
@@ -1187,6 +1222,11 @@
           "ret_10y_ann": {
             "factsheet": 2.87,
             "nav_at_factsheet_date": 2.87,
+            "diff_pp": 0.0
+          },
+          "ret_si_ann": {
+            "factsheet": 3.24,
+            "nav_at_factsheet_date": 3.24,
             "diff_pp": 0.0
           }
         }
@@ -1221,6 +1261,7 @@
       "bid_price": 3.894,
       "offer_price": 4.099,
       "price_date": "2026-08-20",
+      "offer_price_date": "2026-08-20",
       "price_status": "Confirmed",
       "returns": {
         "ret_ytd": 19.92609,
@@ -1234,7 +1275,8 @@
         "ret_5y_cum": 54.52,
         "ret_10y_ann": 16.98698,
         "ret_10y_cum": 380.15,
-        "ret_si_ann": 4.85
+        "ret_si_ann": 5.67,
+        "ret_si_cum": 309.89
       },
       "returns_as_at": "2026-08-20",
       "benchmark_name": "MSCI ACWI/Information Technology NR USD",
@@ -1384,12 +1426,13 @@
         "semi_annual_report_url": "https://doc.morningstar.com/Document/503a5407f885bbc9af0fc3cbce186d03.msdoc/?key=023d247708a47993ed8467e955ed1f06d56f71215c0d4940cfd29d8eacbd50f5"
       },
       "sources": {
-        "fetched_at": "2026-08-23T15:23:44+00:00",
+        "fetched_at": "2026-08-23T16:23:49+00:00",
         "returns": "Fund Centre screener",
         "eligibility": "Fund Centre screener (FundingSource)",
         "facts": "Fund Centre detail (v4/funds)",
         "allocations": "Fund Centre detail (Morningstar portfolio data)",
         "cumulative_returns": "computed from Fund Centre total-return history",
+        "since_inception": "computed from total-return history starting 2001-01-15",
         "offer_price": "GE fund-prices.json",
         "benchmark_returns": "fact sheet PDF (as at 2026-06-30)"
       },
@@ -1422,6 +1465,11 @@
           "ret_10y_ann": {
             "factsheet": 18.58,
             "nav_at_factsheet_date": 18.58,
+            "diff_pp": 0.0
+          },
+          "ret_si_ann": {
+            "factsheet": 5.88,
+            "nav_at_factsheet_date": 5.88,
             "diff_pp": 0.0
           }
         }
@@ -1456,6 +1504,7 @@
       "bid_price": 1.046,
       "offer_price": 1.102,
       "price_date": "2026-08-20",
+      "offer_price_date": "2026-08-20",
       "price_status": "Confirmed",
       "returns": {
         "ret_ytd": 6.62589,
@@ -1469,7 +1518,8 @@
         "ret_5y_cum": null,
         "ret_10y_ann": null,
         "ret_10y_cum": null,
-        "ret_si_ann": 0.66
+        "ret_si_ann": 2.22,
+        "ret_si_cum": 10.11
       },
       "returns_as_at": "2026-08-20",
       "benchmark_name": "MSCI World Health Care Index NR SGD",
@@ -1588,12 +1638,13 @@
         "semi_annual_report_url": "https://doc.morningstar.com/Document/503a5407f885bbc9af0fc3cbce186d03.msdoc/?key=023d247708a47993ed8467e955ed1f06d56f71215c0d4940cfd29d8eacbd50f5"
       },
       "sources": {
-        "fetched_at": "2026-08-23T15:23:44+00:00",
+        "fetched_at": "2026-08-23T16:23:49+00:00",
         "returns": "Fund Centre screener",
         "eligibility": "Fund Centre screener (FundingSource)",
         "facts": "Fund Centre detail (v4/funds)",
         "allocations": "Fund Centre detail (Morningstar portfolio data)",
         "cumulative_returns": "computed from Fund Centre total-return history",
+        "since_inception": "computed from total-return history starting 2022-04-01",
         "offer_price": "GE fund-prices.json",
         "benchmark_returns": "fact sheet PDF (as at 2026-06-30)"
       },
@@ -1614,6 +1665,11 @@
           "ret_3y_ann": {
             "factsheet": 3.27,
             "nav_at_factsheet_date": 3.27,
+            "diff_pp": 0.0
+          },
+          "ret_si_ann": {
+            "factsheet": 1.22,
+            "nav_at_factsheet_date": 1.22,
             "diff_pp": 0.0
           }
         }
@@ -1651,6 +1707,7 @@
       "bid_price": 3.028,
       "offer_price": 3.188,
       "price_date": "2026-08-20",
+      "offer_price_date": "2026-08-20",
       "price_status": "Confirmed",
       "returns": {
         "ret_ytd": 14.69697,
@@ -1664,7 +1721,8 @@
         "ret_5y_cum": 36.27,
         "ret_10y_ann": 9.51651,
         "ret_10y_cum": 148.2,
-        "ret_si_ann": 4.35
+        "ret_si_ann": 4.86,
+        "ret_si_cum": 218.74
       },
       "returns_as_at": "2026-08-20",
       "benchmark_name": null,
@@ -1834,12 +1892,13 @@
         "semi_annual_report_url": "https://doc.morningstar.com/Document/503a5407f885bbc9af0fc3cbce186d03.msdoc/?key=023d247708a47993ed8467e955ed1f06d56f71215c0d4940cfd29d8eacbd50f5"
       },
       "sources": {
-        "fetched_at": "2026-08-23T15:23:44+00:00",
+        "fetched_at": "2026-08-23T16:23:49+00:00",
         "returns": "Fund Centre screener",
         "eligibility": "Fund Centre screener (FundingSource)",
         "facts": "Fund Centre detail (v4/funds)",
         "allocations": "Fund Centre detail (Morningstar portfolio data)",
         "cumulative_returns": "computed from Fund Centre total-return history",
+        "since_inception": "computed from total-return history starting 2002-03-25",
         "offer_price": "GE fund-prices.json",
         "benchmark_returns": "fact sheet PDF (as at 2026-06-30)"
       },
@@ -1872,6 +1931,11 @@
           "ret_10y_ann": {
             "factsheet": 10.39,
             "nav_at_factsheet_date": 10.39,
+            "diff_pp": 0.0
+          },
+          "ret_si_ann": {
+            "factsheet": 4.98,
+            "nav_at_factsheet_date": 4.98,
             "diff_pp": 0.0
           }
         }
@@ -1906,6 +1970,7 @@
       "bid_price": 1.211,
       "offer_price": 1.275,
       "price_date": "2026-08-20",
+      "offer_price_date": "2026-08-20",
       "price_status": "Confirmed",
       "returns": {
         "ret_ytd": 11.92237,
@@ -1919,7 +1984,8 @@
         "ret_5y_cum": 18.96,
         "ret_10y_ann": null,
         "ret_10y_cum": null,
-        "ret_si_ann": 1.94
+        "ret_si_ann": 4.46,
+        "ret_si_cum": 27.47
       },
       "returns_as_at": "2026-08-20",
       "benchmark_name": "MSCI ACWI NR LCL",
@@ -2103,12 +2169,13 @@
         "semi_annual_report_url": "https://doc.morningstar.com/Document/503a5407f885bbc9af0fc3cbce186d03.msdoc/?key=023d247708a47993ed8467e955ed1f06d56f71215c0d4940cfd29d8eacbd50f5"
       },
       "sources": {
-        "fetched_at": "2026-08-23T15:23:44+00:00",
+        "fetched_at": "2026-08-23T16:23:49+00:00",
         "returns": "Fund Centre screener",
         "eligibility": "Fund Centre screener (FundingSource)",
         "facts": "Fund Centre detail (v4/funds)",
         "allocations": "Fund Centre detail (Morningstar portfolio data)",
         "cumulative_returns": "computed from Fund Centre total-return history",
+        "since_inception": "computed from total-return history starting 2021-01-26",
         "offer_price": "GE fund-prices.json",
         "benchmark_returns": "fact sheet PDF (as at 2026-06-30)"
       },
@@ -2135,6 +2202,11 @@
           "ret_5y_ann": {
             "factsheet": 4.1,
             "nav_at_factsheet_date": 4.1,
+            "diff_pp": 0.0
+          },
+          "ret_si_ann": {
+            "factsheet": 4.62,
+            "nav_at_factsheet_date": 4.62,
             "diff_pp": 0.0
           }
         }
@@ -2171,6 +2243,7 @@
       "bid_price": 2.52,
       "offer_price": 2.653,
       "price_date": "2026-08-20",
+      "offer_price_date": "2026-08-20",
       "price_status": "Confirmed",
       "returns": {
         "ret_ytd": 1.002,
@@ -2184,7 +2257,8 @@
         "ret_5y_cum": -7.76,
         "ret_10y_ann": 8.34124,
         "ret_10y_cum": 122.81,
-        "ret_si_ann": 3.78
+        "ret_si_ann": 3.98,
+        "ret_si_cum": 165.26
       },
       "returns_as_at": "2026-08-20",
       "benchmark_name": "MSCI ACWI NR SGD",
@@ -2334,12 +2408,13 @@
         "semi_annual_report_url": "https://doc.morningstar.com/Document/503a5407f885bbc9af0fc3cbce186d03.msdoc/?key=023d247708a47993ed8467e955ed1f06d56f71215c0d4940cfd29d8eacbd50f5"
       },
       "sources": {
-        "fetched_at": "2026-08-23T15:23:44+00:00",
+        "fetched_at": "2026-08-23T16:23:49+00:00",
         "returns": "Fund Centre screener",
         "eligibility": "Fund Centre screener (FundingSource)",
         "facts": "Fund Centre detail (v4/funds)",
         "allocations": "Fund Centre detail (Morningstar portfolio data)",
         "cumulative_returns": "computed from Fund Centre total-return history",
+        "since_inception": "computed from total-return history starting 2001-08-15",
         "offer_price": "GE fund-prices.json",
         "benchmark_returns": "fact sheet PDF (as at 2026-06-30)"
       },
@@ -2372,6 +2447,11 @@
           "ret_10y_ann": {
             "factsheet": 9.48,
             "nav_at_factsheet_date": 9.48,
+            "diff_pp": 0.0
+          },
+          "ret_si_ann": {
+            "factsheet": 4.17,
+            "nav_at_factsheet_date": 4.17,
             "diff_pp": 0.0
           }
         }
@@ -2406,6 +2486,7 @@
       "bid_price": 3.787,
       "offer_price": 3.987,
       "price_date": "2026-08-20",
+      "offer_price_date": "2026-08-20",
       "price_status": "Confirmed",
       "returns": {
         "ret_ytd": 7.15903,
@@ -2419,7 +2500,8 @@
         "ret_5y_cum": 22.2,
         "ret_10y_ann": 2.93401,
         "ret_10y_cum": 33.53,
-        "ret_si_ann": 4.37
+        "ret_si_ann": 4.67,
+        "ret_si_cum": 298.63
       },
       "returns_as_at": "2026-08-20",
       "benchmark_name": "MSCI AC ASEAN NR USD",
@@ -2601,12 +2683,13 @@
         "semi_annual_report_url": "https://doc.morningstar.com/Document/503a5407f885bbc9af0fc3cbce186d03.msdoc/?key=023d247708a47993ed8467e955ed1f06d56f71215c0d4940cfd29d8eacbd50f5"
       },
       "sources": {
-        "fetched_at": "2026-08-23T15:23:44+00:00",
+        "fetched_at": "2026-08-23T16:23:49+00:00",
         "returns": "Fund Centre screener",
         "eligibility": "Fund Centre screener (FundingSource)",
         "facts": "Fund Centre detail (v4/funds)",
         "allocations": "Fund Centre detail (Morningstar portfolio data)",
         "cumulative_returns": "computed from Fund Centre total-return history",
+        "since_inception": "computed from total-return history starting 1996-04-26",
         "offer_price": "GE fund-prices.json",
         "benchmark_returns": "fact sheet PDF (as at 2026-06-30)"
       },
@@ -2639,6 +2722,11 @@
           "ret_10y_ann": {
             "factsheet": 2.93,
             "nav_at_factsheet_date": 2.93,
+            "diff_pp": 0.0
+          },
+          "ret_si_ann": {
+            "factsheet": 4.5,
+            "nav_at_factsheet_date": 4.5,
             "diff_pp": 0.0
           }
         }
@@ -2673,6 +2761,7 @@
       "bid_price": 1.187,
       "offer_price": 1.25,
       "price_date": "2026-08-20",
+      "offer_price_date": "2026-08-20",
       "price_status": "Confirmed",
       "returns": {
         "ret_ytd": 15.41857,
@@ -2686,7 +2775,8 @@
         "ret_5y_cum": null,
         "ret_10y_ann": null,
         "ret_10y_cum": null,
-        "ret_si_ann": 7.7
+        "ret_si_ann": 13.95,
+        "ret_si_cum": 35.47
       },
       "returns_as_at": "2026-08-20",
       "benchmark_name": "MSCI AC Asia Pacific ex Japan NR SGD",
@@ -2815,12 +2905,13 @@
         "semi_annual_report_url": "https://doc.morningstar.com/Document/503a5407f885bbc9af0fc3cbce186d03.msdoc/?key=023d247708a47993ed8467e955ed1f06d56f71215c0d4940cfd29d8eacbd50f5"
       },
       "sources": {
-        "fetched_at": "2026-08-23T15:23:44+00:00",
+        "fetched_at": "2026-08-23T16:23:49+00:00",
         "returns": "Fund Centre screener",
         "eligibility": "Fund Centre screener (FundingSource)",
         "facts": "Fund Centre detail (v4/funds)",
         "allocations": "Fund Centre detail (Morningstar portfolio data)",
         "cumulative_returns": "computed from Fund Centre total-return history",
+        "since_inception": "computed from total-return history starting 2024-04-23",
         "offer_price": "GE fund-prices.json",
         "benchmark_returns": "fact sheet PDF (as at 2026-06-30)",
         "underlying_fund": "fact sheet PDF"
@@ -2836,6 +2927,11 @@
           "ret_1y": {
             "factsheet": 30.93,
             "nav_at_factsheet_date": 30.93,
+            "diff_pp": 0.0
+          },
+          "ret_si_ann": {
+            "factsheet": 15.88,
+            "nav_at_factsheet_date": 15.88,
             "diff_pp": 0.0
           }
         }
@@ -2874,6 +2970,7 @@
       "bid_price": 1.178,
       "offer_price": 1.24,
       "price_date": "2026-08-20",
+      "offer_price_date": "2026-08-20",
       "price_status": "Confirmed",
       "returns": {
         "ret_ytd": 24.49022,
@@ -2887,7 +2984,8 @@
         "ret_5y_cum": 36.47,
         "ret_10y_ann": 6.65462,
         "ret_10y_cum": 90.46,
-        "ret_si_ann": null
+        "ret_si_ann": 2.42,
+        "ret_si_cum": 86.83
       },
       "returns_as_at": "2026-08-20",
       "benchmark_name": "MSCI AC Asia Pacific ex Japan NR SGD",
@@ -3051,12 +3149,13 @@
         "semi_annual_report_url": "https://doc.morningstar.com/Document/503a5407f885bbc9af0fc3cbce186d03.msdoc/?key=023d247708a47993ed8467e955ed1f06d56f71215c0d4940cfd29d8eacbd50f5"
       },
       "sources": {
-        "fetched_at": "2026-08-23T15:23:44+00:00",
+        "fetched_at": "2026-08-23T16:23:49+00:00",
         "returns": "Fund Centre screener",
         "eligibility": "Fund Centre screener (FundingSource)",
         "facts": "Fund Centre detail (v4/funds)",
         "allocations": "Fund Centre detail (Morningstar portfolio data)",
         "cumulative_returns": "computed from Fund Centre total-return history",
+        "since_inception": "computed from total-return history starting 2000-07-10",
         "offer_price": "GE fund-prices.json",
         "benchmark_returns": "fact sheet PDF (as at 2026-06-30)"
       },
@@ -3090,12 +3189,15 @@
             "factsheet": 7.65,
             "nav_at_factsheet_date": 7.65,
             "diff_pp": 0.0
+          },
+          "ret_si_ann": {
+            "factsheet": 2.59,
+            "nav_at_factsheet_date": 2.59,
+            "diff_pp": 0.0
           }
         }
       },
-      "missing_fields": [
-        "ret_si_ann"
-      ]
+      "missing_fields": []
     },
     {
       "fund_id": "F0HKG07064_F03",
@@ -3125,6 +3227,7 @@
       "bid_price": 4.449,
       "offer_price": 4.684,
       "price_date": "2026-08-20",
+      "offer_price_date": "2026-08-20",
       "price_status": "Confirmed",
       "returns": {
         "ret_ytd": 20.21075,
@@ -3138,7 +3241,8 @@
         "ret_5y_cum": 35.52,
         "ret_10y_ann": 8.31281,
         "ret_10y_cum": 122.23,
-        "ret_si_ann": 4.74
+        "ret_si_ann": 5.22,
+        "ret_si_cum": 368.32
       },
       "returns_as_at": "2026-08-20",
       "benchmark_name": "MSCI AC Asia Pacific ex Japan NR SGD",
@@ -3302,12 +3406,13 @@
         "semi_annual_report_url": "https://doc.morningstar.com/Document/503a5407f885bbc9af0fc3cbce186d03.msdoc/?key=023d247708a47993ed8467e955ed1f06d56f71215c0d4940cfd29d8eacbd50f5"
       },
       "sources": {
-        "fetched_at": "2026-08-23T15:23:44+00:00",
+        "fetched_at": "2026-08-23T16:23:49+00:00",
         "returns": "Fund Centre screener",
         "eligibility": "Fund Centre screener (FundingSource)",
         "facts": "Fund Centre detail (v4/funds)",
         "allocations": "Fund Centre detail (Morningstar portfolio data)",
         "cumulative_returns": "computed from Fund Centre total-return history",
+        "since_inception": "computed from total-return history starting 1996-04-26",
         "offer_price": "GE fund-prices.json",
         "benchmark_returns": "fact sheet PDF (as at 2026-06-30)",
         "underlying_fund": "fact sheet PDF"
@@ -3342,6 +3447,11 @@
             "factsheet": 9.31,
             "nav_at_factsheet_date": 9.31,
             "diff_pp": 0.0
+          },
+          "ret_si_ann": {
+            "factsheet": 5.37,
+            "nav_at_factsheet_date": 5.37,
+            "diff_pp": 0.0
           }
         }
       },
@@ -3375,6 +3485,7 @@
       "bid_price": 1.231,
       "offer_price": 1.296,
       "price_date": "2026-08-20",
+      "offer_price_date": "2026-08-20",
       "price_status": "Confirmed",
       "returns": {
         "ret_ytd": 6.30397,
@@ -3388,7 +3499,8 @@
         "ret_5y_cum": -4.87,
         "ret_10y_ann": 3.10152,
         "ret_10y_cum": 35.72,
-        "ret_si_ann": 0.55
+        "ret_si_ann": 1.0,
+        "ret_si_cum": 29.58
       },
       "returns_as_at": "2026-08-20",
       "benchmark_name": "FTSE World Europe TR SGD",
@@ -3536,12 +3648,13 @@
         "semi_annual_report_url": "https://doc.morningstar.com/Document/503a5407f885bbc9af0fc3cbce186d03.msdoc/?key=023d247708a47993ed8467e955ed1f06d56f71215c0d4940cfd29d8eacbd50f5"
       },
       "sources": {
-        "fetched_at": "2026-08-23T15:23:44+00:00",
+        "fetched_at": "2026-08-23T16:23:49+00:00",
         "returns": "Fund Centre screener",
         "eligibility": "Fund Centre screener (FundingSource)",
         "facts": "Fund Centre detail (v4/funds)",
         "allocations": "Fund Centre detail (Morningstar portfolio data)",
         "cumulative_returns": "computed from Fund Centre total-return history",
+        "since_inception": "computed from total-return history starting 2000-07-10",
         "offer_price": "GE fund-prices.json",
         "benchmark_returns": "fact sheet PDF (as at 2026-06-30)"
       },
@@ -3574,6 +3687,11 @@
           "ret_10y_ann": {
             "factsheet": 3.27,
             "nav_at_factsheet_date": 3.27,
+            "diff_pp": 0.0
+          },
+          "ret_si_ann": {
+            "factsheet": 0.87,
+            "nav_at_factsheet_date": 0.87,
             "diff_pp": 0.0
           }
         }
@@ -3608,6 +3726,7 @@
       "bid_price": 4.886,
       "offer_price": 5.144,
       "price_date": "2026-08-20",
+      "offer_price_date": "2026-08-20",
       "price_status": "Confirmed",
       "returns": {
         "ret_ytd": 26.28586,
@@ -3621,7 +3740,8 @@
         "ret_5y_cum": 45.11,
         "ret_10y_ann": 9.49761,
         "ret_10y_cum": 147.77,
-        "ret_si_ann": 6.24
+        "ret_si_ann": 6.94,
+        "ret_si_cum": 414.32
       },
       "returns_as_at": "2026-08-20",
       "benchmark_name": "MSCI AC Far East Ex Japan NR USD",
@@ -3803,12 +3923,13 @@
         "semi_annual_report_url": "https://doc.morningstar.com/Document/503a5407f885bbc9af0fc3cbce186d03.msdoc/?key=023d247708a47993ed8467e955ed1f06d56f71215c0d4940cfd29d8eacbd50f5"
       },
       "sources": {
-        "fetched_at": "2026-08-23T15:23:44+00:00",
+        "fetched_at": "2026-08-23T16:23:49+00:00",
         "returns": "Fund Centre screener",
         "eligibility": "Fund Centre screener (FundingSource)",
         "facts": "Fund Centre detail (v4/funds)",
         "allocations": "Fund Centre detail (Morningstar portfolio data)",
         "cumulative_returns": "computed from Fund Centre total-return history",
+        "since_inception": "computed from total-return history starting 2002-03-25",
         "offer_price": "GE fund-prices.json",
         "benchmark_returns": "fact sheet PDF (as at 2026-06-30)"
       },
@@ -3841,6 +3962,11 @@
           "ret_10y_ann": {
             "factsheet": 10.95,
             "nav_at_factsheet_date": 10.95,
+            "diff_pp": 0.0
+          },
+          "ret_si_ann": {
+            "factsheet": 7.22,
+            "nav_at_factsheet_date": 7.22,
             "diff_pp": 0.0
           }
         }
@@ -3875,6 +4001,7 @@
       "bid_price": 2.413,
       "offer_price": 2.54,
       "price_date": "2026-08-20",
+      "offer_price_date": "2026-08-20",
       "price_status": "Confirmed",
       "returns": {
         "ret_ytd": 28.69333,
@@ -3888,7 +4015,8 @@
         "ret_5y_cum": 25.61,
         "ret_10y_ann": 7.88173,
         "ret_10y_cum": 113.54,
-        "ret_si_ann": 5.69
+        "ret_si_ann": 7.13,
+        "ret_si_cum": 154.56
       },
       "returns_as_at": "2026-08-20",
       "benchmark_name": "MSCI EM NR SGD",
@@ -4042,12 +4170,13 @@
         "semi_annual_report_url": "https://doc.morningstar.com/Document/503a5407f885bbc9af0fc3cbce186d03.msdoc/?key=023d247708a47993ed8467e955ed1f06d56f71215c0d4940cfd29d8eacbd50f5"
       },
       "sources": {
-        "fetched_at": "2026-08-23T15:23:44+00:00",
+        "fetched_at": "2026-08-23T16:23:49+00:00",
         "returns": "Fund Centre screener",
         "eligibility": "Fund Centre screener (FundingSource)",
         "facts": "Fund Centre detail (v4/funds)",
         "allocations": "Fund Centre detail (Morningstar portfolio data)",
         "cumulative_returns": "computed from Fund Centre total-return history",
+        "since_inception": "computed from total-return history starting 2013-01-23",
         "offer_price": "GE fund-prices.json",
         "benchmark_returns": "fact sheet PDF (as at 2026-06-30)",
         "underlying_fund": "fact sheet PDF"
@@ -4082,6 +4211,11 @@
             "factsheet": 9.18,
             "nav_at_factsheet_date": 9.18,
             "diff_pp": 0.0
+          },
+          "ret_si_ann": {
+            "factsheet": 7.66,
+            "nav_at_factsheet_date": 7.66,
+            "diff_pp": 0.0
           }
         }
       },
@@ -4115,6 +4249,7 @@
       "bid_price": 2.566,
       "offer_price": 2.702,
       "price_date": "2026-08-20",
+      "offer_price_date": "2026-08-20",
       "price_status": "Confirmed",
       "returns": {
         "ret_ytd": 18.35793,
@@ -4128,7 +4263,8 @@
         "ret_5y_cum": 9.1,
         "ret_10y_ann": 8.67267,
         "ret_10y_cum": 129.72,
-        "ret_si_ann": 4.54
+        "ret_si_ann": 5.2,
+        "ret_si_cum": 170.11
       },
       "returns_as_at": "2026-08-20",
       "benchmark_name": "MSCI Golden Dragon",
@@ -4256,12 +4392,13 @@
         "semi_annual_report_url": "https://doc.morningstar.com/Document/503a5407f885bbc9af0fc3cbce186d03.msdoc/?key=023d247708a47993ed8467e955ed1f06d56f71215c0d4940cfd29d8eacbd50f5"
       },
       "sources": {
-        "fetched_at": "2026-08-23T15:23:44+00:00",
+        "fetched_at": "2026-08-23T16:23:49+00:00",
         "returns": "Fund Centre screener",
         "eligibility": "Fund Centre screener (FundingSource)",
         "facts": "Fund Centre detail (v4/funds)",
         "allocations": "Fund Centre detail (Morningstar portfolio data)",
         "cumulative_returns": "computed from Fund Centre total-return history",
+        "since_inception": "computed from total-return history starting 2007-01-09",
         "offer_price": "GE fund-prices.json",
         "benchmark_returns": "fact sheet PDF (as at 2026-06-30)",
         "underlying_fund": "fact sheet PDF"
@@ -4296,6 +4433,11 @@
             "factsheet": 10.16,
             "nav_at_factsheet_date": 10.16,
             "diff_pp": 0.0
+          },
+          "ret_si_ann": {
+            "factsheet": 5.42,
+            "nav_at_factsheet_date": 5.42,
+            "diff_pp": 0.0
           }
         }
       },
@@ -4329,6 +4471,7 @@
       "bid_price": 2.03,
       "offer_price": 2.137,
       "price_date": "2026-08-20",
+      "offer_price_date": "2026-08-20",
       "price_status": "Confirmed",
       "returns": {
         "ret_ytd": -1.7425,
@@ -4342,7 +4485,8 @@
         "ret_5y_cum": 22.81,
         "ret_10y_ann": 6.45514,
         "ret_10y_cum": 86.92,
-        "ret_si_ann": 3.4
+        "ret_si_ann": 3.95,
+        "ret_si_cum": 113.68
       },
       "returns_as_at": "2026-08-20",
       "benchmark_name": "MSCI India NR SGD",
@@ -4468,12 +4612,13 @@
         "semi_annual_report_url": "https://doc.morningstar.com/Document/503a5407f885bbc9af0fc3cbce186d03.msdoc/?key=023d247708a47993ed8467e955ed1f06d56f71215c0d4940cfd29d8eacbd50f5"
       },
       "sources": {
-        "fetched_at": "2026-08-23T15:23:44+00:00",
+        "fetched_at": "2026-08-23T16:23:49+00:00",
         "returns": "Fund Centre screener",
         "eligibility": "Fund Centre screener (FundingSource)",
         "facts": "Fund Centre detail (v4/funds)",
         "allocations": "Fund Centre detail (Morningstar portfolio data)",
         "cumulative_returns": "computed from Fund Centre total-return history",
+        "since_inception": "computed from total-return history starting 2007-01-09",
         "offer_price": "GE fund-prices.json",
         "benchmark_returns": "fact sheet PDF (as at 2026-06-30)"
       },
@@ -4506,6 +4651,11 @@
           "ret_10y_ann": {
             "factsheet": 6.77,
             "nav_at_factsheet_date": 6.77,
+            "diff_pp": 0.0
+          },
+          "ret_si_ann": {
+            "factsheet": 3.85,
+            "nav_at_factsheet_date": 3.85,
             "diff_pp": 0.0
           }
         }
@@ -4540,6 +4690,7 @@
       "bid_price": 3.05,
       "offer_price": 3.211,
       "price_date": "2026-08-20",
+      "offer_price_date": "2026-08-20",
       "price_status": "Confirmed",
       "returns": {
         "ret_ytd": 19.28041,
@@ -4553,7 +4704,8 @@
         "ret_5y_cum": 141.11,
         "ret_10y_ann": 16.17569,
         "ret_10y_cum": 347.87,
-        "ret_si_ann": 5.53
+        "ret_si_ann": 6.13,
+        "ret_si_cum": 221.05
       },
       "returns_as_at": "2026-08-20",
       "benchmark_name": "TOPIX SGD Hedged TR SGD",
@@ -4675,12 +4827,13 @@
         "semi_annual_report_url": "https://doc.morningstar.com/Document/503a5407f885bbc9af0fc3cbce186d03.msdoc/?key=023d247708a47993ed8467e955ed1f06d56f71215c0d4940cfd29d8eacbd50f5"
       },
       "sources": {
-        "fetched_at": "2026-08-23T15:23:44+00:00",
+        "fetched_at": "2026-08-23T16:23:49+00:00",
         "returns": "Fund Centre screener",
         "eligibility": "Fund Centre screener (FundingSource)",
         "facts": "Fund Centre detail (v4/funds)",
         "allocations": "Fund Centre detail (Morningstar portfolio data)",
         "cumulative_returns": "computed from Fund Centre total-return history",
+        "since_inception": "computed from total-return history starting 2007-01-09",
         "offer_price": "GE fund-prices.json",
         "benchmark_returns": "fact sheet PDF (as at 2026-06-30)"
       },
@@ -4713,6 +4866,11 @@
           "ret_10y_ann": {
             "factsheet": 16.4,
             "nav_at_factsheet_date": 16.4,
+            "diff_pp": 0.0
+          },
+          "ret_si_ann": {
+            "factsheet": 6.13,
+            "nav_at_factsheet_date": 6.13,
             "diff_pp": 0.0
           }
         }
@@ -4747,6 +4905,7 @@
       "bid_price": 1.249,
       "offer_price": 1.315,
       "price_date": "2026-08-20",
+      "offer_price_date": "2026-08-20",
       "price_status": "Confirmed",
       "returns": {
         "ret_ytd": -5.80694,
@@ -4760,7 +4919,8 @@
         "ret_5y_cum": -5.59,
         "ret_10y_ann": 7.86151,
         "ret_10y_cum": 113.14,
-        "ret_si_ann": 1.18
+        "ret_si_ann": 1.49,
+        "ret_si_cum": 31.47
       },
       "returns_as_at": "2026-08-20",
       "benchmark_name": "FTSE Vietnam TR USD",
@@ -4866,12 +5026,13 @@
         "semi_annual_report_url": "https://doc.morningstar.com/Document/503a5407f885bbc9af0fc3cbce186d03.msdoc/?key=023d247708a47993ed8467e955ed1f06d56f71215c0d4940cfd29d8eacbd50f5"
       },
       "sources": {
-        "fetched_at": "2026-08-23T15:23:44+00:00",
+        "fetched_at": "2026-08-23T16:23:49+00:00",
         "returns": "Fund Centre screener",
         "eligibility": "Fund Centre screener (FundingSource)",
         "facts": "Fund Centre detail (v4/funds)",
         "allocations": "Fund Centre detail (Morningstar portfolio data)",
         "cumulative_returns": "computed from Fund Centre total-return history",
+        "since_inception": "computed from total-return history starting 2008-02-01",
         "offer_price": "GE fund-prices.json",
         "benchmark_returns": "fact sheet PDF (as at 2026-06-30)",
         "underlying_fund": "fact sheet PDF"
@@ -4906,6 +5067,11 @@
             "factsheet": 9.26,
             "nav_at_factsheet_date": 9.26,
             "diff_pp": 0.0
+          },
+          "ret_si_ann": {
+            "factsheet": 1.91,
+            "nav_at_factsheet_date": 1.91,
+            "diff_pp": 0.0
           }
         }
       },
@@ -4939,6 +5105,7 @@
       "bid_price": 4.501,
       "offer_price": 4.738,
       "price_date": "2026-08-20",
+      "offer_price_date": "2026-08-20",
       "price_status": "Confirmed",
       "returns": {
         "ret_ytd": 14.52926,
@@ -4952,7 +5119,8 @@
         "ret_5y_cum": 81.57,
         "ret_10y_ann": 9.263,
         "ret_10y_cum": 142.51,
-        "ret_si_ann": 6.05
+        "ret_si_ann": 6.58,
+        "ret_si_cum": 373.79
       },
       "returns_as_at": "2026-08-20",
       "benchmark_name": "FTSE ST All Share TR SGD",
@@ -5098,12 +5266,13 @@
         "semi_annual_report_url": "https://doc.morningstar.com/Document/503a5407f885bbc9af0fc3cbce186d03.msdoc/?key=023d247708a47993ed8467e955ed1f06d56f71215c0d4940cfd29d8eacbd50f5"
       },
       "sources": {
-        "fetched_at": "2026-08-23T15:23:44+00:00",
+        "fetched_at": "2026-08-23T16:23:49+00:00",
         "returns": "Fund Centre screener",
         "eligibility": "Fund Centre screener (FundingSource)",
         "facts": "Fund Centre detail (v4/funds)",
         "allocations": "Fund Centre detail (Morningstar portfolio data)",
         "cumulative_returns": "computed from Fund Centre total-return history",
+        "since_inception": "computed from total-return history starting 2002-03-25",
         "offer_price": "GE fund-prices.json",
         "benchmark_returns": "fact sheet PDF (as at 2026-06-30)"
       },
@@ -5136,6 +5305,11 @@
           "ret_10y_ann": {
             "factsheet": 8.79,
             "nav_at_factsheet_date": 8.79,
+            "diff_pp": 0.0
+          },
+          "ret_si_ann": {
+            "factsheet": 6.29,
+            "nav_at_factsheet_date": 6.29,
             "diff_pp": 0.0
           }
         }
@@ -5170,6 +5344,7 @@
       "bid_price": 1.688,
       "offer_price": 1.777,
       "price_date": "2026-08-20",
+      "offer_price_date": "2026-08-20",
       "price_status": "Confirmed",
       "returns": {
         "ret_ytd": 9.82433,
@@ -5183,7 +5358,8 @@
         "ret_5y_cum": 36.57,
         "ret_10y_ann": null,
         "ret_10y_cum": null,
-        "ret_si_ann": 7.25
+        "ret_si_ann": 8.15,
+        "ret_si_cum": 77.68
       },
       "returns_as_at": "2026-08-20",
       "benchmark_name": null,
@@ -5333,12 +5509,13 @@
         "semi_annual_report_url": "https://doc.morningstar.com/Document/503a5407f885bbc9af0fc3cbce186d03.msdoc/?key=023d247708a47993ed8467e955ed1f06d56f71215c0d4940cfd29d8eacbd50f5"
       },
       "sources": {
-        "fetched_at": "2026-08-23T15:23:44+00:00",
+        "fetched_at": "2026-08-23T16:23:49+00:00",
         "returns": "Fund Centre screener",
         "eligibility": "Fund Centre screener (FundingSource)",
         "facts": "Fund Centre detail (v4/funds)",
         "allocations": "Fund Centre detail (Morningstar portfolio data)",
         "cumulative_returns": "computed from Fund Centre total-return history",
+        "since_inception": "computed from total-return history starting 2019-04-18",
         "offer_price": "GE fund-prices.json",
         "benchmark_returns": "fact sheet PDF (as at 2026-06-30)"
       },
@@ -5365,6 +5542,11 @@
           "ret_5y_ann": {
             "factsheet": 6.53,
             "nav_at_factsheet_date": 6.53,
+            "diff_pp": 0.0
+          },
+          "ret_si_ann": {
+            "factsheet": 8.33,
+            "nav_at_factsheet_date": 8.33,
             "diff_pp": 0.0
           }
         }
@@ -5402,6 +5584,7 @@
       "bid_price": 1.0,
       "offer_price": 1.053,
       "price_date": "2026-08-20",
+      "offer_price_date": "2026-08-20",
       "price_status": "Confirmed",
       "returns": {
         "ret_ytd": 5.9322,
@@ -5415,7 +5598,8 @@
         "ret_5y_cum": null,
         "ret_10y_ann": null,
         "ret_10y_cum": null,
-        "ret_si_ann": null
+        "ret_si_ann": null,
+        "ret_si_cum": 5.26
       },
       "returns_as_at": "2026-08-20",
       "benchmark_name": "60.00% MSCI ACWI NR SGD + 20.00% JPM Singapore Government Bond TR SGD + 20.00% Bloomberg Glb Agg 50% SGD Hedged TR SGD",
@@ -5426,7 +5610,7 @@
         "ret_3y_ann": null,
         "ret_5y_ann": null,
         "ret_10y_ann": null,
-        "ret_si_ann": 6.11
+        "ret_si_cum": 6.11
       },
       "benchmark_returns": {
         "ret_3m": 9.72,
@@ -5435,7 +5619,7 @@
         "ret_3y_ann": null,
         "ret_5y_ann": null,
         "ret_10y_ann": null,
-        "ret_si_ann": 9.19
+        "ret_si_cum": 9.19
       },
       "calendar_year_returns": {},
       "allocations_as_at": "2026-06-30",
@@ -5598,12 +5782,13 @@
         "semi_annual_report_url": null
       },
       "sources": {
-        "fetched_at": "2026-08-23T15:23:44+00:00",
+        "fetched_at": "2026-08-23T16:23:49+00:00",
         "returns": "Fund Centre screener",
         "eligibility": "Fund Centre screener (FundingSource)",
         "facts": "Fund Centre detail (v4/funds)",
         "allocations": "Fund Centre detail (Morningstar portfolio data)",
         "cumulative_returns": "computed from Fund Centre total-return history",
+        "since_inception": "computed from total-return history starting 2025-10-15",
         "offer_price": "GE fund-prices.json",
         "benchmark_returns": "fact sheet PDF (as at 2026-06-30)"
       },
@@ -5613,7 +5798,13 @@
         "diff_pp": {
           "ret_ytd": 0.002
         },
-        "at_factsheet_date": {}
+        "at_factsheet_date": {
+          "ret_si_cum": {
+            "factsheet": 6.11,
+            "nav_at_factsheet_date": 6.11,
+            "diff_pp": 0.0
+          }
+        }
       },
       "missing_fields": [
         "ret_1y",
@@ -5651,6 +5842,7 @@
       "bid_price": 1.022,
       "offer_price": 1.076,
       "price_date": "2026-08-20",
+      "offer_price_date": "2026-08-20",
       "price_status": "Confirmed",
       "returns": {
         "ret_ytd": 8.03383,
@@ -5664,7 +5856,8 @@
         "ret_5y_cum": null,
         "ret_10y_ann": null,
         "ret_10y_cum": null,
-        "ret_si_ann": null
+        "ret_si_ann": null,
+        "ret_si_cum": 7.58
       },
       "returns_as_at": "2026-08-20",
       "benchmark_name": "80.00% MSCI ACWI NR SGD + 10.00% JPM Singapore Government Bond TR SGD + 10.00% Bloomberg Glb Agg 50% SGD Hedged TR SGD",
@@ -5675,7 +5868,7 @@
         "ret_3y_ann": null,
         "ret_5y_ann": null,
         "ret_10y_ann": null,
-        "ret_si_ann": 8.21
+        "ret_si_cum": 8.21
       },
       "benchmark_returns": {
         "ret_3m": 12.45,
@@ -5684,7 +5877,7 @@
         "ret_3y_ann": null,
         "ret_5y_ann": null,
         "ret_10y_ann": null,
-        "ret_si_ann": 11.77
+        "ret_si_cum": 11.77
       },
       "calendar_year_returns": {},
       "allocations_as_at": "2026-06-30",
@@ -5847,12 +6040,13 @@
         "semi_annual_report_url": null
       },
       "sources": {
-        "fetched_at": "2026-08-23T15:23:44+00:00",
+        "fetched_at": "2026-08-23T16:23:49+00:00",
         "returns": "Fund Centre screener",
         "eligibility": "Fund Centre screener (FundingSource)",
         "facts": "Fund Centre detail (v4/funds)",
         "allocations": "Fund Centre detail (Morningstar portfolio data)",
         "cumulative_returns": "computed from Fund Centre total-return history",
+        "since_inception": "computed from total-return history starting 2025-10-15",
         "offer_price": "GE fund-prices.json",
         "benchmark_returns": "fact sheet PDF (as at 2026-06-30)"
       },
@@ -5862,7 +6056,13 @@
         "diff_pp": {
           "ret_ytd": 0.004
         },
-        "at_factsheet_date": {}
+        "at_factsheet_date": {
+          "ret_si_cum": {
+            "factsheet": 8.21,
+            "nav_at_factsheet_date": 8.21,
+            "diff_pp": 0.0
+          }
+        }
       },
       "missing_fields": [
         "ret_1y",
@@ -5900,6 +6100,7 @@
       "bid_price": 0.957,
       "offer_price": 1.008,
       "price_date": "2026-08-20",
+      "offer_price_date": "2026-08-20",
       "price_status": "Confirmed",
       "returns": {
         "ret_ytd": 1.59236,
@@ -5913,7 +6114,8 @@
         "ret_5y_cum": null,
         "ret_10y_ann": null,
         "ret_10y_cum": null,
-        "ret_si_ann": null
+        "ret_si_ann": null,
+        "ret_si_cum": 0.84
       },
       "returns_as_at": "2026-08-20",
       "benchmark_name": "20.00% MSCI ACWI NR SGD + 40.00% JPM Singapore Government Bond TR SGD + 40.00% Bloomberg Glb Agg 50% SGD Hedged TR SGD",
@@ -5924,7 +6126,7 @@
         "ret_3y_ann": null,
         "ret_5y_ann": null,
         "ret_10y_ann": null,
-        "ret_si_ann": 2.32
+        "ret_si_cum": 2.32
       },
       "benchmark_returns": {
         "ret_3m": 4.35,
@@ -5933,7 +6135,7 @@
         "ret_3y_ann": null,
         "ret_5y_ann": null,
         "ret_10y_ann": null,
-        "ret_si_ann": 2.21
+        "ret_si_cum": 2.21
       },
       "calendar_year_returns": {},
       "allocations_as_at": "2026-06-30",
@@ -6096,12 +6298,13 @@
         "semi_annual_report_url": null
       },
       "sources": {
-        "fetched_at": "2026-08-23T15:23:44+00:00",
+        "fetched_at": "2026-08-23T16:23:49+00:00",
         "returns": "Fund Centre screener",
         "eligibility": "Fund Centre screener (FundingSource)",
         "facts": "Fund Centre detail (v4/funds)",
         "allocations": "Fund Centre detail (Morningstar portfolio data)",
         "cumulative_returns": "computed from Fund Centre total-return history",
+        "since_inception": "computed from total-return history starting 2025-10-15",
         "offer_price": "GE fund-prices.json",
         "benchmark_returns": "fact sheet PDF (as at 2026-06-30)"
       },
@@ -6111,7 +6314,13 @@
         "diff_pp": {
           "ret_ytd": 0.002
         },
-        "at_factsheet_date": {}
+        "at_factsheet_date": {
+          "ret_si_cum": {
+            "factsheet": 2.32,
+            "nav_at_factsheet_date": 2.32,
+            "diff_pp": 0.0
+          }
+        }
       },
       "missing_fields": [
         "ret_1y",
@@ -6149,6 +6358,7 @@
       "bid_price": 2.517,
       "offer_price": 2.65,
       "price_date": "2026-08-20",
+      "offer_price_date": "2026-08-20",
       "price_status": "Confirmed",
       "returns": {
         "ret_ytd": 4.48319,
@@ -6162,7 +6372,8 @@
         "ret_5y_cum": 11.57,
         "ret_10y_ann": 4.81307,
         "ret_10y_cum": 60.01,
-        "ret_si_ann": 3.51
+        "ret_si_ann": 3.66,
+        "ret_si_cum": 164.95
       },
       "returns_as_at": "2026-08-20",
       "benchmark_name": "50.00% MSCI World NR USD + 50.00% FTSE WGBI USD",
@@ -6356,12 +6567,13 @@
         "semi_annual_report_url": "https://doc.morningstar.com/Document/503a5407f885bbc9af0fc3cbce186d03.msdoc/?key=023d247708a47993ed8467e955ed1f06d56f71215c0d4940cfd29d8eacbd50f5"
       },
       "sources": {
-        "fetched_at": "2026-08-23T15:23:44+00:00",
+        "fetched_at": "2026-08-23T16:23:49+00:00",
         "returns": "Fund Centre screener",
         "eligibility": "Fund Centre screener (FundingSource)",
         "facts": "Fund Centre detail (v4/funds)",
         "allocations": "Fund Centre detail (Morningstar portfolio data)",
         "cumulative_returns": "computed from Fund Centre total-return history",
+        "since_inception": "computed from total-return history starting 1999-07-01",
         "offer_price": "GE fund-prices.json",
         "benchmark_returns": "fact sheet PDF (as at 2026-06-30)"
       },
@@ -6394,6 +6606,11 @@
           "ret_10y_ann": {
             "factsheet": 5.17,
             "nav_at_factsheet_date": 5.17,
+            "diff_pp": 0.0
+          },
+          "ret_si_ann": {
+            "factsheet": 3.7,
+            "nav_at_factsheet_date": 3.7,
             "diff_pp": 0.0
           }
         }
@@ -6428,6 +6645,7 @@
       "bid_price": 0.816,
       "offer_price": 0.859,
       "price_date": "2026-08-20",
+      "offer_price_date": "2026-08-20",
       "price_status": "Confirmed",
       "returns": {
         "ret_ytd": 5.78358,
@@ -6441,7 +6659,8 @@
         "ret_5y_cum": 17.58,
         "ret_10y_ann": 4.01308,
         "ret_10y_cum": 48.21,
-        "ret_si_ann": 1.6
+        "ret_si_ann": 1.81,
+        "ret_si_cum": 40.8
       },
       "returns_as_at": "2026-08-20",
       "benchmark_name": null,
@@ -6609,12 +6828,13 @@
         "semi_annual_report_url": "https://doc.morningstar.com/Document/503a5407f885bbc9af0fc3cbce186d03.msdoc/?key=023d247708a47993ed8467e955ed1f06d56f71215c0d4940cfd29d8eacbd50f5"
       },
       "sources": {
-        "fetched_at": "2026-08-23T15:23:44+00:00",
+        "fetched_at": "2026-08-23T16:23:49+00:00",
         "returns": "Fund Centre screener",
         "eligibility": "Fund Centre screener (FundingSource)",
         "facts": "Fund Centre detail (v4/funds)",
         "allocations": "Fund Centre detail (Morningstar portfolio data)",
         "cumulative_returns": "computed from Fund Centre total-return history",
+        "since_inception": "computed from total-return history starting 2007-07-24",
         "offer_price": "GE fund-prices.json",
         "benchmark_returns": "fact sheet PDF (as at 2026-06-30)"
       },
@@ -6647,6 +6867,11 @@
           "ret_10y_ann": {
             "factsheet": 4.4,
             "nav_at_factsheet_date": 4.4,
+            "diff_pp": 0.0
+          },
+          "ret_si_ann": {
+            "factsheet": 1.79,
+            "nav_at_factsheet_date": 1.79,
             "diff_pp": 0.0
           }
         }
@@ -6681,6 +6906,7 @@
       "bid_price": 2.703,
       "offer_price": 2.846,
       "price_date": "2026-08-20",
+      "offer_price_date": "2026-08-20",
       "price_status": "Confirmed",
       "returns": {
         "ret_ytd": 9.30044,
@@ -6694,7 +6920,8 @@
         "ret_5y_cum": 18.66,
         "ret_10y_ann": 6.0729,
         "ret_10y_cum": 80.32,
-        "ret_si_ann": 4.07
+        "ret_si_ann": 4.38,
+        "ret_si_cum": 184.53
       },
       "returns_as_at": "2026-08-20",
       "benchmark_name": null,
@@ -6872,12 +7099,13 @@
         "semi_annual_report_url": "https://doc.morningstar.com/Document/503a5407f885bbc9af0fc3cbce186d03.msdoc/?key=023d247708a47993ed8467e955ed1f06d56f71215c0d4940cfd29d8eacbd50f5"
       },
       "sources": {
-        "fetched_at": "2026-08-23T15:23:44+00:00",
+        "fetched_at": "2026-08-23T16:23:49+00:00",
         "returns": "Fund Centre screener",
         "eligibility": "Fund Centre screener (FundingSource)",
         "facts": "Fund Centre detail (v4/funds)",
         "allocations": "Fund Centre detail (Morningstar portfolio data)",
         "cumulative_returns": "computed from Fund Centre total-return history",
+        "since_inception": "computed from total-return history starting 2002-03-25",
         "offer_price": "GE fund-prices.json",
         "benchmark_returns": "fact sheet PDF (as at 2026-06-30)"
       },
@@ -6910,6 +7138,11 @@
           "ret_10y_ann": {
             "factsheet": 6.69,
             "nav_at_factsheet_date": 6.69,
+            "diff_pp": 0.0
+          },
+          "ret_si_ann": {
+            "factsheet": 4.48,
+            "nav_at_factsheet_date": 4.48,
             "diff_pp": 0.0
           }
         }
@@ -6944,6 +7177,7 @@
       "bid_price": 3.098,
       "offer_price": 3.262,
       "price_date": "2026-08-20",
+      "offer_price_date": "2026-08-20",
       "price_status": "Confirmed",
       "returns": {
         "ret_ytd": 12.0434,
@@ -6957,7 +7191,8 @@
         "ret_5y_cum": 27.12,
         "ret_10y_ann": 7.78394,
         "ret_10y_cum": 111.61,
-        "ret_si_ann": 4.56
+        "ret_si_ann": 4.96,
+        "ret_si_cum": 226.11
       },
       "returns_as_at": "2026-08-20",
       "benchmark_name": null,
@@ -7131,12 +7366,13 @@
         "semi_annual_report_url": "https://doc.morningstar.com/Document/503a5407f885bbc9af0fc3cbce186d03.msdoc/?key=023d247708a47993ed8467e955ed1f06d56f71215c0d4940cfd29d8eacbd50f5"
       },
       "sources": {
-        "fetched_at": "2026-08-23T15:23:44+00:00",
+        "fetched_at": "2026-08-23T16:23:49+00:00",
         "returns": "Fund Centre screener",
         "eligibility": "Fund Centre screener (FundingSource)",
         "facts": "Fund Centre detail (v4/funds)",
         "allocations": "Fund Centre detail (Morningstar portfolio data)",
         "cumulative_returns": "computed from Fund Centre total-return history",
+        "since_inception": "computed from total-return history starting 2002-03-25",
         "offer_price": "GE fund-prices.json",
         "benchmark_returns": "fact sheet PDF (as at 2026-06-30)"
       },
@@ -7169,6 +7405,11 @@
           "ret_10y_ann": {
             "factsheet": 8.54,
             "nav_at_factsheet_date": 8.54,
+            "diff_pp": 0.0
+          },
+          "ret_si_ann": {
+            "factsheet": 5.08,
+            "nav_at_factsheet_date": 5.08,
             "diff_pp": 0.0
           }
         }
@@ -7203,6 +7444,7 @@
       "bid_price": 2.083,
       "offer_price": 2.193,
       "price_date": "2026-08-20",
+      "offer_price_date": "2026-08-20",
       "price_status": "Confirmed",
       "returns": {
         "ret_ytd": 2.30845,
@@ -7216,7 +7458,8 @@
         "ret_5y_cum": 2.76,
         "ret_10y_ann": 2.54569,
         "ret_10y_cum": 28.58,
-        "ret_si_ann": 3.22
+        "ret_si_ann": 3.27,
+        "ret_si_cum": 119.26
       },
       "returns_as_at": "2026-08-20",
       "benchmark_name": null,
@@ -7390,12 +7633,13 @@
         "semi_annual_report_url": "https://doc.morningstar.com/Document/503a5407f885bbc9af0fc3cbce186d03.msdoc/?key=023d247708a47993ed8467e955ed1f06d56f71215c0d4940cfd29d8eacbd50f5"
       },
       "sources": {
-        "fetched_at": "2026-08-23T15:23:44+00:00",
+        "fetched_at": "2026-08-23T16:23:49+00:00",
         "returns": "Fund Centre screener",
         "eligibility": "Fund Centre screener (FundingSource)",
         "facts": "Fund Centre detail (v4/funds)",
         "allocations": "Fund Centre detail (Morningstar portfolio data)",
         "cumulative_returns": "computed from Fund Centre total-return history",
+        "since_inception": "computed from total-return history starting 2002-03-25",
         "offer_price": "GE fund-prices.json",
         "benchmark_returns": "fact sheet PDF (as at 2026-06-30)"
       },
@@ -7428,6 +7672,11 @@
           "ret_10y_ann": {
             "factsheet": 2.87,
             "nav_at_factsheet_date": 2.87,
+            "diff_pp": 0.0
+          },
+          "ret_si_ann": {
+            "factsheet": 3.34,
+            "nav_at_factsheet_date": 3.34,
             "diff_pp": 0.0
           }
         }
@@ -7462,6 +7711,7 @@
       "bid_price": 2.257,
       "offer_price": 2.376,
       "price_date": "2026-08-20",
+      "offer_price_date": "2026-08-20",
       "price_status": "Confirmed",
       "returns": {
         "ret_ytd": 4.58758,
@@ -7475,7 +7725,8 @@
         "ret_5y_cum": 9.88,
         "ret_10y_ann": 4.22605,
         "ret_10y_cum": 51.27,
-        "ret_si_ann": 3.47
+        "ret_si_ann": 3.61,
+        "ret_si_cum": 137.58
       },
       "returns_as_at": "2026-08-20",
       "benchmark_name": null,
@@ -7649,12 +7900,13 @@
         "semi_annual_report_url": "https://doc.morningstar.com/Document/503a5407f885bbc9af0fc3cbce186d03.msdoc/?key=023d247708a47993ed8467e955ed1f06d56f71215c0d4940cfd29d8eacbd50f5"
       },
       "sources": {
-        "fetched_at": "2026-08-23T15:23:44+00:00",
+        "fetched_at": "2026-08-23T16:23:49+00:00",
         "returns": "Fund Centre screener",
         "eligibility": "Fund Centre screener (FundingSource)",
         "facts": "Fund Centre detail (v4/funds)",
         "allocations": "Fund Centre detail (Morningstar portfolio data)",
         "cumulative_returns": "computed from Fund Centre total-return history",
+        "since_inception": "computed from total-return history starting 2002-03-25",
         "offer_price": "GE fund-prices.json",
         "benchmark_returns": "fact sheet PDF (as at 2026-06-30)"
       },
@@ -7687,6 +7939,11 @@
           "ret_10y_ann": {
             "factsheet": 4.7,
             "nav_at_factsheet_date": 4.7,
+            "diff_pp": 0.0
+          },
+          "ret_si_ann": {
+            "factsheet": 3.69,
+            "nav_at_factsheet_date": 3.69,
             "diff_pp": 0.0
           }
         }
@@ -7721,6 +7978,7 @@
       "bid_price": 1.638,
       "offer_price": 1.725,
       "price_date": "2026-08-20",
+      "offer_price_date": "2026-08-20",
       "price_status": "Confirmed",
       "returns": {
         "ret_ytd": 9.71199,
@@ -7734,7 +7992,8 @@
         "ret_5y_cum": 20.0,
         "ret_10y_ann": 5.13237,
         "ret_10y_cum": 64.95,
-        "ret_si_ann": 2.64
+        "ret_si_ann": 2.98,
+        "ret_si_cum": 72.42
       },
       "returns_as_at": "2026-08-20",
       "benchmark_name": "50.00% JPM Singapore Govt TR USD + 50.00% MSCI AC Asia Pac Ex JPN NR USD",
@@ -7902,12 +8161,13 @@
         "semi_annual_report_url": "https://doc.morningstar.com/Document/503a5407f885bbc9af0fc3cbce186d03.msdoc/?key=023d247708a47993ed8467e955ed1f06d56f71215c0d4940cfd29d8eacbd50f5"
       },
       "sources": {
-        "fetched_at": "2026-08-23T15:23:44+00:00",
+        "fetched_at": "2026-08-23T16:23:49+00:00",
         "returns": "Fund Centre screener",
         "eligibility": "Fund Centre screener (FundingSource)",
         "facts": "Fund Centre detail (v4/funds)",
         "allocations": "Fund Centre detail (Morningstar portfolio data)",
         "cumulative_returns": "computed from Fund Centre total-return history",
+        "since_inception": "computed from total-return history starting 2008-02-01",
         "offer_price": "GE fund-prices.json",
         "benchmark_returns": "fact sheet PDF (as at 2026-06-30)"
       },
@@ -7940,6 +8200,11 @@
           "ret_10y_ann": {
             "factsheet": 5.81,
             "nav_at_factsheet_date": 5.81,
+            "diff_pp": 0.0
+          },
+          "ret_si_ann": {
+            "factsheet": 3.16,
+            "nav_at_factsheet_date": 3.16,
             "diff_pp": 0.0
           }
         }
@@ -7974,6 +8239,7 @@
       "bid_price": 0.994,
       "offer_price": 1.047,
       "price_date": "2026-08-20",
+      "offer_price_date": "2026-08-20",
       "price_status": "Confirmed",
       "returns": {
         "ret_ytd": 2.9532,
@@ -7987,7 +8253,8 @@
         "ret_5y_cum": null,
         "ret_10y_ann": null,
         "ret_10y_cum": null,
-        "ret_si_ann": 8.4
+        "ret_si_ann": 8.67,
+        "ret_si_cum": 31.71
       },
       "returns_as_at": "2026-08-20",
       "benchmark_name": null,
@@ -8133,12 +8400,13 @@
         "semi_annual_report_url": "https://doc.morningstar.com/Document/503a5407f885bbc9af0fc3cbce186d03.msdoc/?key=023d247708a47993ed8467e955ed1f06d56f71215c0d4940cfd29d8eacbd50f5"
       },
       "sources": {
-        "fetched_at": "2026-08-23T15:23:44+00:00",
+        "fetched_at": "2026-08-23T16:23:49+00:00",
         "returns": "Fund Centre screener",
         "eligibility": "Fund Centre screener (FundingSource)",
         "facts": "Fund Centre detail (v4/funds)",
         "allocations": "Fund Centre detail (Morningstar portfolio data)",
         "cumulative_returns": "computed from Fund Centre total-return history",
+        "since_inception": "computed from total-return history starting 2023-04-28",
         "offer_price": "GE fund-prices.json",
         "benchmark_returns": "fact sheet PDF (as at 2026-06-30)"
       },
@@ -8159,6 +8427,11 @@
           "ret_3y_ann": {
             "factsheet": 9.15,
             "nav_at_factsheet_date": 9.15,
+            "diff_pp": 0.0
+          },
+          "ret_si_ann": {
+            "factsheet": 10.2,
+            "nav_at_factsheet_date": 10.2,
             "diff_pp": 0.0
           }
         }
@@ -8197,6 +8470,7 @@
       "bid_price": 1.515,
       "offer_price": 1.595,
       "price_date": "2026-08-20",
+      "offer_price_date": "2026-08-20",
       "price_status": "Confirmed",
       "returns": {
         "ret_ytd": 0.93271,
@@ -8210,7 +8484,8 @@
         "ret_5y_cum": 12.31,
         "ret_10y_ann": 1.73168,
         "ret_10y_cum": 18.73,
-        "ret_si_ann": 1.56
+        "ret_si_ann": 1.55,
+        "ret_si_cum": 59.47
       },
       "returns_as_at": "2026-08-20",
       "benchmark_name": "3-Month SORA TR SGD",
@@ -8388,12 +8663,13 @@
         "semi_annual_report_url": "https://doc.morningstar.com/Document/503a5407f885bbc9af0fc3cbce186d03.msdoc/?key=023d247708a47993ed8467e955ed1f06d56f71215c0d4940cfd29d8eacbd50f5"
       },
       "sources": {
-        "fetched_at": "2026-08-23T15:23:44+00:00",
+        "fetched_at": "2026-08-23T16:23:49+00:00",
         "returns": "Fund Centre screener",
         "eligibility": "Fund Centre screener (FundingSource)",
         "facts": "Fund Centre detail (v4/funds)",
         "allocations": "Fund Centre detail (Morningstar portfolio data)",
         "cumulative_returns": "computed from Fund Centre total-return history",
+        "since_inception": "computed from total-return history starting 1996-04-26",
         "offer_price": "GE fund-prices.json",
         "benchmark_returns": "fact sheet PDF (as at 2026-06-30)"
       },
@@ -8426,6 +8702,11 @@
           "ret_10y_ann": {
             "factsheet": 1.74,
             "nav_at_factsheet_date": 1.74,
+            "diff_pp": 0.0
+          },
+          "ret_si_ann": {
+            "factsheet": 1.55,
+            "nav_at_factsheet_date": 1.55,
             "diff_pp": 0.0
           }
         }
@@ -8460,6 +8741,7 @@
       "bid_price": 1.604,
       "offer_price": 1.689,
       "price_date": "2026-08-20",
+      "offer_price_date": "2026-08-20",
       "price_status": "Confirmed",
       "returns": {
         "ret_ytd": -1.59509,
@@ -8473,7 +8755,8 @@
         "ret_5y_cum": -11.92,
         "ret_10y_ann": -0.06832,
         "ret_10y_cum": -0.68,
-        "ret_si_ann": 2.25
+        "ret_si_ann": 2.15,
+        "ret_si_cum": 68.84
       },
       "returns_as_at": "2026-08-20",
       "benchmark_name": "BBgBarc Gbl Agg 50% Hdg SGD",
@@ -8727,12 +9010,13 @@
         "semi_annual_report_url": "https://doc.morningstar.com/Document/503a5407f885bbc9af0fc3cbce186d03.msdoc/?key=023d247708a47993ed8467e955ed1f06d56f71215c0d4940cfd29d8eacbd50f5"
       },
       "sources": {
-        "fetched_at": "2026-08-23T15:23:44+00:00",
+        "fetched_at": "2026-08-23T16:23:49+00:00",
         "returns": "Fund Centre screener",
         "eligibility": "Fund Centre screener (FundingSource)",
         "facts": "Fund Centre detail (v4/funds)",
         "allocations": "Fund Centre detail (Morningstar portfolio data)",
         "cumulative_returns": "computed from Fund Centre total-return history",
+        "since_inception": "computed from total-return history starting 2002-01-15",
         "offer_price": "GE fund-prices.json",
         "benchmark_returns": "fact sheet PDF (as at 2026-06-30)"
       },
@@ -8765,6 +9049,11 @@
           "ret_10y_ann": {
             "factsheet": 0.2,
             "nav_at_factsheet_date": 0.2,
+            "diff_pp": 0.0
+          },
+          "ret_si_ann": {
+            "factsheet": 2.23,
+            "nav_at_factsheet_date": 2.23,
             "diff_pp": 0.0
           }
         }
@@ -8799,6 +9088,7 @@
       "bid_price": 0.761,
       "offer_price": 0.802,
       "price_date": "2026-08-20",
+      "offer_price_date": "2026-08-20",
       "price_status": "Confirmed",
       "returns": {
         "ret_ytd": -0.49716,
@@ -8812,7 +9102,8 @@
         "ret_5y_cum": 1.88,
         "ret_10y_ann": null,
         "ret_10y_cum": null,
-        "ret_si_ann": 0.19
+        "ret_si_ann": 0.33,
+        "ret_si_cum": 1.81
       },
       "returns_as_at": "2026-08-20",
       "benchmark_name": "BBgBarc US Agg Bond Hdg TR SGD",
@@ -8988,12 +9279,13 @@
         "semi_annual_report_url": "https://doc.morningstar.com/Document/503a5407f885bbc9af0fc3cbce186d03.msdoc/?key=023d247708a47993ed8467e955ed1f06d56f71215c0d4940cfd29d8eacbd50f5"
       },
       "sources": {
-        "fetched_at": "2026-08-23T15:23:44+00:00",
+        "fetched_at": "2026-08-23T16:23:49+00:00",
         "returns": "Fund Centre screener",
         "eligibility": "Fund Centre screener (FundingSource)",
         "facts": "Fund Centre detail (v4/funds)",
         "allocations": "Fund Centre detail (Morningstar portfolio data)",
         "cumulative_returns": "computed from Fund Centre total-return history",
+        "since_inception": "computed from total-return history starting 2021-03-22",
         "offer_price": "GE fund-prices.json",
         "benchmark_returns": "fact sheet PDF (as at 2026-06-30)"
       },
@@ -9021,6 +9313,11 @@
             "factsheet": 0.08,
             "nav_at_factsheet_date": 0.31,
             "diff_pp": 0.23
+          },
+          "ret_si_ann": {
+            "factsheet": 0.2,
+            "nav_at_factsheet_date": 0.41,
+            "diff_pp": 0.21
           }
         }
       },
@@ -9056,6 +9353,7 @@
       "bid_price": 0.877,
       "offer_price": 0.924,
       "price_date": "2026-08-20",
+      "offer_price_date": "2026-08-20",
       "price_status": "Confirmed",
       "returns": {
         "ret_ytd": -1.9754,
@@ -9069,7 +9367,8 @@
         "ret_5y_cum": null,
         "ret_10y_ann": null,
         "ret_10y_cum": null,
-        "ret_si_ann": 4.47
+        "ret_si_ann": 2.77,
+        "ret_si_cum": 6.57
       },
       "returns_as_at": "2026-08-20",
       "benchmark_name": "Bloomberg US Aggregate Hdg TR SGD",
@@ -9282,12 +9581,13 @@
         "semi_annual_report_url": "https://doc.morningstar.com/Document/503a5407f885bbc9af0fc3cbce186d03.msdoc/?key=023d247708a47993ed8467e955ed1f06d56f71215c0d4940cfd29d8eacbd50f5"
       },
       "sources": {
-        "fetched_at": "2026-08-23T15:23:44+00:00",
+        "fetched_at": "2026-08-23T16:23:49+00:00",
         "returns": "Fund Centre screener",
         "eligibility": "Fund Centre screener (FundingSource)",
         "facts": "Fund Centre detail (v4/funds)",
         "allocations": "Fund Centre detail (Morningstar portfolio data)",
         "cumulative_returns": "computed from Fund Centre total-return history",
+        "since_inception": "computed from total-return history starting 2024-04-23",
         "offer_price": "GE fund-prices.json",
         "benchmark_returns": "fact sheet PDF (as at 2026-06-30)"
       },
@@ -9302,6 +9602,11 @@
           "ret_1y": {
             "factsheet": 2.37,
             "nav_at_factsheet_date": 2.37,
+            "diff_pp": 0.0
+          },
+          "ret_si_ann": {
+            "factsheet": 3.71,
+            "nav_at_factsheet_date": 3.71,
             "diff_pp": 0.0
           }
         }
@@ -9340,6 +9645,7 @@
       "bid_price": 1.713,
       "offer_price": 1.804,
       "price_date": "2026-08-20",
+      "offer_price_date": "2026-08-20",
       "price_status": "Confirmed",
       "returns": {
         "ret_ytd": 0.88339,
@@ -9353,7 +9659,8 @@
         "ret_5y_cum": 10.16,
         "ret_10y_ann": 2.31941,
         "ret_10y_cum": 25.77,
-        "ret_si_ann": 2.47
+        "ret_si_ann": 2.45,
+        "ret_si_cum": 80.32
       },
       "returns_as_at": "2026-08-20",
       "benchmark_name": "3M SORA + 0.35%",
@@ -9503,12 +9810,13 @@
         "semi_annual_report_url": "https://doc.morningstar.com/Document/503a5407f885bbc9af0fc3cbce186d03.msdoc/?key=023d247708a47993ed8467e955ed1f06d56f71215c0d4940cfd29d8eacbd50f5"
       },
       "sources": {
-        "fetched_at": "2026-08-23T15:23:44+00:00",
+        "fetched_at": "2026-08-23T16:23:49+00:00",
         "returns": "Fund Centre screener",
         "eligibility": "Fund Centre screener (FundingSource)",
         "facts": "Fund Centre detail (v4/funds)",
         "allocations": "Fund Centre detail (Morningstar portfolio data)",
         "cumulative_returns": "computed from Fund Centre total-return history",
+        "since_inception": "computed from total-return history starting 2002-03-25",
         "offer_price": "GE fund-prices.json",
         "benchmark_returns": "fact sheet PDF (as at 2026-06-30)"
       },
@@ -9541,6 +9849,11 @@
           "ret_10y_ann": {
             "factsheet": 2.45,
             "nav_at_factsheet_date": 2.45,
+            "diff_pp": 0.0
+          },
+          "ret_si_ann": {
+            "factsheet": 2.46,
+            "nav_at_factsheet_date": 2.46,
             "diff_pp": 0.0
           }
         }
@@ -9575,6 +9888,7 @@
       "bid_price": 0.821,
       "offer_price": 0.865,
       "price_date": "2026-08-20",
+      "offer_price_date": "2026-08-20",
       "price_status": "Confirmed",
       "returns": {
         "ret_ytd": null,
@@ -9588,7 +9902,8 @@
         "ret_5y_cum": null,
         "ret_10y_ann": null,
         "ret_10y_cum": null,
-        "ret_si_ann": null
+        "ret_si_ann": null,
+        "ret_si_cum": -13.58
       },
       "returns_as_at": "2026-08-20",
       "benchmark_name": "LBMA Gold Price AM TR SGD",
@@ -9599,7 +9914,7 @@
         "ret_3y_ann": null,
         "ret_5y_ann": null,
         "ret_10y_ann": null,
-        "ret_si_ann": -21.05
+        "ret_si_cum": -21.05
       },
       "benchmark_returns": {
         "ret_3m": -11.57,
@@ -9608,7 +9923,7 @@
         "ret_3y_ann": null,
         "ret_5y_ann": null,
         "ret_10y_ann": null,
-        "ret_si_ann": -17.43
+        "ret_si_cum": -17.43
       },
       "calendar_year_returns": {},
       "allocations_as_at": "2026-06-30",
@@ -9654,12 +9969,13 @@
         "semi_annual_report_url": null
       },
       "sources": {
-        "fetched_at": "2026-08-23T15:23:44+00:00",
+        "fetched_at": "2026-08-23T16:23:49+00:00",
         "returns": "Fund Centre screener",
         "eligibility": "Fund Centre screener (FundingSource)",
         "facts": "Fund Centre detail (v4/funds)",
         "allocations": "Fund Centre detail (Morningstar portfolio data)",
         "cumulative_returns": "computed from Fund Centre total-return history",
+        "since_inception": "computed from total-return history starting 2026-01-23",
         "offer_price": "GE fund-prices.json",
         "benchmark_returns": "fact sheet PDF (as at 2026-06-30)",
         "underlying_fund": "fact sheet PDF"
@@ -9668,7 +9984,13 @@
         "as_of": "2026-08-20",
         "total_return_index": 86.42105,
         "diff_pp": {},
-        "at_factsheet_date": {}
+        "at_factsheet_date": {
+          "ret_si_cum": {
+            "factsheet": -21.05,
+            "nav_at_factsheet_date": -21.05,
+            "diff_pp": 0.0
+          }
+        }
       },
       "missing_fields": [
         "ret_ytd",

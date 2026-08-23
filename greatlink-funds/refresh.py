@@ -2,7 +2,8 @@
 """Refresh the GreatLink fund dataset and rebuild the dashboard.
 
     python refresh.py            # the one monthly command (no arguments)
-    python refresh.py --no-pdf   # skip fact sheet downloads/parsing (quick data-only run)
+    python refresh.py --no-pdf   # skip fact sheet downloads; fact sheets already in
+                                 # factsheets/ are still used (quick data-only run)
 
 Pipeline
   1. fund list + GE category + Fund Centre IDs   (greateasternlife.com)
@@ -20,6 +21,7 @@ from __future__ import annotations
 
 import csv
 import io
+import json
 import sys
 import traceback
 from datetime import date, datetime, timezone
@@ -29,7 +31,7 @@ ROOT = Path(__file__).resolve().parent
 sys.path.insert(0, str(ROOT))
 
 from scraper import documents, factsheet_pdf, fundcentre, fundlist, prices  # noqa: E402
-from scraper.util import PoliteSession, atomic_write, atomic_write_json  # noqa: E402
+from scraper.util import PoliteSession, atomic_write  # noqa: E402
 
 DATA = ROOT / "data"
 FACTSHEETS = ROOT / "factsheets"
@@ -37,9 +39,10 @@ TOLERANCE_PP = 0.1   # discrepancy tolerance in percentage points
 
 RETURN_FIELDS = ["ret_ytd", "ret_1m", "ret_3m", "ret_6m", "ret_1y",
                  "ret_3y_ann", "ret_3y_cum", "ret_5y_ann", "ret_5y_cum",
-                 "ret_10y_ann", "ret_10y_cum", "ret_si_ann"]
+                 "ret_10y_ann", "ret_10y_cum", "ret_si_ann", "ret_si_cum"]
+MAX_DETAIL_FAILURE_SHARE = 0.25   # abort the run (dataset untouched) above this
 CSV_COLUMNS = ["name", "category", "fund_id", "fund_code", "risk_class", "currency",
-               "bid_price", "offer_price", "price_date", "fund_size_m", "mgmt_fee_pct",
+               "bid_price", "price_date", "offer_price", "offer_price_date", "fund_size_m", "mgmt_fee_pct",
                "expense_ratio_pct", "inception_date", "manager", "cpf_oa", "cpf_sa", "srs",
                "returns_as_at"] + RETURN_FIELDS + ["factsheet_as_at", "factsheet_local", "factsheet_url"]
 CONVENTION = ("Returns are bid-to-bid in the fund currency (SGD), net of fund management "
@@ -61,7 +64,8 @@ def new_record(stub: dict) -> dict:
         "fund_size_m": None, "fund_size_as_at": None, "currency": "SGD",
         "mgmt_fee_pct": None, "expense_ratio_pct": None, "risk_class": None,
         "eligibility": {"cpf_oa": None, "cpf_sa": None, "srs": None, "cash": None},
-        "bid_price": None, "offer_price": None, "price_date": None, "price_status": None,
+        "bid_price": None, "offer_price": None, "price_date": None, "offer_price_date": None,
+        "price_status": None,
         "returns": {k: None for k in RETURN_FIELDS}, "returns_as_at": None,
         "benchmark_name": None, "factsheet_returns": {}, "benchmark_returns": {},
         "calendar_year_returns": {}, "allocations_as_at": None,
@@ -112,10 +116,14 @@ def merge_nav(fund: dict, history: dict, report: list[str]) -> None:
     if not r:
         report.append(f"- {fund['name']}: no total-return history returned")
         return
-    for k in ("ret_3y_cum", "ret_5y_cum", "ret_10y_cum"):
+    for k in ("ret_3y_cum", "ret_5y_cum", "ret_10y_cum", "ret_si_ann", "ret_si_cum"):
         if k in r:
             fund["returns"][k] = r[k]
     fund["sources"]["cumulative_returns"] = "computed from Fund Centre total-return history"
+    fund["sources"]["since_inception"] = f"computed from total-return history starting {r.get('history_start')}"
+    if r.get("history_start") and fund.get("inception_date") and r["history_start"] != fund["inception_date"]:
+        report.append(f"- {fund['name']}: history starts {r['history_start']} but inception date is "
+                      f"{fund['inception_date']} — since-inception figure covers the history period")
     # Independent cross-check of the screener's figures (same date, same prices)
     diffs = {}
     for k in ("ret_ytd", "ret_1y", "ret_3y_ann", "ret_5y_ann", "ret_10y_ann"):
@@ -138,9 +146,12 @@ def merge_prices(fund: dict, px: dict | None, report: list[str]) -> None:
                       f"{fund['bid_price']} on {px['date']} (kept Fund Centre)")
     if fund["bid_price"] is None:
         fund["bid_price"], fund["price_date"] = px["bid"], px["date"]
-    fund["offer_price"], fund["price_status"] = px["offer"], px["status"]
+    fund["offer_price"], fund["offer_price_date"], fund["price_status"] = px["offer"], px["date"], px["status"]
     if not fund["price_date"]:
         fund["price_date"] = px["date"]
+    elif px["date"] and px["date"] != fund["price_date"]:
+        report.append(f"- {fund['name']}: GE prices page is dated {px['date']} but Fund Centre bid is "
+                      f"dated {fund['price_date']} (offer shown with its own date)")
     fund["sources"]["offer_price"] = "GE fund-prices.json"
 
 
@@ -174,7 +185,7 @@ def apply_factsheet(fund: dict, history: dict, report: list[str]) -> None:
     if parsed["as_at"] and history:
         at_fs = fundcentre.returns_from_history(history, parsed["as_at"])
         check = {}
-        for k in ("ret_1y", "ret_3y_ann", "ret_5y_ann", "ret_10y_ann"):
+        for k in ("ret_1y", "ret_3y_ann", "ret_5y_ann", "ret_10y_ann", "ret_si_ann", "ret_si_cum"):
             a, b = parsed["fund"].get(k), at_fs.get(k)
             if a is not None and b is not None:
                 check[k] = {"factsheet": a, "nav_at_factsheet_date": b, "diff_pp": round(b - a, 2)}
@@ -200,6 +211,9 @@ def finalise_missing(fund: dict) -> None:
 
 
 def write_outputs(funds: list[dict], as_at: str, report_lines: list[str], started: datetime) -> dict:
+    """Render every output in memory first, then swap the files into place one
+    after another, so a failure while rendering touches nothing and the
+    dataset, CSV, report and dashboard always describe the same run."""
     fs_dates = sorted({f["docs"]["factsheet_as_at"] for f in funds if f["docs"].get("factsheet_as_at")})
     dataset = {
         "as_at": as_at,
@@ -209,8 +223,7 @@ def write_outputs(funds: list[dict], as_at: str, report_lines: list[str], starte
         "sample": False, "convention": CONVENTION,
         "fund_count": len(funds), "funds": funds,
     }
-    atomic_write_json(DATA / "funds.json", dataset)
-    atomic_write_json(DATA / "history" / f"funds-{date.today().isoformat()}.json", dataset)
+    json_text = json.dumps(dataset, indent=2, ensure_ascii=False) + "\n"
 
     buf = io.StringIO()
     w = csv.writer(buf)
@@ -227,7 +240,7 @@ def write_outputs(funds: list[dict], as_at: str, report_lines: list[str], starte
             else:
                 row.append(f.get(c))
         w.writerow(["" if v is None else v for v in row])
-    atomic_write(DATA / "funds.csv", buf.getvalue())
+    csv_text = buf.getvalue()
 
     failures = [ln for ln in report_lines if "DISCREPANCY" not in ln]
     discrepancies = [ln for ln in report_lines if "DISCREPANCY" in ln]
@@ -246,7 +259,19 @@ def write_outputs(funds: list[dict], as_at: str, report_lines: list[str], starte
         "## Discrepancies (> 0.1 pp or price/fee mismatch)", ""] + (discrepancies or ["- none"]) + ["",
         "## Missing fields per fund", ""] + (missing or ["- none"]) + ["",
         "## Funds without a local fact sheet", ""] + ([f"- {n}" for n in no_pdf] or ["- none"]) + [""]
-    atomic_write(DATA / "refresh_report.md", "\n".join(report))
+    report_text = "\n".join(report)
+
+    import build_dashboard
+    dashboard_html = build_dashboard.render(dataset)
+
+    # Everything rendered — now swap files into place.
+    atomic_write(DATA / "funds.json", json_text)
+    atomic_write(DATA / "history" / f"funds-{date.today().isoformat()}.json", json_text)
+    atomic_write(DATA / "funds.csv", csv_text)
+    atomic_write(DATA / "refresh_report.md", report_text)
+    atomic_write(ROOT / "dashboard.html", dashboard_html)
+    log(f"          wrote data/funds.json, data/funds.csv, data/refresh_report.md, dashboard.html "
+        f"({len(funds)} funds)")
     return dataset
 
 
@@ -296,13 +321,15 @@ def main(argv: list[str]) -> int:
     for n in check["missing"]:
         report.append(f"- EXPECTED fund not found anywhere: {n}")
 
-    log("Step 3/6  Per-fund detail + NAV history")
+    log("Step 3/6  Per-fund detail + total-return history")
     histories: dict[str, dict] = {}
+    detail_failures = 0
     for i, f in enumerate(funds, 1):
         log(f"          [{i:>2}/{len(funds)}] {f['name']}")
         try:
             merge_detail(f, fundcentre.fetch_detail(session, f["fund_id"]))
         except Exception as err:  # noqa: BLE001
+            detail_failures += 1
             report.append(f"- {f['name']}: detail fetch failed: {err}")
         try:
             start = f.get("inception_date") or "1990-01-01"
@@ -312,6 +339,11 @@ def main(argv: list[str]) -> int:
         except Exception as err:  # noqa: BLE001
             report.append(f"- {f['name']}: NAV history failed: {err}")
 
+    if detail_failures > MAX_DETAIL_FAILURE_SHARE * len(funds):
+        log(f"!! {detail_failures}/{len(funds)} fund detail requests failed — the Fund Centre is probably "
+            f"down. Stopping; previous dataset and dashboard untouched.")
+        return 1
+
     log("Step 4/6  Official bid/offer prices")
     try:
         px = prices.fetch_prices(session)
@@ -320,19 +352,21 @@ def main(argv: list[str]) -> int:
     except Exception as err:  # noqa: BLE001
         report.append(f"- prices page failed: {err}")
 
-    if do_pdf:
-        log("Step 5/6  Fact sheet PDFs")
-        for i, f in enumerate(funds, 1):
+    log("Step 5/6  Fact sheet PDFs" + ("" if do_pdf else "  (--no-pdf: using files already on disk)"))
+    for i, f in enumerate(funds, 1):
+        if do_pdf:
             local = documents.download_factsheet(session, f, FACTSHEETS)
-            f["docs"]["factsheet_local"] = local
-            if f["docs"]["factsheet_url"] and not local:
-                report.append(f"- {f['name']}: fact sheet download failed (online link kept)")
-            elif not f["docs"]["factsheet_url"]:
-                report.append(f"- {f['name']}: no fact sheet link in Fund Centre")
+        else:
+            existing = FACTSHEETS / documents.factsheet_filename(f["name"])
+            local = f"factsheets/{existing.name}" if existing.exists() else None
+        f["docs"]["factsheet_local"] = local
+        if do_pdf and f["docs"]["factsheet_url"] and not local:
+            report.append(f"- {f['name']}: fact sheet download failed (online link kept)")
+        elif not f["docs"]["factsheet_url"]:
+            report.append(f"- {f['name']}: no fact sheet link in Fund Centre")
+        if do_pdf:
             log(f"          [{i:>2}/{len(funds)}] {'ok ' if local else 'MISSING'} {f['name']}")
-            apply_factsheet(f, histories.get(f["fund_id"], {}), report)
-    else:
-        log("Step 5/6  (skipped — --no-pdf)")
+        apply_factsheet(f, histories.get(f["fund_id"], {}), report)
 
     for f in funds:
         finalise_missing(f)
@@ -341,8 +375,6 @@ def main(argv: list[str]) -> int:
 
     log("Step 6/6  Writing dataset, report and dashboard")
     dataset = write_outputs(funds, as_at, report, started)
-    import build_dashboard
-    build_dashboard.main()
     n_disc = sum("DISCREPANCY" in ln for ln in report)
     log(f"Done: {len(funds)} funds, data as at {as_at}, fact sheets as at {dataset['factsheets_as_at']}, "
         f"{n_disc} discrepancies, {len(report) - n_disc} notes -> data/refresh_report.md")

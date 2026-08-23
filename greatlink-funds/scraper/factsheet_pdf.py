@@ -13,8 +13,8 @@ one PDF (Lifestyle / Dynamic Portfolios — one page per portfolio, identified b
     Benchmark 14.05% 10.33% 23.22% 17.46% 10.62% 12.69% 5.78%
 
 `*` = annualised. Restructured funds carry an 8th "Since Restructuring" column;
-young funds print "-" for periods they have not reached. There is no YTD
-column on fact sheets.
+young funds print "-" for periods they have not reached and their last column
+is "Since Inception (Cumulative)" -> ret_si_cum. There is no YTD column.
 """
 
 from __future__ import annotations
@@ -42,6 +42,13 @@ def parse_performance_lines(lines: list[str]) -> dict:
     idx = next((i for i, ln in enumerate(lines) if _HEADER_RE.search(ln)), None)
     if idx is None:
         return out
+    # Column layout is decided by the header block (it may wrap onto the
+    # lines just before/after): an extra "Since Restructuring" column, and for
+    # funds under a year old the last column is "Since Inception (Cumulative)".
+    header_block = " ".join(lines[max(0, idx - 2): idx + 3])
+    keys = list(PERIOD_KEYS_8 if re.search(r"restructur", header_block, re.I) else PERIOD_KEYS)
+    if re.search(r"cumulative", header_block, re.I):
+        keys[6] = "ret_si_cum"
     for ln in lines[idx + 1: idx + 10]:
         toks = _tokens(ln)
         if len(toks) < 7:
@@ -49,8 +56,12 @@ def parse_performance_lines(lines: list[str]) -> dict:
         target = "benchmark" if re.match(r"\s*benchmark", ln, re.I) else "fund"
         if out[target]:
             continue
-        keys = PERIOD_KEYS_8 if len(toks) >= 8 else PERIOD_KEYS
-        vals = {k: parse_pct(t) for k, t in zip(keys, toks)}
+        if len(toks) != len(keys):
+            # Column count disagrees with the header — map the standard 7
+            # only; never guess which column an extra/missing token belongs to.
+            vals = {k: parse_pct(t) for k, t in zip(keys[:7], toks[:7])}
+        else:
+            vals = {k: parse_pct(t) for k, t in zip(keys, toks)}
         out[target] = vals
         if out["fund"] and out["benchmark"]:
             break

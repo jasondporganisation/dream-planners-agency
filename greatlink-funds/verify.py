@@ -81,11 +81,12 @@ def check_buttons(funds, session, online: bool) -> int:
             try:
                 r = session.get(url, timeout=60, stream=True)
                 ok = r.status_code == 200 and "pdf" in (r.headers.get("content-type") or "").lower()
+                why = f"HTTP {r.status_code} {r.headers.get('content-type', '')}"
                 r.close()
-            except Exception:  # noqa: BLE001
-                ok = False
+            except Exception as err:  # noqa: BLE001
+                ok, why = False, f"{type(err).__name__}: {str(err)[:80]}"
             if not ok:
-                bad_online.append(f["name"])
+                bad_online.append(f"{f['name']} ({why})")
     print(f"  local PDFs valid: {len(funds) - len(missing_local)}/{len(funds)}"
           + (f"  missing: {missing_local}" if missing_local else ""))
     print(f"  online links: {'checked' if online else 'skipped (--quick)'}"

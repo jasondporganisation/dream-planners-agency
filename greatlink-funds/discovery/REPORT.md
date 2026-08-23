@@ -27,8 +27,14 @@ site visitor doesn't receive. Screener and detail also work with a plain `reques
 
 ## Field-name semantics (verified against NAV recomputation, 3 funds, to 2 dp)
 
-- Screener `YTD`, `ReturnM1/M3/M6/M12` = **cumulative**; `ReturnM36/M60/M120/MAX` = **annualised**.
+- Screener `YTD`, `ReturnM1/M3/M6/M12` = **cumulative**; `ReturnM36/M60/M120` = **annualised**.
   Detail `Performance.AnnualizedReturn` is the same block (same numbers).
+- **`ReturnMAX` is NOT the since-inception return** (found in review, 24 Aug): it matches neither the
+  fact sheets nor the fund's own history (e.g. Global Disruptive Innovation 0.63 vs fact sheet 4.41).
+  Since-inception (ann. + cum.) is computed from the total-return history, which reproduces every
+  fact sheet's SI figure (39/40; Income Bond differs by 0.2 pp, logged).
+- **Total-return series:** use `ts_type=ts` (distributions reinvested) for all return maths;
+  `ts_type=nav` is price-only and understates dividend-paying funds by several pp.
 - Detail `Performance.CumulativePerformance` is **wrong/unrelated** (e.g. Global Disruptive Innovation
   YTD −14.0% vs NAV-derived +5.64%; Global Equity −4.5% vs +9.51%). Will be ignored.
 - Cumulative 3Y/5Y/10Y/SI (brief wants `ret_5y_cum` alongside `ret_5y_ann`) will be **recomputed

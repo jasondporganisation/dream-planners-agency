@@ -94,34 +94,6 @@ def parse_asat_date(value) -> str | None:
     return None
 
 
-def classify_period_label(label: str) -> str | None:
-    """Map a performance-table column label to a canonical return key.
-
-    Handles annualised-vs-cumulative wording explicitly; returns keys like
-    'ret_ytd', 'ret_3m', 'ret_5y_ann', 'ret_5y_cum', 'ret_si_ann'.
-    """
-    t = str(label).strip().lower().replace("‑", "-")
-    if not t:
-        return None
-    ann = bool(re.search(r"annuali[sz]ed|ann\.?\b|p\.?a\.?", t))
-    cum = bool(re.search(r"cumulative|cum\.?\b|total return", t))
-    if re.search(r"\bytd\b|year[\s-]*to[\s-]*date", t):
-        return "ret_ytd"
-    if re.search(r"since\s+incep|\bsi\b|inception", t):
-        return "ret_si_cum" if cum else "ret_si_ann"
-    m = re.search(r"(\d+)\s*(?:-|\s)?\s*(month|mth|mo\b|m\b)", t)
-    if m:
-        return f"ret_{int(m.group(1))}m"
-    m = re.search(r"(\d+)\s*(?:-|\s)?\s*(year|yr|y\b)", t)
-    if m:
-        n = int(m.group(1))
-        if n == 1:
-            return "ret_1y"
-        suffix = "_cum" if cum and not ann else "_ann"
-        return f"ret_{n}y{suffix}"
-    return None
-
-
 def slugify(name: str) -> str:
     """'GreatLink Global Equity Fund' -> 'greatlink-global-equity-fund'."""
     s = name.lower()

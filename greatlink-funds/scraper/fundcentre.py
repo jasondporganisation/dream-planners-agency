@@ -12,10 +12,11 @@ Endpoints (all plain JSON, verified Aug 2026, see discovery/REPORT.md):
                     &currency_id=BAS&ts_type=ts|nav&from_date=..&to_date=..   (no auth)
              ts = total-return index (distributions reinvested), nav = bid price
 
-Field semantics (verified against NAV recomputation): screener YTD/ReturnM1/M3/
-M6/M12 are cumulative; ReturnM36/M60/M120/MAX are annualised. The detail
-endpoint's "CumulativePerformance" block does NOT agree with NAV history and is
-ignored; its "AnnualizedReturn" block equals the screener figures.
+Field semantics (verified against total-return recomputation, all 40 funds):
+screener YTD/ReturnM1/M3/M6/M12 are cumulative; ReturnM36/M60/M120 are
+annualised. "ReturnMAX" is NOT since-inception (unverifiable, ignored) — SI is
+computed from the history. The detail endpoint's "CumulativePerformance" block
+does NOT agree with the history and is ignored.
 """
 
 from __future__ import annotations
@@ -31,8 +32,11 @@ PRODUCT_RANGE = "GreatLink funds"
 SCREENER_RETURN_MAP = {   # screener field -> our key
     "YTD": "ret_ytd", "ReturnM1": "ret_1m", "ReturnM3": "ret_3m", "ReturnM6": "ret_6m",
     "ReturnM12": "ret_1y", "ReturnM36": "ret_3y_ann", "ReturnM60": "ret_5y_ann",
-    "ReturnM120": "ret_10y_ann", "ReturnMAX": "ret_si_ann",
+    "ReturnM120": "ret_10y_ann",
 }
+# NOTE: the screener's "ReturnMAX" is NOT the since-inception return (it matches
+# neither the fact sheets nor the fund's own history). Since-inception figures
+# are computed from the total-return history instead (returns_from_history).
 
 
 def _num(v):
@@ -199,7 +203,6 @@ def extract_detail(detail: dict) -> dict:
                  "phs_url": doc("ProductHighlights")[0], "prospectus_url": doc("Prospectus")[0],
                  "annual_report_url": doc("AnnualReport")[0],
                  "semi_annual_report_url": doc("SemiAnnualReport")[0]},
-        "annualized_block": perf.get("AnnualizedReturn") or {},
     }
 
 
@@ -246,4 +249,14 @@ def returns_from_history(history: dict[str, float], as_of: str | None = None) ->
     px, d = price_on_or_before(history, f"{end_d.year - 1}-12-31")
     if px is not None and d >= f"{end_d.year - 1}-12-15":
         out["ret_ytd"] = round((end_px / px - 1) * 100, 2)
+    # Since inception: from the first point of the series (the fund's launch
+    # price; the series starts at the inception date). Annualised only once the
+    # fund is at least one year old — matches fact sheet practice.
+    first_px = history[first]
+    years = (end_d - date.fromisoformat(first)).days / 365.25
+    if years > 0 and first_px:
+        out["ret_si_cum"] = round((end_px / first_px - 1) * 100, 2)
+        out["history_start"] = first
+        if years >= 1:
+            out["ret_si_ann"] = round(((end_px / first_px) ** (1 / years) - 1) * 100, 2)
     return out

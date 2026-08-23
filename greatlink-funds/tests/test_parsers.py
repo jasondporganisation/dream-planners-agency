@@ -9,8 +9,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 from scraper.factsheet_pdf import parse_page_facts, parse_performance_lines
 from scraper.fundcentre import returns_from_history, normalize_screener_row
 from scraper.fundlist import parse_fund_list_html, completeness_report, EXPECTED_FUNDS
-from scraper.util import (classify_period_label, parse_asat_date,
-                          parse_money_millions, parse_pct, slugify)
+from scraper.util import parse_asat_date, parse_money_millions, parse_pct, slugify
 
 
 class TestParsePct(unittest.TestCase):
@@ -40,40 +39,6 @@ class TestParsePct(unittest.TestCase):
 
     def test_garbage_is_none_not_zero(self):
         self.assertIsNone(parse_pct("abc"))
-
-
-class TestPeriodLabels(unittest.TestCase):
-    def test_ytd(self):
-        self.assertEqual(classify_period_label("YTD"), "ret_ytd")
-        self.assertEqual(classify_period_label("Year to Date"), "ret_ytd")
-
-    def test_months(self):
-        self.assertEqual(classify_period_label("3 Month"), "ret_3m")
-        self.assertEqual(classify_period_label("6-month"), "ret_6m")
-
-    def test_one_year(self):
-        self.assertEqual(classify_period_label("1 Year"), "ret_1y")
-
-    def test_annualised_default_for_multi_year(self):
-        self.assertEqual(classify_period_label("5 Year"), "ret_5y_ann")
-        self.assertEqual(classify_period_label("3 Year (p.a.)"), "ret_3y_ann")
-        self.assertEqual(classify_period_label("10 Years Annualised"), "ret_10y_ann")
-
-    def test_cumulative_is_distinct(self):
-        self.assertEqual(classify_period_label("5 Year Cumulative"), "ret_5y_cum")
-        self.assertEqual(classify_period_label("3-yr cum."), "ret_3y_cum")
-
-    def test_annualised_beats_cumulative_when_both(self):
-        # "annualised" wording wins if a label carries both words
-        self.assertEqual(classify_period_label("5 Year annualised total return"),
-                         "ret_5y_ann")
-
-    def test_since_inception(self):
-        self.assertEqual(classify_period_label("Since Inception (p.a.)"), "ret_si_ann")
-        self.assertEqual(classify_period_label("Since inception cumulative"), "ret_si_cum")
-
-    def test_unknown(self):
-        self.assertIsNone(classify_period_label("Fund Objective"))
 
 
 class TestDates(unittest.TestCase):
@@ -156,15 +121,42 @@ class TestFactsheetPerformance(unittest.TestCase):
         self.assertEqual(out["fund"]["ret_1y"], 20.78)
         self.assertEqual(out["benchmark"]["ret_1y"], 19.86)
 
-    def test_young_fund_dashes_and_negatives(self):
-        lines = ["3 Mths 6 Mths 1 Year 3 Years* 5 Years* 10 Years* Since Inception*",
+    def test_young_fund_dashes_negatives_and_cumulative_si(self):
+        # Funds under a year old print "Since Inception (Cumulative)" — must not land in the annualised key
+        lines = ["Since Inception",
+                 "3 Mths 6 Mths 1 Year 3 Years* 5 Years* 10 Years*",
+                 "(Cumulative)",
                  "GreatLink Singapore Physical Gold Fund -11.76% - - - - - -21.05%",
                  "Benchmark -11.57% - - - - - -17.43%"]
         out = parse_performance_lines(lines)
         self.assertEqual(out["fund"]["ret_3m"], -11.76)
         self.assertIsNone(out["fund"]["ret_1y"])            # '-' -> None, never 0
         self.assertIsNone(out["fund"]["ret_5y_ann"])
-        self.assertEqual(out["fund"]["ret_si_ann"], -21.05)
+        self.assertEqual(out["fund"]["ret_si_cum"], -21.05)
+        self.assertNotIn("ret_si_ann", out["fund"])
+        self.assertEqual(out["benchmark"]["ret_si_cum"], -17.43)
+
+    def test_eight_column_header_with_seven_token_row_never_guesses(self):
+        lines = ["Since Since", "3 Mths 6 Mths 1 Year 3 Years* 5 Years* 10 Years*", "Inception* Restructuring*",
+                 "Some Fund 1.00% 2.00% 3.00% 4.00% 5.00% 6.00% 7.00%"]
+        out = parse_performance_lines(lines)
+        self.assertEqual(out["fund"]["ret_si_ann"], 7.0)
+        self.assertNotIn("ret_sr_ann", out["fund"])
+
+    def test_real_multi_fund_pdf_page_selection(self):
+        """Uses the downloaded Lifestyle Portfolios sheet if present (5 portfolios in one PDF)."""
+        from pathlib import Path as _P
+        from scraper.factsheet_pdf import parse_factsheet
+        pdf = _P(__file__).resolve().parent.parent / "factsheets" / "greatlink-lifestyle-balanced-portfolio.pdf"
+        if not pdf.exists():
+            self.skipTest("run refresh.py first to download fact sheets")
+        bal = parse_factsheet(pdf, "F23")
+        sec = parse_factsheet(pdf, "F21")
+        self.assertNotEqual(bal["page"], sec["page"])
+        self.assertEqual(bal["facts"]["fund_code"], "F23")
+        self.assertEqual(sec["facts"]["fund_code"], "F21")
+        self.assertNotEqual(bal["fund"]["ret_1y"], sec["fund"]["ret_1y"])
+        self.assertTrue(bal["benchmark"])
 
     def test_no_table(self):
         self.assertEqual(parse_performance_lines(["Fund Objective", "blah"]), {"fund": {}, "benchmark": {}})
@@ -208,6 +200,20 @@ class TestReturnMaths(unittest.TestCase):
         self.assertAlmostEqual(r["ret_3y_ann"], 10.0, places=1)
         self.assertAlmostEqual(r["ret_3y_cum"], 33.1, places=0)
         self.assertNotIn("ret_5y_ann", r)             # history too short -> absent, not invented
+        self.assertAlmostEqual(r["ret_si_ann"], 10.0, places=1)   # since inception from first point
+        self.assertAlmostEqual(r["ret_si_cum"], r["ret_3y_cum"], places=1)
+        self.assertEqual(r["history_start"], "2023-08-20")
+
+    def test_young_fund_has_cumulative_si_only(self):
+        r = returns_from_history({"2026-01-23": 100.0, "2026-06-30": 79.0}, "2026-06-30")
+        self.assertEqual(r["ret_si_cum"], -21.0)
+        self.assertNotIn("ret_si_ann", r)
+
+    def test_on_or_before_fallback(self):
+        h = self._hist()
+        del h["2024-08-20"]; del h["2024-08-19"]          # weekend-style gap
+        r = returns_from_history(h, "2024-08-20")
+        self.assertEqual(r["as_of"], "2024-08-18")
 
     def test_as_of_date_uses_last_price_on_or_before(self):
         h = self._hist()
@@ -230,14 +236,14 @@ class TestScreenerRow(unittest.TestCase):
     def test_annualised_vs_cumulative_labels(self):
         row = {"SecId": "F0HKG07068", "FundCode": "F07", "FundName": "GreatLink Global Equity Fund",
                "Currency": "SGD", "FundingSource": ["Cash", "SRS"], "YTD": 9.50959, "ReturnM12": 20.62,
-               "ReturnM36": 18.97, "ReturnM60": 8.88, "ReturnM120": 10.86, "ReturnMAX": 3.53,
+               "ReturnM36": 18.97, "ReturnM60": 8.88, "ReturnM120": 10.86, "ReturnMAX": 3.53,  # MAX != SI
                "LastPrice": 2.568, "LastPriceDate": 1787184000, "InceptionDate": 965088000,
                "RiskLevel": "4 - Higher Risk"}
         n = normalize_screener_row(row)
         self.assertEqual(n["returns"]["ret_ytd"], 9.50959)       # cumulative
         self.assertEqual(n["returns"]["ret_1y"], 20.62)          # cumulative
         self.assertEqual(n["returns"]["ret_5y_ann"], 8.88)       # annualised
-        self.assertNotIn("ret_5y_cum", n["returns"])             # never derived here
+        self.assertNotIn("ret_si_ann", n["returns"])             # ReturnMAX is NOT since-inception; SI comes from history
         self.assertEqual(n["price_date"], "2026-08-20")
         self.assertEqual(n["inception_date"], "2000-08-01")
         self.assertEqual(n["eligibility"], {"cash": True, "cpf_oa": False, "cpf_sa": False, "srs": True})

@@ -16,8 +16,10 @@ data), Great Eastern's daily price feed, and the official monthly fact sheets.
 Returns are bid-to-bid in SGD, net of fund management fees, excluding policy
 charges. YTD / 1M / 3M / 6M / 1Y are cumulative; 3Y / 5Y / 10Y / since-inception
 are annualised (cumulative versions are also stored and shown in the detail
-panel). Nothing is ever estimated: a figure the source does not publish shows
-as "n/a – launched MMM YYYY".
+panel). Since-inception returns are computed from each fund's full total-return
+history (the Fund Centre's own "max" field is not a since-inception figure).
+Nothing is ever estimated: a figure the source does not publish shows as
+"n/a – launched MMM YYYY".
 
 ---
 
@@ -79,7 +81,8 @@ That single command:
 A failed run never corrupts the previous good dataset — files are written to a
 temp file and swapped only at the end. Fact sheets already downloaded today are
 not re-downloaded, so re-running is safe. `python refresh.py --no-pdf` skips
-the PDFs for a quick numbers-only update.
+the downloads for a quick numbers-only update (fact sheets already in
+`factsheets/` are still used).
 
 **Always glance at `data/refresh_report.md` after a refresh.** "Failures /
 notes: none" and a short discrepancy list means all is well.
@@ -98,7 +101,7 @@ present, online link answering); opens the dashboard in a headless browser,
 fails on any script error and saves screenshots to `verify/`. Add fund names to
 check others: `python verify.py "GreatLink Lion India Fund"`.
 
-Parser unit tests: `python -m unittest discover tests -v` (42 tests).
+Parser and return-maths unit tests: `python -m unittest discover tests -v` (38 tests).
 
 ## Using the dashboard
 
@@ -123,8 +126,10 @@ as at** (daily, from the Fund Centre) and **fact sheets as at** (monthly).
   Product Highlights Sheet, Prospectus and Great Eastern site links.
 - **Fact sheets: Local folder / Online links** (top right) — "Local folder"
   opens the PDFs saved in `factsheets/` next to the dashboard (works offline).
-  Choose "Online links" if you only have `dashboard.html` by itself (e.g. it
-  was emailed to you). The choice is remembered.
+  "Online links" opens the Great Eastern / Morningstar copies instead. The
+  dashboard picks "Local folder" automatically while it sits in the folder it
+  was built in, and "Online links" when the file has been moved, copied or
+  emailed on its own; your choice is remembered once you change it.
 - **Client view** hides the internal columns (IDs, data sources, missing-field
   notes) before you turn the screen to a client.
 - A yellow banner appears automatically if the data is more than 45 days old.
