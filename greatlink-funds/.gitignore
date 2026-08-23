@@ -2,3 +2,7 @@
 __pycache__/
 *.pyc
 discovery/out/
+data/history/*.json
+factsheets/*.pdf
+factsheets/*.part
+verify/

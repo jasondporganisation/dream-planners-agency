@@ -1,0 +1,1278 @@
+{
+  "as_at": "2026-07-31",
+  "generated_at": "2026-08-23T00:00:00+00:00",
+  "sample": true,
+  "convention": "Returns are bid-to-bid in the fund currency, net of fund management fees, excluding policy-level charges.",
+  "funds": [
+    {
+      "fund_id": "SAMPLE_GEQ",
+      "name": "GreatLink Global Equity Fund",
+      "category": "Global Equity",
+      "ge_page_url": "https://www.greateasternlife.com/sg/en/personal-insurance/our-products/wealth-accumulation/investment-linked-funds/greatlink-funds.html",
+      "fundcentre_url": "https://www.greateasternlife.com/sg/en/personal-insurance/our-products/wealth-accumulation/investment-linked-funds/ilp-fund-centre.html#/detail?id=SAMPLE_GEQ",
+      "manager": "Sample Global Managers",
+      "underlying_fund": null,
+      "inception_date": "1999-07-01",
+      "fund_size_m": 380,
+      "currency": "SGD",
+      "mgmt_fee_pct": 1.5,
+      "risk_class": "Higher risk – broadly diversified",
+      "eligibility": {
+        "cpf_oa": false,
+        "cpf_sa": false,
+        "srs": true,
+        "cash": true
+      },
+      "bid_price": 2.1,
+      "offer_price": null,
+      "price_date": "2026-07-31",
+      "returns": {
+        "ret_ytd": 7.8,
+        "ret_1m": 1.2,
+        "ret_3m": 3.4,
+        "ret_6m": 5.9,
+        "ret_1y": 12.4,
+        "ret_3y_ann": 11.6,
+        "ret_3y_cum": 39.0,
+        "ret_5y_ann": 9.8,
+        "ret_5y_cum": 59.6,
+        "ret_10y_ann": 8.2,
+        "ret_si_ann": 4.4,
+        "ret_si_cum": null
+      },
+      "benchmark_name": "MSCI World Index (sample)",
+      "benchmark_returns": {
+        "ret_ytd": 8.1,
+        "ret_1y": 13.0,
+        "ret_3y_ann": 12.1,
+        "ret_5y_ann": 10.4,
+        "ret_10y_ann": 8.8
+      },
+      "calendar_year_returns": {
+        "2016": 6.1,
+        "2017": 18.2,
+        "2018": -7.4,
+        "2019": 24.5,
+        "2020": 14.2,
+        "2021": 20.3,
+        "2022": -18.4,
+        "2023": 19.8,
+        "2024": 15.6,
+        "2025": 10.9
+      },
+      "calendar_year_benchmark": {},
+      "allocation_asset": [
+        {
+          "label": "Equities",
+          "pct": 97.6
+        },
+        {
+          "label": "Cash",
+          "pct": 2.4
+        }
+      ],
+      "allocation_geo": [
+        {
+          "label": "United States",
+          "pct": 62.1
+        },
+        {
+          "label": "Europe ex UK",
+          "pct": 13.4
+        },
+        {
+          "label": "Japan",
+          "pct": 6.2
+        },
+        {
+          "label": "United Kingdom",
+          "pct": 3.8
+        },
+        {
+          "label": "Emerging Markets",
+          "pct": 8.9
+        },
+        {
+          "label": "Others",
+          "pct": 5.6
+        }
+      ],
+      "allocation_sector": [
+        {
+          "label": "Information Technology",
+          "pct": 26.4
+        },
+        {
+          "label": "Financials",
+          "pct": 15.2
+        },
+        {
+          "label": "Health Care",
+          "pct": 11.8
+        },
+        {
+          "label": "Consumer Discretionary",
+          "pct": 10.6
+        },
+        {
+          "label": "Industrials",
+          "pct": 10.1
+        },
+        {
+          "label": "Others",
+          "pct": 25.9
+        }
+      ],
+      "top_holdings": [
+        {
+          "name": "Sample Holding 1",
+          "pct": 4.8
+        },
+        {
+          "name": "Sample Holding 2",
+          "pct": 3.9
+        },
+        {
+          "name": "Sample Holding 3",
+          "pct": 3.1
+        },
+        {
+          "name": "Sample Holding 4",
+          "pct": 2.7
+        },
+        {
+          "name": "Sample Holding 5",
+          "pct": 2.4
+        },
+        {
+          "name": "Sample Holding 6",
+          "pct": 2.1
+        },
+        {
+          "name": "Sample Holding 7",
+          "pct": 1.9
+        },
+        {
+          "name": "Sample Holding 8",
+          "pct": 1.8
+        },
+        {
+          "name": "Sample Holding 9",
+          "pct": 1.6
+        },
+        {
+          "name": "Sample Holding 10",
+          "pct": 1.5
+        }
+      ],
+      "objective": "SAMPLE objective text — replaced by the scraped fund objective after the first refresh.",
+      "docs": {
+        "factsheet_url": null,
+        "factsheet_local": null,
+        "factsheet_as_at": null,
+        "phs_url": null,
+        "other": []
+      },
+      "sources": {
+        "returns": "SAMPLE",
+        "fetched_at": "2026-08-23T00:00:00+00:00"
+      },
+      "missing_fields": []
+    },
+    {
+      "fund_id": "F0HKG07069_F19",
+      "name": "GreatLink Global Equity Alpha Fund",
+      "category": "Global Equity",
+      "ge_page_url": "https://www.greateasternlife.com/sg/en/personal-insurance/our-products/wealth-accumulation/investment-linked-funds/greatlink-funds.html",
+      "fundcentre_url": "https://www.greateasternlife.com/sg/en/personal-insurance/our-products/wealth-accumulation/investment-linked-funds/ilp-fund-centre.html#/detail?id=F0HKG07069_F19",
+      "manager": "Sample Asset Management (placeholder)",
+      "underlying_fund": null,
+      "inception_date": "2007-05-02",
+      "fund_size_m": 290,
+      "currency": "SGD",
+      "mgmt_fee_pct": 1.5,
+      "risk_class": "Higher risk – broadly diversified",
+      "eligibility": {
+        "cpf_oa": false,
+        "cpf_sa": false,
+        "srs": true,
+        "cash": true
+      },
+      "bid_price": 1.95,
+      "offer_price": null,
+      "price_date": "2026-07-31",
+      "returns": {
+        "ret_ytd": 8.4,
+        "ret_1m": 1.4,
+        "ret_3m": 3.8,
+        "ret_6m": 6.3,
+        "ret_1y": 13.1,
+        "ret_3y_ann": 12.2,
+        "ret_3y_cum": 41.2,
+        "ret_5y_ann": 10.4,
+        "ret_5y_cum": 64.0,
+        "ret_10y_ann": 8.9,
+        "ret_si_ann": 5.6,
+        "ret_si_cum": null
+      },
+      "benchmark_name": "MSCI World Index (sample)",
+      "benchmark_returns": {
+        "ret_ytd": 8.1,
+        "ret_1y": 13.0,
+        "ret_3y_ann": 12.1,
+        "ret_5y_ann": 10.4
+      },
+      "calendar_year_returns": {
+        "2016": 7.0,
+        "2017": 19.4,
+        "2018": -8.1,
+        "2019": 26.0,
+        "2020": 15.0,
+        "2021": 21.8,
+        "2022": -17.2,
+        "2023": 21.4,
+        "2024": 16.8,
+        "2025": 11.5
+      },
+      "calendar_year_benchmark": {},
+      "allocation_asset": [],
+      "allocation_geo": [],
+      "allocation_sector": [],
+      "top_holdings": [],
+      "objective": "SAMPLE objective text — replaced by the scraped fund objective after the first refresh.",
+      "docs": {
+        "factsheet_url": null,
+        "factsheet_local": null,
+        "factsheet_as_at": null,
+        "phs_url": null,
+        "other": []
+      },
+      "sources": {
+        "returns": "SAMPLE",
+        "fetched_at": "2026-08-23T00:00:00+00:00"
+      },
+      "missing_fields": []
+    },
+    {
+      "fund_id": "SAMPLE_TECH",
+      "name": "GreatLink Global Technology Fund",
+      "category": "Global Equity",
+      "ge_page_url": "https://www.greateasternlife.com/sg/en/personal-insurance/our-products/wealth-accumulation/investment-linked-funds/greatlink-funds.html",
+      "fundcentre_url": "https://www.greateasternlife.com/sg/en/personal-insurance/our-products/wealth-accumulation/investment-linked-funds/ilp-fund-centre.html#/detail?id=SAMPLE_TECH",
+      "manager": "Sample Asset Management (placeholder)",
+      "underlying_fund": null,
+      "inception_date": "2000-01-15",
+      "fund_size_m": 340,
+      "currency": "SGD",
+      "mgmt_fee_pct": 1.5,
+      "risk_class": "Higher risk – narrowly focused",
+      "eligibility": {
+        "cpf_oa": false,
+        "cpf_sa": false,
+        "srs": true,
+        "cash": true
+      },
+      "bid_price": 1.35,
+      "offer_price": null,
+      "price_date": "2026-07-31",
+      "returns": {
+        "ret_ytd": 12.6,
+        "ret_1m": 2.1,
+        "ret_3m": 5.6,
+        "ret_6m": 9.8,
+        "ret_1y": 18.9,
+        "ret_3y_ann": 19.4,
+        "ret_3y_cum": 70.2,
+        "ret_5y_ann": 14.1,
+        "ret_5y_cum": 93.4,
+        "ret_10y_ann": 13.8,
+        "ret_si_ann": 1.2,
+        "ret_si_cum": null
+      },
+      "benchmark_name": null,
+      "benchmark_returns": {},
+      "calendar_year_returns": {
+        "2016": 9.8,
+        "2017": 36.1,
+        "2018": -9.2,
+        "2019": 42.0,
+        "2020": 38.4,
+        "2021": 24.5,
+        "2022": -33.1,
+        "2023": 42.7,
+        "2024": 28.3,
+        "2025": 16.4
+      },
+      "calendar_year_benchmark": {},
+      "allocation_asset": [],
+      "allocation_geo": [],
+      "allocation_sector": [
+        {
+          "label": "Software",
+          "pct": 34.2
+        },
+        {
+          "label": "Semiconductors",
+          "pct": 27.8
+        },
+        {
+          "label": "Hardware",
+          "pct": 14.6
+        },
+        {
+          "label": "Internet & Media",
+          "pct": 13.9
+        },
+        {
+          "label": "Others",
+          "pct": 9.5
+        }
+      ],
+      "top_holdings": [],
+      "objective": "SAMPLE objective text — replaced by the scraped fund objective after the first refresh.",
+      "docs": {
+        "factsheet_url": null,
+        "factsheet_local": null,
+        "factsheet_as_at": null,
+        "phs_url": null,
+        "other": []
+      },
+      "sources": {
+        "returns": "SAMPLE",
+        "fetched_at": "2026-08-23T00:00:00+00:00"
+      },
+      "missing_fields": []
+    },
+    {
+      "fund_id": "F00001DUL4_F224",
+      "name": "GreatLink Global Disruptive Innovation Fund",
+      "category": "Global Equity",
+      "ge_page_url": "https://www.greateasternlife.com/sg/en/personal-insurance/our-products/wealth-accumulation/investment-linked-funds/greatlink-funds.html",
+      "fundcentre_url": "https://www.greateasternlife.com/sg/en/personal-insurance/our-products/wealth-accumulation/investment-linked-funds/ilp-fund-centre.html#/detail?id=F00001DUL4_F224",
+      "manager": "Sample Asset Management (placeholder)",
+      "underlying_fund": null,
+      "inception_date": "2021-03-15",
+      "fund_size_m": 120,
+      "currency": "SGD",
+      "mgmt_fee_pct": 1.6,
+      "risk_class": "Higher risk – narrowly focused",
+      "eligibility": {
+        "cpf_oa": false,
+        "cpf_sa": false,
+        "srs": true,
+        "cash": true
+      },
+      "bid_price": 0.88,
+      "offer_price": null,
+      "price_date": "2026-07-31",
+      "returns": {
+        "ret_ytd": 10.9,
+        "ret_1m": 1.8,
+        "ret_3m": 4.9,
+        "ret_6m": 8.4,
+        "ret_1y": 16.2,
+        "ret_3y_ann": 8.7,
+        "ret_3y_cum": 28.4,
+        "ret_5y_ann": null,
+        "ret_5y_cum": null,
+        "ret_10y_ann": null,
+        "ret_si_ann": -2.3,
+        "ret_si_cum": null
+      },
+      "benchmark_name": null,
+      "benchmark_returns": {},
+      "calendar_year_returns": {
+        "2022": -29.6,
+        "2023": 18.4,
+        "2024": 12.1,
+        "2025": 9.7
+      },
+      "calendar_year_benchmark": {},
+      "allocation_asset": [],
+      "allocation_geo": [],
+      "allocation_sector": [],
+      "top_holdings": [],
+      "objective": "SAMPLE objective text — replaced by the scraped fund objective after the first refresh.",
+      "docs": {
+        "factsheet_url": null,
+        "factsheet_local": null,
+        "factsheet_as_at": null,
+        "phs_url": null,
+        "other": []
+      },
+      "sources": {
+        "returns": "SAMPLE",
+        "fetched_at": "2026-08-23T00:00:00+00:00"
+      },
+      "missing_fields": []
+    },
+    {
+      "fund_id": "SAMPLE_APEQ",
+      "name": "GreatLink Asia Pacific Equity Fund",
+      "category": "Regional Equity",
+      "ge_page_url": "https://www.greateasternlife.com/sg/en/personal-insurance/our-products/wealth-accumulation/investment-linked-funds/greatlink-funds.html",
+      "fundcentre_url": "https://www.greateasternlife.com/sg/en/personal-insurance/our-products/wealth-accumulation/investment-linked-funds/ilp-fund-centre.html#/detail?id=SAMPLE_APEQ",
+      "manager": "Sample Asset Management (placeholder)",
+      "underlying_fund": null,
+      "inception_date": "1999-04-26",
+      "fund_size_m": 270,
+      "currency": "SGD",
+      "mgmt_fee_pct": 1.5,
+      "risk_class": "Higher risk – broadly diversified",
+      "eligibility": {
+        "cpf_oa": false,
+        "cpf_sa": false,
+        "srs": true,
+        "cash": true
+      },
+      "bid_price": 2.4,
+      "offer_price": null,
+      "price_date": "2026-07-31",
+      "returns": {
+        "ret_ytd": 10.2,
+        "ret_1m": 1.6,
+        "ret_3m": 4.2,
+        "ret_6m": 7.7,
+        "ret_1y": 15.6,
+        "ret_3y_ann": 6.8,
+        "ret_3y_cum": 21.8,
+        "ret_5y_ann": 5.1,
+        "ret_5y_cum": 28.2,
+        "ret_10y_ann": 6.2,
+        "ret_si_ann": 5.4,
+        "ret_si_cum": null
+      },
+      "benchmark_name": null,
+      "benchmark_returns": {},
+      "calendar_year_returns": {
+        "2016": 5.7,
+        "2017": 29.8,
+        "2018": -10.4,
+        "2019": 15.6,
+        "2020": 18.2,
+        "2021": -1.8,
+        "2022": -15.4,
+        "2023": 6.2,
+        "2024": 12.7,
+        "2025": 13.8
+      },
+      "calendar_year_benchmark": {},
+      "allocation_asset": [],
+      "allocation_geo": [
+        {
+          "label": "China",
+          "pct": 24.6
+        },
+        {
+          "label": "Taiwan",
+          "pct": 16.8
+        },
+        {
+          "label": "India",
+          "pct": 15.2
+        },
+        {
+          "label": "Korea",
+          "pct": 12.4
+        },
+        {
+          "label": "Singapore",
+          "pct": 8.1
+        },
+        {
+          "label": "Others",
+          "pct": 22.9
+        }
+      ],
+      "allocation_sector": [],
+      "top_holdings": [],
+      "objective": "SAMPLE objective text — replaced by the scraped fund objective after the first refresh.",
+      "docs": {
+        "factsheet_url": null,
+        "factsheet_local": null,
+        "factsheet_as_at": null,
+        "phs_url": null,
+        "other": []
+      },
+      "sources": {
+        "returns": "SAMPLE",
+        "fetched_at": "2026-08-23T00:00:00+00:00"
+      },
+      "missing_fields": []
+    },
+    {
+      "fund_id": "SAMPLE_GEM",
+      "name": "GreatLink Global Emerging Markets Equity Fund",
+      "category": "Regional Equity",
+      "ge_page_url": "https://www.greateasternlife.com/sg/en/personal-insurance/our-products/wealth-accumulation/investment-linked-funds/greatlink-funds.html",
+      "fundcentre_url": "https://www.greateasternlife.com/sg/en/personal-insurance/our-products/wealth-accumulation/investment-linked-funds/ilp-fund-centre.html#/detail?id=SAMPLE_GEM",
+      "manager": "Sample Asset Management (placeholder)",
+      "underlying_fund": null,
+      "inception_date": "2005-08-01",
+      "fund_size_m": 140,
+      "currency": "SGD",
+      "mgmt_fee_pct": 1.5,
+      "risk_class": "Higher risk – broadly diversified",
+      "eligibility": {
+        "cpf_oa": false,
+        "cpf_sa": false,
+        "srs": true,
+        "cash": true
+      },
+      "bid_price": 1.1,
+      "offer_price": null,
+      "price_date": "2026-07-31",
+      "returns": {
+        "ret_ytd": 9.1,
+        "ret_1m": 1.3,
+        "ret_3m": 3.9,
+        "ret_6m": 6.8,
+        "ret_1y": 13.8,
+        "ret_3y_ann": 4.9,
+        "ret_3y_cum": 15.4,
+        "ret_5y_ann": 3.6,
+        "ret_5y_cum": 19.3,
+        "ret_10y_ann": 4.8,
+        "ret_si_ann": 4.2,
+        "ret_si_cum": null
+      },
+      "benchmark_name": null,
+      "benchmark_returns": {},
+      "calendar_year_returns": {
+        "2016": 9.4,
+        "2017": 32.1,
+        "2018": -14.2,
+        "2019": 17.8,
+        "2020": 15.1,
+        "2021": -3.4,
+        "2022": -19.8,
+        "2023": 8.1,
+        "2024": 10.4,
+        "2025": 12.2
+      },
+      "calendar_year_benchmark": {},
+      "allocation_asset": [],
+      "allocation_geo": [],
+      "allocation_sector": [],
+      "top_holdings": [],
+      "objective": "SAMPLE objective text — replaced by the scraped fund objective after the first refresh.",
+      "docs": {
+        "factsheet_url": null,
+        "factsheet_local": null,
+        "factsheet_as_at": null,
+        "phs_url": null,
+        "other": []
+      },
+      "sources": {
+        "returns": "SAMPLE",
+        "fetched_at": "2026-08-23T00:00:00+00:00"
+      },
+      "missing_fields": []
+    },
+    {
+      "fund_id": "SAMPLE_SGEQ",
+      "name": "GreatLink Singapore Equities Fund",
+      "category": "Single Country Equity",
+      "ge_page_url": "https://www.greateasternlife.com/sg/en/personal-insurance/our-products/wealth-accumulation/investment-linked-funds/greatlink-funds.html",
+      "fundcentre_url": "https://www.greateasternlife.com/sg/en/personal-insurance/our-products/wealth-accumulation/investment-linked-funds/ilp-fund-centre.html#/detail?id=SAMPLE_SGEQ",
+      "manager": "Sample Asset Management (placeholder)",
+      "underlying_fund": null,
+      "inception_date": "1999-04-26",
+      "fund_size_m": 410,
+      "currency": "SGD",
+      "mgmt_fee_pct": 1.0,
+      "risk_class": "Higher risk – narrowly focused",
+      "eligibility": {
+        "cpf_oa": true,
+        "cpf_sa": false,
+        "srs": true,
+        "cash": true
+      },
+      "bid_price": 2.85,
+      "offer_price": null,
+      "price_date": "2026-07-31",
+      "returns": {
+        "ret_ytd": 9.5,
+        "ret_1m": 1.1,
+        "ret_3m": 3.6,
+        "ret_6m": 6.9,
+        "ret_1y": 14.2,
+        "ret_3y_ann": 8.1,
+        "ret_3y_cum": 26.3,
+        "ret_5y_ann": 7.3,
+        "ret_5y_cum": 42.2,
+        "ret_10y_ann": 5.6,
+        "ret_si_ann": 5.0,
+        "ret_si_cum": null
+      },
+      "benchmark_name": "Straits Times Index (sample)",
+      "benchmark_returns": {
+        "ret_ytd": 9.9,
+        "ret_1y": 14.8,
+        "ret_3y_ann": 8.6,
+        "ret_5y_ann": 7.8
+      },
+      "calendar_year_returns": {
+        "2016": 1.8,
+        "2017": 20.4,
+        "2018": -7.2,
+        "2019": 8.4,
+        "2020": -9.1,
+        "2021": 12.1,
+        "2022": 5.4,
+        "2023": 2.8,
+        "2024": 17.5,
+        "2025": 11.2
+      },
+      "calendar_year_benchmark": {},
+      "allocation_asset": [],
+      "allocation_geo": [],
+      "allocation_sector": [],
+      "top_holdings": [
+        {
+          "name": "Sample SG Bank A",
+          "pct": 9.8
+        },
+        {
+          "name": "Sample SG Bank B",
+          "pct": 9.1
+        },
+        {
+          "name": "Sample SG Bank C",
+          "pct": 8.4
+        },
+        {
+          "name": "Sample Telco",
+          "pct": 5.2
+        },
+        {
+          "name": "Sample REIT A",
+          "pct": 4.1
+        },
+        {
+          "name": "Sample Conglomerate",
+          "pct": 3.8
+        },
+        {
+          "name": "Sample REIT B",
+          "pct": 3.2
+        },
+        {
+          "name": "Sample Airline",
+          "pct": 2.9
+        },
+        {
+          "name": "Sample Agri Group",
+          "pct": 2.6
+        },
+        {
+          "name": "Sample Property Co",
+          "pct": 2.4
+        }
+      ],
+      "objective": "SAMPLE objective text — replaced by the scraped fund objective after the first refresh.",
+      "docs": {
+        "factsheet_url": null,
+        "factsheet_local": null,
+        "factsheet_as_at": null,
+        "phs_url": null,
+        "other": []
+      },
+      "sources": {
+        "returns": "SAMPLE",
+        "fetched_at": "2026-08-23T00:00:00+00:00"
+      },
+      "missing_fields": []
+    },
+    {
+      "fund_id": "SAMPLE_JPN",
+      "name": "GreatLink Lion Japan Growth Fund",
+      "category": "Single Country Equity",
+      "ge_page_url": "https://www.greateasternlife.com/sg/en/personal-insurance/our-products/wealth-accumulation/investment-linked-funds/greatlink-funds.html",
+      "fundcentre_url": "https://www.greateasternlife.com/sg/en/personal-insurance/our-products/wealth-accumulation/investment-linked-funds/ilp-fund-centre.html#/detail?id=SAMPLE_JPN",
+      "manager": "Sample Asset Management (placeholder)",
+      "underlying_fund": null,
+      "inception_date": "2006-04-01",
+      "fund_size_m": 90,
+      "currency": "SGD",
+      "mgmt_fee_pct": 1.5,
+      "risk_class": "Higher risk – narrowly focused",
+      "eligibility": {
+        "cpf_oa": false,
+        "cpf_sa": false,
+        "srs": true,
+        "cash": true
+      },
+      "bid_price": 1.05,
+      "offer_price": null,
+      "price_date": "2026-07-31",
+      "returns": {
+        "ret_ytd": 6.4,
+        "ret_1m": 0.9,
+        "ret_3m": 2.8,
+        "ret_6m": 4.9,
+        "ret_1y": 9.8,
+        "ret_3y_ann": 9.4,
+        "ret_3y_cum": 30.9,
+        "ret_5y_ann": 7.1,
+        "ret_5y_cum": 40.9,
+        "ret_10y_ann": 5.9,
+        "ret_si_ann": 2.1,
+        "ret_si_cum": null
+      },
+      "benchmark_name": null,
+      "benchmark_returns": {},
+      "calendar_year_returns": {
+        "2016": 2.1,
+        "2017": 18.9,
+        "2018": -12.4,
+        "2019": 19.2,
+        "2020": 8.8,
+        "2021": 4.2,
+        "2022": -10.1,
+        "2023": 22.4,
+        "2024": 14.8,
+        "2025": 7.9
+      },
+      "calendar_year_benchmark": {},
+      "allocation_asset": [],
+      "allocation_geo": [],
+      "allocation_sector": [],
+      "top_holdings": [],
+      "objective": "SAMPLE objective text — replaced by the scraped fund objective after the first refresh.",
+      "docs": {
+        "factsheet_url": null,
+        "factsheet_local": null,
+        "factsheet_as_at": null,
+        "phs_url": null,
+        "other": []
+      },
+      "sources": {
+        "returns": "SAMPLE",
+        "fetched_at": "2026-08-23T00:00:00+00:00"
+      },
+      "missing_fields": []
+    },
+    {
+      "fund_id": "SAMPLE_SUPREME",
+      "name": "GreatLink Global Supreme Fund",
+      "category": "Mixed Asset",
+      "ge_page_url": "https://www.greateasternlife.com/sg/en/personal-insurance/our-products/wealth-accumulation/investment-linked-funds/greatlink-funds.html",
+      "fundcentre_url": "https://www.greateasternlife.com/sg/en/personal-insurance/our-products/wealth-accumulation/investment-linked-funds/ilp-fund-centre.html#/detail?id=SAMPLE_SUPREME",
+      "manager": "Sample Asset Management (placeholder)",
+      "underlying_fund": null,
+      "inception_date": "1999-07-01",
+      "fund_size_m": 520,
+      "currency": "SGD",
+      "mgmt_fee_pct": 1.25,
+      "risk_class": "Medium to high risk – broadly diversified",
+      "eligibility": {
+        "cpf_oa": true,
+        "cpf_sa": false,
+        "srs": true,
+        "cash": true
+      },
+      "bid_price": 1.75,
+      "offer_price": null,
+      "price_date": "2026-07-31",
+      "returns": {
+        "ret_ytd": 6.1,
+        "ret_1m": 0.9,
+        "ret_3m": 2.7,
+        "ret_6m": 4.6,
+        "ret_1y": 9.4,
+        "ret_3y_ann": 7.2,
+        "ret_3y_cum": 23.2,
+        "ret_5y_ann": 6.0,
+        "ret_5y_cum": 33.8,
+        "ret_10y_ann": 5.3,
+        "ret_si_ann": 4.1,
+        "ret_si_cum": null
+      },
+      "benchmark_name": null,
+      "benchmark_returns": {},
+      "calendar_year_returns": {
+        "2016": 4.9,
+        "2017": 13.8,
+        "2018": -5.9,
+        "2019": 15.4,
+        "2020": 10.2,
+        "2021": 10.8,
+        "2022": -14.9,
+        "2023": 10.4,
+        "2024": 9.1,
+        "2025": 7.2
+      },
+      "calendar_year_benchmark": {},
+      "allocation_asset": [
+        {
+          "label": "Equities",
+          "pct": 58.4
+        },
+        {
+          "label": "Fixed Income",
+          "pct": 36.2
+        },
+        {
+          "label": "Cash",
+          "pct": 5.4
+        }
+      ],
+      "allocation_geo": [],
+      "allocation_sector": [],
+      "top_holdings": [],
+      "objective": "SAMPLE objective text — replaced by the scraped fund objective after the first refresh.",
+      "docs": {
+        "factsheet_url": null,
+        "factsheet_local": null,
+        "factsheet_as_at": null,
+        "phs_url": null,
+        "other": []
+      },
+      "sources": {
+        "returns": "SAMPLE",
+        "fetched_at": "2026-08-23T00:00:00+00:00"
+      },
+      "missing_fields": []
+    },
+    {
+      "fund_id": "SAMPLE_LSB",
+      "name": "GreatLink Lifestyle Balanced Portfolio",
+      "category": "Mixed Asset",
+      "ge_page_url": "https://www.greateasternlife.com/sg/en/personal-insurance/our-products/wealth-accumulation/investment-linked-funds/greatlink-funds.html",
+      "fundcentre_url": "https://www.greateasternlife.com/sg/en/personal-insurance/our-products/wealth-accumulation/investment-linked-funds/ilp-fund-centre.html#/detail?id=SAMPLE_LSB",
+      "manager": "Sample Asset Management (placeholder)",
+      "underlying_fund": null,
+      "inception_date": "2002-08-01",
+      "fund_size_m": 610,
+      "currency": "SGD",
+      "mgmt_fee_pct": 1.0,
+      "risk_class": "Medium risk – broadly diversified",
+      "eligibility": {
+        "cpf_oa": false,
+        "cpf_sa": false,
+        "srs": true,
+        "cash": true
+      },
+      "bid_price": 1.62,
+      "offer_price": null,
+      "price_date": "2026-07-31",
+      "returns": {
+        "ret_ytd": 5.4,
+        "ret_1m": 0.8,
+        "ret_3m": 2.4,
+        "ret_6m": 4.1,
+        "ret_1y": 8.2,
+        "ret_3y_ann": 6.1,
+        "ret_3y_cum": 19.4,
+        "ret_5y_ann": 5.2,
+        "ret_5y_cum": 28.8,
+        "ret_10y_ann": 4.7,
+        "ret_si_ann": 4.3,
+        "ret_si_cum": null
+      },
+      "benchmark_name": null,
+      "benchmark_returns": {},
+      "calendar_year_returns": {
+        "2016": 4.2,
+        "2017": 12.1,
+        "2018": -4.8,
+        "2019": 13.2,
+        "2020": 9.4,
+        "2021": 8.9,
+        "2022": -12.2,
+        "2023": 8.8,
+        "2024": 8.4,
+        "2025": 6.5
+      },
+      "calendar_year_benchmark": {},
+      "allocation_asset": [
+        {
+          "label": "Equities",
+          "pct": 50.8
+        },
+        {
+          "label": "Fixed Income",
+          "pct": 44.1
+        },
+        {
+          "label": "Cash",
+          "pct": 5.1
+        }
+      ],
+      "allocation_geo": [],
+      "allocation_sector": [],
+      "top_holdings": [],
+      "objective": "SAMPLE objective text — replaced by the scraped fund objective after the first refresh.",
+      "docs": {
+        "factsheet_url": null,
+        "factsheet_local": null,
+        "factsheet_as_at": null,
+        "phs_url": null,
+        "other": []
+      },
+      "sources": {
+        "returns": "SAMPLE",
+        "fetched_at": "2026-08-23T00:00:00+00:00"
+      },
+      "missing_fields": []
+    },
+    {
+      "fund_id": "SAMPLE_USIG",
+      "name": "GreatLink US Income and Growth (Dis) Fund",
+      "category": "Mixed Asset",
+      "ge_page_url": "https://www.greateasternlife.com/sg/en/personal-insurance/our-products/wealth-accumulation/investment-linked-funds/greatlink-funds.html",
+      "fundcentre_url": "https://www.greateasternlife.com/sg/en/personal-insurance/our-products/wealth-accumulation/investment-linked-funds/ilp-fund-centre.html#/detail?id=SAMPLE_USIG",
+      "manager": "Sample Asset Management (placeholder)",
+      "underlying_fund": null,
+      "inception_date": "2015-09-01",
+      "fund_size_m": 180,
+      "currency": "SGD",
+      "mgmt_fee_pct": 1.25,
+      "risk_class": "Medium to high risk – narrowly focused",
+      "eligibility": {
+        "cpf_oa": false,
+        "cpf_sa": false,
+        "srs": true,
+        "cash": true
+      },
+      "bid_price": 0.92,
+      "offer_price": null,
+      "price_date": "2026-07-31",
+      "returns": {
+        "ret_ytd": 5.2,
+        "ret_1m": 0.7,
+        "ret_3m": 2.2,
+        "ret_6m": 3.8,
+        "ret_1y": 8.7,
+        "ret_3y_ann": 7.9,
+        "ret_3y_cum": 25.6,
+        "ret_5y_ann": 6.4,
+        "ret_5y_cum": 36.4,
+        "ret_10y_ann": 5.8,
+        "ret_si_ann": 5.1,
+        "ret_si_cum": null
+      },
+      "benchmark_name": null,
+      "benchmark_returns": {},
+      "calendar_year_returns": {
+        "2018": 16.2,
+        "2019": 6.4,
+        "2020": 10.8,
+        "2021": 12.4,
+        "2022": -13.6,
+        "2023": 11.2,
+        "2024": 9.8,
+        "2025": 7.6
+      },
+      "calendar_year_benchmark": {},
+      "allocation_asset": [],
+      "allocation_geo": [],
+      "allocation_sector": [],
+      "top_holdings": [],
+      "objective": "SAMPLE — this fund's fact sheet URL is a real Morningstar document link, kept to demonstrate the online fallback button.",
+      "docs": {
+        "factsheet_url": "https://doc.morningstar.com/document/af60a8f894f9c8f0afc6adf67c1cf3e9.msdoc/?clientid=imassg&key=32545d22b2a6e612",
+        "factsheet_local": null,
+        "factsheet_as_at": "2026-07-31",
+        "phs_url": null,
+        "other": []
+      },
+      "sources": {
+        "returns": "SAMPLE",
+        "fetched_at": "2026-08-23T00:00:00+00:00"
+      },
+      "missing_fields": []
+    },
+    {
+      "fund_id": "SAMPLE_SDB",
+      "name": "GreatLink Short Duration Bond Fund",
+      "category": "Money Markets and Bonds",
+      "ge_page_url": "https://www.greateasternlife.com/sg/en/personal-insurance/our-products/wealth-accumulation/investment-linked-funds/greatlink-funds.html",
+      "fundcentre_url": "https://www.greateasternlife.com/sg/en/personal-insurance/our-products/wealth-accumulation/investment-linked-funds/ilp-fund-centre.html#/detail?id=SAMPLE_SDB",
+      "manager": "Sample Asset Management (placeholder)",
+      "underlying_fund": null,
+      "inception_date": "2000-03-15",
+      "fund_size_m": 480,
+      "currency": "SGD",
+      "mgmt_fee_pct": 0.55,
+      "risk_class": "Low to medium risk – broadly diversified",
+      "eligibility": {
+        "cpf_oa": true,
+        "cpf_sa": true,
+        "srs": true,
+        "cash": true
+      },
+      "bid_price": 1.55,
+      "offer_price": null,
+      "price_date": "2026-07-31",
+      "returns": {
+        "ret_ytd": 2.4,
+        "ret_1m": 0.3,
+        "ret_3m": 1.1,
+        "ret_6m": 1.8,
+        "ret_1y": 4.2,
+        "ret_3y_ann": 3.1,
+        "ret_3y_cum": 9.6,
+        "ret_5y_ann": 2.2,
+        "ret_5y_cum": 11.5,
+        "ret_10y_ann": 2.0,
+        "ret_si_ann": 2.4,
+        "ret_si_cum": null
+      },
+      "benchmark_name": null,
+      "benchmark_returns": {},
+      "calendar_year_returns": {
+        "2016": 2.6,
+        "2017": 2.1,
+        "2018": 1.4,
+        "2019": 3.8,
+        "2020": 3.1,
+        "2021": -0.5,
+        "2022": -2.1,
+        "2023": 4.5,
+        "2024": 3.9,
+        "2025": 3.3
+      },
+      "calendar_year_benchmark": {},
+      "allocation_asset": [
+        {
+          "label": "Government Bonds",
+          "pct": 28.4
+        },
+        {
+          "label": "Corporate Bonds",
+          "pct": 63.1
+        },
+        {
+          "label": "Cash",
+          "pct": 8.5
+        }
+      ],
+      "allocation_geo": [],
+      "allocation_sector": [],
+      "top_holdings": [],
+      "objective": "SAMPLE objective text — replaced by the scraped fund objective after the first refresh.",
+      "docs": {
+        "factsheet_url": null,
+        "factsheet_local": null,
+        "factsheet_as_at": null,
+        "phs_url": null,
+        "other": []
+      },
+      "sources": {
+        "returns": "SAMPLE",
+        "fetched_at": "2026-08-23T00:00:00+00:00"
+      },
+      "missing_fields": []
+    },
+    {
+      "fund_id": "SAMPLE_GB",
+      "name": "GreatLink Global Bond Fund",
+      "category": "Money Markets and Bonds",
+      "ge_page_url": "https://www.greateasternlife.com/sg/en/personal-insurance/our-products/wealth-accumulation/investment-linked-funds/greatlink-funds.html",
+      "fundcentre_url": "https://www.greateasternlife.com/sg/en/personal-insurance/our-products/wealth-accumulation/investment-linked-funds/ilp-fund-centre.html#/detail?id=SAMPLE_GB",
+      "manager": "Sample Asset Management (placeholder)",
+      "underlying_fund": null,
+      "inception_date": "1999-07-01",
+      "fund_size_m": 320,
+      "currency": "SGD",
+      "mgmt_fee_pct": 0.85,
+      "risk_class": "Low to medium risk – broadly diversified",
+      "eligibility": {
+        "cpf_oa": true,
+        "cpf_sa": true,
+        "srs": true,
+        "cash": true
+      },
+      "bid_price": 1.42,
+      "offer_price": null,
+      "price_date": "2026-07-31",
+      "returns": {
+        "ret_ytd": 3.1,
+        "ret_1m": 0.4,
+        "ret_3m": 1.3,
+        "ret_6m": 2.2,
+        "ret_1y": 4.8,
+        "ret_3y_ann": 1.2,
+        "ret_3y_cum": 3.6,
+        "ret_5y_ann": -0.4,
+        "ret_5y_cum": -2.0,
+        "ret_10y_ann": 1.1,
+        "ret_si_ann": 2.6,
+        "ret_si_cum": null
+      },
+      "benchmark_name": null,
+      "benchmark_returns": {},
+      "calendar_year_returns": {
+        "2016": 3.4,
+        "2017": 2.8,
+        "2018": 0.4,
+        "2019": 6.1,
+        "2020": 7.2,
+        "2021": -2.4,
+        "2022": -12.8,
+        "2023": 4.1,
+        "2024": 1.7,
+        "2025": 5.2
+      },
+      "calendar_year_benchmark": {},
+      "allocation_asset": [],
+      "allocation_geo": [],
+      "allocation_sector": [],
+      "top_holdings": [],
+      "objective": "SAMPLE objective text — replaced by the scraped fund objective after the first refresh.",
+      "docs": {
+        "factsheet_url": null,
+        "factsheet_local": null,
+        "factsheet_as_at": null,
+        "phs_url": null,
+        "other": []
+      },
+      "sources": {
+        "returns": "SAMPLE",
+        "fetched_at": "2026-08-23T00:00:00+00:00"
+      },
+      "missing_fields": []
+    },
+    {
+      "fund_id": "SAMPLE_CASH",
+      "name": "GreatLink Cash Fund",
+      "category": "Money Markets and Bonds",
+      "ge_page_url": "https://www.greateasternlife.com/sg/en/personal-insurance/our-products/wealth-accumulation/investment-linked-funds/greatlink-funds.html",
+      "fundcentre_url": "https://www.greateasternlife.com/sg/en/personal-insurance/our-products/wealth-accumulation/investment-linked-funds/ilp-fund-centre.html#/detail?id=SAMPLE_CASH",
+      "manager": "Sample Asset Management (placeholder)",
+      "underlying_fund": null,
+      "inception_date": "1999-04-26",
+      "fund_size_m": 250,
+      "currency": "SGD",
+      "mgmt_fee_pct": 0.3,
+      "risk_class": "Lower risk – broadly diversified",
+      "eligibility": {
+        "cpf_oa": true,
+        "cpf_sa": true,
+        "srs": true,
+        "cash": true
+      },
+      "bid_price": 1.3,
+      "offer_price": null,
+      "price_date": "2026-07-31",
+      "returns": {
+        "ret_ytd": 1.8,
+        "ret_1m": 0.2,
+        "ret_3m": 0.8,
+        "ret_6m": 1.3,
+        "ret_1y": 3.1,
+        "ret_3y_ann": 2.6,
+        "ret_3y_cum": 8.0,
+        "ret_5y_ann": 1.9,
+        "ret_5y_cum": 9.9,
+        "ret_10y_ann": 1.4,
+        "ret_si_ann": 1.5,
+        "ret_si_cum": null
+      },
+      "benchmark_name": null,
+      "benchmark_returns": {},
+      "calendar_year_returns": {
+        "2016": 0.8,
+        "2017": 0.9,
+        "2018": 1.1,
+        "2019": 1.4,
+        "2020": 0.6,
+        "2021": 0.2,
+        "2022": 0.8,
+        "2023": 3.2,
+        "2024": 3.4,
+        "2025": 2.7
+      },
+      "calendar_year_benchmark": {},
+      "allocation_asset": [],
+      "allocation_geo": [],
+      "allocation_sector": [],
+      "top_holdings": [],
+      "objective": "SAMPLE objective text — replaced by the scraped fund objective after the first refresh.",
+      "docs": {
+        "factsheet_url": null,
+        "factsheet_local": null,
+        "factsheet_as_at": null,
+        "phs_url": null,
+        "other": []
+      },
+      "sources": {
+        "returns": "SAMPLE",
+        "fetched_at": "2026-08-23T00:00:00+00:00"
+      },
+      "missing_fields": []
+    },
+    {
+      "fund_id": "SAMPLE_GOLD",
+      "name": "GreatLink Singapore Physical Gold Fund",
+      "category": "Commodities",
+      "ge_page_url": "https://www.greateasternlife.com/sg/en/personal-insurance/our-products/wealth-accumulation/investment-linked-funds/greatlink-funds.html",
+      "fundcentre_url": "https://www.greateasternlife.com/sg/en/personal-insurance/our-products/wealth-accumulation/investment-linked-funds/ilp-fund-centre.html#/detail?id=SAMPLE_GOLD",
+      "manager": "Sample Asset Management (placeholder)",
+      "underlying_fund": null,
+      "inception_date": "2023-11-01",
+      "fund_size_m": 95,
+      "currency": "SGD",
+      "mgmt_fee_pct": 0.75,
+      "risk_class": "Higher risk – narrowly focused",
+      "eligibility": {
+        "cpf_oa": false,
+        "cpf_sa": false,
+        "srs": true,
+        "cash": true
+      },
+      "bid_price": 1.28,
+      "offer_price": null,
+      "price_date": "2026-07-31",
+      "returns": {
+        "ret_ytd": 18.4,
+        "ret_1m": 2.4,
+        "ret_3m": 7.1,
+        "ret_6m": 12.2,
+        "ret_1y": 24.6,
+        "ret_3y_ann": null,
+        "ret_3y_cum": null,
+        "ret_5y_ann": null,
+        "ret_5y_cum": null,
+        "ret_10y_ann": null,
+        "ret_si_ann": 21.2,
+        "ret_si_cum": null
+      },
+      "benchmark_name": null,
+      "benchmark_returns": {},
+      "calendar_year_returns": {
+        "2024": 26.1,
+        "2025": 22.4
+      },
+      "calendar_year_benchmark": {},
+      "allocation_asset": [
+        {
+          "label": "Physical Gold",
+          "pct": 98.9
+        },
+        {
+          "label": "Cash",
+          "pct": 1.1
+        }
+      ],
+      "allocation_geo": [],
+      "allocation_sector": [],
+      "top_holdings": [],
+      "objective": "SAMPLE — young fund: 3Y/5Y/10Y left null to demonstrate the 'n/a – launched MMM YYYY' rendering.",
+      "docs": {
+        "factsheet_url": null,
+        "factsheet_local": null,
+        "factsheet_as_at": null,
+        "phs_url": null,
+        "other": []
+      },
+      "sources": {
+        "returns": "SAMPLE",
+        "fetched_at": "2026-08-23T00:00:00+00:00"
+      },
+      "missing_fields": []
+    }
+  ]
+}
