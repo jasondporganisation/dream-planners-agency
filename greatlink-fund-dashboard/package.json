@@ -1,0 +1,16 @@
+{
+  "name": "greatlink-fund-dashboard",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Scraper + offline dashboard for Great Eastern GreatLink ILP funds (Morningstar-powered ILP Fund Centre)",
+  "scripts": {
+    "discover": "node scripts/discover.mjs",
+    "scrape": "node scripts/scrape.mjs",
+    "factsheets": "node scripts/download-factsheets.mjs",
+    "all": "node scripts/discover.mjs && node scripts/scrape.mjs && node scripts/download-factsheets.mjs"
+  },
+  "devDependencies": {
+    "playwright": "^1.49.0"
+  }
+}

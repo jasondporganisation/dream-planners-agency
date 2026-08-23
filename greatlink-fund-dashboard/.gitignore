@@ -1,0 +1,5 @@
+node_modules/
+data/funds.json
+data/factsheets/*.pdf
+discovery/
+scripts/config.json
