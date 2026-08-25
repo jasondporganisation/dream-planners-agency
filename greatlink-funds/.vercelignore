@@ -1,0 +1,10 @@
+templates/
+scraper/
+discovery/
+tests/
+factsheets/
+*.py
+requirements.txt
+refresh.log
+deploy.log
+BRIEF.md

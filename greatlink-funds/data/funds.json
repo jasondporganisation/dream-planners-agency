@@ -4,7 +4,7 @@
   "factsheets_as_at_range": [
     "2026-06-30"
   ],
-  "generated_at": "2026-08-25T02:39:24+00:00",
+  "generated_at": "2026-08-25T03:17:48+00:00",
   "sample": false,
   "convention": "Returns are bid-to-bid in the fund currency (SGD), net of fund management fees, excluding policy-level charges. YTD, 1M, 3M, 6M and 1Y are cumulative; 3Y, 5Y, 10Y and since-inception are annualised unless labelled cumulative.",
   "fund_count": 40,
@@ -147,7 +147,7 @@
         "semi_annual_report_url": "https://doc.morningstar.com/Document/503a5407f885bbc9af0fc3cbce186d03.msdoc/?key=023d247708a47993ed8467e955ed1f06d56f71215c0d4940cfd29d8eacbd50f5"
       },
       "sources": {
-        "fetched_at": "2026-08-25T02:31:03+00:00",
+        "fetched_at": "2026-08-25T03:08:29+00:00",
         "returns": "Fund Centre screener",
         "eligibility": "Fund Centre screener (FundingSource)",
         "facts": "Fund Centre detail (v4/funds)",
@@ -390,7 +390,7 @@
         "semi_annual_report_url": "https://doc.morningstar.com/Document/503a5407f885bbc9af0fc3cbce186d03.msdoc/?key=023d247708a47993ed8467e955ed1f06d56f71215c0d4940cfd29d8eacbd50f5"
       },
       "sources": {
-        "fetched_at": "2026-08-25T02:31:03+00:00",
+        "fetched_at": "2026-08-25T03:08:29+00:00",
         "returns": "Fund Centre screener",
         "eligibility": "Fund Centre screener (FundingSource)",
         "facts": "Fund Centre detail (v4/funds)",
@@ -653,7 +653,7 @@
         "semi_annual_report_url": "https://doc.morningstar.com/Document/503a5407f885bbc9af0fc3cbce186d03.msdoc/?key=023d247708a47993ed8467e955ed1f06d56f71215c0d4940cfd29d8eacbd50f5"
       },
       "sources": {
-        "fetched_at": "2026-08-25T02:31:03+00:00",
+        "fetched_at": "2026-08-25T03:08:29+00:00",
         "returns": "Fund Centre screener",
         "eligibility": "Fund Centre screener (FundingSource)",
         "facts": "Fund Centre detail (v4/funds)",
@@ -927,7 +927,7 @@
         "semi_annual_report_url": "https://doc.morningstar.com/Document/503a5407f885bbc9af0fc3cbce186d03.msdoc/?key=023d247708a47993ed8467e955ed1f06d56f71215c0d4940cfd29d8eacbd50f5"
       },
       "sources": {
-        "fetched_at": "2026-08-25T02:31:03+00:00",
+        "fetched_at": "2026-08-25T03:08:29+00:00",
         "returns": "Fund Centre screener",
         "eligibility": "Fund Centre screener (FundingSource)",
         "facts": "Fund Centre detail (v4/funds)",
@@ -1183,7 +1183,7 @@
         "semi_annual_report_url": "https://doc.morningstar.com/Document/503a5407f885bbc9af0fc3cbce186d03.msdoc/?key=023d247708a47993ed8467e955ed1f06d56f71215c0d4940cfd29d8eacbd50f5"
       },
       "sources": {
-        "fetched_at": "2026-08-25T02:31:03+00:00",
+        "fetched_at": "2026-08-25T03:08:29+00:00",
         "returns": "Fund Centre screener",
         "eligibility": "Fund Centre screener (FundingSource)",
         "facts": "Fund Centre detail (v4/funds)",
@@ -1249,7 +1249,7 @@
       "fund_size_m": 88.27,
       "fund_size_as_at": "2026-07-31",
       "currency": "SGD",
-      "mgmt_fee_pct": 1.6,
+      "mgmt_fee_pct": 1.25,
       "expense_ratio_pct": 1.72,
       "risk_class": "4 - Higher Risk",
       "eligibility": {
@@ -1426,7 +1426,7 @@
         "semi_annual_report_url": "https://doc.morningstar.com/Document/503a5407f885bbc9af0fc3cbce186d03.msdoc/?key=023d247708a47993ed8467e955ed1f06d56f71215c0d4940cfd29d8eacbd50f5"
       },
       "sources": {
-        "fetched_at": "2026-08-25T02:31:03+00:00",
+        "fetched_at": "2026-08-25T03:08:29+00:00",
         "returns": "Fund Centre screener",
         "eligibility": "Fund Centre screener (FundingSource)",
         "facts": "Fund Centre detail (v4/funds)",
@@ -1669,7 +1669,7 @@
         "semi_annual_report_url": "https://doc.morningstar.com/Document/503a5407f885bbc9af0fc3cbce186d03.msdoc/?key=023d247708a47993ed8467e955ed1f06d56f71215c0d4940cfd29d8eacbd50f5"
       },
       "sources": {
-        "fetched_at": "2026-08-25T02:31:03+00:00",
+        "fetched_at": "2026-08-25T03:08:29+00:00",
         "returns": "Fund Centre screener",
         "eligibility": "Fund Centre screener (FundingSource)",
         "facts": "Fund Centre detail (v4/funds)",
@@ -1881,7 +1881,7 @@
         "semi_annual_report_url": "https://doc.morningstar.com/Document/503a5407f885bbc9af0fc3cbce186d03.msdoc/?key=023d247708a47993ed8467e955ed1f06d56f71215c0d4940cfd29d8eacbd50f5"
       },
       "sources": {
-        "fetched_at": "2026-08-25T02:31:03+00:00",
+        "fetched_at": "2026-08-25T03:08:29+00:00",
         "returns": "Fund Centre screener",
         "eligibility": "Fund Centre screener (FundingSource)",
         "facts": "Fund Centre detail (v4/funds)",
@@ -2135,7 +2135,7 @@
         "semi_annual_report_url": "https://doc.morningstar.com/Document/503a5407f885bbc9af0fc3cbce186d03.msdoc/?key=023d247708a47993ed8467e955ed1f06d56f71215c0d4940cfd29d8eacbd50f5"
       },
       "sources": {
-        "fetched_at": "2026-08-25T02:31:03+00:00",
+        "fetched_at": "2026-08-25T03:08:29+00:00",
         "returns": "Fund Centre screener",
         "eligibility": "Fund Centre screener (FundingSource)",
         "facts": "Fund Centre detail (v4/funds)",
@@ -2412,7 +2412,7 @@
         "semi_annual_report_url": "https://doc.morningstar.com/Document/503a5407f885bbc9af0fc3cbce186d03.msdoc/?key=023d247708a47993ed8467e955ed1f06d56f71215c0d4940cfd29d8eacbd50f5"
       },
       "sources": {
-        "fetched_at": "2026-08-25T02:31:03+00:00",
+        "fetched_at": "2026-08-25T03:08:29+00:00",
         "returns": "Fund Centre screener",
         "eligibility": "Fund Centre screener (FundingSource)",
         "facts": "Fund Centre detail (v4/funds)",
@@ -2683,7 +2683,7 @@
         "semi_annual_report_url": "https://doc.morningstar.com/Document/503a5407f885bbc9af0fc3cbce186d03.msdoc/?key=023d247708a47993ed8467e955ed1f06d56f71215c0d4940cfd29d8eacbd50f5"
       },
       "sources": {
-        "fetched_at": "2026-08-25T02:31:03+00:00",
+        "fetched_at": "2026-08-25T03:08:29+00:00",
         "returns": "Fund Centre screener",
         "eligibility": "Fund Centre screener (FundingSource)",
         "facts": "Fund Centre detail (v4/funds)",
@@ -2905,7 +2905,7 @@
         "semi_annual_report_url": "https://doc.morningstar.com/Document/503a5407f885bbc9af0fc3cbce186d03.msdoc/?key=023d247708a47993ed8467e955ed1f06d56f71215c0d4940cfd29d8eacbd50f5"
       },
       "sources": {
-        "fetched_at": "2026-08-25T02:31:03+00:00",
+        "fetched_at": "2026-08-25T03:08:29+00:00",
         "returns": "Fund Centre screener",
         "eligibility": "Fund Centre screener (FundingSource)",
         "facts": "Fund Centre detail (v4/funds)",
@@ -3149,7 +3149,7 @@
         "semi_annual_report_url": "https://doc.morningstar.com/Document/503a5407f885bbc9af0fc3cbce186d03.msdoc/?key=023d247708a47993ed8467e955ed1f06d56f71215c0d4940cfd29d8eacbd50f5"
       },
       "sources": {
-        "fetched_at": "2026-08-25T02:31:03+00:00",
+        "fetched_at": "2026-08-25T03:08:29+00:00",
         "returns": "Fund Centre screener",
         "eligibility": "Fund Centre screener (FundingSource)",
         "facts": "Fund Centre detail (v4/funds)",
@@ -3406,7 +3406,7 @@
         "semi_annual_report_url": "https://doc.morningstar.com/Document/503a5407f885bbc9af0fc3cbce186d03.msdoc/?key=023d247708a47993ed8467e955ed1f06d56f71215c0d4940cfd29d8eacbd50f5"
       },
       "sources": {
-        "fetched_at": "2026-08-25T02:31:03+00:00",
+        "fetched_at": "2026-08-25T03:08:29+00:00",
         "returns": "Fund Centre screener",
         "eligibility": "Fund Centre screener (FundingSource)",
         "facts": "Fund Centre detail (v4/funds)",
@@ -3648,7 +3648,7 @@
         "semi_annual_report_url": "https://doc.morningstar.com/Document/503a5407f885bbc9af0fc3cbce186d03.msdoc/?key=023d247708a47993ed8467e955ed1f06d56f71215c0d4940cfd29d8eacbd50f5"
       },
       "sources": {
-        "fetched_at": "2026-08-25T02:31:03+00:00",
+        "fetched_at": "2026-08-25T03:08:29+00:00",
         "returns": "Fund Centre screener",
         "eligibility": "Fund Centre screener (FundingSource)",
         "facts": "Fund Centre detail (v4/funds)",
@@ -3882,7 +3882,7 @@
         "semi_annual_report_url": "https://doc.morningstar.com/Document/503a5407f885bbc9af0fc3cbce186d03.msdoc/?key=023d247708a47993ed8467e955ed1f06d56f71215c0d4940cfd29d8eacbd50f5"
       },
       "sources": {
-        "fetched_at": "2026-08-25T02:31:03+00:00",
+        "fetched_at": "2026-08-25T03:08:29+00:00",
         "returns": "Fund Centre screener",
         "eligibility": "Fund Centre screener (FundingSource)",
         "facts": "Fund Centre detail (v4/funds)",
@@ -4129,7 +4129,7 @@
         "semi_annual_report_url": "https://doc.morningstar.com/Document/503a5407f885bbc9af0fc3cbce186d03.msdoc/?key=023d247708a47993ed8467e955ed1f06d56f71215c0d4940cfd29d8eacbd50f5"
       },
       "sources": {
-        "fetched_at": "2026-08-25T02:31:03+00:00",
+        "fetched_at": "2026-08-25T03:08:29+00:00",
         "returns": "Fund Centre screener",
         "eligibility": "Fund Centre screener (FundingSource)",
         "facts": "Fund Centre detail (v4/funds)",
@@ -4351,7 +4351,7 @@
         "semi_annual_report_url": "https://doc.morningstar.com/Document/503a5407f885bbc9af0fc3cbce186d03.msdoc/?key=023d247708a47993ed8467e955ed1f06d56f71215c0d4940cfd29d8eacbd50f5"
       },
       "sources": {
-        "fetched_at": "2026-08-25T02:31:03+00:00",
+        "fetched_at": "2026-08-25T03:08:29+00:00",
         "returns": "Fund Centre screener",
         "eligibility": "Fund Centre screener (FundingSource)",
         "facts": "Fund Centre detail (v4/funds)",
@@ -4571,7 +4571,7 @@
         "semi_annual_report_url": "https://doc.morningstar.com/Document/503a5407f885bbc9af0fc3cbce186d03.msdoc/?key=023d247708a47993ed8467e955ed1f06d56f71215c0d4940cfd29d8eacbd50f5"
       },
       "sources": {
-        "fetched_at": "2026-08-25T02:31:03+00:00",
+        "fetched_at": "2026-08-25T03:08:29+00:00",
         "returns": "Fund Centre screener",
         "eligibility": "Fund Centre screener (FundingSource)",
         "facts": "Fund Centre detail (v4/funds)",
@@ -4786,7 +4786,7 @@
         "semi_annual_report_url": "https://doc.morningstar.com/Document/503a5407f885bbc9af0fc3cbce186d03.msdoc/?key=023d247708a47993ed8467e955ed1f06d56f71215c0d4940cfd29d8eacbd50f5"
       },
       "sources": {
-        "fetched_at": "2026-08-25T02:31:03+00:00",
+        "fetched_at": "2026-08-25T03:08:29+00:00",
         "returns": "Fund Centre screener",
         "eligibility": "Fund Centre screener (FundingSource)",
         "facts": "Fund Centre detail (v4/funds)",
@@ -4985,7 +4985,7 @@
         "semi_annual_report_url": "https://doc.morningstar.com/Document/503a5407f885bbc9af0fc3cbce186d03.msdoc/?key=023d247708a47993ed8467e955ed1f06d56f71215c0d4940cfd29d8eacbd50f5"
       },
       "sources": {
-        "fetched_at": "2026-08-25T02:31:03+00:00",
+        "fetched_at": "2026-08-25T03:08:29+00:00",
         "returns": "Fund Centre screener",
         "eligibility": "Fund Centre screener (FundingSource)",
         "facts": "Fund Centre detail (v4/funds)",
@@ -5225,7 +5225,7 @@
         "semi_annual_report_url": "https://doc.morningstar.com/Document/503a5407f885bbc9af0fc3cbce186d03.msdoc/?key=023d247708a47993ed8467e955ed1f06d56f71215c0d4940cfd29d8eacbd50f5"
       },
       "sources": {
-        "fetched_at": "2026-08-25T02:31:03+00:00",
+        "fetched_at": "2026-08-25T03:08:29+00:00",
         "returns": "Fund Centre screener",
         "eligibility": "Fund Centre screener (FundingSource)",
         "facts": "Fund Centre detail (v4/funds)",
@@ -5468,7 +5468,7 @@
         "semi_annual_report_url": "https://doc.morningstar.com/Document/503a5407f885bbc9af0fc3cbce186d03.msdoc/?key=023d247708a47993ed8467e955ed1f06d56f71215c0d4940cfd29d8eacbd50f5"
       },
       "sources": {
-        "fetched_at": "2026-08-25T02:31:03+00:00",
+        "fetched_at": "2026-08-25T03:08:29+00:00",
         "returns": "Fund Centre screener",
         "eligibility": "Fund Centre screener (FundingSource)",
         "facts": "Fund Centre detail (v4/funds)",
@@ -5741,7 +5741,7 @@
         "semi_annual_report_url": null
       },
       "sources": {
-        "fetched_at": "2026-08-25T02:31:03+00:00",
+        "fetched_at": "2026-08-25T03:08:29+00:00",
         "returns": "Fund Centre screener",
         "eligibility": "Fund Centre screener (FundingSource)",
         "facts": "Fund Centre detail (v4/funds)",
@@ -5999,7 +5999,7 @@
         "semi_annual_report_url": null
       },
       "sources": {
-        "fetched_at": "2026-08-25T02:31:03+00:00",
+        "fetched_at": "2026-08-25T03:08:29+00:00",
         "returns": "Fund Centre screener",
         "eligibility": "Fund Centre screener (FundingSource)",
         "facts": "Fund Centre detail (v4/funds)",
@@ -6257,7 +6257,7 @@
         "semi_annual_report_url": null
       },
       "sources": {
-        "fetched_at": "2026-08-25T02:31:03+00:00",
+        "fetched_at": "2026-08-25T03:08:29+00:00",
         "returns": "Fund Centre screener",
         "eligibility": "Fund Centre screener (FundingSource)",
         "facts": "Fund Centre detail (v4/funds)",
@@ -6526,7 +6526,7 @@
         "semi_annual_report_url": "https://doc.morningstar.com/Document/503a5407f885bbc9af0fc3cbce186d03.msdoc/?key=023d247708a47993ed8467e955ed1f06d56f71215c0d4940cfd29d8eacbd50f5"
       },
       "sources": {
-        "fetched_at": "2026-08-25T02:31:03+00:00",
+        "fetched_at": "2026-08-25T03:08:29+00:00",
         "returns": "Fund Centre screener",
         "eligibility": "Fund Centre screener (FundingSource)",
         "facts": "Fund Centre detail (v4/funds)",
@@ -6787,7 +6787,7 @@
         "semi_annual_report_url": "https://doc.morningstar.com/Document/503a5407f885bbc9af0fc3cbce186d03.msdoc/?key=023d247708a47993ed8467e955ed1f06d56f71215c0d4940cfd29d8eacbd50f5"
       },
       "sources": {
-        "fetched_at": "2026-08-25T02:31:03+00:00",
+        "fetched_at": "2026-08-25T03:08:29+00:00",
         "returns": "Fund Centre screener",
         "eligibility": "Fund Centre screener (FundingSource)",
         "facts": "Fund Centre detail (v4/funds)",
@@ -7058,7 +7058,7 @@
         "semi_annual_report_url": "https://doc.morningstar.com/Document/503a5407f885bbc9af0fc3cbce186d03.msdoc/?key=023d247708a47993ed8467e955ed1f06d56f71215c0d4940cfd29d8eacbd50f5"
       },
       "sources": {
-        "fetched_at": "2026-08-25T02:31:03+00:00",
+        "fetched_at": "2026-08-25T03:08:29+00:00",
         "returns": "Fund Centre screener",
         "eligibility": "Fund Centre screener (FundingSource)",
         "facts": "Fund Centre detail (v4/funds)",
@@ -7325,7 +7325,7 @@
         "semi_annual_report_url": "https://doc.morningstar.com/Document/503a5407f885bbc9af0fc3cbce186d03.msdoc/?key=023d247708a47993ed8467e955ed1f06d56f71215c0d4940cfd29d8eacbd50f5"
       },
       "sources": {
-        "fetched_at": "2026-08-25T02:31:03+00:00",
+        "fetched_at": "2026-08-25T03:08:29+00:00",
         "returns": "Fund Centre screener",
         "eligibility": "Fund Centre screener (FundingSource)",
         "facts": "Fund Centre detail (v4/funds)",
@@ -7592,7 +7592,7 @@
         "semi_annual_report_url": "https://doc.morningstar.com/Document/503a5407f885bbc9af0fc3cbce186d03.msdoc/?key=023d247708a47993ed8467e955ed1f06d56f71215c0d4940cfd29d8eacbd50f5"
       },
       "sources": {
-        "fetched_at": "2026-08-25T02:31:03+00:00",
+        "fetched_at": "2026-08-25T03:08:29+00:00",
         "returns": "Fund Centre screener",
         "eligibility": "Fund Centre screener (FundingSource)",
         "facts": "Fund Centre detail (v4/funds)",
@@ -7859,7 +7859,7 @@
         "semi_annual_report_url": "https://doc.morningstar.com/Document/503a5407f885bbc9af0fc3cbce186d03.msdoc/?key=023d247708a47993ed8467e955ed1f06d56f71215c0d4940cfd29d8eacbd50f5"
       },
       "sources": {
-        "fetched_at": "2026-08-25T02:31:03+00:00",
+        "fetched_at": "2026-08-25T03:08:29+00:00",
         "returns": "Fund Centre screener",
         "eligibility": "Fund Centre screener (FundingSource)",
         "facts": "Fund Centre detail (v4/funds)",
@@ -8120,7 +8120,7 @@
         "semi_annual_report_url": "https://doc.morningstar.com/Document/503a5407f885bbc9af0fc3cbce186d03.msdoc/?key=023d247708a47993ed8467e955ed1f06d56f71215c0d4940cfd29d8eacbd50f5"
       },
       "sources": {
-        "fetched_at": "2026-08-25T02:31:03+00:00",
+        "fetched_at": "2026-08-25T03:08:29+00:00",
         "returns": "Fund Centre screener",
         "eligibility": "Fund Centre screener (FundingSource)",
         "facts": "Fund Centre detail (v4/funds)",
@@ -8359,7 +8359,7 @@
         "semi_annual_report_url": "https://doc.morningstar.com/Document/503a5407f885bbc9af0fc3cbce186d03.msdoc/?key=023d247708a47993ed8467e955ed1f06d56f71215c0d4940cfd29d8eacbd50f5"
       },
       "sources": {
-        "fetched_at": "2026-08-25T02:31:03+00:00",
+        "fetched_at": "2026-08-25T03:08:29+00:00",
         "returns": "Fund Centre screener",
         "eligibility": "Fund Centre screener (FundingSource)",
         "facts": "Fund Centre detail (v4/funds)",
@@ -8622,7 +8622,7 @@
         "semi_annual_report_url": "https://doc.morningstar.com/Document/503a5407f885bbc9af0fc3cbce186d03.msdoc/?key=023d247708a47993ed8467e955ed1f06d56f71215c0d4940cfd29d8eacbd50f5"
       },
       "sources": {
-        "fetched_at": "2026-08-25T02:31:03+00:00",
+        "fetched_at": "2026-08-25T03:08:29+00:00",
         "returns": "Fund Centre screener",
         "eligibility": "Fund Centre screener (FundingSource)",
         "facts": "Fund Centre detail (v4/funds)",
@@ -8969,7 +8969,7 @@
         "semi_annual_report_url": "https://doc.morningstar.com/Document/503a5407f885bbc9af0fc3cbce186d03.msdoc/?key=023d247708a47993ed8467e955ed1f06d56f71215c0d4940cfd29d8eacbd50f5"
       },
       "sources": {
-        "fetched_at": "2026-08-25T02:31:03+00:00",
+        "fetched_at": "2026-08-25T03:08:29+00:00",
         "returns": "Fund Centre screener",
         "eligibility": "Fund Centre screener (FundingSource)",
         "facts": "Fund Centre detail (v4/funds)",
@@ -9238,7 +9238,7 @@
         "semi_annual_report_url": "https://doc.morningstar.com/Document/503a5407f885bbc9af0fc3cbce186d03.msdoc/?key=023d247708a47993ed8467e955ed1f06d56f71215c0d4940cfd29d8eacbd50f5"
       },
       "sources": {
-        "fetched_at": "2026-08-25T02:31:03+00:00",
+        "fetched_at": "2026-08-25T03:08:29+00:00",
         "returns": "Fund Centre screener",
         "eligibility": "Fund Centre screener (FundingSource)",
         "facts": "Fund Centre detail (v4/funds)",
@@ -9540,7 +9540,7 @@
         "semi_annual_report_url": "https://doc.morningstar.com/Document/503a5407f885bbc9af0fc3cbce186d03.msdoc/?key=023d247708a47993ed8467e955ed1f06d56f71215c0d4940cfd29d8eacbd50f5"
       },
       "sources": {
-        "fetched_at": "2026-08-25T02:31:03+00:00",
+        "fetched_at": "2026-08-25T03:08:29+00:00",
         "returns": "Fund Centre screener",
         "eligibility": "Fund Centre screener (FundingSource)",
         "facts": "Fund Centre detail (v4/funds)",
@@ -9769,7 +9769,7 @@
         "semi_annual_report_url": "https://doc.morningstar.com/Document/503a5407f885bbc9af0fc3cbce186d03.msdoc/?key=023d247708a47993ed8467e955ed1f06d56f71215c0d4940cfd29d8eacbd50f5"
       },
       "sources": {
-        "fetched_at": "2026-08-25T02:31:03+00:00",
+        "fetched_at": "2026-08-25T03:08:29+00:00",
         "returns": "Fund Centre screener",
         "eligibility": "Fund Centre screener (FundingSource)",
         "facts": "Fund Centre detail (v4/funds)",
@@ -9928,7 +9928,7 @@
         "semi_annual_report_url": null
       },
       "sources": {
-        "fetched_at": "2026-08-25T02:31:03+00:00",
+        "fetched_at": "2026-08-25T03:08:29+00:00",
         "returns": "Fund Centre screener",
         "eligibility": "Fund Centre screener (FundingSource)",
         "facts": "Fund Centre detail (v4/funds)",

@@ -6,23 +6,25 @@
 <title>GreatLink Fund Comparison Tool</title>
 <style>
   :root{
-    --page:#f9f9f7; --surface:#fcfcfb; --ink:#0b0b0b; --ink2:#52514e; --muted:#898781;
-    --grid:#e1e0d9; --baseline:#c3c2b7; --ring:rgba(11,11,11,.10);
-    --accent:#1f3a52; --accent-ink:#ffffff;
-    --pos:#006300; --neg:#d03b3b;
-    --s1:#2a78d6; --s2:#eb6834; --s3:#1baf7a; --s4:#eda100; --s5:#e87ba4;
-    --warnbg:#fff4d6; --warnink:#6b4e00; --samplebg:#e8f0fe; --sampleink:#1a4a9c;
+    --page:#e8e5de; --surface:#ffffff; --ink:#1e2d5e; --ink2:#4a5580; --muted:#8890a8;
+    --grid:#d8d4ca; --baseline:#b8b4aa; --ring:rgba(30,45,94,.12);
+    --accent:#1e2d5e; --accent-ink:#ffffff;
+    --pos:#1a7a40; --neg:#c0392b;
+    --bar-pos:#1a7a40; --bar-neg:#c0392b;
+    --s1:#1e2d5e; --s2:#c9a84c; --s3:#1a7a40; --s4:#8b44cc; --s5:#c0392b;
+    --warnbg:#fef9ec; --warnink:#7a5a10; --samplebg:#eef2ff; --sampleink:#1e2d5e;
   }
   *{box-sizing:border-box}
   html,body{margin:0}
   body{background:var(--page);color:var(--ink);
        font:15px/1.55 system-ui,-apple-system,"Segoe UI",sans-serif}
-  header{background:var(--surface);border-bottom:1px solid var(--grid);
+  header{background:#1e2d5e;border-bottom:none;
          padding:14px 22px;display:flex;flex-wrap:wrap;gap:10px;align-items:baseline}
-  header h1{margin:0;font-size:21px;letter-spacing:-.01em}
-  header .asat{color:var(--ink2);font-size:13px}
-  header .asat b{font-weight:600;color:var(--ink)}
+  header h1{margin:0;font-size:21px;letter-spacing:-.01em;color:#fff}
+  header .asat{color:rgba(255,255,255,.65);font-size:13px}
+  header .asat b{font-weight:600;color:#c9a84c}
   .toggle select{font:inherit;border:none;background:transparent;color:inherit;padding:0 2px}
+  header .toggle{background:rgba(255,255,255,.12);border-color:rgba(255,255,255,.2);color:rgba(255,255,255,.85)}
   header .spacer{flex:1}
   .banner{padding:9px 22px;font-size:13.5px}
   .banner.sample{background:var(--samplebg);color:var(--sampleink)}
@@ -61,22 +63,27 @@
   .tablewrap{overflow-x:auto;background:var(--surface);border:1px solid var(--grid);border-radius:10px}
   table{border-collapse:collapse;width:100%}
   #fundTable{min-width:1080px}
-  th,td{padding:9px 10px;border-bottom:1px solid var(--grid);text-align:right;white-space:nowrap;
+  th,td{padding:7px 10px;border-bottom:1px solid var(--grid);text-align:right;white-space:nowrap;
         font-variant-numeric:tabular-nums}
+  td{padding:11px 10px}
   th{position:sticky;top:0;background:var(--surface);z-index:1;font-size:11.5px;color:var(--ink2);
      text-transform:uppercase;letter-spacing:.04em;cursor:pointer;user-select:none}
   th.nosort{cursor:default}
   th.name,td.name{text-align:left}
-  td.name{white-space:normal;min-width:230px;font-weight:600;cursor:pointer;max-width:330px}
-  td.name .cat{display:block;font-weight:400;font-size:12px;color:var(--muted)}
-  tbody tr:hover{background:#f2f4f1}
+  th.name{position:sticky;left:0;z-index:3}
+  td.name{position:sticky;left:0;z-index:2;background:var(--surface);box-shadow:1px 0 0 var(--grid);
+          white-space:normal;min-width:240px;font-weight:700;cursor:pointer;max-width:330px}
+  td.name .cat{display:block;font-weight:400;font-size:11px;color:var(--muted);margin-top:1px}
+  .name-actions{display:block;margin-top:4px}
+  tbody tr:hover{background:#f5f2eb}
+  tbody tr:hover td.name{background:#f5f2eb}
   tbody tr:last-child td{border-bottom:none}
   .rank{display:inline-block;min-width:22px;text-align:center;border-radius:6px;font-size:12px;
         padding:1px 4px;color:var(--ink2);background:var(--page);border:1px solid var(--grid)}
   .rank.top{background:var(--accent);border-color:var(--accent);color:var(--accent-ink);font-weight:600}
-  .retcell{position:relative;min-width:88px}
+  .retcell{position:relative;min-width:88px;overflow:hidden}
   .retcell .v{position:relative;z-index:1}
-  .retcell .bar{position:absolute;top:20%;bottom:20%;border-radius:3px;opacity:.16;z-index:0}
+  .retcell .bar{position:absolute;left:0;bottom:0;height:3px;border-radius:0 2px 2px 0;opacity:.7;z-index:0}
   .pos{color:var(--pos)} .neg{color:var(--neg)}
   .na{color:var(--muted);font-size:12px;white-space:normal}
   .internal{background:#faf7ef}
@@ -97,11 +104,12 @@
   #cmpChart{display:block}
   #cmpTableWrap table{min-width:520px}
   #cmpTableWrap th:first-child,#cmpTableWrap td:first-child{text-align:left;white-space:normal}
-  .allocgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px;margin-top:8px}
-  .allocblock h4{margin:6px 0}
+  .allocgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:10px;margin-top:8px;align-items:start}
+  .allocblock{background:var(--page);border-radius:8px;padding:8px 12px}
+  .allocblock h4{margin:0 0 6px;font-size:13px}
   .hbar{display:grid;grid-template-columns:minmax(90px,42%) 1fr 52px;gap:8px;align-items:center;
         font-size:12.5px;margin:3px 0}
-  .hbar .track{height:12px;border-radius:3px;background:var(--page);position:relative}
+  .hbar .track{height:12px;border-radius:3px;background:var(--surface);position:relative}
   .hbar .fill{position:absolute;left:0;top:0;bottom:0;border-radius:3px;background:var(--s1)}
   .hbar .num{text-align:right;font-variant-numeric:tabular-nums}
   .hbar .lbl{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
@@ -128,10 +136,33 @@
     border-top:1px solid var(--grid);padding:7px 22px;font-size:11px;color:var(--muted);z-index:4}
   #fullDisclaimer{display:none}
 
-  @media (max-width:700px){
+  /* ---- layout breakpoints ---- */
+  @media(max-width:819px){
+    header{padding:11px 16px;gap:8px}
     header h1{font-size:18px}
-    main{padding:10px 12px 130px}
-    th,td{padding:7px 6px;font-size:13px}
+    main{padding:10px 14px 130px}
+    td.name{min-width:180px;max-width:260px}
+    th,td{padding:7px 7px;font-size:13.5px}
+    td{padding:9px 7px}
+    #detail{width:min(580px,96vw)}
+  }
+  @media(max-width:599px){
+    header{padding:9px 12px;gap:6px;flex-wrap:wrap}
+    header h1{font-size:16px}
+    header .asat{font-size:12px}
+    header .toggle{font-size:12px;padding:5px 8px}
+    main{padding:8px 10px 145px}
+    th,td{padding:6px 5px;font-size:12.5px}
+    td{padding:9px 5px}
+    td.name{min-width:150px;max-width:200px}
+    .controls{gap:6px}
+    .controls input[type=search]{min-width:0;flex:1 1 100%;width:100%}
+    .chip{font-size:12px;padding:5px 9px}
+    .leader{padding:8px 10px}
+    .leader .row{font-size:12px}
+    #detail{width:100vw}
+    #compareBar{padding:8px 10px;gap:8px;font-size:13px}
+    footer.disc{padding:5px 12px;font-size:10.5px}
   }
   @media print{
     body{background:#fff}
@@ -272,7 +303,7 @@ function retCell(f,key,years,maxAbs){
   if(v==null) return '<td class="retcell">'+fmtPct(v,f,years)+'</td>';
   var w=Math.min(100,Math.abs(v)/maxAbs*100);
   var bar = '<span class="bar" style="right:0;width:'+w
-    +'%;background:var(--'+(v>=0?'pos':'neg')+')"></span>';
+    +'%;background:var(--'+(v>=0?'bar-pos':'bar-neg')+')"></span>';
   return '<td class="retcell">'+bar+'<span class="v">'+fmtPct(v)+'</span></td>';
 }
 function useLocal(){return state.fsSource==='local';}
@@ -280,7 +311,6 @@ function factsheetButtons(f,compact){
   var d=f.docs||{}, out=[];
   if(d.factsheet_local&&useLocal()){
     out.push('<button class="fsbtn" data-open="'+esc(d.factsheet_local)+'">Fact sheet</button>');
-    if(d.factsheet_url) out.push('<a class="small" href="'+esc(d.factsheet_url)+'" target="_blank" rel="noopener">online</a>');
   } else if(d.factsheet_url){
     out.push('<a class="fsbtn" style="text-decoration:none;color:inherit" href="'+esc(d.factsheet_url)+'" target="_blank" rel="noopener">Fact sheet</a>');
   } else {
@@ -320,7 +350,6 @@ var COLS=[
   render:function(f){return fmtNum(f.fund_size_m,0);}},
  {key:'mgmt_fee_pct',label:'Fee %',val:function(f){return f.mgmt_fee_pct;},
   render:function(f){return fmtNum(f.mgmt_fee_pct,2);}},
- {key:'fs',label:'Docs',nosort:true,render:function(f){return factsheetButtons(f,true);}},
  {key:'src',label:'Source',nosort:true,internal:true,
   render:function(f){return '<span class="small muted">'+esc((f.sources&&f.sources.returns)||'—')
     +'<br>'+esc(f.fund_id||'')+'</span>';}},
@@ -359,7 +388,7 @@ function visible(){
 /* ---------- overview render ---------- */
 function renderHead(){
   document.getElementById('headRow').innerHTML=COLS.map(function(c){
-    var cls=[c.cls||'',c.internal?'internal':'',c.nosort?'nosort':''].join(' ');
+    var cls=[c.cls||'',c.internal?'internal':'',c.nosort?'nosort':''].filter(Boolean).join(' ');
     var arrow=state.sortKey===c.key?(state.sortDir>0?' ▲':' ▼'):'';
     return '<th class="'+cls+'" data-col="'+c.key+'">'+esc(c.label)+arrow+'</th>';
   }).join('');
@@ -378,7 +407,8 @@ function renderBody(){
         var dis=(!ck&&state.selected.length>=5)?' disabled':'';
         return '<td><input type="checkbox" data-sel="'+esc(f.fund_id)+'"'+ck+dis+'></td>';}
       if(c.key==='name')return '<td class="name" data-open-detail="'+esc(f.fund_id)+'">'
-        +esc(f.name)+'<span class="cat">'+esc(f.category||'')+'</span></td>';
+        +esc(f.name)+'<span class="cat">'+esc(f.category||'')+'</span>'
+        +'<span class="name-actions">'+factsheetButtons(f,true)+'</span></td>';
       if(c.ret)return retCell(f,c.key,c.years,maxAbs);
       var cls=c.internal?'internal':'';
       return '<td class="'+cls+'">'+(c.render?c.render(f):esc(c.val(f)))+'</td>';
@@ -697,6 +727,10 @@ document.getElementById('tbody').addEventListener('click',function(e){
     renderBody();
     var cs=document.getElementById('compareSection');
     if(!cs.hidden){if(state.selected.length>=2)renderCompare(true);else cs.hidden=true;}
+    return;}
+  if(e.target.closest('.name-actions')){
+    var open=e.target.closest('[data-open]');
+    if(open)window.open(open.dataset.open,'_blank');
     return;}
   var open=e.target.closest('[data-open]');
   if(open){window.open(open.dataset.open,'_blank');return;}
