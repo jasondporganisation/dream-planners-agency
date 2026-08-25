@@ -87,7 +87,6 @@
   .pos{color:var(--pos)} .neg{color:var(--neg)}
   .na{color:var(--muted);font-size:12px;white-space:normal}
   .internal{background:#faf7ef}
-  body.client-view .internal{display:none}
   #matchCount{font-size:13px;color:var(--ink2)}
 
   /* compare */
@@ -188,10 +187,6 @@
   <h1>GreatLink Fund Comparison Tool</h1>
   <span class="asat" id="asatLine"></span>
   <span class="spacer"></span>
-  <label class="toggle" title="Local: open the PDFs in the factsheets/ folder next to this file. Online: open the Great Eastern / Morningstar links (use this if you only received dashboard.html)">
-    Fact sheets: <select id="fsSource"><option value="local">Local folder</option><option value="online">Online links</option></select>
-  </label>
-  <label class="toggle"><input type="checkbox" id="clientView"> Client view</label>
 </header>
 <div id="sampleBanner" class="banner sample" hidden>
   <strong>SAMPLE DATA</strong> — placeholder figures for layout only, not real fund performance.
@@ -306,31 +301,16 @@ function retCell(f,key,years,maxAbs){
     +'%;background:var(--'+(v>=0?'bar-pos':'bar-neg')+')"></span>';
   return '<td class="retcell">'+bar+'<span class="v">'+fmtPct(v)+'</span></td>';
 }
-function useLocal(){return state.fsSource==='local';}
-function factsheetButtons(f,compact){
-  var d=f.docs||{}, out=[];
-  if(d.factsheet_local&&useLocal()){
-    out.push('<button class="fsbtn" data-open="'+esc(d.factsheet_local)+'">Fact sheet</button>');
-  } else if(d.factsheet_url){
-    out.push('<a class="fsbtn" style="text-decoration:none;color:inherit" href="'+esc(d.factsheet_url)+'" target="_blank" rel="noopener">Fact sheet</a>');
-  } else {
-    out.push('<button class="fsbtn" disabled title="No fact sheet found in the last refresh">Fact sheet</button>');
-  }
-  return out.join(' ');
+function factsheetButtons(f){
+  var d=f.docs||{};
+  if(d.factsheet_url)
+    return '<a class="fsbtn" style="text-decoration:none;color:inherit" href="'+esc(d.factsheet_url)+'" target="_blank" rel="noopener">Fact sheet</a>';
+  return '<button class="fsbtn" disabled title="No fact sheet found in the last refresh">Fact sheet</button>';
 }
 
 /* ---------- state ---------- */
 var state={search:'',cats:{},risk:'',oa:false,sa:false,srs:false,
-           sortKey:'ret_ytd',sortDir:-1,selected:[],detail:null,
-           fsSource:(function(){
-             var saved=null;try{saved=localStorage.getItem('gl_fsSource');}catch(e){}
-             if(saved)return saved;
-             // Default to the local PDFs only when this file is still inside the folder it was built in
-             // (i.e. factsheets/ is next to it). A copy that was emailed or moved defaults to online links.
-             var here='';try{here=decodeURIComponent(location.pathname);}catch(e){}
-             var dir=here.replace(/[\\/][^\\/]*$/,'');
-             return (DATA.build_dir&&dir&&dir.replace(/\\/g,'/')===String(DATA.build_dir).replace(/\\/g,'/'))?'local':'online';
-           })()};
+           sortKey:'ret_ytd',sortDir:-1,selected:[],detail:null};
 
 var COLS=[
  {key:'rank',label:'#',nosort:true},
@@ -637,12 +617,9 @@ function detailHTML(f){
       +'</tbody></table>':'';
   var d=f.docs||{};
   var docs='<div class="docbtns">'
-    +((d.factsheet_local&&useLocal())
-      ?'<button class="btn" data-open="'+esc(d.factsheet_local)+'">Open Fund Fact Sheet</button>'
-       +(d.factsheet_url?'<a class="btn2" style="text-decoration:none" href="'+esc(d.factsheet_url)+'" target="_blank" rel="noopener">Online copy</a>':'')
-      :(d.factsheet_url
-        ?'<a class="btn" style="text-decoration:none" href="'+esc(d.factsheet_url)+'" target="_blank" rel="noopener">Open Fund Fact Sheet (online)</a>'
-        :'<button class="btn" disabled>No fact sheet found</button>'))
+    +(d.factsheet_url
+      ?'<a class="btn" style="text-decoration:none" href="'+esc(d.factsheet_url)+'" target="_blank" rel="noopener">Open Fund Fact Sheet</a>'
+      :'<button class="btn" disabled>No fact sheet found</button>')
     +(d.phs_url?'<a class="btn2" style="text-decoration:none" href="'+esc(d.phs_url)+'" target="_blank" rel="noopener">Product Highlights Sheet</a>':'')
     +(d.prospectus_url?'<a class="btn2" style="text-decoration:none" href="'+esc(d.prospectus_url)+'" target="_blank" rel="noopener">Prospectus</a>':'')
     +'<a class="btn2" style="text-decoration:none" href="'+esc(f.fundcentre_url||f.ge_page_url||'#')+'" target="_blank" rel="noopener">View on Great Eastern site</a>'
@@ -702,11 +679,6 @@ document.getElementById('riskFilter').addEventListener('change',function(e){stat
   document.getElementById(id).addEventListener('change',function(e){
     state[['oa','sa','srs'][i]]=e.target.checked;renderBody();});
 });
-document.getElementById('fsSource').addEventListener('change',function(e){
-  state.fsSource=e.target.value;try{localStorage.setItem('gl_fsSource',state.fsSource);}catch(err){}
-  renderBody();if(state.detail)openDetail(state.detail);});
-document.getElementById('clientView').addEventListener('change',function(e){
-  document.body.classList.toggle('client-view',e.target.checked);});
 document.getElementById('catChips').addEventListener('click',function(e){
   var chip=e.target.closest('.chip');if(!chip)return;
   state.cats[chip.dataset.cat]=!state.cats[chip.dataset.cat];
@@ -768,7 +740,6 @@ document.addEventListener('keydown',function(e){if(e.key==='Escape')closeDetail(
     return '<span class="chip" data-cat="'+esc(c)+'">'+esc(c)+'</span>';}).join(' ');
   var rf=document.getElementById('riskFilter');
   risks.sort().forEach(function(r){var o=document.createElement('option');o.value=r;o.textContent=r;rf.appendChild(o);});
-  document.getElementById('fsSource').value=state.fsSource;
   renderBanners();renderLeaders();renderHead();renderBody();
 })();
 })();
