@@ -53,6 +53,10 @@ _TOKEN_RE = re.compile(r"<h[1-4][^>]*>(.*?)</h[1-4]>|detail\?id=([A-Z0-9]+_F\d+)
 def parse_fund_list_html(html: str) -> list[dict]:
     """Return [{fund_id, sec_id, fund_code, category, fundcentre_url, ge_page_url}]
     in page order, de-duplicated by composite id."""
+    # The page has been observed serving the anchor's query string both as a
+    # literal "?id=..." and as the HTML-entity-encoded "?id&#61;...". Decode
+    # entities up front so the id= regex matches either form.
+    html = unescape(html)
     out, seen, category = [], set(), None
     for heading, composite in _TOKEN_RE.findall(html):
         if heading:
