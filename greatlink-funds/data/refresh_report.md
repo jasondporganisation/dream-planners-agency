@@ -1,20 +1,20 @@
 # Refresh report
 
-- Run started: 2026-08-23T16:23:47+00:00
-- Run finished: 2026-08-23T16:31:58+00:00
-- Returns / prices as at: **2026-08-20**
+- Run started: 2026-08-25T02:30:58+00:00
+- Run finished: 2026-08-25T02:39:24+00:00
+- Returns / prices as at: **2026-08-21**
 - Fact sheets as at: **2026-06-30**
 - Funds processed: 40
 - Fact sheets on disk: 40/40
 
 ## Failures / notes
 
-- none
+- EXPECTED fund not found anywhere: sustainable global thematic
 
 ## Discrepancies (> 0.1 pp or price/fee mismatch)
 
-- DISCREPANCY GreatLink Income Bond Fund ret_5y_ann at 2026-06-30: fact sheet 0.08 vs NAV-derived 0.31 (dashboard shows Fund Centre figures as at 2026-08-20)
-- DISCREPANCY GreatLink Income Bond Fund ret_si_ann at 2026-06-30: fact sheet 0.20 vs NAV-derived 0.41 (dashboard shows Fund Centre figures as at 2026-08-20)
+- DISCREPANCY GreatLink Income Bond Fund ret_5y_ann at 2026-06-30: fact sheet 0.08 vs NAV-derived 0.31 (dashboard shows Fund Centre figures as at 2026-08-21)
+- DISCREPANCY GreatLink Income Bond Fund ret_si_ann at 2026-06-30: fact sheet 0.20 vs NAV-derived 0.41 (dashboard shows Fund Centre figures as at 2026-08-21)
 
 ## Missing fields per fund
 
