@@ -1,0 +1,5 @@
+{
+  "rewrites": [
+    { "source": "/", "destination": "/greatlink-funds/dashboard.html" }
+  ]
+}
