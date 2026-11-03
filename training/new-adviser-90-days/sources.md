@@ -22,6 +22,7 @@ Checked on: **3 November 2026**. Ask the team leader to re-check before each new
 |---|---|---|
 | MS-1 | Financial advisory process: what to expect | https://www.moneysense.gov.sg/financial-advisory-process/ |
 | MS-2 | Interpreting your insurance documents | https://www.moneysense.gov.sg/interpreting-your-insurance-documents/ |
+| MS-3 | Buying life insurance online | https://www.moneysense.gov.sg/buying-life-insurance-online/ |
 
 ## Industry body: Life Insurance Association Singapore (lia.org.sg)
 
