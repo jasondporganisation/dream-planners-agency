@@ -14,7 +14,7 @@ Here's how it works. Every dollar you put in can get you tax relief, which is gi
 
 Now the trade-off. From the statutory retirement age, which is sixty-four from first July 2026, only fifty per cent of what you withdraw is taxable. But withdraw earlier, and it's fully taxable, plus a five per cent penalty, except in some specific cases.
 
-So SRS works best for money you won't need until retirement. Whether it suits you depends on your tax bracket and plans.
+So SRS is meant for money you won't need until retirement. Whether it suits you depends on your tax bracket and plans.
 
 Have you heard of SRS before? Comment yes or no.
 

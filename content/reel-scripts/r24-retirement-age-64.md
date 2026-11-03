@@ -3,10 +3,10 @@
 **Life stage:** Retirement myths · **Target length:** ~50 seconds
 
 ## Hook (first 2 seconds)
-"Singapore's retirement age just went up."
+"Singapore's retirement age went up in July 2026."
 
 ## Voiceover
-Singapore's retirement age just went up.
+Singapore's retirement age went up in July 2026.
 
 From first July 2026, the minimum retirement age is sixty-four. That means employers can't ask you to retire before then because of your age. The re-employment age also went up, from sixty-eight to sixty-nine. That's the age up to which eligible employees should be offered re-employment.
 
