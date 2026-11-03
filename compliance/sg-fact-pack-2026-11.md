@@ -210,11 +210,93 @@ Co-insurance on the claimable amount in a policy year (the bands include the ded
 
 ## 3. Lasting Power of Attorney, wills and intestacy, nominations outside the estate
 
-_Pending — research in progress._
+> **Source note:** publicguardian.gov.sg was not reachable from the research environment. The Office of the Public Guardian's pages on **msf.gov.sg** (also official) were used instead. Statute text on sso.agc.gov.sg was not fetched; each statutory point below is confirmed by an allowed government page.
+
+### 3.1 Lasting Power of Attorney (LPA)
+
+| Fact | Detail | Status |
+|---|---|---|
+| What it is | A legal document in which a person aged 21 or over (the Donor) appoints one or more Donees to make decisions for them if they lose mental capacity | VERIFIED |
+| Scope | Personal welfare and/or property & affairs | VERIFIED |
+| Form 1 | General powers with basic restrictions; used by 98% of citizens who made an LPA | VERIFIED |
+| Form 2 | Customised powers; the clauses must be drafted by a Singapore lawyer | VERIFIED |
+| Certificate Issuer | Every LPA must be certified by an OPG-accredited doctor, a practising lawyer or a registered psychiatrist | VERIFIED |
+| Application fee, Form 1 | **Singapore Citizens: free, with no end date** (MSF announcement, 5 Mar 2026). PRs: $30. Foreigners: $160 | VERIFIED |
+| Application fee, Form 2 | Citizens $30, PRs $30, foreigners $160 | VERIFIED |
+| Further fee reductions | The OPG page says other applications "will enjoy reduced fees"; the effective dates were not confirmed | **UNVERIFIED (dates)** |
+| Certificate Issuer fee | Separate, paid by every applicant and not set by OPG. Median Form 1 certification fee as at Jun 2025: doctors $47.50, lawyers $104.50, psychiatrists $350 (excluding consultation and GST) | VERIFIED |
+| Refunds | No refund once the application is submitted | VERIFIED |
+| Without an LPA | Family must apply to court for a Deputy to be appointed (Mental Capacity Act) | VERIFIED |
+| Uptake | 404,000 citizens (about 1 in 7) had made an LPA as of 20 Feb 2026; among seniors over 65, 197,000 (about 1 in 4) | VERIFIED |
+| Changes on 1 Jan 2027 | None found. MSF plans a review of the Mental Capacity Act, with no date given | — |
+
+- **Sources:** [LPA — msf.gov.sg (OPG)](https://www.msf.gov.sg/what-we-do/opg/lasting-power-of-attorney/) · [LPA fees table (PDF) — msf.gov.sg](https://www.msf.gov.sg/api/media/ed7c3607-14e5-48c8-abfa-723ed728e5a0.pdf) · [Form 1 made free for citizens, 5 Mar 2026 — msf.gov.sg](https://www.msf.gov.sg/media-room/article/data-on-lasting-power-of-attorney-(lpa)-uptake-among-seniors-and-fee-waiver-extensions) · [Certificate Issuers — msf.gov.sg](https://www.msf.gov.sg/what-we-do/opg/lasting-power-of-attorney/where-to-find-a-certificate-issuer) · [OPG — msf.gov.sg](https://www.msf.gov.sg/what-we-do/opg) · [Deputyship — msf.gov.sg](https://www.msf.gov.sg/what-we-do/opg/deputyship)
+- **Safe way to say it:** "For Singapore Citizens, applying for an LPA Form 1 is free (MSF). You still pay a Certificate Issuer, such as an accredited doctor or a lawyer, to certify it."
+- **Never say:** "An LPA is completely free" or "Hurry, the free LPA ends on 31 March." (The certification fee is separate, and the free Form 1 for citizens no longer has an end date.)
+- **Never say:** "Your spouse can automatically make decisions for you if you lose capacity." (Without an LPA, a court-appointed Deputy is needed.)
+
+### 3.2 Wills vs intestacy
+
+**Without a will (non-Muslims domiciled in Singapore — Intestate Succession Act 1967):**
+
+| Survived by | Distribution |
+|---|---|
+| Spouse only (no children, no parents) | Spouse gets everything |
+| Spouse and children | ½ to spouse; ½ shared equally among children (parents get nothing) |
+| Children only | All to children equally (a deceased child's share goes to their children) |
+| Spouse and parents (no children) | ½ to spouse; ½ to parents |
+| Parents only | Parents equally |
+| None of the above | Siblings (or their children), then grandparents, then uncles and aunts |
+| No one | Everything goes to the government |
+
+- "Children" means legitimate or legally adopted children and their descendants; illegitimate children are not entitled under the intestacy rules.
+- **Muslim estates** are distributed under section 112 of the Administration of Muslim Law Act; the Syariah Court issues the Inheritance Certificate. Through a will, a Muslim can give away at most one-third of the estate, to people who are not already entitled.
+
+| Will fact | Detail | Status |
+|---|---|---|
+| What a will does | Lets you choose who inherits, guardians for children under 21, and an executor | VERIFIED |
+| Formalities | Made at 21 or over and of sound mind; signed in front of two witnesses aged over 21, who sign in your presence; witnesses (and their spouses) must not be beneficiaries | VERIFIED |
+| Must be in writing | Implied on MoneySense ("a written will"); the explicit statutory wording was not fetched | **UNVERIFIED (wording)** |
+| Marriage | A will is revoked when you marry or remarry | VERIFIED |
+
+- **Status (intestacy table):** VERIFIED
+- **Sources:** [Intestacy — moneysense.gov.sg](https://www.moneysense.gov.sg/intestacy-what-if-you-don-t-have-an-estate-plan/) · [Will — moneysense.gov.sg](https://www.moneysense.gov.sg/legacy-planning/will/) · Public Trustee's Office ([pto.mlaw.gov.sg](https://pto.mlaw.gov.sg/deceased-cpf-estate-monies/information-for-next-of-kin-estate-monies/); a Ministry of Law site outside the listed domains, used only to corroborate the MoneySense table and the definition of issue)
+- **Safe way to say it:** "If a non-Muslim dies without a will in Singapore and leaves a spouse and children, the spouse gets half and the children share the other half (Intestate Succession Act, per MoneySense)."
+- **Never say:** "Without a will, the government takes everything." (Only if there are no eligible relatives.) Also never say "your spouse gets everything anyway."
+
+### 3.3 Nominations outside the estate
+
+| Fact | Detail | Status |
+|---|---|---|
+| CPF | CPF savings are not part of the estate and cannot be left by will; a CPF nomination decides who receives them (see 1.6) | VERIFIED |
+| What overrides a will | CPF nominations and right of survivorship (joint ownership) take precedence over a will | VERIFIED |
+| Trust nomination (insurance) | Takes precedence over a will. Nominees may only be the spouse or children; the policy owner must be 18 or over and sign before 2 witnesses. Insurance Act 1966 **s132** (formerly s49L) | VERIFIED |
+| Revocable nomination (insurance) | The insurer pays according to whichever is the last known document, the revocable nomination or the will. Insurance Act 1966 **s133** (formerly s49M) | VERIFIED |
+| No insurance nomination | The insurer may pay up to $150,000 to a "proper claimant"; anything above that goes to the estate and follows the will or the intestacy rules | VERIFIED |
+
+- **Correction to brief:** s49L (now s132) is the **trust** (irrevocable) nomination and s49M (now s133) is the **revocable** one, not the other way round.
+- **Sources:** [Deciding how to transfer your estate — moneysense.gov.sg](https://www.moneysense.gov.sg/deciding-how-to-transfer-your-estate/) · [CPF nomination — cpf.gov.sg](https://www.cpf.gov.sg/member/account-services/providing-for-your-loved-ones/making-a-cpf-nomination) · [MAS consultation paper on the Insurance Act renumbering (PDF)](https://www.mas.gov.sg/-/media/MAS-Media-Library/publications/consultations/ID/2022/Consultation-Paper-on-Amendments-to-the-Insurance-Act-and-the-Insurance-Intermediaries-Regulations.pdf) · [Insurance (Nomination of Beneficiaries) Regulations 2023 (PDF) — mas.gov.sg](https://www.mas.gov.sg/-/media/mas/regulations-and-financial-stability/regulations-guidance-and-licensing/insurance/regulations-guidance-and-licensing/subsidiary-legislation/insurance-nob-regs-published-10-july-2023.pdf)
+- **Safe way to say it:** "CPF savings and insurance with a nomination can pass outside your will. A trust nomination takes priority over your will; a revocable one follows whichever document is the latest."
+- **Never say:** "A nomination means you don't need a will." (Assets outside CPF and nominated policies still follow the will or intestacy.) Also never say "anyone can be a trust nominee" (spouse or children only).
 
 ## 4. Life-expectancy and cost-of-living statistics
 
-_Pending — research in progress._
+| Statistic | Figure | Reference period | Status |
+|---|---|---|---|
+| Life expectancy at birth, residents | 83.9 years (males 81.8, females 86.0) | 2025, published 3 Jun 2026 | VERIFIED |
+| Life expectancy at age 65, residents | 21.6 more years (males 19.9, females 23.1) | 2025 | VERIFIED |
+| Residents aged 65 and over | 19.5% of residents (12.4% in 2016); 825,300 people | End-June 2026, published 25 Sep 2026 | VERIFIED |
+| Citizens aged 65 and over | 21.4% of citizens | 2026 | VERIFIED |
+| Old-age support ratio | About 3.2 residents aged 20–64 per resident aged 65+ (calculated from SingStat counts; the published figure was not seen) | 2026 | **UNVERIFIED** |
+| Median monthly household **market** income | $12,446 (up 7.7% nominal, 6.8% real, from $11,558) | 2025 (preliminary), published 9 Feb 2026 | VERIFIED |
+| Median household income **from work** | SingStat no longer headlines this measure; it switched to market income in the 2025 report | — | **UNVERIFIED for 2025** |
+| CPI-All Items inflation, full year | 0.9% | 2025 | VERIFIED |
+| CPI-All Items inflation, latest month | 2.2% year on year (MAS Core Inflation 2.0%) | Sep 2026, published 23 Oct 2026 | VERIFIED |
+
+- **Sources:** [Complete Life Tables 2024–2025 — singstat.gov.sg](https://www.singstat.gov.sg/news/complete-life-tables-for-singapore-resident-population-2024-2025) · [Death and life expectancy, latest data — singstat.gov.sg](https://www.singstat.gov.sg/find-data/explore-data-themes/population/death-and-life-expectancy/latest-news-data) · [Population Trends 2026 — singstat.gov.sg](https://www.singstat.gov.sg/publication-resources/population-trends-2026) · [Elderly, youth and sex profile — singstat.gov.sg](https://www.singstat.gov.sg/find-data/explore-data-themes/population/elderly-youth-and-sex-profile/latest-news-data) · [Key Household Income Trends 2025 — singstat.gov.sg](https://www.singstat.gov.sg/publication-resources/key-household-income-trends-2025) · [CPI Dec 2025 — singstat.gov.sg](https://www.singstat.gov.sg/news/singapore-consumer-price-index-dec2025) · [CPI Sep 2026 — singstat.gov.sg](https://www.singstat.gov.sg/news/singapore-consumer-price-index-sep2026) · [MAS Consumer Price Developments, Sep 2026 (PDF)](https://www.mas.gov.sg/-/media/mas-media-library/news/consumer-price-developments/2026/consumer-price-developments-in-september-2026.pdf)
+- **Note:** CPI figures are released monthly (October 2026 data due late November). Always name the month quoted.
+- **Safe way to say it:** "A Singapore resident who reaches 65 can expect to live about 21.6 more years on average (SingStat, 2025), so retirement savings may need to last into the mid-80s or beyond."
+- **Never say:** "You will live to 86" or "inflation is 3% a year." (Life expectancy is an average, not a prediction; inflation must be quoted with its period and source.)
 
 ## 5. MAS / FAA rules for an adviser representative on social media
 
