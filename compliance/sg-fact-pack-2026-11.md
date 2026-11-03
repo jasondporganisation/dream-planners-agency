@@ -2,7 +2,7 @@
 
 **For:** Brand Guardian (automated compliance reviewer for Jason Ng's Instagram reels, podcast scripts and LinkedIn posts)
 **Compiled:** 3 Nov 2026 · **Next review due:** 1 Jan 2027 (several figures change that day — see [Changes on 1 Jan 2027](#changes-on-1-jan-2027))
-**Status:** DRAFT — sections marked _pending_ are still being researched. Brand Guardian must not rely on a pending section.
+**Status:** Complete draft, awaiting human sign-off (Jason / Great Eastern compliance). Every figure was checked against its official page on 3 Nov 2026.
 
 ## How Brand Guardian should use this pack
 
@@ -300,7 +300,115 @@ Co-insurance on the claimable amount in a policy year (the bands include the ded
 
 ## 5. MAS / FAA rules for an adviser representative on social media
 
-_Pending — research in progress._
+> Jason is an appointed representative of a life insurer (Great Eastern) under the Financial Advisers Act. Statute text on sso.agc.gov.sg was not fetched; FAA sections and regulations are cited as quoted in MAS FAQs. **These rules do not replace Great Eastern's own approval process. Brand Guardian's approval is not the insurer's approval.**
+
+### 5.1 MAS Guidelines on Standards of Conduct for Digital Advertising Activities (FSG-03)
+
+**Issued 25 Sep 2025 · in force since 25 Mar 2026 (para 1.7).** Source: [FSG-03 (PDF) — mas.gov.sg](https://www.mas.gov.sg/-/media/mas/regulations-and-financial-stability/regulations-guidance-and-licensing/financial-advisers/guidelines/guidelines-on-standards-of-conduct-for-digital-advertising-activities.pdf)
+
+| Rule (plain English) | Para | Status |
+|---|---|---|
+| Representatives are "digital marketers"; the guidelines cover their posts | 2.1 | VERIFIED |
+| The insurer must oversee, monitor and discipline its representatives' digital advertising | 4.1, 4.2, 5.9, 5.12 | VERIFIED |
+| **Each post must stand on its own.** A disclaimer in the bio, a link or another post does not fix a misleading post | 5.4 | VERIFIED |
+| Key risk disclosures must be legible, clear and prominent, and not cut off by character limits | 5.4 | VERIFIED |
+| Reels: on-screen disclosures must stay up long enough to be read in full. Carousels: disclose on each frame or the first frame | Ex. 2.1(c)–(d) | VERIFIED |
+| Past or illustrative returns need a clear statement that they are not indicative of future performance | Ex. 2.1(b) | VERIFIED |
+| Re-posting or sharing content (including testimonials) counts as advertising | 5.6 | VERIFIED |
+| Influencers or introducers must disclose payment and whether they are licensed | Ex. 2.1(e)–(f) | VERIFIED |
+| Insurers may require prior approval of representatives' accounts and posts, and keep a register of ads | Ex. 4.1 | VERIFIED |
+
+- **Good practice (not a binding rule):** MAS's [Information Paper on market conduct controls in the FA industry, 26 May 2026 (PDF)](https://www.mas.gov.sg/-/media/mas/publications/information-papers/information-paper-on-good-practices-of-market-conduct-controls-in-the-financial-advisory-industry.pdf) lists: prior approval of all self-created marketing material, submitting a screenshot and link within 3 days of posting, and showing the representative's name and number on social media accounts.
+- **Safe way to say it:** A reel whose risk caveat stays on screen long enough to read, with the disclaimer in the post itself, approved by Great Eastern compliance before posting.
+- **Never say:** "Full benefits and T&Cs in my bio link 👆" as the only disclosure. Never post product content Great Eastern hasn't approved.
+
+### 5.2 No misleading claims, no "guaranteed" unless it is
+
+| Rule | Source | Status |
+|---|---|---|
+| Advertising by financial advisers must comply with FAR regulation 22(1) (fair and balanced advertising), linked to FAA s.26 (false or misleading statements); this applies to digital media | [MAS FAQs on Fair and Balanced Advertising, A2, A7 (PDF)](https://www.mas.gov.sg/-/media/MAS/Regulations-and-Financial-Stability/Regulations-Guidance-and-Licensing/Securities-Futures-and-Fund-Management/Regulations-Guidance-and-Licensing/FAQs/FAQs-on-Fair-and-Balanced-Advertising-and-Other-Advertising-Restrictions.pdf) | VERIFIED (as cited in the FAQ); statute text **UNVERIFIED** |
+| Product advertisements must carry "This advertisement has not been reviewed by the Monetary Authority of Singapore." | same FAQ, A8–A9 | Requirement VERIFIED; **whether it applies to life policies is UNVERIFIED** (confirm with Great Eastern) |
+| Investment-linked policy ads must not use "guarantee", "warranty" or anything suggesting the principal or return is guaranteed or that you cannot lose money, unless it actually is | [MAS Notice 307, App F para 3(e) (PDF)](https://www.mas.gov.sg/-/media/mas-media-library/regulation/notices/id/notice-307/mas-307_clean_28-jun-2021.pdf) (revised 28 Jun 2021, in force 1 Jul 2021) | VERIFIED |
+| ILP ads must not describe returns as "targeted" or "expected" | Notice 307, App F para 18(b) | VERIFIED |
+| Participating policy illustrations: Upper Illustration Rate capped at 4.25% p.a., Lower at 3.00% p.a. (since 1 Jul 2021). These are illustrative only | [LIA — illustrated rates for par policies](https://www.lia.org.sg/tools-and-resources/illustrated-investment-rate-of-return-for-par-policies/) | VERIFIED |
+
+- Notice 307 binds the insurer and covers ILPs. Brand Guardian should apply the same "no guaranteed unless it is guaranteed" test to all products. That is a cautious reading, not an express rule for non-ILPs.
+- **Safe way to say it:** "The benefit illustration shows projected values at illustrated rates of 4.25% and 3.00% a year. These are not guaranteed; actual returns may be higher or lower."
+- **Never say:** "Guaranteed 4.25% returns," "you can't lose money," or "expected yield of 4%" about non-guaranteed bonuses.
+
+### 5.3 LIA rules for tied representatives
+
+| Rule | Source | Status |
+|---|---|---|
+| Only use and share material approved for that purpose; content in any medium, **expressly including social media**, must not be inappropriate, inaccurate, inadequate or misleading. Penalties range from warning to termination | [LIA Disciplinary Framework, MU 82/25, Appendix A (PDF)](https://www.lia.org.sg/media/4491/appendix-a-market-conduct-breaches.pdf) | VERIFIED |
+| Get the insurer's approval before any interview, and do not act as a spokesperson for the insurer (**relevant to podcasts**) | same | VERIFIED |
+| Advertising must be clear, easy to understand and not misleading | [LIA Code of Life Insurance Practice, Dec 2021 (PDF)](https://www.lia.org.sg/media/3208/lia_colip_english_dec2021.pdf) | VERIFIED |
+| A standalone public LIA social-media guideline | Not found | **UNVERIFIED** |
+
+- **Safe way to say it (podcast):** "These are my personal views as a representative; I'm not speaking on behalf of Great Eastern." Interviews or guest spots need Great Eastern's prior approval.
+- **Never say:** "Great Eastern's view is…" or announce company positions without approval.
+
+### 5.4 Testimonials
+
+- MAS has **no outright ban** that the research could find. But a testimonial Jason posts or re-shares is an advertisement he and Great Eastern are responsible for (FSG-03 para 5.6), and quoted acclaim in ILP ads must name its source (Notice 307 App F 3(d)). FSG-03 para 1.6 also points to the ASAS Singapore Code of Advertising Practice (outside the allowed sources; not checked). **VERIFIED** for the MAS points.
+- **Safe way to say it:** Only an insurer-approved, attributed client story about the experience (for example, the claim process), with no outcome or return promises.
+- **Never say:** "My client got $500k at 65 with this plan — you will too!" Never re-share client comments that haven't been vetted.
+
+### 5.5 Titles, "independent" and the Register
+
+| Rule | Source | Status |
+|---|---|---|
+| Representatives may **not** call themselves "Financial Advisers" (they may use the term together with "representative"). Titles like "financial planner" are not restricted | [MAS FAQs on the FAA, Q10 (PDF)](https://www.mas.gov.sg/-/media/mas/regulations-and-financial-stability/regulations-guidance-and-licensing/financial-advisers/faq/faqs-on-financial-advisers-act-financial-advisers-regulations-notices-and-guidelines.pdf) | VERIFIED |
+| "Independent" may only be used by firms with no product bias or links to product providers (FAR reg 21; FAA-G05). A tied insurer representative cannot meet this | same FAQ, Q16 · [FAA-G05 — mas.gov.sg](https://www.mas.gov.sg/regulation/guidelines/guidelines-on-the-use-of-the-term-independent-by-financial-advisers) | VERIFIED |
+| Each representative has a unique MAS representative number; the public can check the Register | [MAS Register of Representatives](https://eservices.mas.gov.sg/rr) · [MoneySense](https://www.moneysense.gov.sg/financial-advice-who-you-could-be-dealing-with/) | VERIFIED |
+
+- **Safe way to say it:** "Jason Ng, Financial Services Representative, Great Eastern" or "financial planner (representative of Great Eastern)".
+- **Never say:** "Independent financial adviser," "I'm unbiased — I compare every insurer," or "Jason Ng, Financial Adviser".
+
+### 5.6 POPS / SDIC statement
+
+- Insurer marketing materials for insured policies must carry the Policy Owners' Protection Scheme statement. Full form: _"This policy is protected under the Policy Owners' Protection Scheme which is administered by the Singapore Deposit Insurance Corporation (SDIC). Coverage for your policy is automatic and no further action is required from you. For more information on the types of benefits that are covered under the scheme as well as the limits of coverage, where applicable, please contact your insurer or visit the GIA/LIA or SDIC web-sites (www.gia.org.sg or www.lia.org.sg or www.sdic.org.sg)."_ For internet product ads, the short form is allowed: _"Protected up to specified limits by SDIC."_
+- A new Annex P-B (issued 1 Sep 2026) **takes effect 1 Jan 2027**; the wording representatives use is **unchanged**.
+- **Source:** [SDIC PPF Rules, Annex P-B (PDF) — sdic.org.sg](https://www.sdic.org.sg/api/252/Annex%20P%20B.pdf) (sdic.org.sg is outside the listed domains; it is the primary source for this one rule). **VERIFIED**
+- **Safe way to say it:** Add "Protected up to specified limits by SDIC." when a specific policy is promoted.
+- **Never say:** "Your money is 100% protected by the government."
+
+### 5.7 Current disclaimer, reviewed
+
+> **In use:** "For general information only; it does not consider your specific objectives, financial situation or needs. Jason Ng, Representative, Dream Planners."
+
+| Gap | Why | Basis |
+|---|---|---|
+| Does not name the insurer | "Dream Planners" does not tell viewers whom he represents; MAS expects customers to be able to verify a representative's identity | Notice 307 App F 3(b) (ILP ads must name the insurer); MAS Information Paper p.4 |
+| No representative number | MAS good practice | MAS Information Paper p.4 (good practice, not a binding rule) |
+| No SDIC line when a policy is promoted | Required in insurer marketing material for insured policies | SDIC Annex P-B paras 1.1 and 2 |
+| No "not guaranteed / not indicative of future performance" caveat when figures are shown | Required when returns or illustrations appear | FSG-03 Ex. 2.1(b); Notice 307 App F |
+| Bio-only disclaimers don't count | It must be in each post or frame | FSG-03 para 5.4, Ex. 2.1(d) |
+| Possibly missing "not reviewed by MAS" for product ads | Applicability to life policies unconfirmed | MAS FAQ A8 (**UNVERIFIED** for life policies) |
+| "Seek advice" wording | No official source found that requires it | **UNVERIFIED**: optional, not mandatory |
+
+**Suggested disclaimer for Great Eastern compliance to confirm** (not yet approved; fill in the exact legal entity name and representative number from GE):
+
+> "For general information only; it does not consider your specific objectives, financial situation or needs. Jason Ng is a representative of [The Great Eastern Life Assurance Company Limited] (MAS Rep No. [XXXXXX]) and leads Dream Planners."
+> When a policy is named, add: "Protected up to specified limits by SDIC." When figures are shown, add: "Projected/illustrated values are not guaranteed; past performance is not indicative of future performance."
+
+Until GE confirms new wording, **Brand Guardian should keep using the current disclaimer and send for human review any post that names a product, shows returns or illustrations, includes a testimonial, or is a podcast/interview appearance.**
+
+### 5.8 Recent and upcoming regulatory dates
+
+| Change | Date | Status | Source |
+|---|---|---|---|
+| FSG-03 digital advertising guidelines in force | 25 Mar 2026 | VERIFIED | [mas.gov.sg](https://www.mas.gov.sg/-/media/mas/regulations-and-financial-stability/regulations-guidance-and-licensing/financial-advisers/guidelines/guidelines-on-standards-of-conduct-for-digital-advertising-activities.pdf) |
+| LIA: ILP illustrations add a 0% return column and a lapse statement (upper and lower rates currently capped at 8% and 4%). Never quote ILP projections without the 0% scenario | 16 Nov 2026 | VERIFIED | [lia.org.sg (PDF)](https://www.lia.org.sg/media/4796/enhancements-to-policy-illustration-pi-of-investment-linked-policy-ilp.pdf) |
+| MAS Notice FAA-N27, Reporting of Misconduct of Representatives | **1 Jan 2027** | VERIFIED | [mas.gov.sg](https://www.mas.gov.sg/regulation/notices/notice-faa-n27) |
+| New SDIC Annex P-B (wording for representatives unchanged) | **1 Jan 2027** | VERIFIED | [sdic.org.sg (PDF)](https://www.sdic.org.sg/api/252/Annex%20P%20B.pdf) |
+| Balanced scorecard (FAA-N20) | No change found for 1 Jan 2027 (last amended 29 Dec 2025) | VERIFIED | [mas.gov.sg](https://www.mas.gov.sg/regulation/notices/notice-faa-n20) |
+
+### Corrections to the original brief
+
+- The digital advertising guidelines are **FSG-03** (in force 25 Mar 2026), not "FAA-G18"; the 2023 document was a consultation paper.
+- The MAS FAQ links advertising rules to **FAA s.26**, not s.45.
+- MAS has no outright testimonial ban; testimonials are treated as advertisements.
 
 ---
 
@@ -313,6 +421,9 @@ _Pending — research in progress._
 | Retirement sums (cohort turning 55) | BRS $110,200 / FRS $220,400 / ERS $440,800 | BRS $114,100 / FRS $228,200 / ERS $456,400 | [cpf.gov.sg](https://www.cpf.gov.sg/member/infohub/educational-resources/what-is-the-cpf-retirement-sum) |
 | OW ceiling | $8,000 | $8,000 (no change) | [2027 rate table](https://www.cpf.gov.sg/content/dam/web/employer/employer-obligations/documents/jan2027cpfcontributionrates.pdf) |
 | Retirement / re-employment age | 64 / 69 | No change (last changed 1 Jul 2026) | [mom.gov.sg](https://www.mom.gov.sg/employment-practices/retirement) |
+| MAS Notice FAA-N27 (reporting of representative misconduct) | — | In force | [mas.gov.sg](https://www.mas.gov.sg/regulation/notices/notice-faa-n27) |
+| SDIC POPS Annex P-B | 2022 version | New version in force; representative-facing wording unchanged | [sdic.org.sg](https://www.sdic.org.sg/api/252/Annex%20P%20B.pdf) |
+| LPA, wills, intestacy, nominations | — | No change found | see section 3 |
 
 **Other 2027 dates to watch (not 1 Jan):**
 
@@ -320,5 +431,25 @@ _Pending — research in progress._
 |---|---|---|---|
 | Second phase of MediShield Life inpatient deductible increase | 1 Apr 2027 | Date VERIFIED; **new amounts UNVERIFIED** (not published on the pages checked) | [MOH, 15 Oct 2024](https://www.moh.gov.sg/newsroom/government-accepts-medishield-life-council-s-recommendations-to-enhance-medishield-life-scheme---government-support-more-than-offsets-premium-increases/) |
 | MediShield Life Phased Support (two policy years from 1 Apr 2025) appears to end for renewals from 1 Apr 2027 | 1 Apr 2027 | **UNVERIFIED** (an inference from "two policy years", not stated outright) | [moh.gov.sg](https://www.moh.gov.sg/managing-expenses/schemes-and-subsidies/medishield-life/medishield-life-premiums-and-subsidies/) |
+| LIA ILP illustration changes (0% column, lapse statement) | 16 Nov 2026 | VERIFIED (before 2027, but affects posts now) | [lia.org.sg](https://www.lia.org.sg/media/4796/enhancements-to-policy-illustration-pi-of-investment-linked-policy-ilp.pdf) |
 
-_Further 2027 changes will be added as the remaining sections are completed._
+---
+
+## UNVERIFIED items — do not approve posts that rely on these
+
+1. Any future increase in the retirement or re-employment age (no date published).
+2. MediShield Life deductibles from 1 Apr 2027 (amounts not published) and the end of Phased Support.
+3. Pioneer Generation MediSave top-up amounts (MOH and CPF pages conflict).
+4. Effective dates of the further LPA fee reductions.
+5. The explicit statutory "in writing" wording for wills.
+6. The old-age support ratio (only a calculated value, about 3.2).
+7. Median household income from work for 2025 (SingStat now headlines market income).
+8. Text of FAA s.26 / FAR reg 22, and whether the "not reviewed by MAS" statement applies to life policies.
+9. Any mandatory "seek advice" disclaimer wording.
+10. A standalone LIA social-media guideline; the ASAS advertising code.
+
+## Maintenance
+
+- Re-check every figure on or after **1 Jan 2027** and whenever CPF, MOH or MAS announce changes (Budget in February; MediShield Life changes usually in April).
+- Brand Guardian should treat this pack as **expired after 31 Jan 2027** unless it is re-verified.
+- Before relying on this pack, it should be reviewed and signed off by a person (Jason or Great Eastern compliance). Brand Guardian currently approves posts with no human step.
