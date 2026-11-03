@@ -9,6 +9,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 from scraper.factsheet_pdf import parse_page_facts, parse_performance_lines
 from scraper.fundcentre import returns_from_history, normalize_screener_row
 from scraper.fundlist import parse_fund_list_html, completeness_report, EXPECTED_FUNDS
+from scraper.checks import fund_problems, validate_dataset
 from scraper.util import parse_asat_date, parse_money_millions, parse_pct, slugify
 
 
@@ -274,6 +275,29 @@ class TestFundListPage(unittest.TestCase):
         self.assertEqual(funds[2]["category"], "Money Markets and Bonds")
         self.assertIn("#/detail?id=F0HKG07068_F07", funds[1]["fundcentre_url"])
 
+    def test_link_encodings_seen_or_likely(self):
+        """Every encoding of the deep link must give the same three funds."""
+        variants = {
+            "entity": self.HTML.replace("?id=", "?id&#61;"),           # served Aug + Nov 2026
+            "double-entity": self.HTML.replace("?id=", "?id&amp;#61;"),
+            "percent": self.HTML.replace("?id=", "%3Fid%3D"),
+            "not-first-param": self.HTML.replace("?id=", "?lang=en_sg&amp;id="),
+            "lower-case": self.HTML.replace("detail?id=", "Detail?ID=").replace("_F", "_f"),
+        }
+        want = ["F00001DUL4_F224", "F0HKG07068_F07", "F0HKG07063_F01"]
+        for label, html in variants.items():
+            with self.subTest(label):
+                funds = parse_fund_list_html(html)
+                self.assertEqual([f["fund_id"] for f in funds], want)
+                self.assertEqual(funds[2]["category"], "Money Markets and Bonds")
+
+    def test_heading_variants(self):
+        html = (self.HTML.replace("<h3>Global Equity</h3>", "<h3><span> GLOBAL&nbsp;Equity </span></h3>")
+                .replace("Money Markets and Bonds", "Money Markets &amp; Bonds"))
+        funds = parse_fund_list_html(html)
+        self.assertEqual(funds[0]["category"], "Global Equity")
+        self.assertEqual(funds[2]["category"], "Money Markets and Bonds")
+
     def test_expected_list_is_forty_in_six(self):
         self.assertEqual(sum(len(v) for v in EXPECTED_FUNDS.values()), 40)
         self.assertEqual(len(EXPECTED_FUNDS), 6)
@@ -286,6 +310,39 @@ class TestFundListPage(unittest.TestCase):
         self.assertEqual(rep["found"], 41)
         self.assertEqual(rep["unexpected_kept"], ["brand new"])
         self.assertEqual(len(rep["missing"]), 1)                # the one we overwrote
+
+
+class TestDatasetChecks(unittest.TestCase):
+    GOOD = {"name": "GreatLink X Fund", "bid_price": 1.0, "price_date": "2026-11-02",
+            "returns": {"ret_1m": 0.5, "ret_ytd": None}}
+
+    def test_good_fund_passes(self):
+        self.assertEqual(fund_problems(self.GOOD, "2026-11-02"), [])
+
+    def test_young_fund_with_only_short_returns_passes(self):
+        f = dict(self.GOOD, returns={"ret_1m": -7.0, "ret_ytd": None, "ret_1y": None})
+        self.assertEqual(fund_problems(f, "2026-11-02"), [])
+
+    def test_empty_fund_fails(self):
+        f = {"name": "GreatLink X Fund", "bid_price": None, "price_date": None, "returns": {}}
+        probs = fund_problems(f, "2026-11-02")
+        self.assertEqual(len(probs), 3)
+        self.assertTrue(any("no returns" in p for p in probs))
+
+    def test_stale_fund_fails(self):
+        f = dict(self.GOOD, price_date="2026-08-21")
+        self.assertTrue(any("days behind" in p for p in fund_problems(f, "2026-11-02")))
+
+    def test_too_few_funds_fails(self):
+        self.assertTrue(validate_dataset([self.GOOD] * 3, "2026-11-02"))
+
+    def test_committed_dataset_is_complete(self):
+        """The data/funds.json in the repo must pass the same checks refresh.py applies."""
+        import json
+        path = Path(__file__).resolve().parent.parent / "data" / "funds.json"
+        data = json.loads(path.read_text())
+        self.assertEqual(validate_dataset(data["funds"], data["as_at"]), [])
+        self.assertEqual(data["fund_count"], len(data["funds"]))
 
 
 if __name__ == "__main__":
