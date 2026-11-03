@@ -3,10 +3,10 @@
 **Life stage:** All ages · **Target length:** ~55 seconds
 
 ## Hook (first 2 seconds)
-"Scams cost people in Singapore over nine hundred million dollars last year."
+"Over nine hundred million dollars, lost to scams."
 
 ## Voiceover
-Scams cost people in Singapore over nine hundred million dollars last year.
+Over nine hundred million dollars, lost to scams.
 
 According to the Singapore Police Force, scam losses were about nine hundred and thirteen million dollars in 2025, across almost forty-two thousand cases. That's lower than 2024, but still huge. So let's keep it simple with three words: Add, Check, Tell.
 
