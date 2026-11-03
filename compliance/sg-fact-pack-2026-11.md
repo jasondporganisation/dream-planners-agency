@@ -109,7 +109,104 @@
 
 ## 2. MediShield Life and Integrated Shield Plans
 
-_Pending — research in progress._
+### 2.1 What MediShield Life covers
+
+| Fact | Detail | Status |
+|---|---|---|
+| Purpose | Large hospital bills and selected costly outpatient treatments (e.g. dialysis, chemotherapy) | VERIFIED |
+| Sized for | Subsidised treatment in public hospitals (Class B2/C wards). It pays a smaller share of Class A/B1 or private bills | VERIFIED |
+| Who | All Singapore Citizens and PRs, automatically | VERIFIED |
+| Lifelong | Covered for life, regardless of age or health, including pre-existing conditions | VERIFIED |
+| Serious pre-existing conditions | 30% Additional Premiums for the first 10 years | VERIFIED |
+
+- **Sources:** [MediShield Life — moh.gov.sg](https://www.moh.gov.sg/managing-expenses/schemes-and-subsidies/medishield-life/medishield-life/) · [MediShield Life — cpf.gov.sg](https://www.cpf.gov.sg/member/healthcare-financing/medishield-life) · [Pre-existing conditions — moh.gov.sg](https://www.moh.gov.sg/managing-expenses/schemes-and-subsidies/medishield-life/coverage-for-pre-existing-conditions/)
+- **Safe way to say it:** "MediShield Life is basic, lifelong cover for large hospital bills, sized for B2/C wards in public hospitals."
+- **Never say:** "MediShield Life covers your whole hospital bill" or "MediShield Life is useless." (It is designed to leave co-payments, and it is the base of every Integrated Shield Plan.)
+
+### 2.2 Annual premiums before subsidies (policies starting or renewing on or after 1 Apr 2025, including 9% GST)
+
+| Age next birthday | Premium | Age next birthday | Premium |
+|---|---|---|---|
+| 1–20 | $200 | 74–75 | $1,816 |
+| 21–30 | $295 | 76–78 | $2,027 |
+| 31–40 | $503 | 79–80 | $2,187 |
+| 41–50 | $637 | 81–83 | $2,303 |
+| 51–60 | $903 | 84–85 | $2,616 |
+| 61–65 | $1,131 | 86–88 | $2,785 |
+| 66–70 | $1,326 | 89–90 | $2,785 |
+| 71–73 | $1,643 | above 90 | $2,826 |
+
+- Premiums are fully payable by MediSave (including a family member's MediSave).
+- Premium subsidies of up to 60% apply for lower- to middle-income households (household monthly income per person of $3,600 or less, and home Annual Value of $31,000 or less; PRs receive half the rate). Pioneer Generation subsidies of 40–60% and additional Merdeka Generation subsidies also apply. Additional Premium Support means no one loses cover because they cannot afford premiums.
+- **Status:** VERIFIED
+- **Sources:** [Premium and subsidy tables — moh.gov.sg](https://www.moh.gov.sg/managing-expenses/schemes-and-subsidies/medishield-life/medishield-life-premium-and-subsidy-tables/) · [Premiums and subsidies — moh.gov.sg](https://www.moh.gov.sg/managing-expenses/schemes-and-subsidies/medishield-life/medishield-life-premiums-and-subsidies/)
+- **Safe way to say it:** "For ages 31–40 (age next birthday), the MediShield Life premium before subsidies is $503 a year, payable fully by MediSave (MOH, from 1 Apr 2025)."
+- **Never say:** "MediShield Life costs about $500 for everyone." (Premiums depend on age band and subsidies.)
+- **Do not quote** Pioneer Generation MediSave top-up amounts: MOH and CPF pages give different figures ($300–$1,200 vs $250–$900). **UNVERIFIED / conflicting.**
+
+### 2.3 Deductible and co-insurance
+
+Deductible per policy year, by age next birthday at the start of the policy year:
+
+| Ward or treatment | Age 80 and below | Age 81 and above |
+|---|---|---|
+| Class C (and subsidised community hospital, short-stay ward, inpatient palliative care) | $2,000 | $2,750 |
+| Class B2 / B2+ / B1 (and the non-subsidised versions of the above) | $2,500 | $3,500 |
+| Class A (including private hospitals) | $3,500 | $4,500 |
+| Day surgery | $1,500 | $2,000 |
+| Outpatient | $500 | $500 |
+
+- The outpatient deductible applies to outpatient treatment from 1 Jun 2026. You pay the full deductible only once per policy year.
+
+Co-insurance on the claimable amount in a policy year (the bands include the deductible):
+
+| Claimable amount | Co-insurance |
+|---|---|
+| First $5,000 | 10% |
+| Next $5,000 | 5% |
+| Above $10,000 | 3% |
+
+- **Status:** VERIFIED
+- **Sources:** [Understand MediShield Life payouts — cpf.gov.sg](https://www.cpf.gov.sg/member/annex/understand-medishield-life-payouts) · [How to make a claim — moh.gov.sg](https://www.moh.gov.sg/managing-expenses/schemes-and-subsidies/medishield-life/how-to-make-a-medishield-life-claim/)
+- **Watch:** the second phase of the inpatient deductible increase takes effect on **1 Apr 2027**. The new amounts are **not published** on the pages checked, so do not quote 2027 deductibles. **UNVERIFIED.** See [MOH, 15 Oct 2024](https://www.moh.gov.sg/newsroom/government-accepts-medishield-life-council-s-recommendations-to-enhance-medishield-life-scheme---government-support-more-than-offsets-premium-increases/).
+- **Safe way to say it:** "For a Class B2 stay at age 80 or below, you pay the first $2,500 per policy year (the deductible), then a co-insurance share that starts at 10%."
+- **Never say:** "With MediShield Life you pay nothing out of pocket."
+
+### 2.4 Claim limits
+
+| Limit | Figure | Status |
+|---|---|---|
+| Per policy year | $200,000 | VERIFIED |
+| Lifetime | No limit | VERIFIED |
+| Normal ward | $830 a day, plus an extra $800 a day for the first 2 days | VERIFIED |
+| ICU | $5,140 a day | VERIFIED |
+| Surgery | $240 to $3,900 by procedure table (1–7) | VERIFIED |
+| Implants | $7,000 per treatment | VERIFIED |
+| Kidney dialysis | $1,750 a month | VERIFIED |
+| Cancer drug treatment | $200 to $12,800 a month, by drug | VERIFIED |
+| Cell, tissue and gene therapy products | $141,000 per treatment, outside the policy-year limit | VERIFIED |
+
+- Benefits apply to admissions or treatments from 1 Jun 2026 (MOH benefits page, updated 3 Jun 2026).
+- **Source:** [MediShield Life benefits — moh.gov.sg](https://www.moh.gov.sg/managing-expenses/schemes-and-subsidies/medishield-life/medishield-life-benefits/)
+- **Safe way to say it:** "MediShield Life pays up to $200,000 per policy year with no lifetime limit, subject to claim limits per treatment."
+- **Never say:** "MediShield Life has unlimited coverage." (There is no lifetime limit, but there are yearly and per-treatment limits.)
+
+### 2.5 Integrated Shield Plans (generic — do not name insurers in compliance examples)
+
+| Fact | Detail | Status |
+|---|---|---|
+| What it is | Offered by private insurers: the MediShield Life component plus an additional private insurance component for higher ward classes or private hospitals | VERIFIED |
+| Pre-existing conditions | The MediShield Life part still covers them even if the private part excludes them | VERIFIED |
+| One plan only | You can be covered by only one Integrated Shield Plan at a time | VERIFIED |
+| MediSave for the private part | Up to the Additional Withdrawal Limits by age next birthday: $300 (40 and below), $600 (41–70), $900 (71 and above). Any excess is paid in cash | VERIFIED |
+| Riders | Rider premiums must be paid fully in cash (no MediSave) | VERIFIED |
+| Minimum 5% co-payment | For new riders sold from 1 Apr 2019 | VERIFIED |
+| New rider rules from 1 Apr 2026 | New riders may not cover the minimum IP deductible ($1,500–$3,500 a year by ward class); the co-payment cap is raised from at least $3,000 to at least $6,000 a year; the 5% minimum co-payment is unchanged | VERIFIED |
+| Legacy riders | Riders sold 27 Nov 2025 – 31 Mar 2026 must move to compliant riders by the first renewal after 1 Apr 2028 | VERIFIED |
+
+- **Sources:** [About Integrated Shield Plans — moh.gov.sg](https://www.moh.gov.sg/managing-expenses/schemes-and-subsidies/integrated-shield-plans/about-integrated-shield-plans/) · [Integrated Shield Plan — cpf.gov.sg](https://www.cpf.gov.sg/member/healthcare-financing/getting-supplementary-coverage/integrated-shield-plan) · [New IP rider requirements — moh.gov.sg](https://www.moh.gov.sg/newipriders/) · [MOH press release, 26 Nov 2025](https://www.moh.gov.sg/newsroom/new-requirements-for-integrated-shield-plan-riders-to-strengthen-sustainability-of-private-health-insurance-and-address-rising-healthcare-costs/) · [MOH on 5% co-payment](https://www.moh.gov.sg/newsroom/co-payment-in-integrated-shield-plans-for-specific-hospital-categories-and-breakdown-of-average-claims-made-through-full-riders-of-integrated-shield-plans/)
+- **Safe way to say it:** "An Integrated Shield Plan builds on MediShield Life to cover higher ward classes or private hospitals. Part of the premium can come from MediSave up to set limits; riders are paid in cash."
+- **Never say:** "Get a rider and you'll never pay a cent for hospital bills." (New riders must have at least 5% co-payment and, from 1 Apr 2026, cannot cover the minimum deductible.) Also never say "pay your whole plan with MediSave."
 
 ## 3. Lasting Power of Attorney, wills and intestacy, nominations outside the estate
 
@@ -134,5 +231,12 @@ _Pending — research in progress._
 | Retirement sums (cohort turning 55) | BRS $110,200 / FRS $220,400 / ERS $440,800 | BRS $114,100 / FRS $228,200 / ERS $456,400 | [cpf.gov.sg](https://www.cpf.gov.sg/member/infohub/educational-resources/what-is-the-cpf-retirement-sum) |
 | OW ceiling | $8,000 | $8,000 (no change) | [2027 rate table](https://www.cpf.gov.sg/content/dam/web/employer/employer-obligations/documents/jan2027cpfcontributionrates.pdf) |
 | Retirement / re-employment age | 64 / 69 | No change (last changed 1 Jul 2026) | [mom.gov.sg](https://www.mom.gov.sg/employment-practices/retirement) |
+
+**Other 2027 dates to watch (not 1 Jan):**
+
+| Change | Date | Status | Source |
+|---|---|---|---|
+| Second phase of MediShield Life inpatient deductible increase | 1 Apr 2027 | Date VERIFIED; **new amounts UNVERIFIED** (not published on the pages checked) | [MOH, 15 Oct 2024](https://www.moh.gov.sg/newsroom/government-accepts-medishield-life-council-s-recommendations-to-enhance-medishield-life-scheme---government-support-more-than-offsets-premium-increases/) |
+| MediShield Life Phased Support (two policy years from 1 Apr 2025) appears to end for renewals from 1 Apr 2027 | 1 Apr 2027 | **UNVERIFIED** (an inference from "two policy years", not stated outright) | [moh.gov.sg](https://www.moh.gov.sg/managing-expenses/schemes-and-subsidies/medishield-life/medishield-life-premiums-and-subsidies/) |
 
 _Further 2027 changes will be added as the remaining sections are completed._
