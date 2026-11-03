@@ -30,7 +30,7 @@ Illustrative contrast: interest on a $5,000 balance at 25% a year is roughly $1,
 ## Common myths to correct
 - "Paying the minimum keeps me debt-free." It keeps you in good standing, not out of debt.
 - "Interest is only charged on the unpaid part." Check your card terms: interest-free periods can be lost once you carry a balance. Describe this as "check how your card works", not as a universal rule (**UNVERIFIED** detail).
-- "Checking my credit report hurts my score." Not stated by MoneySense, so avoid the claim either way.
+- "Only people in trouble look at their credit report." Anyone can request their own report from Credit Bureau Singapore to check its accuracy.
 - "Debt problems are shameful." Early help is common and sensible.
 
 ## "Never say" lines

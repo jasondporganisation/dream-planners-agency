@@ -19,9 +19,10 @@
 | 2 | Silver Support quarterly payouts | $215 to $1,080 per quarter, by flat type and household income per person | Current (raised 2025) | [cpf.gov.sg: Silver Support Scheme](https://www.cpf.gov.sg/member/retirement-income/government-support/silver-support-scheme) | VERIFIED |
 | 3 | Silver Support key eligibility | SC 65+; total CPF contributions by 55 ≤ $140,000; 1–5 room HDB; household income ≤ $2,300 per person | Current | [cpf.gov.sg: Silver Support Scheme](https://www.cpf.gov.sg/member/retirement-income/government-support/silver-support-scheme) | VERIFIED |
 | 4 | Basic Healthcare Sum | $79,000 (below 65; fixed for life for those turning 65 in 2026) | From 1 Jan 2026 | [cpf.gov.sg: BHS for 2026](https://www.cpf.gov.sg/member/infohub/news/news-releases/cpf-interest-rates-from-1-january-to-31-march-2026-and-basic-healthcare-sum-for-2026) | VERIFIED |
-| 5 | SRS contribution caps and withdrawal tax treatment | See `ep55`/family pack figures | — | [iras.gov.sg: SRS](https://www.iras.gov.sg/taxes/individual-income-tax/employees/deductions-for-individuals-personal-reliefs-and-tax-rebates/supplementary-retirement-scheme-(srs)) | SEE NOTE |
+| 5 | SRS contribution cap | $15,300 (SC/PR); $35,700 (foreigners) a year; relief equals amount contributed | Current | [iras.gov.sg: SRS contributions](https://www.iras.gov.sg/taxes/individual-income-tax/basics-of-individual-income-tax/special-tax-schemes/srs-contributions) | VERIFIED |
+| 6 | SRS withdrawals | At/after statutory retirement age (64 from 1 Jul 2026): 50% taxable, no penalty, can be spread over 10 years. Early: 100% taxable + 5% penalty | Current | [iras.gov.sg: tax on SRS withdrawals](https://www.iras.gov.sg/taxes/individual-income-tax/basics-of-individual-income-tax/special-tax-schemes/tax-on-srs-withdrawals) | VERIFIED |
 
-**SRS note:** figures to be filled from the IRAS check (contribution cap, 50% of withdrawals taxable at the statutory retirement age, 5% penalty on early withdrawals). Until filled, treat as **UNVERIFIED**.
+**SRS note:** the statutory retirement age that applies is the one in force when the member first contributed. Say "check your own SRS retirement age".
 
 ## Worked example (illustrative numbers only)
 "Kok Wai" estimates illustrative spending of $2,800 a month at 65.
