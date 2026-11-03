@@ -62,7 +62,7 @@ Weeks run Monday to Saturday. Public holidays in this period include Chinese New
 - **Set-up:** Firm systems, email, compliance manual, social media policy. Register any business social media account with the firm. [MAS-3]
 - **Note:** New CPF senior contribution rates and new retirement sums took effect on **1 January 2027**. See Module E. [CPF-2] [CPF-7]
 - **Suggested activity:** Read the compliance manual. Write your first 30 warm-list names. No client contact.
-- **Day 7 coach check:** see `coach-checklist.md`.
+- **Day 7 coach check** (Day 7 is Sun 10 Jan; hold it on Sat 9 Jan or Mon 11 Jan). See `coach-checklist.md`.
 
 #### Week 2 (11–16 Jan, Days 8–13): Fact-find and warm list
 - **Learning:** Module B (fact-find). Module D part 1 (warm list).
@@ -80,7 +80,7 @@ Weeks run Monday to Saturday. Public holidays in this period include Chinese New
 - **Learning:** Module F (full). A short refresher quiz on Module A.
 - **Practice:** Two full mock meetings (fact-find to next step) observed by the team leader.
 - **Suggested activity:** 3–5 honest contacts a day. 5–8 conversations this week. 1–2 fact-finds (practice or real, if appointed).
-- **Day 30 coach check** (around Wed 3 Feb).
+- **Day 30 coach check** (Day 30 is Tue 2 Feb; hold it that week).
 
 ### Phase 2: Supervised practice (Days 31–60)
 
