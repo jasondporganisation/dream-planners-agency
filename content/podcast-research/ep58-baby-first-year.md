@@ -10,7 +10,7 @@
 4. Children already on the Cash Gift keep it until 31 Mar 2027, then get a top-up to $10,000 by 30 Apr 2027.
 5. Tax reliefs for working parents include Qualifying Child Relief and Working Mother's Child Relief (fixed amounts for children born from 1 Jan 2024).
 6. Budget the first year on real costs (childcare, medical, time off), not on grants alone.
-7. Update paperwork: nominations, will, and protection review with a licensed professional.
+7. Update paperwork: CPF nomination, will (with a guardian named for the child) and LPA.
 
 ## Verified Singapore facts
 | # | Fact | Figure | Effective date | Source | Status |

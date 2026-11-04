@@ -75,7 +75,7 @@ Key sources (all fetched in this session):
 | MS-10 | Other outpatient limits: dialysis $450/month; outpatient scans $600/yr; cancer drugs on the Cancer Drug List $1,200/month (drugs with MSHL limit above $5,400) or $600/month (others) | See figure | Current | S5 | "Up to $1,200 per month for cancer drug treatments on the Cancer Drug List with MediShield Life claim limit above $5,400." | VERIFIED |
 | MS-11 | Additional Withdrawal Limits for the private (non-MSHL) part of IP premiums: $300 (age 40 and below), $600 (41 to 70), $900 (71 and above) per year, by age next birthday | $300 / $600 / $900 | Current | S14 | "$300 per year for those at age 40 years and below on their next birthday" | VERIFIED |
 | MS-12 | MediSave can be used for approved dependants: spouse, parent, grandparent, sibling, child | List | Current | https://www.moh.gov.sg/managing-expenses/schemes-and-subsidies/medisave/ | "Approved dependants refer to any of the following: Spouse Parent Grandparent Sibling Child" | VERIFIED |
-| MS-13 | Basic Healthcare Sum (BHS), current 2026 value | n/a | n/a | https://www.cpf.gov.sg/member/healthcare-financing/using-your-medisave-savings | Page explains BHS but showed no 2026 figure. An older CPF article gave "The 2024 BHS is $71,500." | UNVERIFIED for 2026: no current figure seen on an official page |
+| MS-13 | Basic Healthcare Sum (BHS), 2026 value for members below 65 | $79,000 (up from $75,500 in 2025); fixed for life for members turning 65 in 2026 | From 1 Jan 2026 | https://www.cpf.gov.sg/member/infohub/news/news-releases/cpf-interest-rates-from-1-january-to-31-march-2026-and-basic-healthcare-sum-for-2026 | "For members below 65 years old, their BHS will be raised from $75,500 to $79,000." | VERIFIED (Brand Guardian re-check 4 Nov 2026; matches cpf.md 9a) |
 
 ## 3. CareShield Life (CSHL)
 
@@ -190,3 +190,7 @@ Key sources (all fetched in this session):
 - HCG "living in the community" requirement: seen only in a 2021 MOH answer (https://www.moh.gov.sg/newsroom/the-eligibility-criteria-of-the-home-caregiving-grant/), which also has outdated amounts and income thresholds. Not restated on the 2026 page.
 - The aic.sg Home Caregiving Grant page was deliberately not used (not a gov.sg domain). The supportgowhere.life.gov.sg page rendered no content through curl.
 - One discrepancy among official pages: togetherforbetter.gov.sg (last updated Dec 2025) still says "As of 2025, the monthly payout is $662" for CareShield Life. That is the 2025 figure. The 2026 figure is $689 (CPF, MOH).
+
+
+## Brand Guardian note (4 Nov 2026)
+The IP-01 to IP-10 rows (Integrated Shield Plans and riders) are background for compliance only. **Do not use them on the podcast.** Rider design, rider premiums and claim behaviour are product territory for an insurer's representative. IP-07 (rider premiums 35-40% lower) is a premium comparison and must never be quoted on air.

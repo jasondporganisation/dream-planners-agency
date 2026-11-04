@@ -4,13 +4,13 @@
 **Listener's real question:** "What happens to my money if an illness or accident stops me working, for a while or for good?"
 
 ## Key points (in order)
-1. Your ability to earn is often your biggest financial asset. We rarely think about protecting it.
+1. Your ability to earn underpins most money plans, so it is worth knowing what happens to your household budget if work stops.
 2. Severe disability, in national scheme terms, means being unable to do 3 of 6 Activities of Daily Living (washing, dressing, feeding, toileting, walking or moving around, transferring).
 3. CareShield Life pays a monthly cash payout for life during severe disability. CPF's example: a successful claim in 2026 (at age 46) gives $689 a month for life. Payout levels rise 4% a year for 2026–2030. Amounts for other ages and cohorts are in CPF's payout table.
 4. MOH estimates 1 in 2 Singapore residents could develop severe disability at some point in their lifetime.
 5. National schemes cover severe, long-term disability. Shorter or partial inability to work (e.g. months off after surgery) often falls to your own savings and employer benefits.
 6. Practical steps: know your employer's medical leave and benefits, keep an emergency fund, set up an LPA, and talk to family.
-7. This is an area for personal advice from a licensed professional. The podcast explains the landscape only.
+7. The podcast explains the national landscape only. It is not personal advice and does not discuss private cover.
 
 ## Verified Singapore facts
 | # | Fact | Figure | Effective date | Source | Status |
@@ -25,9 +25,9 @@
 ## Worked example (illustrative numbers only)
 "Daniel", 40, earns an illustrative $4,500 a month and has monthly household costs of an illustrative $3,500.
 - If he became severely disabled in 2026, CareShield Life would pay about $689 a month (CPF's 2026 example level), and MediSave Care up to $200 a month depending on his balance.
-- That leaves a gap of about $2,600 a month against his costs, before care costs are added.
-The point: national schemes are a floor. Knowing the gap is the start of a conversation, not a reason to panic.
-*Say on air: "Illustrative. Everyone's costs and cover are different. Speak to a licensed adviser for your own situation."*
+- National schemes are a floor, not income replacement. The rest of his household costs would come from savings, family arrangements and any employer benefits.
+The point: understand how the national layer works, keep an emergency fund, and have the family conversation early. Do not compute a personal "cover gap" on air.
+*Say on air: "Illustrative. Everyone's situation is different."* (No call to speak to an adviser: from an insurer's representative that reads as a sales invitation.)
 
 ## Common myths to correct
 - "Disability only happens to old people." Severe disability can happen at any age.
@@ -37,5 +37,6 @@ The point: national schemes are a floor. Knowing the gap is the start of a conve
 
 ## "Never say" lines
 - "You need [X] times your income in disability cover."
+- Any "cover gap" or "shortfall" figure for a listener or for the example character, and "your biggest asset needs protecting" (a sales set-up for income-protection products).
 - "Without extra cover your family will suffer."
 - Any reference to private supplements by name or premium.
