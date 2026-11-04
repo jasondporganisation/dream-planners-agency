@@ -14,7 +14,7 @@ Here's how it works. Every dollar you put in can get you tax relief, which is gi
 
 Now the trade-off. From your SRS retirement age, only fifty per cent of what you withdraw is taxable. But withdraw earlier, and it's fully taxable, plus a five per cent penalty, except in some specific cases. Your SRS retirement age is fixed by the statutory retirement age when you first contribute. It's sixty-four if your first contribution is on or after first July 2026; earlier contributors keep their older age.
 
-So SRS is meant for money you won't need until retirement. Whether it suits you depends on your tax bracket and plans.
+So SRS is meant for money you won't need until retirement.
 
 Have you heard of SRS before? Comment yes or no.
 
