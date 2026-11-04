@@ -4,6 +4,9 @@
     python refresh.py            # the one monthly command (no arguments)
     python refresh.py --no-pdf   # skip fact sheet downloads; fact sheets already in
                                  # factsheets/ are still used (quick data-only run)
+    python refresh.py --allow-incomplete
+                                 # write the dataset even if a fund came back empty
+                                 # or stale (the problems are listed in the report)
 
 Pipeline
   1. fund list + GE category + Fund Centre IDs   (greateasternlife.com)
@@ -30,7 +33,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent
 sys.path.insert(0, str(ROOT))
 
-from scraper import documents, factsheet_pdf, fundcentre, fundlist, prices  # noqa: E402
+from scraper import checks, documents, factsheet_pdf, fundcentre, fundlist, prices  # noqa: E402
 from scraper.util import PoliteSession, atomic_write  # noqa: E402
 
 DATA = ROOT / "data"
@@ -278,6 +281,7 @@ def write_outputs(funds: list[dict], as_at: str, report_lines: list[str], starte
 def main(argv: list[str]) -> int:
     started = datetime.now(timezone.utc)
     do_pdf = "--no-pdf" not in argv
+    allow_incomplete = "--allow-incomplete" in argv
     DATA.mkdir(exist_ok=True)
     (DATA / "history").mkdir(exist_ok=True)
     FACTSHEETS.mkdir(exist_ok=True)
@@ -372,6 +376,16 @@ def main(argv: list[str]) -> int:
         finalise_missing(f)
     funds.sort(key=lambda f: (fundlist.CATEGORIES.index(f["category"]) if f["category"] in fundlist.CATEGORIES else 99, f["name"]))
     as_at = max((f["returns_as_at"] or f["price_date"] or "" for f in funds), default="") or date.today().isoformat()
+
+    problems = checks.validate_dataset(funds, as_at)
+    if problems:
+        log("!! " + "\n!! ".join(problems))
+        if not allow_incomplete:
+            log(f"!! {len(problems)} problem(s) above: a fund came back empty or stale. Stopping; "
+                f"previous dataset and dashboard untouched. Re-run later, or use "
+                f"`python refresh.py --allow-incomplete` to publish anyway.")
+            return 1
+        report.extend(f"- INCOMPLETE (published with --allow-incomplete): {p}" for p in problems)
 
     log("Step 6/6  Writing dataset, report and dashboard")
     dataset = write_outputs(funds, as_at, report, started)

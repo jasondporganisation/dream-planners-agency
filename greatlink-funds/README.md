@@ -84,6 +84,13 @@ not re-downloaded, so re-running is safe. `python refresh.py --no-pdf` skips
 the downloads for a quick numbers-only update (fact sheets already in
 `factsheets/` are still used).
 
+The run **stops without writing anything** if any fund comes back empty (no
+bid price, no price date, or no 1M/3M/6M/YTD/1Y return at all), if a fund's
+price is more than 10 days older than the rest, or if fewer than 35 funds are
+found. The terminal lists the funds affected. Usually a retry later fixes it; if
+you really need to publish anyway, run `python refresh.py --allow-incomplete`
+and the problems are recorded in `data/refresh_report.md`.
+
 **Always glance at `data/refresh_report.md` after a refresh.** "Failures /
 notes: none" and a short discrepancy list means all is well.
 
@@ -101,7 +108,7 @@ present, online link answering); opens the dashboard in a headless browser,
 fails on any script error and saves screenshots to `verify/`. Add fund names to
 check others: `python verify.py "GreatLink Lion India Fund"`.
 
-Parser and return-maths unit tests: `python -m unittest discover tests -v` (38 tests).
+Parser and return-maths unit tests: `python -m unittest discover tests -v` (46 tests, including a check that the committed `data/funds.json` has no empty or stale fund).
 
 ## Using the dashboard
 
