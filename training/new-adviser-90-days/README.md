@@ -134,7 +134,7 @@ Weeks run Monday to Saturday. Public holidays in this period include Chinese New
 
 ## Suggested daily and weekly activity at a glance
 
-These are **suggestions** to build habits, not quotas. Quality always comes before quantity. See Module F.
+These are **suggestions** to build habits, not quotas. Quality always comes before quantity. See Module F. **Every client-facing number applies only once you appear on the MAS register.** Until then, the only activity is learning, role-play and list-building. [MAS-5]
 
 | Weeks | Honest contacts / day | Conversations / week | Fact-finds / week | Recommendation meetings / week | Learning / week |
 |---|---|---|---|---|---|
@@ -161,6 +161,18 @@ We look at **skills, habits and quality**, never income:
 - Client feedback and zero compliance issues
 
 ---
+
+## Principal-specific inserts (team leader to add before Day 1)
+
+This pack is deliberately generic. Before 4 January 2027 the team leader adds, **from the principal's own approved material only** (kept in the principal's systems, not in this folder):
+
+- [ ] The principal's appointment checklist and RNF paperwork steps, with who submits what and expected turnaround
+- [ ] The principal's approved fact-find / FNA form and how case files are submitted and checked
+- [ ] The principal's compliance manual, social media policy and advertisement approval route (who approves, how long it takes)
+- [ ] The principal's product training and certification sequence (what must be completed before each product can be advised on)
+- [ ] The principal's DNC check process and approved CRM or tracker
+- [ ] The principal's gifts, referral and complaint-handling rules
+- [ ] Names of the compliance contact and the supervisor of record for each new rep
 
 ## If you're struggling
 

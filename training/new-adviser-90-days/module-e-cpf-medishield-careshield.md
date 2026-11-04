@@ -57,7 +57,7 @@ Rates are for Singapore Citizens and Permanent Residents from the third year, wi
 | 2026 | $110,200 | $220,400 | $440,800 |
 | 2027 | $114,100 | $228,200 | $456,400 |
 
-- FRS = 2 × BRS. From 1 January 2026, ERS = 2 × that year's FRS. [CPF-7]
+- FRS = 2 × BRS. Since 2025, ERS = 4 × BRS (that is, 2 × FRS). The BRS and FRS are fixed by the year a member turns 55; the ERS a member can top up to rises each year. [CPF-7]
 - CPF LIFE payouts can start from age 65. CPF's own estimates for 2026 (male, Standard Plan) are about **$950 / $1,780 / $3,440 a month** for BRS / FRS / ERS. These are CPF's estimates. Don't round them up, and don't present them as guaranteed for any one person. [CPF-7]
 
 ### MediSave: Basic Healthcare Sum [CPF-8]

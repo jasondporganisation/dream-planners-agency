@@ -41,9 +41,10 @@ By the end of this module, each new representative can:
 |---|---|---|---|---|
 | Weeks 1–2 (licensing, set-up) | 0 (list-building only) | 0 | 0 | 0 |
 | Weeks 3–4 | 3–5 | 5–8 | 1–2 (practice and real) | 0–1 |
-| Weeks 5–8 | 5–8 | 8–12 | 2–4 | 1–3 |
-| Weeks 9–13 | 5–10 | 10–15 | 3–5 | 2–4 |
+| Weeks 5–9 | 5–8 | 8–12 | 2–4 | 1–3 |
+| Weeks 10–13 | 5–10 | 10–15 | 3–5 | 2–4 |
 
+- **Not yet on the MAS register? Then every client-facing column is 0.** Keep building the warm list and practising role-plays; real contacts, fact-finds and recommendations start only after your appointment shows on the register. [MAS-5]
 - "Contact" means an honest, compliant approach (see Module D) after any needed **Do Not Call** check. [PDPC-1]
 - **Submissions** are tracked but **never targeted** in this pack. A submission should only follow a proper fact-find, a documented reasonable basis and full disclosure. [MAS-2] [MS-1]
 - If your numbers are well below the range, talk to your team leader about what's in the way. Don't just work longer hours.
