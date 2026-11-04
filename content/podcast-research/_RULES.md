@@ -22,7 +22,7 @@
 - Fear-based lines ("you'll be ruined", "your family will suffer").
 
 ## Standard on-air disclaimer (to be placed by the script tool)
-"This episode is general information only. It does not consider your specific situation or needs. Figures are correct at the time of recording; please check the official sources linked in the show notes."
+"For general information only; it does not consider your specific objectives, financial situation or needs. Jason Ng, Representative, Dream Planners." Then: "Figures are correct at the time of recording; please check the official sources linked in the show notes. These are my personal views; I am not speaking on behalf of any insurer."
 
 ## Episode file template
 1. Working title
