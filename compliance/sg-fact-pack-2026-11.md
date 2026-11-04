@@ -64,7 +64,7 @@
 | Plans | Escalating (starts lower, rises 2% a year), Standard (level payouts, not inflation-adjusted), Basic (starts low; falls once balances drop below $60,000) | VERIFIED |
 | Lifelong | All three plans pay monthly for life; any remaining premium balance goes to loved ones at death | VERIFIED |
 | Auto-inclusion | SC/PR born 1958 or later with at least $60,000 in retirement savings when payouts start | VERIFIED |
-| Payout start | Choose any time from 65 to 70; starts automatically at 70 | VERIFIED |
+| Payout start | Auto-included members: choose any time from 65 to 70; starts automatically at 70. Members not auto-included can join voluntarily any time from 65 to one month before 80 | VERIFIED |
 | Deferral | Payouts rise by up to 7% for each year deferred, up to 35% if deferred to 70 | VERIFIED |
 | Estimated payouts from 65 (turning 55 in 2026, Standard Plan, 4% interest) | BRS ≈ $950/month · FRS ≈ $1,780/month · ERS ≈ $3,440/month | VERIFIED (CPF's own estimates) |
 
@@ -287,9 +287,9 @@ Co-insurance on the claimable amount in a policy year (the bands include the ded
 | Life expectancy at age 65, residents | 21.6 more years (males 19.9, females 23.1) | 2025 | VERIFIED |
 | Residents aged 65 and over | 19.5% of residents (12.4% in 2016); 825,300 people | End-June 2026, published 25 Sep 2026 | VERIFIED |
 | Citizens aged 65 and over | 21.4% of citizens | 2026 | VERIFIED |
-| Old-age support ratio | About 3.2 residents aged 20–64 per resident aged 65+ (calculated from SingStat counts; the published figure was not seen) | 2026 | **UNVERIFIED** |
+| Old-age support ratio | 3.2 residents aged 20–64 per resident aged 65+ (3.3 the year before), as published by SingStat | 2026 | VERIFIED (re-checked 4 Nov 2026) |
 | Median monthly household **market** income | $12,446 (up 7.7% nominal, 6.8% real, from $11,558) | 2025 (preliminary), published 9 Feb 2026 | VERIFIED |
-| Median household income **from work** | SingStat no longer headlines this measure; it switched to market income in the 2025 report | — | **UNVERIFIED for 2025** |
+| Median household income **from work** | SingStat no longer headlines this measure; it switched to market income in the 2025 report. Do not call $12,446 "income from work" | — | **UNVERIFIED for 2025** |
 | CPI-All Items inflation, full year | 0.9% | 2025 | VERIFIED |
 | CPI-All Items inflation, latest month | 2.2% year on year (MAS Core Inflation 2.0%) | Sep 2026, published 23 Oct 2026 | VERIFIED |
 
@@ -442,11 +442,10 @@ Until GE confirms new wording, **Brand Guardian should keep using the current di
 3. Pioneer Generation MediSave top-up amounts (MOH and CPF pages conflict).
 4. Effective dates of the further LPA fee reductions.
 5. The explicit statutory "in writing" wording for wills.
-6. The old-age support ratio (only a calculated value, about 3.2).
-7. Median household income from work for 2025 (SingStat now headlines market income).
-8. Text of FAA s.26 / FAR reg 22, and whether the "not reviewed by MAS" statement applies to life policies.
-9. Any mandatory "seek advice" disclaimer wording.
-10. A standalone LIA social-media guideline; the ASAS advertising code.
+6. Median household income from work for 2025 (SingStat now headlines market income; a $12,027 employment-income figure circulates in secondary sources but was not read on singstat.gov.sg).
+7. Text of FAA s.26 / FAR reg 22, and whether the "not reviewed by MAS" statement applies to life policies.
+8. Any mandatory "seek advice" disclaimer wording.
+9. A standalone LIA social-media guideline; the ASAS advertising code.
 
 ## Maintenance
 
