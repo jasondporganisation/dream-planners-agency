@@ -21,38 +21,38 @@ The rules hold across all 30:
 
 ## Scripts
 
-| # | File | Title | Life stage | Hook |
-|---|---|---|---|---|
-| 01 | [r01-first-payslip-cpf.md](r01-first-payslip-cpf.md) | Your first payslip: where did 20% go? | First job | "Your salary is five thousand. So why did you get four thousand?" |
-| 02 | [r02-cpf-three-accounts.md](r02-cpf-three-accounts.md) | CPF's three accounts, in under a minute | First job | "Your CPF isn't one pot. It's three." |
-| 03 | [r03-first-income-tax.md](r03-first-income-tax.md) | Your first tax bill: less scary than you think | First job | "Got a letter from IRAS? Don't panic." |
-| 04 | [r04-first-salary-budget.md](r04-first-salary-budget.md) | Your first salary: give every dollar a job | First job | "First pay day. Where does it all go?" |
-| 05 | [r05-credit-card-minimum-payment.md](r05-credit-card-minimum-payment.md) | The minimum payment trap on your credit card | First job | "Paying the minimum on your credit card? Watch this first." |
-| 06 | [r06-skillsfuture-credit.md](r06-skillsfuture-credit.md) | Unused SkillsFuture Credit? Check yours today | Career growth | "You might have money for courses you've never touched." |
-| 07 | [r07-job-loss-support.md](r07-job-loss-support.md) | Retrenched or between jobs? Know this support exists | Career switch | "Lost your job? You may not be on your own." |
-| 08 | [r08-going-freelance-cpf.md](r08-going-freelance-cpf.md) | Going freelance or doing gig work? CPF still matters | Career switch | "No boss means no employer CPF. Then what?" |
-| 09 | [r09-bto-housing-grant.md](r09-bto-housing-grant.md) | First home? Check this grant before you count your savings | BTO / home loan | "Buying your first flat? Don't miss this grant." |
-| 10 | [r10-home-loan-limits.md](r10-home-loan-limits.md) | How much home loan can you actually take? | BTO / home loan | "Your dream flat versus the loan you can get." |
-| 11 | [r11-cpf-housing-accrued-interest.md](r11-cpf-housing-accrued-interest.md) | Used CPF for your flat? Meet "accrued interest" | BTO / home loan | "You sold your flat. So why does CPF want money back?" |
-| 12 | [r12-hdb-joint-tenancy.md](r12-hdb-joint-tenancy.md) | Joint tenancy or tenancy-in-common? It matters later | BTO / estate | "Two names on the flat. But how they're written matters." |
-| 13 | [r13-newlywed-spouse-relief.md](r13-newlywed-spouse-relief.md) | Just married? Two money admin tasks people forget | Marriage | "Newly married? Your tax form may have changed too." |
-| 14 | [r14-baby-support-by-birth-date.md](r14-baby-support-by-birth-date.md) | Baby on the way? Government support depends on the birth date | First child | "Expecting a baby? The support changes on one date." |
-| 15 | [r15-advance-care-planning.md](r15-advance-care-planning.md) | The conversation most families avoid: Advance Care Planning | Will, LPA & estate | "If you couldn't speak for yourself, who would know what you want?" |
-| 16 | [r16-parental-leave.md](r16-parental-leave.md) | New parents: how much leave do you actually get? | First child | "Dads, you may get more leave than you think." |
-| 17 | [r17-working-mother-child-relief.md](r17-working-mother-child-relief.md) | Working mums: this tax relief changed in 2024 | First child | "Working mums, this tax relief now works differently." |
-| 18 | [r18-parent-relief.md](r18-parent-relief.md) | Supporting your parents? IRAS may recognise that | Caring for parents | "You give your parents an allowance. Did you know about this?" |
-| 19 | [r19-topping-up-parents-cpf.md](r19-topping-up-parents-cpf.md) | Topping up your parents' CPF: what to know | Caring for parents | "Want to boost your parents' retirement savings? Here's how it works." |
-| 20 | [r20-medisave-for-parents.md](r20-medisave-for-parents.md) | Can your MediSave pay for your parents' hospital bill? | Caring for parents | "Your parent is in hospital. Can your MediSave help?" |
-| 21 | [r21-home-caregiving-grant.md](r21-home-caregiving-grant.md) | Caring for a parent at home? Check this grant | Caring for parents | "Caring for Mum or Dad at home? There's a grant for that." |
-| 22 | [r22-myth-withdraw-all-at-55.md](r22-myth-withdraw-all-at-55.md) | Myth: "At 55, I can take out all my CPF" | Retirement myths | "At fifty-five, you can withdraw all your CPF. True or false?" |
-| 23 | [r23-retirement-sums-2026.md](r23-retirement-sums-2026.md) | BRS, FRS, ERS: CPF's retirement sums, explained simply | Retirement myths | "BRS, FRS, ERS. What do these letters actually mean?" |
-| 24 | [r24-retirement-age-64.md](r24-retirement-age-64.md) | Retirement age is now 64. Here's what that means | Retirement myths | "Singapore's retirement age went up in July 2026." |
-| 25 | [r25-srs-basics.md](r25-srs-basics.md) | SRS: the retirement scheme many people skip | Retirement myths | "Heard of SRS? Many people haven't." |
-| 26 | [r26-medisave-basic-healthcare-sum.md](r26-medisave-basic-healthcare-sum.md) | Your MediSave has a ceiling. Here's what happens at the top | Medical costs | "Your MediSave can't grow forever." |
-| 27 | [r27-inflation-quiet-thief.md](r27-inflation-quiet-thief.md) | Inflation: the quiet thief in your wallet | Inflation | "Your money can shrink without you spending a cent." |
-| 28 | [r28-scams-add-check-tell.md](r28-scams-add-check-tell.md) | Three words that protect your money: Add, Check, Tell | Scams | "Over nine hundred million dollars, lost to scams." |
-| 29 | [r29-fake-government-officials.md](r29-fake-government-officials.md) | "This is the government calling." Is it? | Scams | "Real government officers will never ask you this." |
-| 30 | [r30-investment-scam-checks.md](r30-investment-scam-checks.md) | "Can't lose" investment tips: three checks first | Scams | "The biggest scam losses in Singapore come from this." |
+| # | File | Title | Life stage | Hook | Brand Guardian (4 Nov 2026) |
+|---|---|---|---|---|---|
+| 01 | [r01-first-payslip-cpf.md](r01-first-payslip-cpf.md) | Your first payslip: where did 20% go? | First job | "Your salary is five thousand. So why did you get four thousand?" | PASS |
+| 02 | [r02-cpf-three-accounts.md](r02-cpf-three-accounts.md) | CPF's three accounts, in under a minute | First job | "Your CPF isn't one pot. It's three." | PASS |
+| 03 | [r03-first-income-tax.md](r03-first-income-tax.md) | Your first tax bill: less scary than you think | First job | "Got a letter from IRAS? Don't panic." | FIXED |
+| 04 | [r04-first-salary-budget.md](r04-first-salary-budget.md) | Your first salary: give every dollar a job | First job | "First pay day. Where does it all go?" | PASS |
+| 05 | [r05-credit-card-minimum-payment.md](r05-credit-card-minimum-payment.md) | The minimum payment trap on your credit card | First job | "Paying the minimum on your credit card? Watch this first." | PASS |
+| 06 | [r06-skillsfuture-credit.md](r06-skillsfuture-credit.md) | Unused SkillsFuture Credit? Check yours today | Career growth | "You might have money for courses you've never touched." | PASS |
+| 07 | [r07-job-loss-support.md](r07-job-loss-support.md) | Retrenched or between jobs? Know this support exists | Career switch | "Lost your job? You may not be on your own." | PASS |
+| 08 | [r08-going-freelance-cpf.md](r08-going-freelance-cpf.md) | Going freelance or doing gig work? CPF still matters | Career switch | "No boss means no employer CPF. Then what?" | PASS |
+| 09 | [r09-bto-housing-grant.md](r09-bto-housing-grant.md) | First home? Check this grant before you count your savings | BTO / home loan | "Buying your first flat? Don't miss this grant." | PASS |
+| 10 | [r10-home-loan-limits.md](r10-home-loan-limits.md) | How much home loan can you actually take? | BTO / home loan | "Your dream flat versus the loan you can get." | PASS |
+| 11 | [r11-cpf-housing-accrued-interest.md](r11-cpf-housing-accrued-interest.md) | Used CPF for your flat? Meet "accrued interest" | BTO / home loan | "You sold your flat. So why does CPF want money back?" | PASS |
+| 12 | [r12-hdb-joint-tenancy.md](r12-hdb-joint-tenancy.md) | Joint tenancy or tenancy-in-common? It matters later | BTO / estate | "Two names on the flat. But how they're written matters." | PASS |
+| 13 | [r13-newlywed-spouse-relief.md](r13-newlywed-spouse-relief.md) | Just married? Two money admin tasks people forget | Marriage | "Newly married? Your tax form may have changed too." | PASS |
+| 14 | [r14-baby-support-by-birth-date.md](r14-baby-support-by-birth-date.md) | Baby on the way? Government support depends on the birth date | First child | "Expecting a baby? The support changes on one date." | PASS |
+| 15 | [r15-advance-care-planning.md](r15-advance-care-planning.md) | The conversation most families avoid: Advance Care Planning | Will, LPA & estate | "If you couldn't speak for yourself, who would know what you want?" | PASS |
+| 16 | [r16-parental-leave.md](r16-parental-leave.md) | New parents: how much leave do you actually get? | First child | "Dads, you may get more leave than you think." | PASS |
+| 17 | [r17-working-mother-child-relief.md](r17-working-mother-child-relief.md) | Working mums: this tax relief changed in 2024 | First child | "Working mums, this tax relief now works differently." | PASS |
+| 18 | [r18-parent-relief.md](r18-parent-relief.md) | Supporting your parents? IRAS may recognise that | Caring for parents | "You give your parents an allowance. Did you know about this?" | PASS |
+| 19 | [r19-topping-up-parents-cpf.md](r19-topping-up-parents-cpf.md) | Topping up your parents' CPF: what to know | Caring for parents | "Want to boost your parents' retirement savings? Here's how it works." | PASS |
+| 20 | [r20-medisave-for-parents.md](r20-medisave-for-parents.md) | Can your MediSave pay for your parents' hospital bill? | Caring for parents | "Your parent is in hospital. Can your MediSave help?" | PASS |
+| 21 | [r21-home-caregiving-grant.md](r21-home-caregiving-grant.md) | Caring for a parent at home? Check this grant | Caring for parents | "Caring for Mum or Dad at home? There's a grant for that." | PASS |
+| 22 | [r22-myth-withdraw-all-at-55.md](r22-myth-withdraw-all-at-55.md) | Myth: "At 55, I can take out all my CPF" | Retirement myths | "At fifty-five, you can withdraw all your CPF. True or false?" | PASS |
+| 23 | [r23-retirement-sums-2026.md](r23-retirement-sums-2026.md) | BRS, FRS, ERS: CPF's retirement sums, explained simply | Retirement myths | "BRS, FRS, ERS. What do these letters actually mean?" | PASS |
+| 24 | [r24-retirement-age-64.md](r24-retirement-age-64.md) | Retirement age is now 64. Here's what that means | Retirement myths | "Singapore's retirement age went up in July 2026." | FIXED |
+| 25 | [r25-srs-basics.md](r25-srs-basics.md) | SRS: the retirement scheme many people skip | Retirement myths | "Heard of SRS? Many people haven't." | FIXED |
+| 26 | [r26-medisave-basic-healthcare-sum.md](r26-medisave-basic-healthcare-sum.md) | Your MediSave has a ceiling. Here's what happens at the top | Medical costs | "Your MediSave can't grow forever." | PASS |
+| 27 | [r27-inflation-quiet-thief.md](r27-inflation-quiet-thief.md) | Inflation: the quiet thief in your wallet | Inflation | "Your money can shrink without you spending a cent." | PASS |
+| 28 | [r28-scams-add-check-tell.md](r28-scams-add-check-tell.md) | Three words that protect your money: Add, Check, Tell | Scams | "Over nine hundred million dollars, lost to scams." | PASS |
+| 29 | [r29-fake-government-officials.md](r29-fake-government-officials.md) | "This is the government calling." Is it? | Scams | "Real government officers will never ask you this." | PASS |
+| 30 | [r30-investment-scam-checks.md](r30-investment-scam-checks.md) | "Can't lose" investment tips: three checks first | Scams | "The biggest scam losses in Singapore come from this." | PASS |
 
 ## Overlap with the 10 reels already made
 
@@ -106,3 +106,16 @@ All sources are official Singapore government or statutory-board pages:
   - madeforfamilies.gov.sg and life.gov.sg (Baby Bonus, SG Child Support Package)
   - aic.sg (Agency for Integrated Care: Home Caregiving Grant, Advance Care Planning)
   - eservices.mas.gov.sg (MAS Financial Institutions Directory)
+
+## Brand Guardian review — 4 Nov 2026
+
+**Result:** 27 PASS · 3 FIXED · 0 DROP. All 30 carry the exact disclaimer; none name a product, insurer or plan, quote premiums or returns, sell, guarantee, say "best" or tell a client story.
+
+Fixes made on this branch:
+- **r03 FIXED:** 18 April is the e-filing deadline (paper filing is earlier). Voiceover and on-screen text now say "e-filing".
+- **r24 FIXED:** 64 is the retirement age for workers born on or after 1 Jul 1963; older cohorts keep 62 or 63 (MOM). Voiceover now says so.
+- **r25 FIXED:** SRS penalty-free withdrawal age is fixed by the statutory retirement age when you *first contribute*, so it is not 64 for everyone. Voiceover and on-screen text corrected.
+
+Facts re-checked against official pages on 4 Nov 2026 (all correct): CPF 4% floor to 31 Dec 2027 and extra-interest rules (r02); MoneySense minimum payment 3–5% or $50 and 25–29% card interest (r05); EHG up to $120,000, $9,000 ceiling, unchanged by NDR 2026 (r09); SG Child Support Package amounts and 1 Apr 2027 start (r14); Home Caregiving Grant $600/$400/$200 and eligibility (r21); FRS $220,400 / BRS $110,200 / ERS $440,800 (r22, r23); re-employment age 69 (r24); MAS core inflation 0.7% for 2025 and the 1.5–2.0% forecast for 2026 (r27); SPF 2025 scam losses of $913.1m across 41,974 cases, with investment scams first and government-official impersonation second (r28–r30).
+
+Before posting: every reel still needs the posting-day date check in the table above. If a reel's figures are out of date, it goes back to Brand Guardian.

@@ -8,7 +8,7 @@
 ## Voiceover
 Singapore's retirement age went up in July 2026.
 
-From first July 2026, the minimum retirement age is sixty-four. That means employers can't ask you to retire before then because of your age. The re-employment age also went up, from sixty-eight to sixty-nine. That's the age up to which eligible employees should be offered re-employment.
+From first July 2026, the minimum retirement age is sixty-four for workers born on or after first July 1963. Older workers keep a lower retirement age, so check the Ministry of Manpower page. That means employers can't ask you to retire before then because of your age. The re-employment age also went up, from sixty-eight to sixty-nine. That's the age up to which eligible employees should be offered re-employment.
 
 Now, here's a common mix-up. The retirement age is not the age your CPF payouts start. For members born from 1954 onwards, the CPF payout eligibility age is sixty-five.
 

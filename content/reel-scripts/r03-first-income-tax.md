@@ -10,7 +10,7 @@ Got a letter from IRAS? Don't panic.
 
 Starting work means you may need to file income tax for the first time. Here are four things to know.
 
-One: the deadline. Individual income tax filing is due by eighteenth April each year, for the income you earned in the year before.
+One: the deadline. If you file online, individual income tax filing is due by eighteenth April each year, for the income you earned in the year before.
 
 Two: the first twenty thousand dollars of chargeable income is taxed at zero per cent. The next ten thousand is taxed at two per cent. Chargeable income is what's left after reliefs and deductions, not your gross salary.
 
@@ -26,7 +26,7 @@ What tax question do you have? Comment below.
 | Scene | On-screen text |
 |---|---|
 | 1 | First tax letter? Don't panic 📩 |
-| 2 | Filing deadline: 18 April |
+| 2 | E-filing deadline: 18 April |
 | 3 | First $20,000 chargeable income: 0% · next $10,000: 2% |
 | 4 | Chargeable income = after reliefs, not gross pay |
 | 5 | Example: Earned Income Relief (below 55) $1,000 |
