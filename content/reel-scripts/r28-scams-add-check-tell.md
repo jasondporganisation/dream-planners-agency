@@ -8,7 +8,7 @@
 ## Voiceover
 Over nine hundred million dollars, lost to scams.
 
-According to the Singapore Police Force, scam losses were about nine hundred and thirteen million dollars in 2025, across almost forty-two thousand cases. That's lower than 2024, but still huge. So let's keep it simple with three words: Add, Check, Tell.
+According to the Singapore Police Force, scam losses were about nine hundred and thirteen million dollars in 2025, across about thirty-seven thousand scam cases. That's lower than 2024, but still huge. So let's keep it simple with three words: Add, Check, Tell.
 
 Add. Add the ScamShield app, and turn on your bank's security features, like transaction limits and two-factor authentication.
 
@@ -40,7 +40,7 @@ Share this with your parents, and follow for more money safety tips.
 For general information only; it does not consider your specific objectives, financial situation or needs. Jason Ng, Representative, Dream Planners.
 
 ## Sources
-- Singapore Police Force: Scams and cybercrime fell by almost a quarter in 2025 ($913.1m lost, 41,974 cases) — https://www.police.gov.sg/Media-Hub/Police-Life/2026/02/Scams-and-Cybercrime-Fell-by-Almost-a-Quarter-in-2025
+- Singapore Police Force: Scams and cybercrime fell by almost a quarter in 2025 ($913.1m lost, 37,308 scam cases; 41,974 is scams and cybercrime combined) + Annual Scam and Cybercrime Brief 2025 — https://www.police.gov.sg/-/media/SPF/Advisories/Scams/Annual-Scam-and-Cybercrime-Brief-2025.pdf — https://www.police.gov.sg/Media-Hub/Police-Life/2026/02/Scams-and-Cybercrime-Fell-by-Almost-a-Quarter-in-2025
 - ScamShield: I can ACT against scams (Add, Check, Tell) — https://www.scamshield.gov.sg/get-involved/i-can-act-campaign/
 - ScamShield (Helpline 1799) — https://www.scamshield.gov.sg/
 - Scam Alert — https://www.scamalert.sg/

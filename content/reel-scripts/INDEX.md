@@ -50,7 +50,7 @@ The rules hold across all 30:
 | 25 | [r25-srs-basics.md](r25-srs-basics.md) | SRS: the retirement scheme many people skip | Retirement myths | "Heard of SRS? Many people haven't." | FIXED |
 | 26 | [r26-medisave-basic-healthcare-sum.md](r26-medisave-basic-healthcare-sum.md) | Your MediSave has a ceiling. Here's what happens at the top | Medical costs | "Your MediSave can't grow forever." | PASS |
 | 27 | [r27-inflation-quiet-thief.md](r27-inflation-quiet-thief.md) | Inflation: the quiet thief in your wallet | Inflation | "Your money can shrink without you spending a cent." | PASS |
-| 28 | [r28-scams-add-check-tell.md](r28-scams-add-check-tell.md) | Three words that protect your money: Add, Check, Tell | Scams | "Over nine hundred million dollars, lost to scams." | PASS |
+| 28 | [r28-scams-add-check-tell.md](r28-scams-add-check-tell.md) | Three words that protect your money: Add, Check, Tell | Scams | "Over nine hundred million dollars, lost to scams." | FIXED |
 | 29 | [r29-fake-government-officials.md](r29-fake-government-officials.md) | "This is the government calling." Is it? | Scams | "Real government officers will never ask you this." | PASS |
 | 30 | [r30-investment-scam-checks.md](r30-investment-scam-checks.md) | "Can't lose" investment tips: three checks first | Scams | "The biggest scam losses in Singapore come from this." | PASS |
 
@@ -109,13 +109,14 @@ All sources are official Singapore government or statutory-board pages:
 
 ## Brand Guardian review — 4 Nov 2026
 
-**Result:** 27 PASS · 3 FIXED · 0 DROP. All 30 carry the exact disclaimer; none name a product, insurer or plan, quote premiums or returns, sell, guarantee, say "best" or tell a client story.
+**Result:** 26 PASS · 4 FIXED · 0 DROP. All 30 carry the exact disclaimer; none name a product, insurer or plan, quote premiums or returns, sell, guarantee, say "best" or tell a client story.
 
 Fixes made on this branch:
 - **r03 FIXED:** 18 April is the e-filing deadline (paper filing is earlier). Voiceover and on-screen text now say "e-filing".
 - **r24 FIXED:** 64 is the retirement age for workers born on or after 1 Jul 1963; older cohorts keep 62 or 63 (MOM). Voiceover now says so.
+- **r28 FIXED:** 2025 had 37,308 *scam* cases; 41,974 is scams and cybercrime combined (SPF Annual Scam and Cybercrime Brief 2025). Voiceover now says about 37,000 scam cases.
 - **r25 FIXED:** SRS penalty-free withdrawal age is fixed by the statutory retirement age when you *first contribute*, so it is not 64 for everyone. Voiceover and on-screen text corrected.
 
-Facts re-checked against official pages on 4 Nov 2026 (all correct): CPF 4% floor to 31 Dec 2027 and extra-interest rules (r02); MoneySense minimum payment 3–5% or $50 and 25–29% card interest (r05); EHG up to $120,000, $9,000 ceiling, unchanged by NDR 2026 (r09); SG Child Support Package amounts and 1 Apr 2027 start (r14); Home Caregiving Grant $600/$400/$200 and eligibility (r21); FRS $220,400 / BRS $110,200 / ERS $440,800 (r22, r23); re-employment age 69 (r24); MAS core inflation 0.7% for 2025 and the 1.5–2.0% forecast for 2026 (r27); SPF 2025 scam losses of $913.1m across 41,974 cases, with investment scams first and government-official impersonation second (r28–r30).
+Facts re-checked against official pages on 4 Nov 2026 (all correct): CPF 4% floor to 31 Dec 2027 and extra-interest rules (r02); MoneySense minimum payment 3–5% or $50 and 25–29% card interest (r05); EHG up to $120,000, $9,000 ceiling, unchanged by NDR 2026 (r09); SG Child Support Package amounts and 1 Apr 2027 start (r14); Home Caregiving Grant $600/$400/$200 and eligibility (r21); FRS $220,400 / BRS $110,200 / ERS $440,800 (r22, r23); re-employment age 69 (r24); MAS core inflation 0.7% for 2025 and the 1.5–2.0% forecast for 2026 (r27); SPF 2025 scam losses of $913.1m, with investment scams first and government-official impersonation second (r28–r30).
 
 Before posting: every reel still needs the posting-day date check in the table above. If a reel's figures are out of date, it goes back to Brand Guardian.
