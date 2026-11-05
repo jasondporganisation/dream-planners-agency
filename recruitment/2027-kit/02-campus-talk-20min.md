@@ -92,7 +92,7 @@
 
 **Speaker notes:**
 - Prepared answers:
-  - *"Is it MLM?"* "No. Representatives are appointed by a licensed insurer and must be on the MAS register before advising. Nobody earns anything just for bringing in a recruit; a representative's income comes from advising clients. If you'd like to know how team leaders are paid, we'll explain it from the principal's written terms." (Do not deny that leaders may earn on their team's business if the principal's scheme provides for it; confirm the wording with the principal before use.)
+  - *"Is it MLM?"* "No. Representatives are appointed by a licensed insurer and must be on the MAS register before advising. A representative's own income comes from advising clients. If you'd like to know how team leaders are paid, we'll explain it from the principal's written terms." (Do not deny that leaders may earn on their team's business, or that recruitment-linked incentives exist, if the principal's scheme provides for them; confirm the wording with the principal before use. [JASON: confirm against the principal's written agency scheme])
   - *"Do I have to sell to my friends?"* "Many people start with people they know, but you never have to pressure anyone, and 'no' is a fine answer."
   - *"Can I do this part-time?"* "Ask us in the career conversation; it depends on the principal's rules."
 - Close: "Thanks. If it's not for you, I hope you now know a bit more about how financial planning works."
