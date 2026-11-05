@@ -20,3 +20,5 @@ td.n,th.n{text-align:right}
 footer{font-size:.9rem;color:var(--muted);border-top:1px solid var(--line);margin-top:24px;padding-top:12px}
 .disclaimer{font-weight:600;color:var(--ink)}
 ul.links li{margin:.5rem 0}
+.result{overflow-x:auto}
+@media (max-width:400px){th,td{padding:6px 4px}table{font-size:.9rem}}
