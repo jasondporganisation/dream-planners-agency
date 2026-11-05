@@ -176,4 +176,4 @@ Each person states one commitment and the facilitator writes it down. Prompt: *H
 
 Each person states one commitment and the facilitator writes it down. Prompt: *How many clients with cashflow stress will you check in with this week?*
 
-**Links:** [Objection playbook (PR #16 branch)](https://github.com/jasondporganisation/dream-planners-agency/blob/claude/ecstatic-pasteur-6got9n/training/objection-handling-playbook.md) · [Objection cheat sheet (PR #16 branch)](https://github.com/jasondporganisation/dream-planners-agency/blob/claude/ecstatic-pasteur-6got9n/training/objection-cheatsheet.md) · [Client care: annual review agenda](../../client-care/annual-review-agenda.md)
+**Links:** [Objection playbook (PR #16 branch)](https://github.com/jasondporganisation/dream-planners-agency/blob/main/training/objection-handling-playbook.md) · [Objection cheat sheet (PR #16 branch)](https://github.com/jasondporganisation/dream-planners-agency/blob/main/training/objection-cheatsheet.md) · [Client care: annual review agenda](../../client-care/annual-review-agenda.md)
