@@ -67,7 +67,7 @@
 
 ### Slide 2 — Thank you (5 min)
 - Allowance: paid by PayNow after Day 5 against the attendance record, by **[JASON: date]**, as in your allowance letter
-- Certificates from the principal tonight
+- Certificates: **[JASON: confirm who issues them and when; the pack doesn't say]**
 - Welfare contact remains available: **[JASON: name and phone]**
 
 **Speaker notes:** Don't state the allowance amount on screen; refer to the letter.

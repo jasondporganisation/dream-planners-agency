@@ -1,7 +1,7 @@
 # Day 4 — Thu 10 Dec 2026: Talking about money fairly [Option 2]
 
 > **Principal's Day 4:** plan submission by **12pm**, then a sports activity. **Agency's part (Option 2):** Workshop 6 (talking about money fairly) as the self-check before submission, plus buddy review (`01-week-by-week-plan.md`). Under **Option 1**, skip the workshop and run only Session 4.2 (buddy review with the checklist, 20 min) before the principal's deadline.
-> Workshop 6 is normally 2.5 hours (`02-workshops.md`). To meet the 12pm deadline it runs **9.30–11.40**, with the "Red Pen" activity ending on interns' own drafts, then buddy review and submission.
+> Workshop 6 is normally 2.5 hours (`02-workshops.md`). To meet the 12pm deadline it runs **9.30–11.40**, with the "Red Pen" activity ending on interns' own drafts, then buddy review and submission. **[JASON: this departs from the 2.5-hour workshop length in `02-workshops.md` (teaching about 60 min → about 45 min; Red Pen 45 → 40 min). The pack fixes only the 12pm deadline, not workshop clock times. Approve the shorter version, or move part of the teaching to Day 3 afternoon, or start earlier if the principal's Day 4 allows.]**
 
 | Time | Block |
 |---|---|

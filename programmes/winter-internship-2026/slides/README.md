@@ -1,6 +1,6 @@
 # Facilitator Slide Outlines — Winter Internship 2026 (5-day programme)
 
-> **Status:** Draft for Heron and Jason. **Brand Guardian must check every deck before use**, and anything shown to interns that might later be published goes through the principal insurer's ad-approval process first (README section 4 and 7).
+> **Status:** Draft for Heron and Jason. **Brand Guardian must check every deck before use**, and anything shown to interns that might later be published goes through the principal insurer's ad-approval process first (pack README sections 4 and 9).
 > **Programme:** the principal insurer's 5-day year-end internship, **Mon 7 – Fri 11 Dec 2026**, interns **21+**, undergraduates, SC/PR. Agenda and agency roles follow [`../01-week-by-week-plan.md`](../01-week-by-week-plan.md) (default 5-day plan). Dates, allowance and eligibility are **not changed** here; see [`../README.md`](../README.md).
 > **Figures:** only from [`compliance/sg-fact-pack-2026-11.md`](../../../compliance/sg-fact-pack-2026-11.md), quoted as written there with the date. Programme rules (21+, allowance, dates) come from the pack README. If a slide needs a figure that isn't in the fact pack, leave it out.
 > **House rules on every slide:** no insurer or product names, no premiums or returns, no "you should buy", no income or earnings figures or promises, no calls to "speak to an adviser". Activities use fictional personas; interns never share their own finances.

@@ -1,6 +1,6 @@
 # Day 2 — Tue 8 Dec 2026: Budgeting and scams [Option 2]
 
-> **Principal's Day 2:** profiling tool. **Agency's part (Option 2 only):** Workshop 1 (budgeting) and Workshop 5 (scams), learning log (`01-week-by-week-plan.md`). Under **Option 1** the principal runs the day; skip this deck, and buddies do only the 5.00pm learning-log check-in.
+> **Principal's Day 2:** profiling tool. **Agency's part (Option 2 only):** Workshop 1 (budgeting) and Workshop 5 (scams), learning log (`01-week-by-week-plan.md`). Under **Option 1** the principal runs the day; skip this deck; buddies do only a learning-log check-in if the principal's Day 2 schedule allows **[JASON: confirm; the pack doesn't set an agency activity on Day 2 under Option 1]**.
 > Workshops follow `02-workshops.md`: 2.5 hours each (about 60 min teaching, 45–60 min activity, 20 min debrief, 10 min break).
 > **Facilitator rules:** general education only; fictional personas; nobody shares their own income, debts or family finances.
 
@@ -30,7 +30,7 @@
 - **Take-home pay:** what lands in your bank account
 - Fictional payslip: gross $3,500 → employee CPF 20% ($700) → take-home $2,800
 
-**Speaker notes:** The 20% employee rate is for ages 55 and below, monthly wages above $750, in 2026 (CPF Board, via the fact pack section 1.1). Say: "The $3,500 is made up for the exercise, not a salary guide." Don't discuss what any job pays.
+**Speaker notes:** The 20% employee rate is for Singapore Citizens and 3rd-year-onwards PRs, ages 55 and below, monthly wages above $750, from 1 Jan 2026 (CPF Board, via the fact pack section 1.1; unchanged in 2027). First- and second-year PRs have lower rates; don't quote those, they aren't in the fact pack. Say: "The $3,500 is made up for the exercise, not a salary guide." Don't discuss what any job pays.
 
 ### Slide 3 — CPF in one line (5 min)
 - Employer adds 17% on top, so 37% in total goes into your CPF (ages 55 and below, 2026)

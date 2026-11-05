@@ -73,7 +73,7 @@
 - Representatives work under a firm that supervises them
 - Advice must suit the person; content must be fair and balanced
 - Each social post must stand on its own; a bio disclaimer doesn't fix a misleading post (FSG-03, fact pack section 5.1)
-- Misconduct reporting rules tighten from 1 Jan 2027 (MAS Notice FAA-N27, fact pack section 5.8)
+- From 1 Jan 2027, MAS Notice FAA-N27 on reporting representatives' misconduct takes effect (fact pack section 5.8)
 
 **Speaker notes:** Link the rules to the "may / may not" table: "This is why interns don't advise."
 
@@ -121,11 +121,11 @@
 
 **(b) National schemes that already apply:**
 - **CPF** for retirement, housing and healthcare; 37% total contribution for ages 55 and below on monthly wages above $750 in 2026 (section 1.1).
-- **MediShield Life:** basic lifelong cover for large hospital bills, for all SC/PR automatically, sized for B2/C wards in public hospitals; it is designed to leave co-payments (deductible and co-insurance) (sections 2.1, 2.3). At ages 21–30 (age next birthday) the premium before subsidies is $295 a year, payable by MediSave (section 2.2).
+- **MediShield Life:** basic lifelong cover for large hospital bills, for all SC/PR automatically, sized for B2/C wards in public hospitals; it is designed to leave co-payments (deductible and co-insurance) (sections 2.1, 2.3). At ages 21–30 (age next birthday) the premium before subsidies is $295 a year (MOH, policies starting or renewing from 1 Apr 2025), payable by MediSave (section 2.2).
 
 **(c) Admin to-dos (strong answers spot these):**
 - **CPF nomination:** marriage **revokes** an existing nomination, so it needs to be made again; it's free and can be done online with Singpass and two witnesses (section 1.6).
-- **Will:** a will is revoked on marriage; it must be made at 21 or over, with two witnesses over 21 who aren't beneficiaries (section 3.2). Without a will, a non-Muslim spouse with no children shares the estate with parents, half each (section 3.2).
+- **Will:** a will is revoked on marriage; it must be made at 21 or over, with two witnesses over 21 who aren't beneficiaries (section 3.2). Without a will, if a non-Muslim dies leaving a spouse and parents but no children, half goes to the spouse and half to the parents (section 3.2).
 - **LPA:** anyone 21 or over can make one; Form 1 is free for Singapore Citizens, but the Certificate Issuer fee is separate (section 3.1). Without one, family must apply to court for a Deputy.
 
 **(d) Questions for any licensed adviser:** "What does my existing cover, including MediShield Life, already do?" "What are the exclusions and waiting periods?" "What happens if I can't keep paying?" "Are you tied to one insurer?" "Can I see your number on the MAS Register?"
