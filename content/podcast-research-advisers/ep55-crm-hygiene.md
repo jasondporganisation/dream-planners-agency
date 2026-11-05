@@ -25,7 +25,7 @@
 
 Notes for the script team:
 - These obligations apply to "organisations". How they split between an individual representative and their firm was not researched. Say "you and your firm", and "tell your firm straight away", not "you must notify PDPC yourself".
-- Maximum financial penalties for data protection breaches (S$1 million or 10% of annual Singapore turnover for larger organisations, from 1 Oct 2022) were seen only on a law-firm summary: UNVERIFIED, do not quote.
+- Maximum financial penalties for data protection breaches (S$1 million or 10% of annual Singapore turnover for larger organisations, from 1 Oct 2022) are confirmed in PDPC's Advisory Guidelines on Enforcement, para 27.1 and footnote 53 (the 10% limb applies where Singapore turnover exceeds S$10 million): VERIFIED by Brand Guardian on 5 Nov 2026, https://www.pdpc.gov.sg/-/media/files/pdpc/pdf-files/advisory-guidelines/advisory-guidelines-on-enforcement-of-dp-provisions_1oct2022.pdf. This is the FI's exposure; say "up to".
 - The PDPC Key Concepts link's file name says 2022, but the document inside says "Revised 29 April 2026". The breach guide is dated 2021; check PDPC for a newer version before recording.
 
 ## Hypothetical example

@@ -7,7 +7,7 @@
 ## Key points (in order)
 1. Meaning is not a poster on the wall. It grows from seeing the effect of your work on real people.
 2. Contact with the people you help matters. In a field experiment at a fundraising organisation, callers who briefly met someone their work helped later showed more persistence and better job performance than control groups. Lab experiments linked this to a stronger sense of their own impact.
-3. Caring about others works best when you also enjoy the work. Grant found that prosocial motivation predicted persistence and performance more strongly when intrinsic motivation was also high, in studies of firefighters and fundraising callers.
+3. Caring about others tends to sustain you more when you also enjoy the work. Grant found that prosocial motivation predicted persistence and performance more strongly when intrinsic motivation was also high, in studies of firefighters and fundraising callers.
 4. You can shape your job. Wrzesniewski and Dutton describe "job crafting": people change the tasks they do, the relationships they build, and how they think about the work, and this changes the meaning of the work.
 5. For a practice: with client consent and within your firm's rules, collect and re-read thank-you notes. Spend time with clients beyond transactions, and share stories (anonymised) about outcomes at team meetings.
 6. For yourself: notice which parts of the week give you energy, and craft a little more of those in. Notice which drain you, and rethink them.

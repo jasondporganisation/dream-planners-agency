@@ -7,7 +7,7 @@
 ## Key points (in order)
 1. Reframe it. A referral is a client choosing to share something that helped them. Your job is to make that easy and safe, not to extract names.
 2. Build the ask into your process at natural points (for example, at the end of a review where the client said it was useful), so it isn't a one-off favour you have to work up courage for.
-3. Ask for an introduction, not a list. The best route is the client asking their friend first, then the friend contacting you or agreeing to be contacted.
+3. Ask for an introduction, not a list. The cleanest route is the client asking their friend first, then the friend contacting you or agreeing to be contacted.
 4. Personal data rules apply to the friend's details. Under PDPC guidance, when you receive someone's data from a third party, check that the person agreed to it being shared. When you first contact them, say who gave you their details and confirm they agreed.
 5. Paid introducer arrangements are a different thing and are regulated. MAS says only financial institutions may appoint introducers; individual representatives may not set up their own introducer arrangements. Check with your compliance team before offering anyone anything for a referral.
 6. Thank people without strings. A thank-you note is fine; check your firm's rules on gifts.
