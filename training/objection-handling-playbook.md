@@ -215,7 +215,7 @@ Every objection card has five parts:
 ### 20. "I have a health condition; nobody will cover me."
 
 - **Really worried about:** Rejection, embarrassment.
-- **Response A (factual reassurance):** "Thank you for trusting me with that. MediShield Life covers all Singapore Citizens and PRs for life, including pre-existing conditions. For serious pre-existing conditions there may be additional premiums for the first 10 years." [Fact pack 2.1] [MOH-1]
+- **Response A (factual reassurance):** "Thank you for trusting me with that. MediShield Life covers all Singapore Citizens and PRs for life, including pre-existing conditions. For serious pre-existing conditions, MediShield Life charges 30% additional premiums for the first 10 years." [Fact pack 2.1] [MOH-1]
 - **Response B (honest about private cover):** "For private plans, the insurer decides after underwriting. I can't promise an outcome. What I can do is make sure the application is complete and honest; you must disclose everything asked, because non-disclosure can affect claims later."
 - **Never say:** "Don't mention it on the form." / "You'll definitely be accepted." / "They'll never find out."
 - **Role-play line:** "I have diabetes, so insurance won't take me, right?"
@@ -225,7 +225,7 @@ Every objection card has five parts:
 (Listed here because new reps hear it often in first meetings.)
 
 - **Really worried about:** Being left without service.
-- **Response A:** "That's a fair concern. I'm supported by a team leader and our team, and the policy is with the insurer, not with me personally. If I'm ever unavailable, the insurer will assign someone to service you."
+- **Response A:** "That's a fair concern. I'm supported by a team leader and our team, and the policy is with the insurer, not with me personally. If I'm ever unavailable, you can always contact the insurer directly, and it will arrange servicing under its own procedures." (Check your principal's actual orphan-policy servicing practice before saying more.)
 - **Response B:** "You can check my registration on the MAS register. I'd also like to agree a review date with you now, so you can see whether I keep my word." [MAS-5]
 - **Never say:** "I'll be in this job forever." / "Older agents are out of touch."
 - **Role-play line:** "You just joined, right? Will you still be doing this next year?"
@@ -264,7 +264,7 @@ Every objection card has five parts:
 
 - **Really worried about:** Rising costs, especially as they get older.
 - **Response A (options, not fear):** "That's a real concern. Let's look at the options together, like a lower ward class or keeping the plan without the rider, and what each means for your out-of-pocket costs."
-- **Response B (facts):** "A few facts to weigh: you can only hold one Integrated Shield Plan at a time. MediSave can pay for the private part only up to the Additional Withdrawal Limits ($300 / $600 / $900 a year by age). Rider premiums must be paid fully in cash. And MediShield Life stays with you whatever you choose." [Fact pack 2.5] [MOH-5]
+- **Response B (facts):** "A few facts to weigh: you can only hold one Integrated Shield Plan at a time. MediSave can pay for the private part only up to the Additional Withdrawal Limits ($300 / $600 / $900 a year, by age next birthday). Rider premiums must be paid fully in cash. And MediShield Life stays with you whatever you choose." [Fact pack 2.5] [MOH-5]
 - **Never say:** "Never downgrade; you'll regret it." / "With a rider you'll never pay a cent." / "Pay your whole plan with MediSave."
 - **Role-play line:** "My hospital plan premium jumped again. Should I just cancel the rider?"
 
@@ -288,7 +288,7 @@ Every objection card has five parts:
 
 - **Really worried about:** Paperwork; thinks the will covers everything.
 - **Response A (CPF):** "A will is important. But CPF savings aren't part of your estate and can't be left by will; a CPF nomination decides who receives them. Making one is free." [Fact pack 1.6, 3.3]
-- **Response B (insurance):** "For insurance, a trust nomination (spouse or children only) takes precedence over a will. Without a nomination, the insurer may pay up to $150,000 to a 'proper claimant' and the rest goes through the estate. For anything legal, please speak to a lawyer." [Fact pack 3.3]
+- **Response B (insurance):** "For insurance, a trust nomination (spouse or children only) takes precedence over a will. Without an insurance nomination, the insurer may pay up to $150,000 to a 'proper claimant' and the rest goes through the estate. For anything legal, please speak to a lawyer." [Fact pack 3.3]
 - **Never say:** "A nomination means you don't need a will." / "Just put your CPF in your will."
 - **Role-play line:** "I already did a will. Isn't that enough?"
 
@@ -381,12 +381,12 @@ Only these figures appear. All are **VERIFIED** in the [fact pack](../compliance
 |---|---|---|
 | MediShield Life covers all SCs and PRs automatically, for life, including pre-existing conditions; serious pre-existing conditions pay 30% additional premiums for the first 10 years | 2.1 | [MOH-1](https://www.moh.gov.sg/managing-expenses/schemes-and-subsidies/medishield-life/medishield-life/) |
 | MediShield Life is sized for Class B2/C wards; deductible and co-insurance apply | 2.1, 2.3 | [MOH-3](https://www.moh.gov.sg/managing-expenses/schemes-and-subsidies/medishield-life/how-to-make-a-medishield-life-claim/) |
-| Only one Integrated Shield Plan at a time; MediSave Additional Withdrawal Limits $300 / $600 / $900 by age; rider premiums in cash | 2.5 | [MOH-5](https://www.moh.gov.sg/managing-expenses/schemes-and-subsidies/integrated-shield-plans/about-integrated-shield-plans/) |
+| Only one Integrated Shield Plan at a time; MediSave Additional Withdrawal Limits $300 / $600 / $900 by age next birthday; rider premiums in cash | 2.5 | [MOH-5](https://www.moh.gov.sg/managing-expenses/schemes-and-subsidies/integrated-shield-plans/about-integrated-shield-plans/) |
 | CPF nomination is free, covers CPF savings outside the estate; marriage revokes an existing nomination | 1.6 | [cpf.gov.sg: Making a CPF nomination](https://www.cpf.gov.sg/member/account-services/providing-for-your-loved-ones/making-a-cpf-nomination) |
 | Insurance trust nomination: spouse or children only, overrides a will; no nomination: up to $150,000 to a proper claimant | 3.3 | [MoneySense: Deciding how to transfer your estate](https://www.moneysense.gov.sg/deciding-how-to-transfer-your-estate/); Insurance Act 1966 s132–133 |
 | Tied representatives may not call themselves "independent" | 5.5 | [MAS FAA-G05](https://www.mas.gov.sg/regulation/guidelines/guidelines-on-the-use-of-the-term-independent-by-financial-advisers) |
 | MAS Notice FAA-N27 effective 1 Jan 2027 | 5.8 | [mas.gov.sg](https://www.mas.gov.sg/regulation/notices/notice-faa-n27) |
 | FIDReC handles disputes with financial institutions (objection 18) | — | [fidrec.com.sg](https://www.fidrec.com.sg) (official dispute-resolution body; outside the fact pack, cited directly) |
-| Free-look: at least 14 days from receipt of the policy (Module C) | — | [LIA-1](https://www.lia.org.sg/media/1381/lia_colip_english_june2018.pdf), [LIA-2](https://www.lia.org.sg/tools-and-resources/insurance-terms/) |
+| Free-look: at least 14 days from receipt of the policy (Module C) | — (**not in the fact pack; pending human check**) | [LIA Code of Life Insurance Practice, Dec 2021](https://www.lia.org.sg/media/3208/lia_colip_english_dec2021.pdf), [LIA-2](https://www.lia.org.sg/tools-and-resources/insurance-terms/). Confirm the period on the current LIA page and in the principal's policy documents before quoting. |
 
 **Do not quote:** MediShield Life deductibles from 1 Apr 2027 (not yet published), the end of Phased Support, or any retirement-age increase. These are UNVERIFIED in the fact pack.

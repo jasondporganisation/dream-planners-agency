@@ -30,7 +30,7 @@
 | 22 | "Compare other insurers" | "Please do. I represent one insurer, so I can't compare the market." | "Others are worse" / "I compare all" |
 | 23 | "Told to switch" | "Get a written gain/lose comparison: waiting periods, new exclusions, costs." | "Switch to me instead" |
 | 24 | "Cancel for cash" | "What's happening? Let's see what you'd lose, and the policy's options." | "Cancel; I'll get you a new one" |
-| 25 | "Premium up, drop rider" | "Options: ward class, no rider. One IP only; MediSave limits $300/$600/$900; riders in cash." | "Never downgrade" |
+| 25 | "Premium up, drop rider" | "Options: ward class, no rider. One IP only; MediSave limits $300/$600/$900 (by age next birthday); riders in cash." | "Never downgrade" |
 | 26 | "No review needed" | "Any changes? Marriage revokes a CPF nomination." | "Reviews are compulsory" |
 | 27 | "ILP is down, I want out" | "What was your goal? Values go up and down; check charges and cover lost." | "It will definitely bounce back" |
 | 28 | "I have a will" | "CPF isn't covered by a will; CPF nomination is free. See a lawyer for legal points." | "Nomination = no will needed" |
