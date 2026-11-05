@@ -100,8 +100,11 @@ results into `data/refresh_report.md` (same layout as before):
 - as `DISCREPANCY` lines: a bid price that moved more than 15% since the
   previous dataset ("week-on-week").
 
-These do not stop the refresh, but the Failures section is then no longer
-"- none", so the weekly PR is held for a person instead of being auto-merged.
+These do not stop the refresh. A Failures / notes line means that section is no
+longer "- none", so the weekly PR is held for a person instead of being
+auto-merged. A week-on-week move is only a `DISCREPANCY` line: the Failures
+section stays "- none", and whether the PR is held depends on how many
+DISCREPANCY lines the Monday auto-merge job allows.
 The dashboard shows a red warning banner when its data is more than 10 days old.
 
 **Always glance at `data/refresh_report.md` after a refresh.** "Failures /
