@@ -2,6 +2,7 @@
 
 **When:** Week 5 (practise in every team huddle from Week 5 to Week 13)
 **Time:** 20-minute talk, 25-minute role-play, 15-minute quiz and review
+**Go further:** the [Objection Handling Playbook](../objection-handling-playbook.md) covers 30 objections from first meetings and reviews, when to walk away and how to document the conversation. Print the [one-page cheat sheet](../objection-cheatsheet.md) for huddles.
 
 > An objection is information, not an attack. Our aim is not to "overcome" it. We aim to **understand it, answer honestly, and respect the client's decision.** Source references point to `sources.md`.
 
