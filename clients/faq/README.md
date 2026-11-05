@@ -18,3 +18,4 @@
 | [02-hospitalisation-medishield-ip.md](02-hospitalisation-medishield-ip.md) | Hospitalisation, MediShield Life, Integrated Shield Plans | Q13–Q26 |
 | [03-cpf.md](03-cpf.md) | CPF | Q27–Q39 |
 | [04-nominations-wills-lpa.md](04-nominations-wills-lpa.md) | Nominations, wills, Lasting Power of Attorney | Q40–Q53 |
+| [05-premiums-lapses.md](05-premiums-lapses.md) | Premiums and lapses (general) | Q54–Q65 |
