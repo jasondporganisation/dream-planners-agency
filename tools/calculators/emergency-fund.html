@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en-SG">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self' file:; style-src 'self' file:; connect-src 'none'; img-src 'none'; form-action 'none'; base-uri 'none'">
+<meta name="referrer" content="no-referrer">
+<meta name="robots" content="noindex">
+<link rel="stylesheet" href="style.css">
+<title>Emergency fund calculator | Dream Planners</title>
+</head>
+<body><main>
+<h1>Emergency fund</h1>
+<p>An emergency fund is cash you can reach quickly if income stops or a big bill arrives. This shows how many months of expenses your savings would cover.</p>
+<form id="f" class="card" novalidate>
+  <label for="exp">Monthly expenses ($)<span class="hint">What you spend in a normal month, including loan repayments and insurance premiums.</span></label>
+  <input id="exp" type="number" inputmode="decimal" min="0" step="any">
+  <label for="months">Months of expenses you want covered<span class="hint">You choose this. There is no official figure; it depends on your job, family and other cover.</span></label>
+  <input id="months" type="number" inputmode="decimal" min="0" step="any">
+  <label for="saved">Emergency savings you have now ($)<span class="hint">Cash you could use within days, not money you have set aside for other goals.</span></label>
+  <input id="saved" type="number" inputmode="decimal" min="0" step="any">
+  <button type="submit">Calculate</button>
+</form>
+<section id="out" class="card result" aria-live="polite"><p>Fill in all three boxes and press Calculate.</p></section>
+<h2>How it works</h2>
+<div class="card">
+<ul>
+<li>Target = monthly expenses × months you chose.</li>
+<li>Months covered = savings ÷ monthly expenses.</li>
+<li>Assumes your expenses stay the same and ignores any interest on the savings.</li>
+<li>No default figures are filled in: the fact pack has no official guideline for how big an emergency fund should be.</li>
+</ul>
+</div>
+<footer>
+  <p class="disclaimer">For general information only; it does not consider your specific objectives, financial situation or needs. Jason Ng, Representative, Dream Planners.</p>
+  <p>This is an educational tool, not financial advice. Nothing you type is stored or sent anywhere: the page has no server, no cookies, no tracking and no external scripts.</p>
+  <p>Reference figures are from the Dream Planners fact pack (<code>compliance/sg-fact-pack-2026-11.md</code>, figures checked 3 Nov 2026). Government figures change, often in January; check the official source before relying on them.</p>
+  <p><a href="index.html">All calculators</a></p>
+</footer>
+</main>
+<script src="calc.js"></script>
+<script src="ui.js"></script>
+<script src="emergency-fund.js"></script>
+</body>
+</html>

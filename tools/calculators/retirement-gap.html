@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en-SG">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self' file:; style-src 'self' file:; connect-src 'none'; img-src 'none'; form-action 'none'; base-uri 'none'">
+<meta name="referrer" content="no-referrer">
+<meta name="robots" content="noindex">
+<link rel="stylesheet" href="style.css">
+<title>Retirement income gap illustration | Dream Planners</title>
+</head>
+<body><main>
+<h1>Retirement income gap</h1>
+<p>A rough illustration of how much money might be needed at retirement to top up other income to the level you want, after allowing for rising prices. You enter every rate.</p>
+<p class="notice"><strong>Illustration only.</strong> This is not a projection or a guarantee. It uses the rates you type in, held steady every year, which real life never does. Actual results will be different.</p>
+<form id="f" class="card" novalidate>
+  <label for="age">Your age now</label>
+  <input id="age" type="number" inputmode="numeric" min="0" step="1">
+  <label for="ret">Age you plan to stop working</label>
+  <input id="ret" type="number" inputmode="numeric" min="0" step="1">
+  <label for="yrs">Years the money needs to last<span class="hint">For reference: a Singapore resident aged 65 lives about 21.6 more years on average (SingStat, 2025). That is an average, not a prediction; many people live longer.</span></label>
+  <input id="yrs" type="number" inputmode="decimal" min="0" step="any">
+  <label for="want">Monthly income you want in retirement, in today's dollars ($)</label>
+  <input id="want" type="number" inputmode="decimal" min="0" step="any">
+  <label for="other">Other monthly income you expect, in today's dollars ($)<span class="hint">For example a CPF LIFE estimate from your CPF account, rental or a pension. Enter 0 if none.</span></label>
+  <input id="other" type="number" inputmode="decimal" min="0" step="any">
+  <label for="saved">Savings already set aside for retirement ($)<span class="hint">Not counting CPF if you have already included CPF LIFE above.</span></label>
+  <input id="saved" type="number" inputmode="decimal" min="0" step="any">
+  <label for="infl">Yearly inflation rate you want to assume (%)<span class="hint">For reference only: Singapore CPI-All Items inflation was 0.9% for 2025 and 2.2% year on year in Sep 2026 (SingStat). Past inflation does not predict future inflation.</span></label>
+  <input id="infl" type="number" inputmode="decimal" step="any">
+  <label for="rpre">Yearly return to assume on savings until retirement (%)</label>
+  <input id="rpre" type="number" inputmode="decimal" step="any">
+  <label for="rpost">Yearly return to assume during retirement (%)</label>
+  <input id="rpost" type="number" inputmode="decimal" step="any">
+  <button type="submit">Show illustration</button>
+</form>
+<section id="out" class="card result" aria-live="polite"><p>Fill in every box and press Show illustration.</p></section>
+<h2>Assumptions</h2>
+<div class="card">
+<ul>
+<li>The gap today = income you want − other income. If other income covers it, the gap is $0.</li>
+<li>The gap grows with the inflation rate you entered, every year, until retirement and through retirement.</li>
+<li>Other income is assumed to keep pace with inflation. <strong>CPF LIFE Standard Plan payouts are level and not inflation-adjusted</strong> (CPF Board), so if you entered a CPF LIFE estimate the real gap may be larger than shown.</li>
+<li>Money needed at retirement = the amount that, earning your "during retirement" return, pays the yearly gap at the start of each year for the number of years you entered (rounded up to whole years).</li>
+<li>Your current savings grow at your "until retirement" return. No new savings, fees, taxes or withdrawals are included.</li>
+<li>Rates are the same every year. Real returns and inflation go up and down, and returns can be negative.</li>
+</ul>
+<p>Sources for reference figures: <a href="https://www.singstat.gov.sg/news/complete-life-tables-for-singapore-resident-population-2024-2025" rel="noreferrer">SingStat Complete Life Tables 2024–2025</a> · <a href="https://www.singstat.gov.sg/news/singapore-consumer-price-index-dec2025" rel="noreferrer">SingStat CPI Dec 2025</a> · <a href="https://www.singstat.gov.sg/news/singapore-consumer-price-index-sep2026" rel="noreferrer">SingStat CPI Sep 2026</a> · <a href="https://www.cpf.gov.sg/member/retirement-income/monthly-payouts/cpf-life" rel="noreferrer">CPF LIFE, cpf.gov.sg</a></p>
+</div>
+<footer>
+  <p class="disclaimer">For general information only; it does not consider your specific objectives, financial situation or needs. Jason Ng, Representative, Dream Planners.</p>
+  <p>This is an educational tool, not financial advice. Nothing you type is stored or sent anywhere: the page has no server, no cookies, no tracking and no external scripts.</p>
+  <p>Reference figures are from the Dream Planners fact pack (<code>compliance/sg-fact-pack-2026-11.md</code>, figures checked 3 Nov 2026). Government figures change, often in January; check the official source before relying on them.</p>
+  <p><a href="index.html">All calculators</a></p>
+</footer>
+</main>
+<script src="calc.js"></script>
+<script src="ui.js"></script>
+<script src="retirement-gap.js"></script>
+</body>
+</html>
