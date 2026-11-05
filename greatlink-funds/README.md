@@ -91,6 +91,19 @@ found. The terminal lists the funds affected. Usually a retry later fixes it; if
 you really need to publish anyway, run `python refresh.py --allow-incomplete`
 and the problems are recorded in `data/refresh_report.md`.
 
+On top of that, every refresh runs **data-sanity checks** and writes the
+results into `data/refresh_report.md` (same layout as before):
+
+- under "Failures / notes": `FUND COUNT` (not exactly 40 funds), `DUPLICATE`
+  (two funds share a fund code or ID), `BAD PRICE` (a price of 0 or below),
+  `STALE DATA` / `STALE PRICE` (prices more than 10 days old on the run date);
+- as `DISCREPANCY` lines: a bid price that moved more than 15% since the
+  previous dataset ("week-on-week").
+
+These do not stop the refresh, but the Failures section is then no longer
+"- none", so the weekly PR is held for a person instead of being auto-merged.
+The dashboard shows a red warning banner when its data is more than 10 days old.
+
 **Always glance at `data/refresh_report.md` after a refresh.** "Failures /
 notes: none" and a short discrepancy list means all is well.
 

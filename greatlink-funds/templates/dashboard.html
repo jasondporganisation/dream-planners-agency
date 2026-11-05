@@ -32,7 +32,11 @@
   header .spacer{flex:1}
   .banner{padding:9px 22px;font-size:13.5px}
   .banner.sample{background:var(--samplebg);color:var(--sampleink)}
-  .banner.stale{background:var(--warnbg);color:var(--warnink)}
+  .banner.stale{background:#b42318;color:#fff;font-size:15px;padding:12px 22px;border-bottom:3px solid #7a1610}
+  .banner.stale strong{font-weight:800}
+  .banner.stale code{background:rgba(0,0,0,.25);padding:1px 5px;border-radius:4px;color:#fff}
+  .asatbar.is-stale{background:#fdecea;border-bottom-color:#f1b5ae}
+  .asatbar.is-stale .big b{color:#b42318}
   main{max-width:1440px;margin:0 auto;padding:14px 22px 120px}
   h2{font-size:16px;margin:22px 0 8px}
   .muted{color:var(--muted)} .small{font-size:12.5px}
@@ -249,8 +253,8 @@
   <strong>SAMPLE DATA</strong> — placeholder figures for layout only, not real fund performance.
   Run <code>python refresh.py</code> to load live Great Eastern / Morningstar data.
 </div>
-<div id="staleBanner" class="banner stale" hidden></div>
-<div class="asatbar">
+<div id="staleBanner" class="banner stale" role="alert" hidden></div>
+<div class="asatbar" id="asatBar">
   <span class="big" id="asatBig"></span>
   <span class="plain"><strong>Past performance is not indicative of future performance. This is not financial advice.</strong></span>
 </div>
@@ -529,8 +533,11 @@ function renderBanners(){
   if(DATA.as_at){
     var age=Math.floor((Date.now()-new Date(DATA.as_at).getTime())/864e5);
     if(age>STALE_DAYS){stale.hidden=false;
-      stale.innerHTML='⚠️ This data is <strong>'+age+' days old</strong> (as at '+fmtDate(DATA.as_at)
-        +'). Run <code>python refresh.py</code> before showing it to a client.';}
+      document.getElementById('asatBar').classList.add('is-stale');
+      stale.innerHTML='⚠️ <strong>Out-of-date data:</strong> prices and returns are as at <strong>'+esc(fmtDate(DATA.as_at))
+        +'</strong>, which is <strong>'+age+' days old</strong> (more than '+STALE_DAYS+' days). '
+        +'Do not show these figures to a client until the weekly refresh has run '
+        +'(or run <code>python refresh.py</code>).';}
   }
   document.getElementById('shortDisc').textContent=DISCLAIMER;
   document.getElementById('fullDisclaimer').textContent=DISCLAIMER
