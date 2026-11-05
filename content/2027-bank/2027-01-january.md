@@ -1,6 +1,6 @@
 # January 2027 — Q1 (posts 01–08)
 
-Figures from `compliance/sg-fact-pack-2026-11.md` (checked 3 Nov 2026). Four posts this month depend on 1 Jan 2027 changes and are flagged ⚑.
+Figures from `compliance/sg-fact-pack-2026-11.md` (checked 3 Nov 2026). Five posts this month (01–05) depend on 1 Jan 2027 changes and are flagged ⚑.
 
 ---
 

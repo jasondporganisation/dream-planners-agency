@@ -42,7 +42,27 @@
 
 These use figures that take effect on 1 Jan 2027. Re-check each against cpf.gov.sg on or after 1 Jan 2027 before posting. The fact pack expires after 31 Jan 2027 unless re-verified, so **every post in this bank needs its figures re-checked against a refreshed fact pack before it goes out**.
 
-The full list is filled in as each month is written; see the Flag line on each post.
+| # | Post | 1 Jan 2027 dependency |
+|---|---|---|
+| 01 | CPF rates for workers above 55 to 60 change today | New 35.5% total rate |
+| 02 | Above 60 to 65: a smaller change | New 26% total rate |
+| 03 | Where does the extra CPF money go? | Allocation of extra contributions to RA, then OA |
+| 04 | Turning 55 in 2027? Your retirement sums are new | 2027 cohort BRS/FRS/ERS |
+| 05 | Myth: "Everyone's CPF goes up in 2027" | Which bands changed; OW ceiling unchanged |
+| 70 | The Full Retirement Sum is a benchmark | 2027 cohort FRS ($228,200) |
+| 85 | Year-end bonus and the CPF ceilings | 2027 ceilings (unchanged from 2026) |
+| 86 | Working past 65? CPF still contributes | 2027 rate table for 65+ bands (unchanged) |
+
+## ⚠ On hold
+
+- **63 · Ward class and your deductible** quotes 2026 MediShield Life deductibles. The second phase of increases takes effect 1 Apr 2027 and the new amounts were not published when this was written. Replace the figures with MOH's current table, or don't post it.
+
+## Notes for Brand Guardian / reviewers
+
+- **73** quotes the restricted terms "Financial Adviser" and "independent" only to explain that Jason does not use them.
+- **37** (Muslim estates) is factual but sensitive; suggest a human check of the wording.
+- Several posts repeat a key fact on purpose (e.g. marriage revokes a will and CPF nomination in 12, 82, 87). Space these out in the calendar.
+- Every post was machine-checked for: 80–180 words (actual range 100–150), 3–5 hashtags (all have 4–5), the exact disclaimer, a Sources line, and banned words (insurer names, "guarantee", "best", "independent", "financial adviser").
 
 ## Date-sensitive (not 1 Jan 2027)
 
