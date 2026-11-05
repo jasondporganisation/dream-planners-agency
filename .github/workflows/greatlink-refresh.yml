@@ -1,0 +1,111 @@
+# Weekly refresh of the GreatLink fund dashboard (greatlink-funds/).
+#
+# Runs every Monday 06:00 Singapore time on a free GitHub-hosted runner, pulls
+# the same public Great Eastern / Fund Centre pages that `python refresh.py`
+# uses, runs the unit tests (which include the "no empty fund" check on the new
+# data/funds.json) and opens a pull request with the new data. It never pushes
+# to main: a person reviews and merges the PR, and Vercel then deploys main.
+#
+# No secrets needed: it uses the built-in GITHUB_TOKEN only.
+# One-time repo setting (owner): Settings > Actions > General > Workflow
+# permissions > tick "Allow GitHub Actions to create and approve pull requests".
+# Without it the data is still pushed to a refresh branch and the run log says
+# how to open the PR by hand.
+
+name: GreatLink weekly data refresh
+
+on:
+  schedule:
+    - cron: "0 22 * * 0"   # Sunday 22:00 UTC = Monday 06:00 SGT (UTC+8)
+  workflow_dispatch: {}      # "Run workflow" button for an on-demand refresh
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: greatlink-refresh
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    defaults:
+      run:
+        working-directory: greatlink-funds
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install libraries (requests + pdfplumber; no browser needed)
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install "requests>=2.31" "pdfplumber>=0.11"
+
+      - name: Tests before refresh
+        run: python -m unittest discover tests -v
+
+      - name: Refresh data from the public GE pages
+        # Stops with an error (and writes nothing) if any fund comes back empty
+        # or stale, or fewer than 35 funds are found. GitHub then emails the
+        # failure; nothing reaches main.
+        run: python refresh.py
+
+      - name: Tests after refresh (includes the "no empty fund" check on the new data)
+        run: python -m unittest discover tests -v
+
+      - name: "No empty fund check (explicit)"
+        run: |
+          python - <<'PY'
+          import json, sys
+          sys.path.insert(0, ".")
+          from scraper.checks import validate_dataset
+          d = json.load(open("data/funds.json"))
+          problems = validate_dataset(d["funds"], d["as_at"])
+          print(f"{len(d['funds'])} funds, as at {d['as_at']}")
+          for p in problems:
+              print("PROBLEM:", p)
+          sys.exit(1 if problems else 0)
+          PY
+
+      - name: Open a pull request with the new data
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          set -euo pipefail
+          FILES="dashboard.html data/funds.json data/funds.csv data/refresh_report.md"
+          if git diff --quiet -- $FILES; then
+            echo "No change in the data since the last refresh. Nothing to do."
+            exit 0
+          fi
+          AS_AT=$(python -c 'import json;print(json.load(open("data/funds.json"))["as_at"])')
+          BRANCH="data-refresh/greatlink-${AS_AT}"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git checkout -B "$BRANCH"
+          git add $FILES
+          git commit -m "Refresh GreatLink fund data (as at ${AS_AT})"
+          git push --force -u origin "$BRANCH"
+          if [ -n "$(gh pr list --head "$BRANCH" --state open --json number --jq '.[].number')" ]; then
+            echo "A pull request for $BRANCH is already open; it now has the latest data."
+            exit 0
+          fi
+          {
+            echo "Automatic weekly refresh of the GreatLink fund dashboard."
+            echo
+            echo "- Data as at: **${AS_AT}**"
+            echo "- Unit tests and the \"no empty fund\" check passed on the new data."
+            echo "- Please glance at \`greatlink-funds/data/refresh_report.md\` in the Files tab, then merge to publish."
+            echo
+            echo "Workflow run: ${GITHUB_SERVER_URL}/${GITHUB_REPOSITORY}/actions/runs/${GITHUB_RUN_ID}"
+          } > "$RUNNER_TEMP/pr-body.md"
+          if ! gh pr create --base "${{ github.event.repository.default_branch }}" --head "$BRANCH" \
+                 --title "GreatLink fund data as at ${AS_AT}" --body-file "$RUNNER_TEMP/pr-body.md"; then
+            echo "::warning::Could not open the PR automatically. The new data is on branch $BRANCH."
+            echo "::warning::Owner: Settings > Actions > General > tick 'Allow GitHub Actions to create and approve pull requests', or open the PR by hand from $BRANCH."
+            exit 1
+          fi
