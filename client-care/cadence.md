@@ -83,7 +83,7 @@ Clients tell us about life events, or we see them because they choose to share (
 
 | Event | Appropriate | Not appropriate |
 |---|---|---|
-| Marriage, new baby, new home, new job | Congratulations, a small personal note. You can offer a review later: "when things settle, happy to look at whether anything in your plans needs updating, no rush." | Messaging about cover in the congratulations message itself; turning up with a proposal |
+| Marriage, new baby, new home, new job | Congratulations, a small personal note. You can offer a review later: "when things settle, happy to look at whether your paperwork or nominations need updating, no rush." | Messaging about cover in the congratulations message itself; turning up with a proposal |
 | Child starting school, graduating | Congratulations | Education-planning pitches |
 | Retirement | Congratulations; ask how they'd like to celebrate | Product talk in the same message |
 | Illness or hospitalisation | Concern, an offer of practical help, "no need to reply" | Asking about claims in the first message unless they raised it; switch to [`claims-support.md`](claims-support.md) when they're ready |

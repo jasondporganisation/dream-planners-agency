@@ -138,7 +138,7 @@ Starting points for a voice note or call. Make them your own.
 
 ## E. Life events (M25–M32) — all ✍️ PERSONALISE
 
-Respond only to events the client shares with you. The first message is about them. Anything about plans comes later, and only if they want it.
+Respond only to events the client shares with you. The first message is about them. A review offer comes later (M29), and only if they want it.
 
 **M25 — Marriage**
 > Congratulations, [Client first name] and [partner's name]! 🎉 So happy for you both. [Personal line, e.g. "The photos look beautiful."] Wishing you a lifetime of happiness together.
@@ -153,7 +153,7 @@ Respond only to events the client shares with you. The first message is about th
 > Congratulations on the new role, [Client first name]! Well deserved. [Personal line]. All the best for the first few weeks!
 
 **M29 — Gentle review offer, sent 4–8 weeks *after* a life event, never in the same message**
-> Hi [Client first name], hope you're settling in well after [the wedding / the baby / the move / the new job]. When things are calmer, and only if it's useful, I'm happy to sit down and check whether anything in your plans, nominations or contact details needs updating to reflect the change. No rush at all. Just let me know.
+> Hi [Client first name], hope you're settling in well after [the wedding / the baby / the move / the new job]. When things are calmer, and only if it's useful, I'm happy to sit down and check whether your paperwork, nominations or contact details need updating to reflect the change. No rush at all. Just let me know.
 
 **M30 — Retirement**
 > Congratulations on your retirement, [Client first name]! After [X] years, you've more than earned it. What's the first thing on your list? [Personal line]
