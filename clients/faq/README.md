@@ -1,7 +1,7 @@
 # Client FAQ bank — index
 
 **Owner:** Xavier (client experience) · **Checked by:** Brand Guardian · **Every outgoing message reviewed by:** Jason Ng
-**Status:** DRAFT, in progress. Figures come only from [`compliance/sg-fact-pack-2026-11.md`](../../compliance/sg-fact-pack-2026-11.md) (checked 3 Nov 2026; re-check on or after 1 Jan 2027).
+**Status:** DRAFT, awaiting Brand Guardian check and Jason's review. Figures come only from [`compliance/sg-fact-pack-2026-11.md`](../../compliance/sg-fact-pack-2026-11.md) (checked 3 Nov 2026; re-check on or after 1 Jan 2027).
 
 ## How to use
 
@@ -21,3 +21,14 @@
 | [05-premiums-lapses.md](05-premiums-lapses.md) | Premiums and lapses (general) | Q54–Q65 |
 | [06-policy-reviews.md](06-policy-reviews.md) | Policy reviews | Q66–Q76 |
 | [07-life-events.md](07-life-events.md) | Life events: marriage, new baby, new job, retirement | Q77–Q90 |
+| [08-death-of-family-member.md](08-death-of-family-member.md) | When a family member passes away | Q91–Q100 |
+
+**Total: 100 questions.**
+
+## Notes for Brand Guardian and Jason
+
+- Every figure is taken from the fact pack and links to the official page named there. Nothing marked UNVERIFIED in the pack is quoted (for example, MediShield Life deductibles from 1 Apr 2027 are not given).
+- Some answers state general rules that the fact pack does not cover word for word (for example, grace periods and reinstatement in general terms, group insurance ending when you leave a job, an LPA ending at death). These have no figures and say to check the policy or ask. Please check them.
+- Q65 mentions the Policy Owners' Protection Scheme without quoting limits; it links to sdic.org.sg, which the fact pack names as the primary source for that rule.
+- Q94 links to the Public Trustee's Office (pto.mlaw.gov.sg), which the fact pack uses as a labelled exception.
+- Re-check the CPF figures on or after 1 Jan 2027, and the MediShield Life figures after 1 Apr 2027. The fact pack expires after 31 Jan 2027 unless it is re-verified.
