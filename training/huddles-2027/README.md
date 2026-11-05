@@ -21,7 +21,7 @@ The topics rotate through: prospecting, fact-finding, client reviews, referrals,
 ## Linked material
 
 - Training pack: [`../new-adviser-90-days/`](../new-adviser-90-days/README.md) (Modules A–F)
-- Objection playbook: `training/objection-handling-playbook.md` and `training/objection-cheatsheet.md`. These are on the PR #16 branch (`claude/ecstatic-pasteur-6got9n`) until it is merged. [View the playbook on that branch](https://github.com/jasondporganisation/dream-planners-agency/blob/claude/ecstatic-pasteur-6got9n/training/objection-handling-playbook.md)
+- Objection playbook: `training/objection-handling-playbook.md` and `training/objection-cheatsheet.md`. Merged in PR #16. [View the playbook](https://github.com/jasondporganisation/dream-planners-agency/blob/main/training/objection-handling-playbook.md)
 - Fact pack: [`../../compliance/sg-fact-pack-2026-11.md`](../../compliance/sg-fact-pack-2026-11.md)
 - Client-care toolkit: [`../../client-care/`](../../client-care/README.md)
 

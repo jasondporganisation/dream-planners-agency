@@ -144,7 +144,7 @@ Each person states one commitment and the facilitator writes it down. Prompt: *H
 
 Each person states one commitment and the facilitator writes it down. Prompt: *Who (by count) needs a follow-up to re-explain the guaranteed and non-guaranteed parts of what they hold?*
 
-**Links:** [Objection playbook (PR #16 branch)](https://github.com/jasondporganisation/dream-planners-agency/blob/claude/ecstatic-pasteur-6got9n/training/objection-handling-playbook.md) · [Fact pack](../../compliance/sg-fact-pack-2026-11.md) · [Training pack Module A: MAS/FAA conduct basics](../new-adviser-90-days/module-a-mas-faa-conduct-basics.md)
+**Links:** [Objection playbook (PR #16 branch)](https://github.com/jasondporganisation/dream-planners-agency/blob/main/training/objection-handling-playbook.md) · [Fact pack](../../compliance/sg-fact-pack-2026-11.md) · [Training pack Module A: MAS/FAA conduct basics](../new-adviser-90-days/module-a-mas-faa-conduct-basics.md)
 
 ---
 

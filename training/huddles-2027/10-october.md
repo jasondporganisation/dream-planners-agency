@@ -144,4 +144,4 @@ Each person states one commitment and the facilitator writes it down. Prompt: *H
 
 Each person states one commitment and the facilitator writes it down. Prompt: *How many "send details" stalls will you convert into a specific next step or a respectful close?*
 
-**Links:** [Objection playbook (PR #16 branch)](https://github.com/jasondporganisation/dream-planners-agency/blob/claude/ecstatic-pasteur-6got9n/training/objection-handling-playbook.md) · [Objection cheat sheet (PR #16 branch)](https://github.com/jasondporganisation/dream-planners-agency/blob/claude/ecstatic-pasteur-6got9n/training/objection-cheatsheet.md) · [Training pack Module C: common objections](../new-adviser-90-days/module-c-common-objections.md)
+**Links:** [Objection playbook (PR #16 branch)](https://github.com/jasondporganisation/dream-planners-agency/blob/main/training/objection-handling-playbook.md) · [Objection cheat sheet (PR #16 branch)](https://github.com/jasondporganisation/dream-planners-agency/blob/main/training/objection-cheatsheet.md) · [Training pack Module C: common objections](../new-adviser-90-days/module-c-common-objections.md)

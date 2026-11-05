@@ -73,7 +73,7 @@ Each person states one commitment and the facilitator writes it down. Prompt: *H
 
 Each person states one commitment and the facilitator writes it down. Prompt: *How many "second opinion" follow-ups will you offer, with no pressure?*
 
-**Links:** [Objection playbook (PR #16 branch)](https://github.com/jasondporganisation/dream-planners-agency/blob/claude/ecstatic-pasteur-6got9n/training/objection-handling-playbook.md) · [Objection cheat sheet (PR #16 branch)](https://github.com/jasondporganisation/dream-planners-agency/blob/claude/ecstatic-pasteur-6got9n/training/objection-cheatsheet.md) · [Training pack Module A: MAS/FAA conduct basics](../new-adviser-90-days/module-a-mas-faa-conduct-basics.md)
+**Links:** [Objection playbook (PR #16 branch)](https://github.com/jasondporganisation/dream-planners-agency/blob/main/training/objection-handling-playbook.md) · [Objection cheat sheet (PR #16 branch)](https://github.com/jasondporganisation/dream-planners-agency/blob/main/training/objection-cheatsheet.md) · [Training pack Module A: MAS/FAA conduct basics](../new-adviser-90-days/module-a-mas-faa-conduct-basics.md)
 
 ---
 

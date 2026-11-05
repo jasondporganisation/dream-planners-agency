@@ -108,7 +108,7 @@ Each person states one commitment and the facilitator writes it down. Prompt: *W
 
 Each person states one commitment and the facilitator writes it down. Prompt: *How many full fact-finds will you complete this week, and with which kinds of client? Do not use names.*
 
-**Links:** [Training pack Module B: fact-find and needs analysis](../new-adviser-90-days/module-b-fact-find-needs-analysis.md) · [Training pack Module A: MAS/FAA conduct basics](../new-adviser-90-days/module-a-mas-faa-conduct-basics.md) · [Objection playbook (PR #16 branch)](https://github.com/jasondporganisation/dream-planners-agency/blob/claude/ecstatic-pasteur-6got9n/training/objection-handling-playbook.md)
+**Links:** [Training pack Module B: fact-find and needs analysis](../new-adviser-90-days/module-b-fact-find-needs-analysis.md) · [Training pack Module A: MAS/FAA conduct basics](../new-adviser-90-days/module-a-mas-faa-conduct-basics.md) · [Objection playbook (PR #16 branch)](https://github.com/jasondporganisation/dream-planners-agency/blob/main/training/objection-handling-playbook.md)
 
 ---
 

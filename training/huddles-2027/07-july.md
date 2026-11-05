@@ -109,7 +109,7 @@ Each person states one commitment and the facilitator writes it down. Prompt: *W
 
 Each person states one commitment and the facilitator writes it down. Prompt: *How many "not now" contacts will you put on a respectful revisit date in the CRM?*
 
-**Links:** [Objection playbook (PR #16 branch)](https://github.com/jasondporganisation/dream-planners-agency/blob/claude/ecstatic-pasteur-6got9n/training/objection-handling-playbook.md) · [Objection cheat sheet (PR #16 branch)](https://github.com/jasondporganisation/dream-planners-agency/blob/claude/ecstatic-pasteur-6got9n/training/objection-cheatsheet.md) · [Training pack Module C: common objections](../new-adviser-90-days/module-c-common-objections.md)
+**Links:** [Objection playbook (PR #16 branch)](https://github.com/jasondporganisation/dream-planners-agency/blob/main/training/objection-handling-playbook.md) · [Objection cheat sheet (PR #16 branch)](https://github.com/jasondporganisation/dream-planners-agency/blob/main/training/objection-cheatsheet.md) · [Training pack Module C: common objections](../new-adviser-90-days/module-c-common-objections.md)
 
 ---
 
