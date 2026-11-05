@@ -14,3 +14,4 @@
 
 | File | Topic | Questions |
 |---|---|---|
+| [01-claims-basics.md](01-claims-basics.md) | Claims process basics | Q1–Q12 |
