@@ -1,7 +1,7 @@
 # Client FAQ bank — index
 
 **Owner:** Xavier (client experience) · **Checked by:** Brand Guardian · **Every outgoing message reviewed by:** Jason Ng
-**Status:** DRAFT, awaiting Brand Guardian check and Jason's review. Figures come only from [`compliance/sg-fact-pack-2026-11.md`](../../compliance/sg-fact-pack-2026-11.md) (checked 3 Nov 2026; re-check on or after 1 Jan 2027).
+**Status:** DRAFT. Brand Guardian checked 5 Nov 2026 (fixes on this branch); each answer is still reviewed by Jason before it is sent. Figures come only from [`compliance/sg-fact-pack-2026-11.md`](../../compliance/sg-fact-pack-2026-11.md) (checked 3 Nov 2026; re-check on or after 1 Jan 2027).
 
 ## How to use
 
