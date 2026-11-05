@@ -29,6 +29,7 @@ import sys
 import traceback
 from datetime import date, datetime, timezone
 from pathlib import Path
+from zoneinfo import ZoneInfo
 
 ROOT = Path(__file__).resolve().parent
 sys.path.insert(0, str(ROOT))
@@ -213,6 +214,48 @@ def finalise_missing(fund: dict) -> None:
     fund["missing_fields"] = miss
 
 
+def render_report(funds: list[dict], as_at: str, report_lines: list[str], started: datetime,
+                  generated_at: str, factsheets_as_at: str | None, fs_dates: list[str]) -> str:
+    """data/refresh_report.md. The Monday auto-merge job reads the lines
+    "Funds processed: N", "Fact sheets on disk: N/M", the "## Failures / notes"
+    section ("- none" when clean) and the DISCREPANCY lines — keep this layout
+    exactly (tests/test_refresh_checks.py pins it)."""
+    failures = [ln for ln in report_lines if "DISCREPANCY" not in ln]
+    discrepancies = [ln for ln in report_lines if "DISCREPANCY" in ln]
+    missing = [f"- {f['name']}: {', '.join(f['missing_fields'])}" for f in funds if f["missing_fields"]]
+    no_pdf = [f["name"] for f in funds if not f["docs"].get("factsheet_local")]
+    report = [
+        "# Refresh report", "",
+        f"- Run started: {started.isoformat(timespec='seconds')}",
+        f"- Run finished: {generated_at}",
+        f"- Returns / prices as at: **{as_at}**",
+        f"- Fact sheets as at: **{factsheets_as_at}**"
+        + (f" (range {fs_dates[0]} – {fs_dates[-1]})" if len(fs_dates) > 1 else ""),
+        f"- Funds processed: {len(funds)}",
+        f"- Fact sheets on disk: {len(funds) - len(no_pdf)}/{len(funds)}", "",
+        "## Failures / notes", ""] + (failures or ["- none"]) + ["",
+        "## Discrepancies (> 0.1 pp or price/fee mismatch)", ""] + (discrepancies or ["- none"]) + ["",
+        "## Missing fields per fund", ""] + (missing or ["- none"]) + ["",
+        "## Funds without a local fact sheet", ""] + ([f"- {n}" for n in no_pdf] or ["- none"]) + [""]
+    return "\n".join(report)
+
+
+def load_previous_funds(path: Path) -> list[dict]:
+    """Funds from the last published dataset (for the week-on-week check);
+    [] if there is none or it is the labelled sample."""
+    try:
+        prev = json.loads(path.read_text(encoding="utf-8"))
+    except (OSError, ValueError):
+        return []
+    if prev.get("sample"):
+        return []
+    return prev.get("funds") or []
+
+
+def today_sgt() -> date:
+    return datetime.now(ZoneInfo("Asia/Singapore")).date()
+
+
 def write_outputs(funds: list[dict], as_at: str, report_lines: list[str], started: datetime) -> dict:
     """Render every output in memory first, then swap the files into place one
     after another, so a failure while rendering touches nothing and the
@@ -245,24 +288,8 @@ def write_outputs(funds: list[dict], as_at: str, report_lines: list[str], starte
         w.writerow(["" if v is None else v for v in row])
     csv_text = buf.getvalue()
 
-    failures = [ln for ln in report_lines if "DISCREPANCY" not in ln]
-    discrepancies = [ln for ln in report_lines if "DISCREPANCY" in ln]
-    missing = [f"- {f['name']}: {', '.join(f['missing_fields'])}" for f in funds if f["missing_fields"]]
-    no_pdf = [f["name"] for f in funds if not f["docs"].get("factsheet_local")]
-    report = [
-        "# Refresh report", "",
-        f"- Run started: {started.isoformat(timespec='seconds')}",
-        f"- Run finished: {dataset['generated_at']}",
-        f"- Returns / prices as at: **{as_at}**",
-        f"- Fact sheets as at: **{dataset['factsheets_as_at']}**"
-        + (f" (range {fs_dates[0]} – {fs_dates[-1]})" if len(fs_dates) > 1 else ""),
-        f"- Funds processed: {len(funds)}",
-        f"- Fact sheets on disk: {len(funds) - len(no_pdf)}/{len(funds)}", "",
-        "## Failures / notes", ""] + (failures or ["- none"]) + ["",
-        "## Discrepancies (> 0.1 pp or price/fee mismatch)", ""] + (discrepancies or ["- none"]) + ["",
-        "## Missing fields per fund", ""] + (missing or ["- none"]) + ["",
-        "## Funds without a local fact sheet", ""] + ([f"- {n}" for n in no_pdf] or ["- none"]) + [""]
-    report_text = "\n".join(report)
+    report_text = render_report(funds, as_at, report_lines, started,
+                                dataset["generated_at"], dataset["factsheets_as_at"], fs_dates)
 
     import build_dashboard
     dashboard_html = build_dashboard.render(dataset)
@@ -287,6 +314,7 @@ def main(argv: list[str]) -> int:
     FACTSHEETS.mkdir(exist_ok=True)
     session = PoliteSession()
     report: list[str] = []
+    previous_funds = load_previous_funds(DATA / "funds.json")   # read before anything is overwritten
 
     log("== GreatLink refresh ==")
     log("Step 1/6  Fund list + categories (greateasternlife.com)")
@@ -386,6 +414,14 @@ def main(argv: list[str]) -> int:
                 f"`python refresh.py --allow-incomplete` to publish anyway.")
             return 1
         report.extend(f"- INCOMPLETE (published with --allow-incomplete): {p}" for p in problems)
+
+    # Data-sanity checks: listed in the report (Failures / DISCREPANCY lines) so
+    # the PR is held for a person instead of being auto-merged.
+    sanity = checks.sanity_failures(funds, as_at, today_sgt())
+    sanity += checks.weekly_move_discrepancies(funds, previous_funds)
+    for ln in sanity:
+        log("!! sanity: " + ln[2:])
+    report.extend(sanity)
 
     log("Step 6/6  Writing dataset, report and dashboard")
     dataset = write_outputs(funds, as_at, report, started)

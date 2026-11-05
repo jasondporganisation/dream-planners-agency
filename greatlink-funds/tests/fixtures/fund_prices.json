@@ -1,0 +1,14 @@
+{
+  "funds": [
+    {"fundName": "GreatLink Global Equity Fund", "fundCode": "07", "fundBidPrice": "2.3456",
+     "fundOfferPrice": "2.4690", "fundValueDate": "2026-11-03",
+     "fundPriceStatusDescription": "Normal", "fundCPFApproved": "Y"},
+    {"fundName": "GreatLink Cash Fund", "fundCode": "F01", "fundBidPrice": "1.2001",
+     "fundOfferPrice": "", "fundValueDate": "2026-11-03",
+     "fundPriceStatusDescription": "Normal", "fundCPFApproved": "N"},
+    {"fundName": "GreatLink Suspended Fund", "fundCode": "99", "fundBidPrice": "n.a.",
+     "fundOfferPrice": null, "fundValueDate": "",
+     "fundPriceStatusDescription": "Suspended", "fundCPFApproved": "N"},
+    {"fundName": "Row without a code (ignored)", "fundCode": "", "fundBidPrice": "1.0"}
+  ]
+}

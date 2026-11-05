@@ -76,6 +76,25 @@ jobs:
           sys.exit(1 if problems else 0)
           PY
 
+      - name: "Data-sanity summary (from data/refresh_report.md)"
+        # Problems found by the sanity checks (fund count, duplicate codes,
+        # prices <= 0, data older than 10 days) are listed under
+        # "## Failures / notes"; big weekly price moves are DISCREPANCY lines.
+        # They do not stop the run: the PR still opens, but the auto-merge job
+        # holds it for a person. This step only surfaces them in the run log.
+        run: |
+          python - <<'PY'
+          text = open("data/refresh_report.md", encoding="utf-8").read()
+          failures = text.split("## Failures / notes", 1)[1].split("\n## ", 1)[0]
+          notes = [ln for ln in failures.splitlines() if ln.startswith("- ") and ln != "- none"]
+          disc = [ln for ln in text.splitlines() if ln.startswith("- DISCREPANCY")]
+          for ln in notes:
+              print(f"::warning title=Refresh note::{ln[2:]}")
+          if len(disc) > 3:
+              print(f"::warning title=Discrepancies::{len(disc)} DISCREPANCY lines (auto-merge allows at most 3)")
+          print(f"{len(notes)} failure/note line(s), {len(disc)} DISCREPANCY line(s)")
+          PY
+
       - name: Open a pull request with the new data
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
