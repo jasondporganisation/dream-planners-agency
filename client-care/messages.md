@@ -46,7 +46,7 @@ Warm Singapore English for WhatsApp and email. **Templates only.** Jason reviews
 > Hi [Client first name], a short checklist for when your documents arrive:
 > • Keep them together in one place (physical folder or secure digital storage)
 > • Tell a family member where they are
-> • Save my number under "[Adviser name] – Insurance" so your family can find me
+> • Save my number under "[Adviser name] (my adviser)" so your family can find me
 > • Read through the documents. The policy document sets out the terms; if anything is unclear, ask me
 >
 > That's all. Speak soon, [Adviser name]

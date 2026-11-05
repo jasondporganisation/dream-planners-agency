@@ -2,7 +2,7 @@
 
 **Context:** proposal P86, the "referral moment at policy delivery". This file covers how to make that moment, and the annual review, an *invitation* the client can easily decline, and the PDPA and Do Not Call (DNC) rules that apply to what happens next.
 
-**The core idea:** the best referral process **puts the friend in control**. We ask the client to pass *our* contact to someone who might find it useful. We don't ask the client to hand over the friend's number. The friend then decides whether to get in touch. That keeps the client comfortable, respects the friend, and avoids most of the PDPA and DNC risk.
+**The core idea:** our referral process **puts the friend in control**. We ask the client to pass *our* contact to someone who might find it useful. We don't ask the client to hand over the friend's number. The friend then decides whether to get in touch. That keeps the client comfortable, respects the friend, and greatly reduces the PDPA and DNC risk.
 
 > This is guidance, not legal advice. Your insurer's compliance rules apply on top of this, and they win if they're stricter.
 
@@ -33,7 +33,7 @@ All of these are low-pressure, make it easy to say no, and put the friend in con
 > "Thank you again for trusting me with this. I hope today's walkthrough made everything clear. One small thing, and please feel free to say no: if you ever come across someone who's going through a big life change and would like a no-obligation chat, would you be comfortable passing them my contact? Only if you think it would genuinely help them."
 
 **At the annual review**
-> "I really enjoy these catch-ups, so thank you. Most of the people I help came through someone they trust. If a friend or family member ever mentions wanting to sort out their paperwork or talk through a life change, I'd be glad to help, and I'll look after them the same way. No pressure at all."
+> "I really enjoy these catch-ups, so thank you. If a friend or family member ever mentions wanting to sort out their paperwork or talk through a life change, I'd be glad to help, and I'll look after them the same way. No pressure at all."
 
 **When the client offers a friend's name**
 > "That's very kind, thank you. Rather than me contacting [friend] out of the blue, could you pass them my number and let them decide whether to reach out? I'd rather they hear about me from you first, and they won't feel chased."
@@ -60,7 +60,7 @@ The client forwards this themselves. The adviser doesn't send it to the friend.
 
 The Personal Data Protection Act 2012 sets out how organisations collect, use and disclose personal data ([PDPC, PDPA overview](https://www.pdpc.gov.sg/overview-of-pdpa/the-legislation/personal-data-protection-act)). For referrals, the key points are:
 
-1. **Consent.** Generally, the friend's consent is needed to collect, use or disclose their personal data. PDPC recognises that an organisation can obtain personal data from a third-party source, such as a client, where the individual has consented, or is deemed to have consented, to that source disclosing it ([PDPC, Advisory Guidelines on Key Concepts in the PDPA, rev. 17 May 2022, PDF](https://www.pdpc.gov.sg/-/media/files/pdpc/pdf-files/advisory-guidelines/ag-on-key-concepts/advisory-guidelines-on-key-concepts-in-the-pdpa-17-may-2022.pdf)). **In practice:** ask the client to confirm that the friend has agreed to be contacted, and record that confirmation (who, when, how).
+1. **Consent.** Generally, the friend's consent is needed to collect, use or disclose their personal data. PDPC recognises that an organisation can obtain personal data from a third-party source, such as a client, where the individual has consented, or is deemed to have consented, to that source disclosing it ([PDPC, Advisory Guidelines on Key Concepts in the PDPA, rev. 29 Apr 2026, PDF (file name still says 2022)](https://www.pdpc.gov.sg/-/media/files/pdpc/pdf-files/advisory-guidelines/ag-on-key-concepts/advisory-guidelines-on-key-concepts-in-the-pdpa-17-may-2022.pdf)). **In practice:** ask the client to confirm that the friend has agreed to be contacted, and record that confirmation (who, when, how).
 2. **Purpose.** Use the friend's details only for the purpose they agreed to (e.g. "one introductory hello"). Don't add them to newsletters, broadcast lists or festive greetings.
 3. **Notification.** In your first contact, tell the friend how you got their details and why you're contacting them.
 4. **Withdrawal.** If the friend says "no thanks" or "please don't contact me", stop, and delete their details unless there's a legal or business need to keep a do-not-contact note.
@@ -74,7 +74,7 @@ The Personal Data Protection Act 2012 sets out how organisations collect, use an
 Source: [PDPC, Advisory Guidelines on the Do Not Call Provisions (rev. 1 Feb 2021, PDF)](https://www.pdpc.gov.sg/-/media/Files/PDPC/PDF-Files/Advisory-Guidelines/Advisory-Guidelines-on-the-DNC-Provisions-1-Feb-2021.pdf) · [PDPC Advisory Guidelines page](https://www.pdpc.gov.sg/guidelines-and-consultation/2020/02/advisory-guidelines-on-the-do-not-call-provisions) · [DNC Registry](https://www.dnc.gov.sg/)
 
 ### What's covered
-The DNC provisions apply to **"specified messages"**, broadly messages that offer, advertise or promote goods or services, sent to a **Singapore telephone number** by voice or video call, text (PDPC: "any text, sound or visual message", e.g. SMS/MMS) or fax. The guidelines don't name chat apps specifically, so **treat WhatsApp and other chat messages to a Singapore number as covered**. There are three registers: No Voice Call, No Text Message and No Fax Message.
+The DNC provisions apply to **"specified messages"**, broadly messages that offer, advertise or promote goods or services, sent to a **Singapore telephone number** by voice or video call, text (PDPC: "any text, sound or visual message", e.g. SMS/MMS) or fax. PDPC says the DNC provisions apply equally to all means of sending a specified message to a Singapore number, naming **WhatsApp, iMessage and Viber** as examples (DNC Guidelines, para on "message" definitions). So **WhatsApp messages to a Singapore number are covered**. There are three registers: No Voice Call, No Text Message and No Fax Message.
 
 A message to a referred friend that introduces your services, offers a meeting about financial planning, or asks whether they'd like to receive such information **is a specified message**. PDPC states that a message whose purpose is to *obtain consent* to send specified messages is itself a specified message.
 
@@ -128,7 +128,7 @@ Outcome: [meeting agreed | declined → stop & record do-not-contact | no respon
 
 ## Sources
 - PDPC, [Advisory Guidelines on the Do Not Call Provisions (rev. 1 Feb 2021, PDF)](https://www.pdpc.gov.sg/-/media/Files/PDPC/PDF-Files/Advisory-Guidelines/Advisory-Guidelines-on-the-DNC-Provisions-1-Feb-2021.pdf): duties under ss.43–45 and 48B, the 21-day validity, referral-programme examples, responding to requests for information, ongoing-relationship exclusion
-- PDPC, [Advisory Guidelines on Key Concepts in the PDPA (rev. 17 May 2022, PDF)](https://www.pdpc.gov.sg/-/media/files/pdpc/pdf-files/advisory-guidelines/ag-on-key-concepts/advisory-guidelines-on-key-concepts-in-the-pdpa-17-may-2022.pdf): consent, including personal data obtained from third-party sources
+- PDPC, [Advisory Guidelines on Key Concepts in the PDPA (rev. 29 Apr 2026, PDF; file name still says 2022)](https://www.pdpc.gov.sg/-/media/files/pdpc/pdf-files/advisory-guidelines/ag-on-key-concepts/advisory-guidelines-on-key-concepts-in-the-pdpa-17-may-2022.pdf): consent, including personal data obtained from third-party sources
 - PDPC, [PDPA overview](https://www.pdpc.gov.sg/overview-of-pdpa/the-legislation/personal-data-protection-act)
 - [DNC Registry](https://www.dnc.gov.sg/)
 - MAS, [FAQs on the FAA, Regulations, Notices and Guidelines (28 Nov 2024, PDF)](https://www.mas.gov.sg/-/media/mas/regulations-and-financial-stability/regulations-guidance-and-licensing/financial-advisers/faq/faqs-on-financial-advisers-act-financial-advisers-regulations-notices-and-guidelines-281124.pdf): introducers (Notice FAA-N02)

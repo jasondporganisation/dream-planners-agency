@@ -109,7 +109,7 @@ The PDPA sets the rules for collecting, using and disclosing personal data ([PDP
 2. **Store client details only in approved, access-controlled systems.** This repository and `tracker-template.csv` hold **no real client data**. Make working copies in the team's approved system, not in personal spreadsheets or chat groups.
 3. **Never send NRIC numbers, policy numbers, medical details or bank details on WhatsApp.** Use the insurer's secure channels for documents.
 4. **Respect "please stop".** If a client says they don't want greetings, stop the next day and record it (`contact_pref` column). Service messages about their existing policies can continue.
-5. **Greetings and service messages to existing clients are not marketing.** If a message offers or promotes a product, it becomes a "specified message" under the Do Not Call provisions. See [`referral-ask.md`](referral-ask.md#do-not-call-dnc-rules) for those rules. None of the M01–M40 templates is a specified message, and they must stay that way.
+5. **Greetings and service messages to existing clients are not marketing.** If a message offers or promotes a product, it can become a "specified message" under the Do Not Call provisions. See [`referral-ask.md`](referral-ask.md#do-not-call-dnc-rules) for those rules. None of the M01–M40 templates is a specified message, and they must stay that way.
 
 ## Sources
 - PDPC, [Personal Data Protection Act overview](https://www.pdpc.gov.sg/overview-of-pdpa/the-legislation/personal-data-protection-act)

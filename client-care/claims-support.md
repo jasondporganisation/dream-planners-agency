@@ -66,7 +66,7 @@ People going through a claim are often dealing with illness, injury, a death or 
 ### Step 3 — Help with the paperwork
 - [ ] Offer to go through forms with them, by phone, video or in person. Forms are stressful for someone who is unwell or grieving.
 - [ ] The client (or the person with legal standing) completes and signs their own forms. Don't fill in their declarations or answer health questions for them.
-- [ ] Check everything is complete before submission. Missing documents are the most common cause of delay.
+- [ ] Check everything is complete before submission. Missing documents often cause delays.
 - [ ] Keep a record of what was submitted and when.
 
 ### Step 4 — Follow up every week until closed
