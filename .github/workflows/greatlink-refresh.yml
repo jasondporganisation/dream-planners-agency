@@ -41,6 +41,10 @@ jobs:
         with:
           python-version: "3.12"
 
+      - uses: actions/setup-node@v4   # runs the dashboard sort/filter tests
+        with:
+          node-version: "20"
+
       - name: Install libraries (requests + pdfplumber; no browser needed)
         run: |
           python -m pip install --upgrade pip

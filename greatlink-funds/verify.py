@@ -111,7 +111,7 @@ def screenshots() -> int:
         rows = page.locator("#tbody tr").count()
         print(f"  overview rows rendered: {rows}")
         page.screenshot(path=str(OUT / "overview.png"), full_page=False)
-        # compare: tick first three visible funds
+        # compare: tick the first three visible funds (the maximum)
         boxes = page.locator("#tbody input[data-sel]")
         for i in range(3):
             boxes.nth(i).check()
@@ -123,12 +123,14 @@ def screenshots() -> int:
         page.wait_for_selector("#detail.show")
         page.wait_for_timeout(400)
         page.locator("#detail").screenshot(path=str(OUT / "detail.png"))
-        # client view hides internal columns
         page.keyboard.press("Escape")
-        page.wait_for_timeout(300)
-        page.check("#clientView")
-        hidden = page.evaluate("getComputedStyle(document.querySelector('td.internal')).display")
-        print(f"  client view hides internal columns: {hidden == 'none'}")
+        # phone layout: cards instead of the wide table
+        phone = b.new_page(viewport={"width": 390, "height": 844}, device_scale_factor=2, is_mobile=True)
+        phone.on("pageerror", lambda e: errors.append(str(e)))
+        phone.goto((ROOT / "dashboard.html").as_uri())
+        phone.wait_for_selector(".card")
+        print(f"  phone cards rendered: {phone.locator('.card').count()}")
+        phone.screenshot(path=str(OUT / "phone.png"))
         b.close()
     print(f"  console errors: {len(errors)}" + (f" -> {errors[:3]}" if errors else ""))
     print(f"  screenshots: {[p.name for p in sorted(OUT.glob('*.png'))]}")

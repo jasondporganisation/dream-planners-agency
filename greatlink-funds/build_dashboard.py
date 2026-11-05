@@ -15,17 +15,24 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent
 PLACEHOLDER = "/*__FUND_DATA_JSON__*/null"
+LOGIC_PLACEHOLDER = "/*__FUND_LOGIC_JS__*/"
+
+sys.path.insert(0, str(ROOT))
+from scraper.display import annotate  # noqa: E402
 
 
 def render(dataset: dict) -> str:
     """Return the dashboard HTML with `dataset` embedded (no files written)."""
     template = (ROOT / "templates" / "dashboard.html").read_text(encoding="utf-8")
-    if PLACEHOLDER not in template:
-        raise RuntimeError("build_dashboard: placeholder not found in templates/dashboard.html")
+    for ph in (PLACEHOLDER, LOGIC_PLACEHOLDER):
+        if ph not in template:
+            raise RuntimeError(f"build_dashboard: {ph} not found in templates/dashboard.html")
+    logic = (ROOT / "templates" / "fund_logic.js").read_text(encoding="utf-8")
+    # Display-only labels (why a figure is n/a, region, missing holdings note).
+    dataset = dict(dataset, funds=[annotate(f, dataset.get("as_at")) for f in dataset["funds"]])
     # </script> inside a JSON string would terminate the script block early.
-    dataset = dict(dataset, build_dir=str(ROOT))
     payload = json.dumps(dataset, ensure_ascii=False).replace("</", "<\\/")
-    return template.replace(PLACEHOLDER, payload)
+    return template.replace(LOGIC_PLACEHOLDER, logic).replace(PLACEHOLDER, payload)
 
 
 def main() -> int:
