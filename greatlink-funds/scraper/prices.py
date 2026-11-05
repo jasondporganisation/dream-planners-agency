@@ -20,8 +20,14 @@ def fetch_prices(session: PoliteSession) -> dict[str, dict]:
     res = session.get(PRICES_URL, params={"name": "gDaily", "mode": "daily"},
                       headers={"Referer": "https://www.greateasternlife.com/"})
     res.raise_for_status()
+    return parse_prices(res.json())
+
+
+def parse_prices(payload: dict) -> dict[str, dict]:
+    """Parse the fund-prices.json payload (no network) into
+    {fund_code (e.g. 'F07'): {bid, offer, date, status, name, cpf_approved}}."""
     out = {}
-    for row in res.json().get("funds", []):
+    for row in (payload or {}).get("funds", []) or []:
         code = str(row.get("fundCode") or "").strip()
         if not code:
             continue

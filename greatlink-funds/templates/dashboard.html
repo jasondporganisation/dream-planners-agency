@@ -347,7 +347,7 @@ window.FUND_DATA = /*__FUND_DATA_JSON__*/null;
 var DATA = window.FUND_DATA;
 if(!DATA||!DATA.funds){document.body.innerHTML='<p style="padding:24px">No embedded data — run python refresh.py (or build_dashboard.py).</p>';return;}
 var FUNDS = DATA.funds;
-var STALE_DAYS = 45;
+var STALE_DAYS = 10;
 var SERIES = ['#2a78d6','#eb6834','#1baf7a','#eda100','#e87ba4'];
 var FL = window.FundLogic;
 var MAXC = FL.MAX_COMPARE;
