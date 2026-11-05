@@ -2,7 +2,7 @@
 
 **Facilitators:** Heron (people) and Spectre (sales). **Length:** 30 minutes. See the [format and rules](README.md).
 
-**February focus:** Chinese New Year falls in early February (CNY Day is Sat 6 Feb 2027; check MOM's list for any holiday in lieu). It is a relationship month, not a selling month. Budget 2027 is usually announced in February. Treat Budget news as unverified until the official pages are updated and the fact pack is refreshed.
+**February focus:** Chinese New Year falls in early February (CNY is Sat 6 and Sun 7 Feb 2027, with Mon 8 Feb as the substitute public holiday; MOM public holidays 2027, gazetted 18 Jun 2026). The Week 6 huddle on Tue 9 Feb is a normal working day, the first day back. It is a relationship month, not a selling month. Budget 2027 is usually announced in February. Treat Budget news as unverified until the official pages are updated and the fact pack is refreshed.
 
 **Standing rules:** figures come from the [fact pack](../../compliance/sg-fact-pack-2026-11.md) only, with their effective dates. Do not name products or insurers. Make no earnings claims. Do not name clients.
 
@@ -15,7 +15,7 @@
 
 ### 0–5 min · Wins and numbers
 
-- Each person reports last week's appointments, fact-finds, cases submitted and reviews done. Use counts only, with no names.
+- Each person reports last week's appointments, fact-finds, cases submitted and reviews done. Use counts only, with no client names. The facilitator records team totals only, never individual numbers by name, and does not rank people.
 - Share one win from last week. A learning or a client thank-you counts as a win.
 - Read back last week's commitments: done, part done or not done. Do not shame anyone. Ask what got in the way.
 
@@ -50,7 +50,7 @@ Each person states one commitment and the facilitator writes it down. Prompt: *W
 
 ### 0–5 min · Wins and numbers
 
-- Each person reports last week's appointments, fact-finds, cases submitted and reviews done. Use counts only, with no names.
+- Each person reports last week's appointments, fact-finds, cases submitted and reviews done. Use counts only, with no client names. The facilitator records team totals only, never individual numbers by name, and does not rank people.
 - Share one win, or one reunion-table money conversation you heard. Do not use names.
 - Read back last week's commitments: done, part done or not done. Do not shame anyone. Ask what got in the way.
 
@@ -85,7 +85,7 @@ Each person states one commitment and the facilitator writes it down. Prompt: *W
 
 ### 0–5 min · Wins and numbers
 
-- Each person reports last week's appointments, fact-finds, cases submitted and reviews done. Use counts only, with no names.
+- Each person reports last week's appointments, fact-finds, cases submitted and reviews done. Use counts only, with no client names. The facilitator records team totals only, never individual numbers by name, and does not rank people.
 - Share one win from last week. A learning or a client thank-you counts as a win.
 - Read back last week's commitments: done, part done or not done. Do not shame anyone. Ask what got in the way.
 
@@ -120,7 +120,7 @@ Each person states one commitment and the facilitator writes it down. Prompt: *H
 
 ### 0–5 min · Wins and numbers
 
-- Each person reports last week's appointments, fact-finds, cases submitted and reviews done. Use counts only, with no names.
+- Each person reports last week's appointments, fact-finds, cases submitted and reviews done. Use counts only, with no client names. The facilitator records team totals only, never individual numbers by name, and does not rank people.
 - Share one win from last week. A learning or a client thank-you counts as a win.
 - Read back last week's commitments: done, part done or not done. Do not shame anyone. Ask what got in the way.
 

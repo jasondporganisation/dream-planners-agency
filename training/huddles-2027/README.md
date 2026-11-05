@@ -3,13 +3,13 @@
 **For:** Heron (people) and Spectre (sales) directors, running Jason Ng's Dream Planners team huddles.
 **Status:** Draft for Jason's review. Not yet checked by our principal's compliance team.
 
-52 huddles, one every Tuesday from 5 Jan to 28 Dec 2027. There is one file per month. If a Tuesday is a public holiday, hold the huddle on the next working day. Check the MOM public holiday list for 2027 before you print the month.
+52 huddles, one every Tuesday from 5 Jan to 28 Dec 2027. There is one file per month. No 2027 public holiday falls on a Tuesday (MOM public holidays 2027, gazetted 18 Jun 2026), so no huddle has to move. Weeks next to a holiday are noted in each month file: Week 6 (CNY), Weeks 10 and 12 (Hari Raya Puasa, Good Friday), Week 20 (Hari Raya Haji, Vesak Day), Week 32 (National Day), Week 43 (Deepavali) and Week 52 (Christmas). If MOM changes a date, hold the huddle on the next working day.
 
 ## The 30-minute format (same every week)
 
 | Time | Block | What happens |
 |---|---|---|
-| 0–5 min | **Wins and numbers** | Each person gives last week's appointments, fact-finds, cases submitted and reviews done. Use numbers only. Never name clients, and give no details that could identify them. Share one win. |
+| 0–5 min | **Wins and numbers** | Each person gives last week's appointments, fact-finds, cases submitted and reviews done. Use numbers only. Never name clients, and give no details that could identify them. The facilitator records team totals only, never individual numbers by name, and does not rank people or call out low numbers. Share one win. |
 | 5–15 min | **Skill topic** | The facilitator covers three teaching points. |
 | 15–25 min | **Role-play or drill** | Practise in pairs or threes. The observer uses the checklist in the agenda. |
 | 25–30 min | **Commitments** | Each person states one specific, measurable action for the week. The facilitator writes them down and reviews them at the next huddle. |
@@ -59,10 +59,10 @@ The topics rotate through: prospecting, fact-finding, client reviews, referrals,
 | Client reviews | 9, 20, 31, 45 |
 | Referrals | 7, 21, 34, 47 |
 | Objection handling | 5, 12, 17, 23, 29, 36, 43, 48 |
-| Compliance (Fair Dealing, documentation, conduct) | 1, 8, 11, 18, 30, 38, 44, 50 |
+| Compliance (Fair Dealing, documentation, conduct) | 1, 8, 11, 12, 14, 18, 30, 36, 38, 44, 50 |
 | Time management | 2, 13, 24, 26, 35, 39, 50, 52 |
 | Mindset | 6, 13, 19, 26, 32, 39, 46, 51, 52 |
-| Product-neutral planning concepts | 1, 8, 10, 14, 22, 25, 33, 37, 40, 49 |
+| Product-neutral planning concepts | 1, 8, 10, 14, 16, 22, 25, 33, 37, 40, 49 |
 
 Some weeks combine two topics, so they appear twice.
 
@@ -70,5 +70,5 @@ Some weeks combine two topics, so they appear twice.
 
 - Tax relief caps and the year-end CPF top-up cut-off are **not in the fact pack**. Weeks 10, 40 and 49 tell advisers to refer clients to cpf.gov.sg and iras.gov.sg instead of quoting figures. Add them to the pack once they have been verified.
 - MediShield Life deductibles from 1 Apr 2027 are UNVERIFIED in the pack. Week 14 tells advisers not to quote them.
-- Public holiday dates for 2027, apart from Chinese New Year, are not confirmed here. Check MOM's list and move any Tuesday huddle that falls on a holiday.
+- 2027 public holidays are now confirmed against MOM's press release of 18 Jun 2026 ([mom.gov.sg](https://www.mom.gov.sg/newsroom/press-releases/2026/0618-public-holidays-for-2027)). None falls on a Tuesday.
 - The objection playbook card numbers (#2, #3 and so on) follow the PR #16 branch. Re-check them if the playbook is renumbered before it merges.

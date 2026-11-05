@@ -2,7 +2,7 @@
 
 **Facilitators:** Heron (people) and Spectre (sales). **Length:** 30 minutes. See the [format and rules](README.md).
 
-**May focus:** digital conduct, resilience, and service moments such as claims. Check MOM's list for May public holidays and move any huddle that falls on one.
+**May focus:** digital conduct, resilience, and service moments such as claims. Public holidays: Labour Day is Sat 1 May, Hari Raya Haji is Mon 17 May and Vesak Day is Thu 20 May (MOM public holidays 2027, gazetted 18 Jun 2026). No Tuesday huddle moves. Week 20 (Tue 18 May) sits in a short week between two holidays, so expect leave and keep it to 30 minutes.
 
 **Standing rules:** figures come from the [fact pack](../../compliance/sg-fact-pack-2026-11.md) only, with their effective dates. Do not name products or insurers. Make no earnings claims. Do not name clients.
 
@@ -15,7 +15,7 @@
 
 ### 0–5 min · Wins and numbers
 
-- Each person reports last week's appointments, fact-finds, cases submitted and reviews done. Use counts only, with no names.
+- Each person reports last week's appointments, fact-finds, cases submitted and reviews done. Use counts only, with no client names. The facilitator records team totals only, never individual numbers by name, and does not rank people.
 - Share one win from last week. A learning or a client thank-you counts as a win.
 - Read back last week's commitments: done, part done or not done. Do not shame anyone. Ask what got in the way.
 
@@ -50,7 +50,7 @@ Each person states one commitment and the facilitator writes it down. Prompt: *W
 
 ### 0–5 min · Wins and numbers
 
-- Each person reports last week's appointments, fact-finds, cases submitted and reviews done. Use counts only, with no names.
+- Each person reports last week's appointments, fact-finds, cases submitted and reviews done. Use counts only, with no client names. The facilitator records team totals only, never individual numbers by name, and does not rank people.
 - Share one win from last week. A learning or a client thank-you counts as a win.
 - Read back last week's commitments: done, part done or not done. Do not shame anyone. Ask what got in the way.
 
@@ -84,7 +84,7 @@ Each person states one commitment and the facilitator writes it down. Prompt: *W
 
 ### 0–5 min · Wins and numbers
 
-- Each person reports last week's appointments, fact-finds, cases submitted and reviews done. Use counts only, with no names.
+- Each person reports last week's appointments, fact-finds, cases submitted and reviews done. Use counts only, with no client names. The facilitator records team totals only, never individual numbers by name, and does not rank people.
 - Share one win from last week. A learning or a client thank-you counts as a win.
 - Read back last week's commitments: done, part done or not done. Do not shame anyone. Ask what got in the way.
 
@@ -119,7 +119,7 @@ Each person states one commitment and the facilitator writes it down. Prompt: *W
 
 ### 0–5 min · Wins and numbers
 
-- Each person reports last week's appointments, fact-finds, cases submitted and reviews done. Use counts only, with no names.
+- Each person reports last week's appointments, fact-finds, cases submitted and reviews done. Use counts only, with no client names. The facilitator records team totals only, never individual numbers by name, and does not rank people.
 - Share one win from last week. A learning or a client thank-you counts as a win.
 - Read back last week's commitments: done, part done or not done. Do not shame anyone. Ask what got in the way.
 

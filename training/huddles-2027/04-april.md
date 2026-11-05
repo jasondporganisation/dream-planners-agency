@@ -15,7 +15,7 @@
 
 ### 0–5 min · Wins and numbers
 
-- Each person reports last week's appointments, fact-finds, cases submitted and reviews done. Use counts only, with no names.
+- Each person reports last week's appointments, fact-finds, cases submitted and reviews done. Use counts only, with no client names. The facilitator records team totals only, never individual numbers by name, and does not rank people.
 - Share one win from last week. A learning or a client thank-you counts as a win.
 - Read back last week's commitments: done, part done or not done. Do not shame anyone. Ask what got in the way.
 
@@ -50,7 +50,7 @@ Each person states one commitment and the facilitator writes it down. Prompt: *H
 
 ### 0–5 min · Wins and numbers
 
-- Each person reports last week's appointments, fact-finds, cases submitted and reviews done. Use counts only, with no names.
+- Each person reports last week's appointments, fact-finds, cases submitted and reviews done. Use counts only, with no client names. The facilitator records team totals only, never individual numbers by name, and does not rank people.
 - Share one win from last week. A learning or a client thank-you counts as a win.
 - Read back last week's commitments: done, part done or not done. Do not shame anyone. Ask what got in the way.
 
@@ -84,7 +84,7 @@ Each person states one commitment and the facilitator writes it down. Prompt: *H
 
 ### 0–5 min · Wins and numbers
 
-- Each person reports last week's appointments, fact-finds, cases submitted and reviews done. Use counts only, with no names.
+- Each person reports last week's appointments, fact-finds, cases submitted and reviews done. Use counts only, with no client names. The facilitator records team totals only, never individual numbers by name, and does not rank people.
 - Share one win from last week. A learning or a client thank-you counts as a win.
 - Read back last week's commitments: done, part done or not done. Do not shame anyone. Ask what got in the way.
 
@@ -119,7 +119,7 @@ Each person states one commitment and the facilitator writes it down. Prompt: *H
 
 ### 0–5 min · Wins and numbers
 
-- Each person reports last week's appointments, fact-finds, cases submitted and reviews done. Use counts only, with no names.
+- Each person reports last week's appointments, fact-finds, cases submitted and reviews done. Use counts only, with no client names. The facilitator records team totals only, never individual numbers by name, and does not rank people.
 - Share one win from last week. A learning or a client thank-you counts as a win.
 - Read back last week's commitments: done, part done or not done. Do not shame anyone. Ask what got in the way.
 

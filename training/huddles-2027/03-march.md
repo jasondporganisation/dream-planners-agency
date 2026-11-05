@@ -2,7 +2,7 @@
 
 **Facilitators:** Heron (people) and Spectre (sales). **Length:** 30 minutes. See the [format and rules](README.md).
 
-**March focus:** annual reviews, tax-filing season (IRAS filing usually opens in March; check iras.gov.sg for this year's deadline) and a Fair Dealing refresher before the quarter closes.
+**March focus:** annual reviews, tax-filing season (IRAS filing usually opens in March; check iras.gov.sg for this year's deadline) and a Fair Dealing refresher before the quarter closes. Public holidays: Hari Raya Puasa is Wed 10 Mar, the day after the Week 10 huddle, and Good Friday is Fri 26 Mar, the week of the Week 12 huddle (MOM public holidays 2027, gazetted 18 Jun 2026). No Tuesday huddle moves. Keep Week 10 to time and expect some people to be on leave.
 
 **Standing rules:** figures come from the [fact pack](../../compliance/sg-fact-pack-2026-11.md) only, with their effective dates. Do not name products or insurers. Make no earnings claims. Do not name clients.
 
@@ -15,7 +15,7 @@
 
 ### 0–5 min · Wins and numbers
 
-- Each person reports last week's appointments, fact-finds, cases submitted and reviews done. Use counts only, with no names.
+- Each person reports last week's appointments, fact-finds, cases submitted and reviews done. Use counts only, with no client names. The facilitator records team totals only, never individual numbers by name, and does not rank people.
 - Share one win from last week. A learning or a client thank-you counts as a win.
 - Read back last week's commitments: done, part done or not done. Do not shame anyone. Ask what got in the way.
 
@@ -50,7 +50,7 @@ Each person states one commitment and the facilitator writes it down. Prompt: *H
 
 ### 0–5 min · Wins and numbers
 
-- Each person reports last week's appointments, fact-finds, cases submitted and reviews done. Use counts only, with no names.
+- Each person reports last week's appointments, fact-finds, cases submitted and reviews done. Use counts only, with no client names. The facilitator records team totals only, never individual numbers by name, and does not rank people.
 - Share one win from last week. A learning or a client thank-you counts as a win.
 - Read back last week's commitments: done, part done or not done. Do not shame anyone. Ask what got in the way.
 
@@ -85,7 +85,7 @@ Each person states one commitment and the facilitator writes it down. Prompt: *H
 
 ### 0–5 min · Wins and numbers
 
-- Each person reports last week's appointments, fact-finds, cases submitted and reviews done. Use counts only, with no names.
+- Each person reports last week's appointments, fact-finds, cases submitted and reviews done. Use counts only, with no client names. The facilitator records team totals only, never individual numbers by name, and does not rank people.
 - Share one win from last week. A learning or a client thank-you counts as a win.
 - Read back last week's commitments: done, part done or not done. Do not shame anyone. Ask what got in the way.
 
@@ -120,7 +120,7 @@ Each person states one commitment and the facilitator writes it down. Prompt: *H
 
 ### 0–5 min · Wins and numbers
 
-- Each person reports last week's appointments, fact-finds, cases submitted and reviews done. Use counts only, with no names.
+- Each person reports last week's appointments, fact-finds, cases submitted and reviews done. Use counts only, with no client names. The facilitator records team totals only, never individual numbers by name, and does not rank people.
 - Share one win from last week. A learning or a client thank-you counts as a win.
 - Read back last week's commitments: done, part done or not done. Do not shame anyone. Ask what got in the way.
 
@@ -155,7 +155,7 @@ Each person states one commitment and the facilitator writes it down. Prompt: *W
 
 ### 0–5 min · Wins and numbers
 
-- Each person reports last week's appointments, fact-finds, cases submitted and reviews done. Use counts only, with no names.
+- Each person reports last week's appointments, fact-finds, cases submitted and reviews done. Use counts only, with no client names. The facilitator records team totals only, never individual numbers by name, and does not rank people.
 - Give Q1 totals: appointments, fact-finds, reviews and submissions (counts only). What was your best week, and why?
 - Read back last week's commitments: done, part done or not done. Do not shame anyone. Ask what got in the way.
 

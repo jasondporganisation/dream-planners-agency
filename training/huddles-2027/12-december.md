@@ -2,7 +2,7 @@
 
 **Facilitators:** Heron (people) and Spectre (sales). **Length:** 30 minutes. See the [format and rules](README.md).
 
-**December focus:** close out the year cleanly with top-up conversations before the year ends, documentation, rest, and the 2027 review on 28 Dec. Several figures change on 1 Jan 2028, so do not quote 2028 figures until the fact pack is refreshed.
+**December focus:** close out the year cleanly with top-up conversations before the year ends, documentation, rest, and the 2027 review on 28 Dec. Several figures change on 1 Jan 2028, so do not quote 2028 figures until the fact pack is refreshed. Christmas is Sat 25 Dec (MOM public holidays 2027, gazetted 18 Jun 2026), so the Week 52 huddle on Tue 28 Dec is a normal working day, but many people will be on leave. Run it with whoever is in, and let absent members send their year totals and 2028 commitment in writing.
 
 **Standing rules:** figures come from the [fact pack](../../compliance/sg-fact-pack-2026-11.md) only, with their effective dates. Do not name products or insurers. Make no earnings claims. Do not name clients.
 
@@ -15,7 +15,7 @@
 
 ### 0–5 min · Wins and numbers
 
-- Each person reports last week's appointments, fact-finds, cases submitted and reviews done. Use counts only, with no names.
+- Each person reports last week's appointments, fact-finds, cases submitted and reviews done. Use counts only, with no client names. The facilitator records team totals only, never individual numbers by name, and does not rank people.
 - Share one win from last week. A learning or a client thank-you counts as a win.
 - Read back last week's commitments: done, part done or not done. Do not shame anyone. Ask what got in the way.
 
@@ -50,7 +50,7 @@ Each person states one commitment and the facilitator writes it down. Prompt: *H
 
 ### 0–5 min · Wins and numbers
 
-- Each person reports last week's appointments, fact-finds, cases submitted and reviews done. Use counts only, with no names.
+- Each person reports last week's appointments, fact-finds, cases submitted and reviews done. Use counts only, with no client names. The facilitator records team totals only, never individual numbers by name, and does not rank people.
 - Share one win from last week. A learning or a client thank-you counts as a win.
 - Read back last week's commitments: done, part done or not done. Do not shame anyone. Ask what got in the way.
 
@@ -84,7 +84,7 @@ Each person states one commitment and the facilitator writes it down. Prompt: *W
 
 ### 0–5 min · Wins and numbers
 
-- Each person reports last week's appointments, fact-finds, cases submitted and reviews done. Use counts only, with no names.
+- Each person reports last week's appointments, fact-finds, cases submitted and reviews done. Use counts only, with no client names. The facilitator records team totals only, never individual numbers by name, and does not rank people.
 - Share your favourite win of 2027 (no names) and one thing you're grateful for.
 - Read back last week's commitments: done, part done or not done. Do not shame anyone. Ask what got in the way.
 
@@ -118,7 +118,7 @@ Each person states one commitment and the facilitator writes it down. Prompt: *W
 
 ### 0–5 min · Wins and numbers
 
-- Each person reports last week's appointments, fact-finds, cases submitted and reviews done. Use counts only, with no names.
+- Each person reports last week's appointments, fact-finds, cases submitted and reviews done. Use counts only, with no client names. The facilitator records team totals only, never individual numbers by name, and does not rank people.
 - Give the 2027 totals: appointments, fact-finds, reviews and submissions (counts only). Name your best ratio improvement of the year.
 - Read back last week's commitments: done, part done or not done. Do not shame anyone. Ask what got in the way.
 

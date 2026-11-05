@@ -2,7 +2,7 @@
 
 **Facilitators:** Heron (people) and Spectre (sales). **Length:** 30 minutes. See the [format and rules](README.md).
 
-**October focus:** the start of year-end CPF top-up conversations, the sandwich generation and time-pressure objections. Check MOM's list for any October public holiday, such as Deepavali.
+**October focus:** the start of year-end CPF top-up conversations, the sandwich generation and time-pressure objections. Deepavali is Thu 28 Oct (MOM public holidays 2027, gazetted 18 Jun 2026), in the same week as the Week 43 huddle on Tue 26 Oct. No Tuesday huddle moves. Expect leave that week.
 
 **Standing rules:** figures come from the [fact pack](../../compliance/sg-fact-pack-2026-11.md) only, with their effective dates. Do not name products or insurers. Make no earnings claims. Do not name clients.
 
@@ -15,7 +15,7 @@
 
 ### 0–5 min · Wins and numbers
 
-- Each person reports last week's appointments, fact-finds, cases submitted and reviews done. Use counts only, with no names.
+- Each person reports last week's appointments, fact-finds, cases submitted and reviews done. Use counts only, with no client names. The facilitator records team totals only, never individual numbers by name, and does not rank people.
 - Share one win from last week. A learning or a client thank-you counts as a win.
 - Read back last week's commitments: done, part done or not done. Do not shame anyone. Ask what got in the way.
 
@@ -50,7 +50,7 @@ Each person states one commitment and the facilitator writes it down. Prompt: *H
 
 ### 0–5 min · Wins and numbers
 
-- Each person reports last week's appointments, fact-finds, cases submitted and reviews done. Use counts only, with no names.
+- Each person reports last week's appointments, fact-finds, cases submitted and reviews done. Use counts only, with no client names. The facilitator records team totals only, never individual numbers by name, and does not rank people.
 - Share one win from last week. A learning or a client thank-you counts as a win.
 - Read back last week's commitments: done, part done or not done. Do not shame anyone. Ask what got in the way.
 
@@ -85,7 +85,7 @@ Each person states one commitment and the facilitator writes it down. Prompt: *H
 
 ### 0–5 min · Wins and numbers
 
-- Each person reports last week's appointments, fact-finds, cases submitted and reviews done. Use counts only, with no names.
+- Each person reports last week's appointments, fact-finds, cases submitted and reviews done. Use counts only, with no client names. The facilitator records team totals only, never individual numbers by name, and does not rank people.
 - Share one win from last week. A learning or a client thank-you counts as a win.
 - Read back last week's commitments: done, part done or not done. Do not shame anyone. Ask what got in the way.
 
@@ -120,7 +120,7 @@ Each person states one commitment and the facilitator writes it down. Prompt: *H
 
 ### 0–5 min · Wins and numbers
 
-- Each person reports last week's appointments, fact-finds, cases submitted and reviews done. Use counts only, with no names.
+- Each person reports last week's appointments, fact-finds, cases submitted and reviews done. Use counts only, with no client names. The facilitator records team totals only, never individual numbers by name, and does not rank people.
 - Share one win from last week. A learning or a client thank-you counts as a win.
 - Read back last week's commitments: done, part done or not done. Do not shame anyone. Ask what got in the way.
 
