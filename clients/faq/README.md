@@ -20,3 +20,4 @@
 | [04-nominations-wills-lpa.md](04-nominations-wills-lpa.md) | Nominations, wills, Lasting Power of Attorney | Q40–Q53 |
 | [05-premiums-lapses.md](05-premiums-lapses.md) | Premiums and lapses (general) | Q54–Q65 |
 | [06-policy-reviews.md](06-policy-reviews.md) | Policy reviews | Q66–Q76 |
+| [07-life-events.md](07-life-events.md) | Life events: marriage, new baby, new job, retirement | Q77–Q90 |
