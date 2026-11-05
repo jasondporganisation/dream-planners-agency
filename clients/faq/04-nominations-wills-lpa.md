@@ -1,0 +1,45 @@
+# Nominations, wills and Lasting Power of Attorney (Q40–Q53)
+
+General information only. It does not consider your specific objectives, financial situation or needs, and it is not legal advice. For a will or a customised LPA, speak to a lawyer. Figures are from MSF (Office of the Public Guardian), MoneySense and CPF pages as checked on 3 Nov 2026.
+
+### Q40. How do I make a CPF nomination?
+You can do it online with Singpass and two witnesses, or in person by appointment, where CPF staff can witness it. Your witnesses cannot be your nominees and cannot be organisations. Anyone aged 16 or over can nominate, and you can nominate anyone, even someone without a CPF account. It is free. Remember that marriage cancels an existing CPF nomination, so check it after you marry. Source: [cpf.gov.sg](https://www.cpf.gov.sg/member/account-services/providing-for-your-loved-ones/making-a-cpf-nomination). Ask me if you would like a reminder to review it at your next policy review.
+
+### Q41. What is the difference between a trust nomination and a revocable nomination on my insurance?
+Both decide who receives a policy's payout when you pass away, outside your will. A trust nomination (Insurance Act section 132) takes priority over your will, and the nominees can only be your spouse or children. A revocable nomination (section 133) can be changed more freely; the insurer pays according to whichever is the latest document, the revocable nomination or your will. The choice has real consequences, including for changing the policy later. Source: [moneysense.gov.sg](https://www.moneysense.gov.sg/deciding-how-to-transfer-your-estate/). Check your own policy documents or ask me which type you have.
+
+### Q42. Who can I name in a trust nomination?
+Only your spouse or children. You must be 18 or over and sign in front of two witnesses. Because a trust nomination takes priority over your will, it gives clarity, but it also means you generally need your nominees' consent for many later changes to the policy. If you want to name a parent, sibling or someone else, a revocable nomination may be the route. Source: [moneysense.gov.sg](https://www.moneysense.gov.sg/deciding-how-to-transfer-your-estate/). Check your own policy documents or ask me before making or changing a nomination.
+
+### Q43. What happens to my insurance payout if I have not nominated anyone?
+The insurer may pay up to $150,000 to a "proper claimant", such as a close family member, to help them in the short term. Anything above that goes to your estate, and is then distributed according to your will, or under the intestacy rules if there is no will. This can take longer and means your family may have to apply for legal papers first. Source: [moneysense.gov.sg](https://www.moneysense.gov.sg/deciding-how-to-transfer-your-estate/). Check your own policy documents or ask me whether a nomination is in place on each of your policies.
+
+### Q44. If I have nominations, do I still need a will?
+Usually, yes. Nominations cover only CPF savings and the specific policies you have nominated. Everything else, such as bank accounts, investments, property you own in your sole name and personal belongings, still follows your will, or the intestacy rules if there is no will. A will also lets you choose guardians for children under 21 and an executor to handle your estate. Source: [moneysense.gov.sg](https://www.moneysense.gov.sg/legacy-planning/will/). A lawyer can help you draft one that fits your family.
+
+### Q45. Does getting married affect my will?
+Yes. In Singapore, a will is revoked when you marry or remarry. So a will made before marriage generally no longer applies afterwards, and you would need to make a new one. Marriage also cancels an existing CPF nomination. Insurance nominations follow their own rules. If you have just married, it is a good time to review all of these together. Source: [moneysense.gov.sg](https://www.moneysense.gov.sg/legacy-planning/will/) · [cpf.gov.sg](https://www.cpf.gov.sg/member/account-services/providing-for-your-loved-ones/making-a-cpf-nomination). Check your own policy documents or ask me about your insurance nominations.
+
+### Q46. What makes a will valid?
+In general, you must be 21 or over and of sound mind. You sign the will in front of two witnesses aged over 21, who then sign in your presence. Your witnesses, and their spouses, must not be beneficiaries under the will, or they may lose their gift. The rules for Muslims are different. Many people use a lawyer to make sure the will is clear and valid. Source: [moneysense.gov.sg](https://www.moneysense.gov.sg/legacy-planning/will/). I cannot draft a will for you, but I can make sure your insurance nominations fit with your wider plans.
+
+### Q47. What happens if someone dies without a will?
+For non-Muslims domiciled in Singapore, the Intestate Succession Act sets who inherits. For example: a spouse with no children or parents gets everything; with a spouse and children, the spouse gets half and the children share the other half; with a spouse and parents but no children, the spouse gets half and the parents half. If there are no eligible relatives, everything goes to the government. Muslim estates follow the Administration of Muslim Law Act. Source: [moneysense.gov.sg](https://www.moneysense.gov.sg/intestacy-what-if-you-don-t-have-an-estate-plan/).
+
+### Q48. Does a will override my nominations?
+Not always. A CPF nomination, and joint property held under right of survivorship, take priority over a will. A trust nomination on an insurance policy also takes priority over a will. A revocable insurance nomination is different: the insurer follows whichever is the latest document, the nomination or the will. So the order in which you sign things can matter. Source: [moneysense.gov.sg](https://www.moneysense.gov.sg/deciding-how-to-transfer-your-estate/). Check your own policy documents or ask me, and keep your will and nominations in line with each other.
+
+### Q49. Who receives my insurance payout when I pass away?
+It depends on whether you made a nomination. With a trust nomination, the payout goes to your nominated spouse or children. With a revocable nomination, it goes to the nominees unless a later will says otherwise. With no nomination, the insurer may pay up to $150,000 to a proper claimant, and the rest goes to your estate under your will or the intestacy rules. Source: [moneysense.gov.sg](https://www.moneysense.gov.sg/deciding-how-to-transfer-your-estate/). Check your own policy documents or ask me; I can confirm the nomination on each of your policies.
+
+### Q50. What is a Lasting Power of Attorney (LPA)?
+An LPA is a legal document in which you (the Donor, aged 21 or over) appoint one or more people you trust (Donees) to make decisions for you if you lose mental capacity. It can cover personal welfare, property and affairs, or both. Form 1 gives general powers with basic restrictions and is used by 98% of people who made an LPA. Form 2 is for customised powers, drafted by a Singapore lawyer. Every LPA must be certified by an accredited doctor, a practising lawyer or a registered psychiatrist. Source: [msf.gov.sg](https://www.msf.gov.sg/what-we-do/opg/lasting-power-of-attorney/).
+
+### Q51. How much does an LPA cost?
+For Singapore Citizens, the application fee for LPA Form 1 is free, with no end date (announced 5 Mar 2026). PRs pay $30 and foreigners $160. For Form 2, citizens and PRs pay $30 and foreigners $160. Separately, you pay a Certificate Issuer to certify it. That fee is not set by the government; as at June 2025, the median Form 1 fee was $47.50 for doctors, $104.50 for lawyers and $350 for psychiatrists (before consultation and GST). There is no refund once submitted. Source: [msf.gov.sg](https://www.msf.gov.sg/what-we-do/opg/lasting-power-of-attorney/).
+
+### Q52. My spouse can make decisions for me if I lose capacity, right?
+Not automatically. Without an LPA, your family would have to apply to court to have a Deputy appointed under the Mental Capacity Act before they can act on your behalf, for example to manage your bank accounts or deal with your policies. This can take time and cost money at an already hard moment. An LPA lets you choose in advance who decides for you. About 1 in 7 citizens had made one as of 20 Feb 2026. Source: [msf.gov.sg](https://www.msf.gov.sg/what-we-do/opg/lasting-power-of-attorney/).
+
+### Q53. How often should I review my nominations, will and LPA?
+A good habit is to look at them at each annual policy review, and always after a major life event: marriage, divorce, the birth or adoption of a child, a death in the family, or buying property. Marriage cancels your CPF nomination and revokes your will, while divorce does not cancel a CPF nomination, so both events need attention. Sources: [cpf.gov.sg](https://www.cpf.gov.sg/member/account-services/providing-for-your-loved-ones/making-a-cpf-nomination) · [moneysense.gov.sg](https://www.moneysense.gov.sg/legacy-planning/will/). Ask me and I will add a reminder to your review.
