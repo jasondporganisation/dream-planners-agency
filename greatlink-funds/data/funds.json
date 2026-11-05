@@ -1,10 +1,10 @@
 {
-  "as_at": "2026-11-02",
+  "as_at": "2026-11-03",
   "factsheets_as_at": "2026-09-30",
   "factsheets_as_at_range": [
     "2026-09-30"
   ],
-  "generated_at": "2026-11-03T23:22:38+00:00",
+  "generated_at": "2026-11-05T02:20:50+00:00",
   "sample": false,
   "convention": "Returns are bid-to-bid in the fund currency (SGD), net of fund management fees, excluding policy-level charges. YTD, 1M, 3M, 6M and 1Y are cumulative; 3Y, 5Y, 10Y and since-inception are annualised unless labelled cumulative.",
   "fund_count": 40,
@@ -34,27 +34,27 @@
         "cpf_sa": false,
         "srs": true
       },
-      "bid_price": 1.087,
-      "offer_price": 1.145,
-      "price_date": "2026-11-02",
-      "offer_price_date": "2026-11-02",
+      "bid_price": 1.093,
+      "offer_price": 1.151,
+      "price_date": "2026-11-03",
+      "offer_price_date": "2026-11-03",
       "price_status": "Confirmed",
       "returns": {
-        "ret_ytd": 2.16165,
-        "ret_1m": -6.53482,
-        "ret_3m": -1.98377,
-        "ret_6m": 3.6225,
-        "ret_1y": -1.7179,
-        "ret_3y_ann": 11.74566,
-        "ret_3y_cum": 39.54,
+        "ret_ytd": 2.72556,
+        "ret_1m": -6.01892,
+        "ret_3m": -2.3235,
+        "ret_6m": 4.19447,
+        "ret_1y": -1.8851,
+        "ret_3y_ann": 11.85524,
+        "ret_3y_cum": 39.95,
         "ret_5y_ann": null,
         "ret_5y_cum": null,
         "ret_10y_ann": null,
         "ret_10y_cum": null,
-        "ret_si_ann": 3.08,
-        "ret_si_cum": 14.42
+        "ret_si_ann": 3.2,
+        "ret_si_cum": 15.05
       },
-      "returns_as_at": "2026-11-02",
+      "returns_as_at": "2026-11-03",
       "benchmark_name": null,
       "factsheet_returns": {
         "ret_3m": 1.5,
@@ -175,7 +175,7 @@
         "semi_annual_report_url": "https://doc.morningstar.com/Document/b88514fb7d2066c36b51f67606d0ebf3.msdoc/?key=023d247708a47993ed8467e955ed1f06d56f71215c0d4940cfd29d8eacbd50f5"
       },
       "sources": {
-        "fetched_at": "2026-11-03T23:21:15+00:00",
+        "fetched_at": "2026-11-05T02:19:08+00:00",
         "returns": "Fund Centre screener",
         "eligibility": "Fund Centre screener (FundingSource)",
         "facts": "Fund Centre detail (v4/funds)",
@@ -186,12 +186,12 @@
         "benchmark_returns": "fact sheet PDF (as at 2026-09-30)"
       },
       "nav_check": {
-        "as_of": "2026-11-02",
-        "total_return_index": 114.42105,
+        "as_of": "2026-11-03",
+        "total_return_index": 115.05263,
         "diff_pp": {
-          "ret_ytd": 0.002,
-          "ret_1y": 0.002,
-          "ret_3y_ann": -0.004
+          "ret_ytd": -0.004,
+          "ret_1y": 0.005,
+          "ret_3y_ann": -0.005
         },
         "at_factsheet_date": {
           "ret_1y": {
@@ -242,27 +242,27 @@
         "cpf_sa": false,
         "srs": true
       },
-      "bid_price": 2.693,
-      "offer_price": 2.835,
-      "price_date": "2026-11-02",
-      "offer_price_date": "2026-11-02",
+      "bid_price": 2.694,
+      "offer_price": 2.836,
+      "price_date": "2026-11-03",
+      "offer_price_date": "2026-11-03",
       "price_status": "Confirmed",
       "returns": {
-        "ret_ytd": 4.82678,
-        "ret_1m": -1.93008,
-        "ret_3m": 0.2233,
-        "ret_6m": 3.41782,
-        "ret_1y": 4.82678,
-        "ret_3y_ann": 16.20896,
-        "ret_3y_cum": 56.93,
-        "ret_5y_ann": 7.44087,
-        "ret_5y_cum": 43.17,
-        "ret_10y_ann": 11.38689,
-        "ret_10y_cum": 194.0,
+        "ret_ytd": 4.86571,
+        "ret_1m": -1.89366,
+        "ret_3m": -0.77348,
+        "ret_6m": 3.45622,
+        "ret_1y": 4.29733,
+        "ret_3y_ann": 15.97606,
+        "ret_3y_cum": 55.99,
+        "ret_5y_ann": 7.47171,
+        "ret_5y_cum": 43.37,
+        "ret_10y_ann": 11.43979,
+        "ret_10y_cum": 195.39,
         "ret_si_ann": 4.33,
-        "ret_si_cum": 183.47
+        "ret_si_cum": 183.58
       },
-      "returns_as_at": "2026-11-02",
+      "returns_as_at": "2026-11-03",
       "benchmark_name": "MSCI World NR USD",
       "factsheet_returns": {
         "ret_3m": 3.57,
@@ -418,7 +418,7 @@
         "semi_annual_report_url": "https://doc.morningstar.com/Document/b88514fb7d2066c36b51f67606d0ebf3.msdoc/?key=023d247708a47993ed8467e955ed1f06d56f71215c0d4940cfd29d8eacbd50f5"
       },
       "sources": {
-        "fetched_at": "2026-11-03T23:21:15+00:00",
+        "fetched_at": "2026-11-05T02:19:08+00:00",
         "returns": "Fund Centre screener",
         "eligibility": "Fund Centre screener (FundingSource)",
         "facts": "Fund Centre detail (v4/funds)",
@@ -429,14 +429,14 @@
         "benchmark_returns": "fact sheet PDF (as at 2026-09-30)"
       },
       "nav_check": {
-        "as_of": "2026-11-02",
-        "total_return_index": 283.47368,
+        "as_of": "2026-11-03",
+        "total_return_index": 283.57895,
         "diff_pp": {
-          "ret_ytd": -0.003,
+          "ret_ytd": -0.004,
           "ret_1y": -0.003,
-          "ret_3y_ann": -0.001,
-          "ret_5y_ann": 0.001,
-          "ret_10y_ann": -0.003
+          "ret_3y_ann": -0.004,
+          "ret_5y_ann": 0.002,
+          "ret_10y_ann": -0.0
         },
         "at_factsheet_date": {
           "ret_1y": {
@@ -493,27 +493,27 @@
         "cpf_sa": false,
         "srs": true
       },
-      "bid_price": 2.5,
-      "offer_price": 2.632,
-      "price_date": "2026-11-02",
-      "offer_price_date": "2026-11-02",
+      "bid_price": 2.484,
+      "offer_price": 2.615,
+      "price_date": "2026-11-03",
+      "offer_price_date": "2026-11-03",
       "price_status": "Confirmed",
       "returns": {
-        "ret_ytd": 6.60981,
-        "ret_1m": -2.03762,
-        "ret_3m": -1.49724,
-        "ret_6m": 2.3751,
-        "ret_1y": 6.929,
-        "ret_3y_ann": 17.88587,
-        "ret_3y_cum": 63.83,
-        "ret_5y_ann": 7.96776,
-        "ret_5y_cum": 46.71,
-        "ret_10y_ann": 10.63432,
-        "ret_10y_cum": 174.73,
-        "ret_si_ann": 3.75,
-        "ret_si_cum": 163.16
+        "ret_ytd": 5.92751,
+        "ret_1m": -2.66458,
+        "ret_3m": -3.08233,
+        "ret_6m": 1.7199,
+        "ret_1y": 6.33562,
+        "ret_3y_ann": 17.53124,
+        "ret_3y_cum": 62.35,
+        "ret_5y_ann": 7.79128,
+        "ret_5y_cum": 45.52,
+        "ret_10y_ann": 10.57546,
+        "ret_10y_cum": 173.27,
+        "ret_si_ann": 3.73,
+        "ret_si_cum": 161.47
       },
-      "returns_as_at": "2026-11-02",
+      "returns_as_at": "2026-11-03",
       "benchmark_name": "MSCI World NR USD",
       "factsheet_returns": {
         "ret_3m": 0.04,
@@ -677,7 +677,7 @@
         "semi_annual_report_url": "https://doc.morningstar.com/Document/b88514fb7d2066c36b51f67606d0ebf3.msdoc/?key=023d247708a47993ed8467e955ed1f06d56f71215c0d4940cfd29d8eacbd50f5"
       },
       "sources": {
-        "fetched_at": "2026-11-03T23:21:15+00:00",
+        "fetched_at": "2026-11-05T02:19:08+00:00",
         "returns": "Fund Centre screener",
         "eligibility": "Fund Centre screener (FundingSource)",
         "facts": "Fund Centre detail (v4/funds)",
@@ -689,14 +689,14 @@
         "underlying_fund": "fact sheet PDF"
       },
       "nav_check": {
-        "as_of": "2026-11-02",
-        "total_return_index": 263.15789,
+        "as_of": "2026-11-03",
+        "total_return_index": 261.47368,
         "diff_pp": {
-          "ret_ytd": -0.0,
-          "ret_1y": -0.001,
-          "ret_3y_ann": -0.004,
-          "ret_5y_ann": -0.002,
-          "ret_10y_ann": 0.004
+          "ret_ytd": -0.002,
+          "ret_1y": -0.004,
+          "ret_3y_ann": 0.001,
+          "ret_5y_ann": 0.001,
+          "ret_10y_ann": -0.005
         },
         "at_factsheet_date": {
           "ret_1y": {
@@ -753,27 +753,27 @@
         "cpf_sa": false,
         "srs": true
       },
-      "bid_price": 2.479,
-      "offer_price": 2.61,
-      "price_date": "2026-11-02",
-      "offer_price_date": "2026-11-02",
+      "bid_price": 2.483,
+      "offer_price": 2.614,
+      "price_date": "2026-11-03",
+      "offer_price_date": "2026-11-03",
       "price_status": "Confirmed",
       "returns": {
-        "ret_ytd": 2.01646,
-        "ret_1m": -3.16406,
-        "ret_3m": -1.93829,
-        "ret_6m": 1.05993,
-        "ret_1y": 1.10114,
-        "ret_3y_ann": 13.8472,
-        "ret_3y_cum": 47.56,
-        "ret_5y_ann": 3.54222,
-        "ret_5y_cum": 19.01,
-        "ret_10y_ann": 9.40534,
-        "ret_10y_cum": 145.69,
-        "ret_si_ann": 3.97,
-        "ret_si_cum": 160.95
+        "ret_ytd": 2.18107,
+        "ret_1m": -3.00781,
+        "ret_3m": -2.24409,
+        "ret_6m": 1.22299,
+        "ret_1y": 0.85297,
+        "ret_3y_ann": 13.77312,
+        "ret_3y_cum": 47.27,
+        "ret_5y_ann": 3.41722,
+        "ret_5y_cum": 18.29,
+        "ret_10y_ann": 9.45557,
+        "ret_10y_cum": 146.82,
+        "ret_si_ann": 3.98,
+        "ret_si_cum": 161.37
       },
-      "returns_as_at": "2026-11-02",
+      "returns_as_at": "2026-11-03",
       "benchmark_name": "MSCI World NR USD",
       "factsheet_returns": {
         "ret_3m": -1.92,
@@ -951,7 +951,7 @@
         "semi_annual_report_url": "https://doc.morningstar.com/Document/b88514fb7d2066c36b51f67606d0ebf3.msdoc/?key=023d247708a47993ed8467e955ed1f06d56f71215c0d4940cfd29d8eacbd50f5"
       },
       "sources": {
-        "fetched_at": "2026-11-03T23:21:15+00:00",
+        "fetched_at": "2026-11-05T02:19:08+00:00",
         "returns": "Fund Centre screener",
         "eligibility": "Fund Centre screener (FundingSource)",
         "facts": "Fund Centre detail (v4/funds)",
@@ -963,14 +963,14 @@
         "underlying_fund": "fact sheet PDF"
       },
       "nav_check": {
-        "as_of": "2026-11-02",
-        "total_return_index": 260.94737,
+        "as_of": "2026-11-03",
+        "total_return_index": 261.36842,
         "diff_pp": {
-          "ret_ytd": -0.004,
-          "ret_1y": 0.001,
-          "ret_3y_ann": -0.003,
-          "ret_5y_ann": 0.002,
-          "ret_10y_ann": -0.005
+          "ret_ytd": 0.001,
+          "ret_1y": 0.003,
+          "ret_3y_ann": 0.003,
+          "ret_5y_ann": -0.003,
+          "ret_10y_ann": -0.004
         },
         "at_factsheet_date": {
           "ret_1y": {
@@ -1027,27 +1027,27 @@
         "cpf_sa": false,
         "srs": true
       },
-      "bid_price": 0.747,
-      "offer_price": 0.787,
-      "price_date": "2026-11-02",
-      "offer_price_date": "2026-11-02",
+      "bid_price": 0.752,
+      "offer_price": 0.792,
+      "price_date": "2026-11-03",
+      "offer_price_date": "2026-11-03",
       "price_status": "Confirmed",
       "returns": {
-        "ret_ytd": 5.43619,
-        "ret_1m": 3.8943,
-        "ret_3m": -6.53088,
-        "ret_6m": -3.41524,
-        "ret_1y": 4.59044,
-        "ret_3y_ann": 7.53175,
-        "ret_3y_cum": 24.34,
-        "ret_5y_ann": -1.86275,
-        "ret_5y_cum": -8.97,
-        "ret_10y_ann": 2.68126,
-        "ret_10y_cum": 30.29,
-        "ret_si_ann": 2.95,
-        "ret_si_cum": 86.41
+        "ret_ytd": 6.14192,
+        "ret_1m": 4.58971,
+        "ret_3m": -5.67987,
+        "ret_6m": -2.76876,
+        "ret_1y": 5.00974,
+        "ret_3y_ann": 7.34932,
+        "ret_3y_cum": 23.71,
+        "ret_5y_ann": -1.86983,
+        "ret_5y_cum": -9.01,
+        "ret_10y_ann": 2.78595,
+        "ret_10y_cum": 31.62,
+        "ret_si_ann": 2.98,
+        "ret_si_cum": 87.65
       },
-      "returns_as_at": "2026-11-02",
+      "returns_as_at": "2026-11-03",
       "benchmark_name": "FTSE EPRA Nareit Developed NR USD",
       "factsheet_returns": {
         "ret_3m": -7.63,
@@ -1207,7 +1207,7 @@
         "semi_annual_report_url": "https://doc.morningstar.com/Document/b88514fb7d2066c36b51f67606d0ebf3.msdoc/?key=023d247708a47993ed8467e955ed1f06d56f71215c0d4940cfd29d8eacbd50f5"
       },
       "sources": {
-        "fetched_at": "2026-11-03T23:21:15+00:00",
+        "fetched_at": "2026-11-05T02:19:08+00:00",
         "returns": "Fund Centre screener",
         "eligibility": "Fund Centre screener (FundingSource)",
         "facts": "Fund Centre detail (v4/funds)",
@@ -1218,14 +1218,14 @@
         "benchmark_returns": "fact sheet PDF (as at 2026-09-30)"
       },
       "nav_check": {
-        "as_of": "2026-11-02",
-        "total_return_index": 186.40632,
+        "as_of": "2026-11-03",
+        "total_return_index": 187.65368,
         "diff_pp": {
-          "ret_ytd": -0.004,
-          "ret_1y": 0.0,
-          "ret_3y_ann": 0.002,
-          "ret_5y_ann": -0.003,
-          "ret_10y_ann": 0.001
+          "ret_ytd": 0.002,
+          "ret_1y": -0.0,
+          "ret_3y_ann": -0.001,
+          "ret_5y_ann": 0.0,
+          "ret_10y_ann": -0.004
         },
         "at_factsheet_date": {
           "ret_1y": {
@@ -1282,27 +1282,27 @@
         "cpf_sa": false,
         "srs": true
       },
-      "bid_price": 2.418,
-      "offer_price": 2.546,
-      "price_date": "2026-11-02",
-      "offer_price_date": "2026-11-02",
+      "bid_price": 2.428,
+      "offer_price": 2.556,
+      "price_date": "2026-11-03",
+      "offer_price_date": "2026-11-03",
       "price_status": "Confirmed",
       "returns": {
-        "ret_ytd": -3.08617,
-        "ret_1m": -4.31342,
-        "ret_3m": -4.27553,
-        "ret_6m": -2.77443,
-        "ret_1y": -8.09578,
-        "ret_3y_ann": 4.54747,
-        "ret_3y_cum": 14.27,
-        "ret_5y_ann": -3.17288,
-        "ret_5y_cum": -14.89,
-        "ret_10y_ann": 7.98075,
-        "ret_10y_cum": 115.51,
-        "ret_si_ann": 3.77,
-        "ret_si_cum": 154.53
+        "ret_ytd": -2.68537,
+        "ret_1m": -3.91769,
+        "ret_3m": -4.52222,
+        "ret_6m": -2.37234,
+        "ret_1y": -8.06513,
+        "ret_3y_ann": 4.44518,
+        "ret_3y_cum": 13.94,
+        "ret_5y_ann": -3.127,
+        "ret_5y_cum": -14.69,
+        "ret_10y_ann": 8.08326,
+        "ret_10y_cum": 117.56,
+        "ret_si_ann": 3.79,
+        "ret_si_cum": 155.58
       },
-      "returns_as_at": "2026-11-02",
+      "returns_as_at": "2026-11-03",
       "benchmark_name": "MSCI ACWI NR SGD",
       "factsheet_returns": {
         "ret_3m": -4.39,
@@ -1359,7 +1359,7 @@
         "semi_annual_report_url": "https://doc.morningstar.com/Document/b88514fb7d2066c36b51f67606d0ebf3.msdoc/?key=023d247708a47993ed8467e955ed1f06d56f71215c0d4940cfd29d8eacbd50f5"
       },
       "sources": {
-        "fetched_at": "2026-11-03T23:21:15+00:00",
+        "fetched_at": "2026-11-05T02:19:08+00:00",
         "returns": "Fund Centre screener",
         "eligibility": "Fund Centre screener (FundingSource)",
         "facts": "Fund Centre detail (v4/funds)",
@@ -1370,14 +1370,14 @@
         "benchmark_returns": "fact sheet PDF (as at 2026-09-30)"
       },
       "nav_check": {
-        "as_of": "2026-11-02",
-        "total_return_index": 254.52632,
+        "as_of": "2026-11-03",
+        "total_return_index": 255.57895,
         "diff_pp": {
-          "ret_ytd": 0.004,
-          "ret_1y": 0.004,
-          "ret_3y_ann": -0.003,
-          "ret_5y_ann": -0.003,
-          "ret_10y_ann": 0.001
+          "ret_ytd": 0.005,
+          "ret_1y": 0.005,
+          "ret_3y_ann": -0.005,
+          "ret_5y_ann": 0.003,
+          "ret_10y_ann": 0.003
         },
         "at_factsheet_date": {
           "ret_1y": {
@@ -1434,27 +1434,27 @@
         "cpf_sa": false,
         "srs": true
       },
-      "bid_price": 3.635,
-      "offer_price": 3.827,
-      "price_date": "2026-11-02",
-      "offer_price_date": "2026-11-02",
+      "bid_price": 3.674,
+      "offer_price": 3.868,
+      "price_date": "2026-11-03",
+      "offer_price_date": "2026-11-03",
       "price_status": "Confirmed",
       "returns": {
-        "ret_ytd": 11.94949,
-        "ret_1m": -13.22511,
-        "ret_3m": -5.63344,
-        "ret_6m": 1.82073,
-        "ret_1y": 6.81751,
-        "ret_3y_ann": 24.29429,
-        "ret_3y_cum": 92.02,
-        "ret_5y_ann": 6.81685,
-        "ret_5y_cum": 39.06,
-        "ret_10y_ann": 15.94377,
-        "ret_10y_cum": 339.01,
-        "ret_si_ann": 5.34,
-        "ret_si_cum": 282.63
+        "ret_ytd": 13.1506,
+        "ret_1m": -12.2941,
+        "ret_3m": -5.96365,
+        "ret_6m": 2.91317,
+        "ret_1y": 6.86446,
+        "ret_3y_ann": 24.36605,
+        "ret_3y_cum": 92.36,
+        "ret_5y_ann": 6.90639,
+        "ret_5y_cum": 39.64,
+        "ret_10y_ann": 16.12379,
+        "ret_10y_cum": 345.87,
+        "ret_si_ann": 5.38,
+        "ret_si_cum": 286.74
       },
-      "returns_as_at": "2026-11-02",
+      "returns_as_at": "2026-11-03",
       "benchmark_name": "MSCI ACWI/Information Technology NR USD",
       "factsheet_returns": {
         "ret_3m": 1.3,
@@ -1614,7 +1614,7 @@
         "semi_annual_report_url": "https://doc.morningstar.com/Document/b88514fb7d2066c36b51f67606d0ebf3.msdoc/?key=023d247708a47993ed8467e955ed1f06d56f71215c0d4940cfd29d8eacbd50f5"
       },
       "sources": {
-        "fetched_at": "2026-11-03T23:21:15+00:00",
+        "fetched_at": "2026-11-05T02:19:08+00:00",
         "returns": "Fund Centre screener",
         "eligibility": "Fund Centre screener (FundingSource)",
         "facts": "Fund Centre detail (v4/funds)",
@@ -1625,13 +1625,13 @@
         "benchmark_returns": "fact sheet PDF (as at 2026-09-30)"
       },
       "nav_check": {
-        "as_of": "2026-11-02",
-        "total_return_index": 382.63158,
+        "as_of": "2026-11-03",
+        "total_return_index": 386.73684,
         "diff_pp": {
-          "ret_ytd": -0.001,
-          "ret_1y": -0.002,
-          "ret_3y_ann": 0.004,
-          "ret_5y_ann": -0.003,
+          "ret_ytd": 0.001,
+          "ret_1y": 0.004,
+          "ret_3y_ann": -0.004,
+          "ret_5y_ann": -0.004,
           "ret_10y_ann": 0.004
         },
         "at_factsheet_date": {
@@ -1689,27 +1689,27 @@
         "cpf_sa": false,
         "srs": true
       },
-      "bid_price": 1.12,
-      "offer_price": 1.179,
-      "price_date": "2026-11-02",
-      "offer_price_date": "2026-11-02",
+      "bid_price": 1.115,
+      "offer_price": 1.174,
+      "price_date": "2026-11-03",
+      "offer_price_date": "2026-11-03",
       "price_status": "Confirmed",
       "returns": {
-        "ret_ytd": 14.16922,
-        "ret_1m": 11.22145,
-        "ret_3m": 11.33201,
-        "ret_6m": 21.08108,
-        "ret_1y": 20.43011,
-        "ret_3y_ann": 7.32393,
-        "ret_3y_cum": 23.62,
+        "ret_ytd": 13.65953,
+        "ret_1m": 10.72493,
+        "ret_3m": 11.5,
+        "ret_6m": 20.54054,
+        "ret_1y": 19.63519,
+        "ret_3y_ann": 7.32216,
+        "ret_3y_cum": 23.61,
         "ret_5y_ann": null,
         "ret_5y_cum": null,
         "ret_10y_ann": null,
         "ret_10y_cum": null,
-        "ret_si_ann": 3.65,
-        "ret_si_cum": 17.89
+        "ret_si_ann": 3.55,
+        "ret_si_cum": 17.37
       },
-      "returns_as_at": "2026-11-02",
+      "returns_as_at": "2026-11-03",
       "benchmark_name": "MSCI World Health Care Index NR SGD",
       "factsheet_returns": {
         "ret_3m": 2.0,
@@ -1830,7 +1830,7 @@
         "semi_annual_report_url": "https://doc.morningstar.com/Document/b88514fb7d2066c36b51f67606d0ebf3.msdoc/?key=023d247708a47993ed8467e955ed1f06d56f71215c0d4940cfd29d8eacbd50f5"
       },
       "sources": {
-        "fetched_at": "2026-11-03T23:21:15+00:00",
+        "fetched_at": "2026-11-05T02:19:08+00:00",
         "returns": "Fund Centre screener",
         "eligibility": "Fund Centre screener (FundingSource)",
         "facts": "Fund Centre detail (v4/funds)",
@@ -1841,12 +1841,12 @@
         "benchmark_returns": "fact sheet PDF (as at 2026-09-30)"
       },
       "nav_check": {
-        "as_of": "2026-11-02",
-        "total_return_index": 117.89474,
+        "as_of": "2026-11-03",
+        "total_return_index": 117.36842,
         "diff_pp": {
-          "ret_ytd": -0.001,
-          "ret_1y": 0.0,
-          "ret_3y_ann": 0.004
+          "ret_ytd": -0.0,
+          "ret_1y": -0.005,
+          "ret_3y_ann": 0.002
         },
         "at_factsheet_date": {
           "ret_1y": {
@@ -1896,27 +1896,27 @@
         "cpf_sa": false,
         "srs": true
       },
-      "bid_price": 2.825,
-      "offer_price": 2.974,
-      "price_date": "2026-11-02",
-      "offer_price_date": "2026-11-02",
+      "bid_price": 2.809,
+      "offer_price": 2.957,
+      "price_date": "2026-11-03",
+      "offer_price_date": "2026-11-03",
       "price_status": "Confirmed",
       "returns": {
-        "ret_ytd": 7.00758,
-        "ret_1m": -6.64243,
-        "ret_3m": -4.20482,
-        "ret_6m": -1.36173,
-        "ret_1y": 6.84569,
-        "ret_3y_ann": 16.53598,
-        "ret_3y_cum": 58.26,
-        "ret_5y_ann": 4.20676,
-        "ret_5y_cum": 22.88,
-        "ret_10y_ann": 8.83074,
-        "ret_10y_cum": 133.09,
-        "ret_si_ann": 4.53,
-        "ret_si_cum": 197.37
+        "ret_ytd": 6.40152,
+        "ret_1m": -7.17118,
+        "ret_3m": -5.06928,
+        "ret_6m": -1.92039,
+        "ret_1y": 5.36384,
+        "ret_3y_ann": 15.97008,
+        "ret_3y_cum": 55.97,
+        "ret_5y_ann": 4.0794,
+        "ret_5y_cum": 22.13,
+        "ret_10y_ann": 8.7959,
+        "ret_10y_cum": 132.34,
+        "ret_si_ann": 4.5,
+        "ret_si_cum": 195.68
       },
-      "returns_as_at": "2026-11-02",
+      "returns_as_at": "2026-11-03",
       "benchmark_name": null,
       "factsheet_returns": {
         "ret_3m": -2.56,
@@ -2084,7 +2084,7 @@
         "semi_annual_report_url": "https://doc.morningstar.com/Document/b88514fb7d2066c36b51f67606d0ebf3.msdoc/?key=023d247708a47993ed8467e955ed1f06d56f71215c0d4940cfd29d8eacbd50f5"
       },
       "sources": {
-        "fetched_at": "2026-11-03T23:21:15+00:00",
+        "fetched_at": "2026-11-05T02:19:08+00:00",
         "returns": "Fund Centre screener",
         "eligibility": "Fund Centre screener (FundingSource)",
         "facts": "Fund Centre detail (v4/funds)",
@@ -2095,14 +2095,14 @@
         "benchmark_returns": "fact sheet PDF (as at 2026-09-30)"
       },
       "nav_check": {
-        "as_of": "2026-11-02",
-        "total_return_index": 297.36842,
+        "as_of": "2026-11-03",
+        "total_return_index": 295.68421,
         "diff_pp": {
-          "ret_ytd": -0.002,
-          "ret_1y": -0.004,
-          "ret_3y_ann": -0.004,
-          "ret_5y_ann": -0.003,
-          "ret_10y_ann": 0.001
+          "ret_ytd": 0.002,
+          "ret_1y": 0.004,
+          "ret_3y_ann": 0.0,
+          "ret_5y_ann": -0.001,
+          "ret_10y_ann": -0.004
         },
         "at_factsheet_date": {
           "ret_1y": {
@@ -2159,27 +2159,27 @@
         "cpf_sa": false,
         "srs": true
       },
-      "bid_price": 1.163,
-      "offer_price": 1.225,
-      "price_date": "2026-11-02",
-      "offer_price_date": "2026-11-02",
+      "bid_price": 1.158,
+      "offer_price": 1.219,
+      "price_date": "2026-11-03",
+      "offer_price_date": "2026-11-03",
       "price_status": "Confirmed",
       "returns": {
-        "ret_ytd": 7.48614,
-        "ret_1m": -4.7502,
-        "ret_3m": 0.08606,
-        "ret_6m": 3.74665,
-        "ret_1y": 4.58633,
-        "ret_3y_ann": 12.86095,
-        "ret_3y_cum": 43.76,
-        "ret_5y_ann": 2.31992,
-        "ret_5y_cum": 12.15,
+        "ret_ytd": 7.02403,
+        "ret_1m": -5.15971,
+        "ret_3m": -0.77121,
+        "ret_6m": 3.30062,
+        "ret_1y": 4.04313,
+        "ret_3y_ann": 12.32992,
+        "ret_3y_cum": 41.74,
+        "ret_5y_ann": 2.21208,
+        "ret_5y_cum": 11.56,
         "ret_10y_ann": null,
         "ret_10y_cum": null,
-        "ret_si_ann": 3.57,
-        "ret_si_cum": 22.42
+        "ret_si_ann": 3.49,
+        "ret_si_cum": 21.89
       },
-      "returns_as_at": "2026-11-02",
+      "returns_as_at": "2026-11-03",
       "benchmark_name": "MSCI ACWI NR LCL",
       "factsheet_returns": {
         "ret_3m": -0.41,
@@ -2365,7 +2365,7 @@
         "semi_annual_report_url": "https://doc.morningstar.com/Document/b88514fb7d2066c36b51f67606d0ebf3.msdoc/?key=023d247708a47993ed8467e955ed1f06d56f71215c0d4940cfd29d8eacbd50f5"
       },
       "sources": {
-        "fetched_at": "2026-11-03T23:21:15+00:00",
+        "fetched_at": "2026-11-05T02:19:08+00:00",
         "returns": "Fund Centre screener",
         "eligibility": "Fund Centre screener (FundingSource)",
         "facts": "Fund Centre detail (v4/funds)",
@@ -2376,13 +2376,13 @@
         "benchmark_returns": "fact sheet PDF (as at 2026-09-30)"
       },
       "nav_check": {
-        "as_of": "2026-11-02",
-        "total_return_index": 122.42105,
+        "as_of": "2026-11-03",
+        "total_return_index": 121.89474,
         "diff_pp": {
-          "ret_ytd": -0.004,
-          "ret_1y": -0.004,
-          "ret_3y_ann": 0.001,
-          "ret_5y_ann": -0.0
+          "ret_ytd": 0.004,
+          "ret_1y": 0.003,
+          "ret_3y_ann": -0.0,
+          "ret_5y_ann": 0.002
         },
         "at_factsheet_date": {
           "ret_1y": {
@@ -2436,27 +2436,27 @@
         "cpf_sa": false,
         "srs": true
       },
-      "bid_price": 3.381,
-      "offer_price": 3.559,
-      "price_date": "2026-11-02",
-      "offer_price_date": "2026-11-02",
+      "bid_price": 3.361,
+      "offer_price": 3.538,
+      "price_date": "2026-11-03",
+      "offer_price_date": "2026-11-03",
       "price_status": "Confirmed",
       "returns": {
-        "ret_ytd": -4.32937,
-        "ret_1m": -7.0132,
-        "ret_3m": -9.93607,
-        "ret_6m": -3.4,
-        "ret_1y": -3.6203,
-        "ret_3y_ann": 7.40237,
-        "ret_3y_cum": 23.89,
-        "ret_5y_ann": 0.58388,
-        "ret_5y_cum": 2.95,
-        "ret_10y_ann": 1.97282,
-        "ret_10y_cum": 21.57,
-        "ret_si_ann": 4.25,
-        "ret_si_cum": 255.89
+        "ret_ytd": -4.8953,
+        "ret_1m": -7.56326,
+        "ret_3m": -10.84881,
+        "ret_6m": -3.97143,
+        "ret_1y": -4.59835,
+        "ret_3y_ann": 6.7358,
+        "ret_3y_cum": 21.6,
+        "ret_5y_ann": 0.42793,
+        "ret_5y_cum": 2.16,
+        "ret_10y_ann": 1.97116,
+        "ret_10y_cum": 21.56,
+        "ret_si_ann": 4.23,
+        "ret_si_cum": 253.79
       },
-      "returns_as_at": "2026-11-02",
+      "returns_as_at": "2026-11-03",
       "benchmark_name": "MSCI AC ASEAN NR USD",
       "factsheet_returns": {
         "ret_3m": 2.09,
@@ -2632,7 +2632,7 @@
         "semi_annual_report_url": "https://doc.morningstar.com/Document/b88514fb7d2066c36b51f67606d0ebf3.msdoc/?key=023d247708a47993ed8467e955ed1f06d56f71215c0d4940cfd29d8eacbd50f5"
       },
       "sources": {
-        "fetched_at": "2026-11-03T23:21:15+00:00",
+        "fetched_at": "2026-11-05T02:19:08+00:00",
         "returns": "Fund Centre screener",
         "eligibility": "Fund Centre screener (FundingSource)",
         "facts": "Fund Centre detail (v4/funds)",
@@ -2643,14 +2643,14 @@
         "benchmark_returns": "fact sheet PDF (as at 2026-09-30)"
       },
       "nav_check": {
-        "as_of": "2026-11-02",
-        "total_return_index": 355.89474,
+        "as_of": "2026-11-03",
+        "total_return_index": 353.78947,
         "diff_pp": {
-          "ret_ytd": 0.001,
-          "ret_1y": -0.0,
-          "ret_3y_ann": 0.002,
-          "ret_5y_ann": 0.004,
-          "ret_10y_ann": 0.003
+          "ret_ytd": 0.005,
+          "ret_1y": 0.002,
+          "ret_3y_ann": -0.004,
+          "ret_5y_ann": -0.002,
+          "ret_10y_ann": 0.001
         },
         "at_factsheet_date": {
           "ret_1y": {
@@ -2707,27 +2707,27 @@
         "cpf_sa": false,
         "srs": true
       },
-      "bid_price": 1.122,
-      "offer_price": 1.182,
-      "price_date": "2026-11-02",
-      "offer_price_date": "2026-11-02",
+      "bid_price": 1.111,
+      "offer_price": 1.17,
+      "price_date": "2026-11-03",
+      "offer_price_date": "2026-11-03",
       "price_status": "Confirmed",
       "returns": {
-        "ret_ytd": 11.31121,
-        "ret_1m": -5.71827,
-        "ret_3m": -3.63381,
-        "ret_6m": 5.70256,
-        "ret_1y": 10.67816,
+        "ret_ytd": 10.21993,
+        "ret_1m": -6.6426,
+        "ret_3m": -4.57858,
+        "ret_6m": 4.66626,
+        "ret_1y": 8.7683,
         "ret_3y_ann": null,
         "ret_3y_cum": null,
         "ret_5y_ann": null,
         "ret_5y_cum": null,
         "ret_10y_ann": null,
         "ret_10y_cum": null,
-        "ret_si_ann": 11.16,
-        "ret_si_cum": 30.65
+        "ret_si_ann": 10.72,
+        "ret_si_cum": 29.37
       },
-      "returns_as_at": "2026-11-02",
+      "returns_as_at": "2026-11-03",
       "benchmark_name": "MSCI AC Asia Pacific ex Japan NR SGD",
       "factsheet_returns": {
         "ret_3m": 0.43,
@@ -2854,7 +2854,7 @@
         "semi_annual_report_url": "https://doc.morningstar.com/Document/b88514fb7d2066c36b51f67606d0ebf3.msdoc/?key=023d247708a47993ed8467e955ed1f06d56f71215c0d4940cfd29d8eacbd50f5"
       },
       "sources": {
-        "fetched_at": "2026-11-03T23:21:15+00:00",
+        "fetched_at": "2026-11-05T02:19:08+00:00",
         "returns": "Fund Centre screener",
         "eligibility": "Fund Centre screener (FundingSource)",
         "facts": "Fund Centre detail (v4/funds)",
@@ -2866,10 +2866,10 @@
         "underlying_fund": "fact sheet PDF"
       },
       "nav_check": {
-        "as_of": "2026-11-02",
-        "total_return_index": 130.65263,
+        "as_of": "2026-11-03",
+        "total_return_index": 129.37158,
         "diff_pp": {
-          "ret_ytd": 0.001,
+          "ret_ytd": -0.0,
           "ret_1y": -0.002
         },
         "at_factsheet_date": {
@@ -2916,27 +2916,27 @@
         "cpf_sa": false,
         "srs": true
       },
-      "bid_price": 1.083,
-      "offer_price": 1.14,
-      "price_date": "2026-11-02",
-      "offer_price_date": "2026-11-02",
+      "bid_price": 1.067,
+      "offer_price": 1.124,
+      "price_date": "2026-11-03",
+      "offer_price_date": "2026-11-03",
       "price_status": "Confirmed",
       "returns": {
-        "ret_ytd": 15.47271,
-        "ret_1m": -7.51494,
-        "ret_3m": -6.36924,
-        "ret_6m": -0.33224,
-        "ret_1y": 13.31922,
-        "ret_3y_ann": 18.66597,
-        "ret_3y_cum": 67.1,
-        "ret_5y_ann": 4.48454,
-        "ret_5y_cum": 24.53,
-        "ret_10y_ann": 6.0296,
-        "ret_10y_cum": 79.59,
-        "ret_si_ann": 2.11,
-        "ret_si_cum": 73.29
+        "ret_ytd": 13.76674,
+        "ret_1m": -8.8813,
+        "ret_3m": -6.55138,
+        "ret_6m": -1.80471,
+        "ret_1y": 10.31066,
+        "ret_3y_ann": 17.59541,
+        "ret_3y_cum": 62.62,
+        "ret_5y_ann": 4.23383,
+        "ret_5y_cum": 23.04,
+        "ret_10y_ann": 5.88415,
+        "ret_10y_cum": 77.14,
+        "ret_si_ann": 2.05,
+        "ret_si_cum": 70.73
       },
-      "returns_as_at": "2026-11-02",
+      "returns_as_at": "2026-11-03",
       "benchmark_name": "MSCI AC Asia Pacific ex Japan NR SGD",
       "factsheet_returns": {
         "ret_3m": -3.72,
@@ -3098,7 +3098,7 @@
         "semi_annual_report_url": "https://doc.morningstar.com/Document/b88514fb7d2066c36b51f67606d0ebf3.msdoc/?key=023d247708a47993ed8467e955ed1f06d56f71215c0d4940cfd29d8eacbd50f5"
       },
       "sources": {
-        "fetched_at": "2026-11-03T23:21:15+00:00",
+        "fetched_at": "2026-11-05T02:19:08+00:00",
         "returns": "Fund Centre screener",
         "eligibility": "Fund Centre screener (FundingSource)",
         "facts": "Fund Centre detail (v4/funds)",
@@ -3109,14 +3109,14 @@
         "benchmark_returns": "fact sheet PDF (as at 2026-09-30)"
       },
       "nav_check": {
-        "as_of": "2026-11-02",
-        "total_return_index": 173.29474,
+        "as_of": "2026-11-03",
+        "total_return_index": 170.73474,
         "diff_pp": {
-          "ret_ytd": 0.003,
-          "ret_1y": -0.001,
-          "ret_3y_ann": -0.004,
-          "ret_5y_ann": 0.005,
-          "ret_10y_ann": -0.0
+          "ret_ytd": -0.003,
+          "ret_1y": 0.001,
+          "ret_3y_ann": -0.005,
+          "ret_5y_ann": 0.004,
+          "ret_10y_ann": 0.004
         },
         "at_factsheet_date": {
           "ret_1y": {
@@ -3173,27 +3173,27 @@
         "cpf_sa": false,
         "srs": true
       },
-      "bid_price": 4.09,
-      "offer_price": 4.306,
-      "price_date": "2026-11-02",
-      "offer_price_date": "2026-11-02",
+      "bid_price": 4.04,
+      "offer_price": 4.253,
+      "price_date": "2026-11-03",
+      "offer_price_date": "2026-11-03",
       "price_status": "Confirmed",
       "returns": {
-        "ret_ytd": 10.51067,
-        "ret_1m": -8.48064,
-        "ret_3m": -6.72748,
-        "ret_6m": -2.40993,
-        "ret_1y": 8.74767,
-        "ret_3y_ann": 18.16318,
-        "ret_3y_cum": 64.99,
-        "ret_5y_ann": 4.0538,
-        "ret_5y_cum": 21.98,
-        "ret_10y_ann": 7.33586,
-        "ret_10y_cum": 102.98,
-        "ret_si_ann": 4.9,
-        "ret_si_cum": 330.53
+        "ret_ytd": 9.15969,
+        "ret_1m": -9.59946,
+        "ret_3m": -6.91244,
+        "ret_6m": -3.60296,
+        "ret_1y": 6.03675,
+        "ret_3y_ann": 17.17766,
+        "ret_3y_cum": 60.89,
+        "ret_5y_ann": 3.86638,
+        "ret_5y_cum": 20.89,
+        "ret_10y_ann": 7.24123,
+        "ret_10y_cum": 101.2,
+        "ret_si_ann": 4.86,
+        "ret_si_cum": 325.26
       },
-      "returns_as_at": "2026-11-02",
+      "returns_as_at": "2026-11-03",
       "benchmark_name": "MSCI AC Asia Pacific ex Japan NR SGD",
       "factsheet_returns": {
         "ret_3m": -3.06,
@@ -3347,7 +3347,7 @@
         "semi_annual_report_url": "https://doc.morningstar.com/Document/b88514fb7d2066c36b51f67606d0ebf3.msdoc/?key=023d247708a47993ed8467e955ed1f06d56f71215c0d4940cfd29d8eacbd50f5"
       },
       "sources": {
-        "fetched_at": "2026-11-03T23:21:15+00:00",
+        "fetched_at": "2026-11-05T02:19:08+00:00",
         "returns": "Fund Centre screener",
         "eligibility": "Fund Centre screener (FundingSource)",
         "facts": "Fund Centre detail (v4/funds)",
@@ -3359,14 +3359,14 @@
         "underlying_fund": "fact sheet PDF"
       },
       "nav_check": {
-        "as_of": "2026-11-02",
-        "total_return_index": 430.52632,
+        "as_of": "2026-11-03",
+        "total_return_index": 425.26316,
         "diff_pp": {
-          "ret_ytd": 0.001,
-          "ret_1y": -0.002,
-          "ret_3y_ann": 0.003,
-          "ret_5y_ann": 0.004,
-          "ret_10y_ann": -0.004
+          "ret_ytd": -0.0,
+          "ret_1y": -0.003,
+          "ret_3y_ann": -0.002,
+          "ret_5y_ann": -0.004,
+          "ret_10y_ann": 0.001
         },
         "at_factsheet_date": {
           "ret_1y": {
@@ -3423,27 +3423,27 @@
         "cpf_sa": false,
         "srs": true
       },
-      "bid_price": 1.19,
-      "offer_price": 1.253,
-      "price_date": "2026-11-02",
-      "offer_price_date": "2026-11-02",
+      "bid_price": 1.193,
+      "offer_price": 1.256,
+      "price_date": "2026-11-03",
+      "offer_price_date": "2026-11-03",
       "price_status": "Confirmed",
       "returns": {
-        "ret_ytd": 2.76339,
-        "ret_1m": 2.23368,
-        "ret_3m": -2.45902,
-        "ret_6m": 4.66139,
-        "ret_1y": 0.93299,
-        "ret_3y_ann": 4.82918,
-        "ret_3y_cum": 15.2,
-        "ret_5y_ann": -1.88815,
-        "ret_5y_cum": -9.09,
-        "ret_10y_ann": 2.78692,
-        "ret_10y_cum": 31.64,
-        "ret_si_ann": 0.86,
-        "ret_si_cum": 25.26
+        "ret_ytd": 3.02245,
+        "ret_1m": 2.49141,
+        "ret_3m": -1.6488,
+        "ret_6m": 4.92524,
+        "ret_1y": 1.01609,
+        "ret_3y_ann": 4.88337,
+        "ret_3y_cum": 15.38,
+        "ret_5y_ann": -1.92847,
+        "ret_5y_cum": -9.28,
+        "ret_10y_ann": 2.79009,
+        "ret_10y_cum": 31.68,
+        "ret_si_ann": 0.87,
+        "ret_si_cum": 25.58
       },
-      "returns_as_at": "2026-11-02",
+      "returns_as_at": "2026-11-03",
       "benchmark_name": "FTSE World Europe TR SGD",
       "factsheet_returns": {
         "ret_3m": -0.84,
@@ -3589,7 +3589,7 @@
         "semi_annual_report_url": "https://doc.morningstar.com/Document/b88514fb7d2066c36b51f67606d0ebf3.msdoc/?key=023d247708a47993ed8467e955ed1f06d56f71215c0d4940cfd29d8eacbd50f5"
       },
       "sources": {
-        "fetched_at": "2026-11-03T23:21:15+00:00",
+        "fetched_at": "2026-11-05T02:19:08+00:00",
         "returns": "Fund Centre screener",
         "eligibility": "Fund Centre screener (FundingSource)",
         "facts": "Fund Centre detail (v4/funds)",
@@ -3600,14 +3600,14 @@
         "benchmark_returns": "fact sheet PDF (as at 2026-09-30)"
       },
       "nav_check": {
-        "as_of": "2026-11-02",
-        "total_return_index": 125.26316,
+        "as_of": "2026-11-03",
+        "total_return_index": 125.57895,
         "diff_pp": {
-          "ret_ytd": 0.003,
-          "ret_1y": 0.003,
-          "ret_3y_ann": -0.001,
+          "ret_ytd": 0.002,
+          "ret_1y": -0.004,
+          "ret_3y_ann": 0.003,
           "ret_5y_ann": 0.002,
-          "ret_10y_ann": -0.003
+          "ret_10y_ann": 0.0
         },
         "at_factsheet_date": {
           "ret_1y": {
@@ -3664,27 +3664,27 @@
         "cpf_sa": false,
         "srs": true
       },
-      "bid_price": 4.479,
-      "offer_price": 4.715,
-      "price_date": "2026-11-02",
-      "offer_price_date": "2026-11-02",
+      "bid_price": 4.396,
+      "offer_price": 4.628,
+      "price_date": "2026-11-03",
+      "offer_price_date": "2026-11-03",
       "price_status": "Confirmed",
       "returns": {
-        "ret_ytd": 15.76635,
-        "ret_1m": -10.29441,
-        "ret_3m": -7.07469,
-        "ret_6m": -2.43956,
-        "ret_1y": 14.64039,
-        "ret_3y_ann": 22.96495,
-        "ret_3y_cum": 85.93,
-        "ret_5y_ann": 5.45718,
-        "ret_5y_cum": 30.43,
-        "ret_10y_ann": 8.4945,
-        "ret_10y_cum": 125.98,
-        "ret_si_ann": 6.5,
-        "ret_si_cum": 371.47
+        "ret_ytd": 13.62109,
+        "ret_1m": -11.95674,
+        "ret_3m": -7.37463,
+        "ret_6m": -4.24744,
+        "ret_1y": 10.73048,
+        "ret_3y_ann": 21.64771,
+        "ret_3y_cum": 80.02,
+        "ret_5y_ann": 5.16774,
+        "ret_5y_cum": 28.65,
+        "ret_10y_ann": 8.33008,
+        "ret_10y_cum": 122.58,
+        "ret_si_ann": 6.42,
+        "ret_si_cum": 362.74
       },
-      "returns_as_at": "2026-11-02",
+      "returns_as_at": "2026-11-03",
       "benchmark_name": "MSCI AC Far East Ex Japan NR USD",
       "factsheet_returns": {
         "ret_3m": -3.66,
@@ -3720,137 +3720,137 @@
       "allocation_asset": [
         {
           "label": "Stock",
-          "pct": 95.44
+          "pct": 91.71
         },
         {
           "label": "Cash",
-          "pct": 4.56
+          "pct": 8.29
         }
       ],
       "allocation_geo": [
         {
           "label": "Taiwan",
-          "pct": 32.32
+          "pct": 31.6
         },
         {
           "label": "South Korea",
-          "pct": 27.83
+          "pct": 28.17
         },
         {
           "label": "China",
-          "pct": 21.19
+          "pct": 22.0
         },
         {
           "label": "Singapore",
-          "pct": 5.49
+          "pct": 5.36
         },
         {
           "label": "Hong Kong",
-          "pct": 4.55
+          "pct": 4.44
         },
         {
           "label": "United States",
-          "pct": 3.09
+          "pct": 3.02
         },
         {
           "label": "Malaysia",
-          "pct": 1.85
+          "pct": 1.81
         },
         {
           "label": "Vietnam",
-          "pct": 0.94
+          "pct": 0.92
         },
         {
           "label": "United Kingdom",
-          "pct": 0.87
+          "pct": 0.85
         },
         {
           "label": "Others",
-          "pct": 1.88
+          "pct": 1.83
         }
       ],
       "allocation_sector": [
         {
           "label": "Technology",
-          "pct": 58.32
+          "pct": 58.29
         },
         {
           "label": "Financial Services",
-          "pct": 18.43
+          "pct": 18.01
         },
         {
           "label": "Consumer Cyclical",
-          "pct": 6.36
+          "pct": 6.21
         },
         {
           "label": "Industrials",
-          "pct": 4.66
+          "pct": 4.56
         },
         {
           "label": "Communication Services",
-          "pct": 4.16
+          "pct": 4.07
         },
         {
           "label": "Basic Materials",
-          "pct": 3.31
+          "pct": 3.23
         },
         {
           "label": "Real Estate",
-          "pct": 2.22
-        },
-        {
-          "label": "Healthcare",
-          "pct": 1.22
-        },
-        {
-          "label": "Energy",
-          "pct": 0.75
+          "pct": 2.17
         },
         {
           "label": "Consumer Defensive",
-          "pct": 0.56
+          "pct": 1.52
+        },
+        {
+          "label": "Healthcare",
+          "pct": 1.2
+        },
+        {
+          "label": "Energy",
+          "pct": 0.73
         }
       ],
       "top_holdings": [
         {
           "name": "Taiwan Semiconductor Manufacturing Co Ltd",
-          "pct": 20.85
+          "pct": 19.58
         },
         {
           "name": "Samsung Electronics Co Ltd",
-          "pct": 11.14
+          "pct": 10.46
         },
         {
           "name": "Sk Hynix Inc",
-          "pct": 7.75
+          "pct": 7.28
         },
         {
           "name": "Tencent Holdings Ltd",
-          "pct": 3.74
+          "pct": 3.52
         },
         {
           "name": "Dbs Group Holdings Ltd",
-          "pct": 3.28
+          "pct": 3.08
         },
         {
           "name": "China Construction Bank Corp Class H",
-          "pct": 2.99
+          "pct": 2.8
         },
         {
           "name": "Mediatek Inc",
-          "pct": 2.63
+          "pct": 2.47
         },
         {
           "name": "Alibaba Group Holding Ltd Ordinary Shares",
-          "pct": 2.57
+          "pct": 2.41
         },
         {
           "name": "Bank Of China Ltd Class H",
-          "pct": 1.77
+          "pct": 1.66
         },
         {
           "name": "Aia Group Ltd",
-          "pct": 1.66
+          "pct": 1.56
         }
       ],
       "objective": "To maximise capital growth through investing primarily in equities of companies based in China, Hong Kong, Indonesia, South Korea, Malaysia, Philippines, Singapore, Taiwan and Thailand, and also in other Asia Pacific regions except Japan.",
@@ -3864,7 +3864,7 @@
         "semi_annual_report_url": "https://doc.morningstar.com/Document/b88514fb7d2066c36b51f67606d0ebf3.msdoc/?key=023d247708a47993ed8467e955ed1f06d56f71215c0d4940cfd29d8eacbd50f5"
       },
       "sources": {
-        "fetched_at": "2026-11-03T23:21:15+00:00",
+        "fetched_at": "2026-11-05T02:19:08+00:00",
         "returns": "Fund Centre screener",
         "eligibility": "Fund Centre screener (FundingSource)",
         "facts": "Fund Centre detail (v4/funds)",
@@ -3875,14 +3875,14 @@
         "benchmark_returns": "fact sheet PDF (as at 2026-09-30)"
       },
       "nav_check": {
-        "as_of": "2026-11-02",
-        "total_return_index": 471.47368,
+        "as_of": "2026-11-03",
+        "total_return_index": 462.73684,
         "diff_pp": {
-          "ret_ytd": -0.004,
+          "ret_ytd": 0.001,
           "ret_1y": 0.0,
-          "ret_3y_ann": 0.005,
-          "ret_5y_ann": -0.003,
-          "ret_10y_ann": 0.005
+          "ret_3y_ann": -0.002,
+          "ret_5y_ann": -0.002,
+          "ret_10y_ann": 0.0
         },
         "at_factsheet_date": {
           "ret_1y": {
@@ -3939,27 +3939,27 @@
         "cpf_sa": false,
         "srs": true
       },
-      "bid_price": 2.09,
-      "offer_price": 2.2,
-      "price_date": "2026-11-02",
-      "offer_price_date": "2026-11-02",
+      "bid_price": 2.062,
+      "offer_price": 2.171,
+      "price_date": "2026-11-03",
+      "offer_price_date": "2026-11-03",
       "price_status": "Confirmed",
       "returns": {
-        "ret_ytd": 11.46667,
-        "ret_1m": -12.62542,
-        "ret_3m": -8.29311,
-        "ret_6m": -7.27595,
-        "ret_1y": 13.71055,
-        "ret_3y_ann": 18.12512,
-        "ret_3y_cum": 64.83,
-        "ret_5y_ann": 1.13834,
-        "ret_5y_cum": 5.82,
-        "ret_10y_ann": 6.45608,
-        "ret_10y_cum": 86.94,
-        "ret_si_ann": 5.91,
-        "ret_si_cum": 120.49
+        "ret_ytd": 9.97333,
+        "ret_1m": -13.79599,
+        "ret_3m": -10.2698,
+        "ret_6m": -8.51819,
+        "ret_1y": 10.97955,
+        "ret_3y_ann": 17.01368,
+        "ret_3y_cum": 60.22,
+        "ret_5y_ann": 0.92729,
+        "ret_5y_cum": 4.72,
+        "ret_10y_ann": 6.31259,
+        "ret_10y_cum": 84.44,
+        "ret_si_ann": 5.8,
+        "ret_si_cum": 117.53
       },
-      "returns_as_at": "2026-11-02",
+      "returns_as_at": "2026-11-03",
       "benchmark_name": "MSCI EM NR SGD",
       "factsheet_returns": {
         "ret_3m": -8.1,
@@ -4111,7 +4111,7 @@
         "semi_annual_report_url": "https://doc.morningstar.com/Document/b88514fb7d2066c36b51f67606d0ebf3.msdoc/?key=023d247708a47993ed8467e955ed1f06d56f71215c0d4940cfd29d8eacbd50f5"
       },
       "sources": {
-        "fetched_at": "2026-11-03T23:21:15+00:00",
+        "fetched_at": "2026-11-05T02:19:08+00:00",
         "returns": "Fund Centre screener",
         "eligibility": "Fund Centre screener (FundingSource)",
         "facts": "Fund Centre detail (v4/funds)",
@@ -4123,14 +4123,14 @@
         "underlying_fund": "fact sheet PDF"
       },
       "nav_check": {
-        "as_of": "2026-11-02",
-        "total_return_index": 220.48526,
+        "as_of": "2026-11-03",
+        "total_return_index": 217.53158,
         "diff_pp": {
-          "ret_ytd": -0.003,
-          "ret_1y": 0.001,
-          "ret_3y_ann": -0.005,
-          "ret_5y_ann": -0.002,
-          "ret_10y_ann": -0.004
+          "ret_ytd": 0.003,
+          "ret_1y": -0.0,
+          "ret_3y_ann": 0.004,
+          "ret_5y_ann": -0.003,
+          "ret_10y_ann": 0.003
         },
         "at_factsheet_date": {
           "ret_1y": {
@@ -4187,27 +4187,27 @@
         "cpf_sa": false,
         "srs": true
       },
-      "bid_price": 2.287,
-      "offer_price": 2.408,
-      "price_date": "2026-11-02",
-      "offer_price_date": "2026-11-02",
+      "bid_price": 2.211,
+      "offer_price": 2.328,
+      "price_date": "2026-11-03",
+      "offer_price_date": "2026-11-03",
       "price_status": "Confirmed",
       "returns": {
-        "ret_ytd": 5.48893,
-        "ret_1m": -12.07228,
-        "ret_3m": -6.30889,
-        "ret_6m": -11.2534,
-        "ret_1y": 1.10522,
-        "ret_3y_ann": 12.57557,
-        "ret_3y_cum": 42.67,
-        "ret_5y_ann": -0.70207,
-        "ret_5y_cum": -3.46,
-        "ret_10y_ann": 7.20081,
-        "ret_10y_cum": 100.44,
-        "ret_si_ann": 4.53,
-        "ret_si_cum": 140.74
+        "ret_ytd": 1.98339,
+        "ret_1m": -14.99423,
+        "ret_3m": -11.24047,
+        "ret_6m": -14.20256,
+        "ret_1y": -2.81319,
+        "ret_3y_ann": 10.78714,
+        "ret_3y_cum": 35.98,
+        "ret_5y_ann": -1.29587,
+        "ret_5y_cum": -6.31,
+        "ret_10y_ann": 6.89547,
+        "ret_10y_cum": 94.8,
+        "ret_si_ann": 4.35,
+        "ret_si_cum": 132.74
       },
-      "returns_as_at": "2026-11-02",
+      "returns_as_at": "2026-11-03",
       "benchmark_name": "MSCI Golden Dragon",
       "factsheet_returns": {
         "ret_3m": -2.49,
@@ -4341,7 +4341,7 @@
         "semi_annual_report_url": "https://doc.morningstar.com/Document/b88514fb7d2066c36b51f67606d0ebf3.msdoc/?key=023d247708a47993ed8467e955ed1f06d56f71215c0d4940cfd29d8eacbd50f5"
       },
       "sources": {
-        "fetched_at": "2026-11-03T23:21:15+00:00",
+        "fetched_at": "2026-11-05T02:19:08+00:00",
         "returns": "Fund Centre screener",
         "eligibility": "Fund Centre screener (FundingSource)",
         "facts": "Fund Centre detail (v4/funds)",
@@ -4353,14 +4353,14 @@
         "underlying_fund": "fact sheet PDF"
       },
       "nav_check": {
-        "as_of": "2026-11-02",
-        "total_return_index": 240.73684,
+        "as_of": "2026-11-03",
+        "total_return_index": 232.73684,
         "diff_pp": {
-          "ret_ytd": -0.001,
-          "ret_1y": -0.005,
-          "ret_3y_ann": -0.004,
-          "ret_5y_ann": -0.002,
-          "ret_10y_ann": 0.001
+          "ret_ytd": 0.003,
+          "ret_1y": -0.003,
+          "ret_3y_ann": -0.003,
+          "ret_5y_ann": 0.004,
+          "ret_10y_ann": -0.005
         },
         "at_factsheet_date": {
           "ret_1y": {
@@ -4417,27 +4417,27 @@
         "cpf_sa": false,
         "srs": true
       },
-      "bid_price": 1.933,
-      "offer_price": 2.035,
-      "price_date": "2026-11-02",
-      "offer_price_date": "2026-11-02",
+      "bid_price": 1.969,
+      "offer_price": 2.073,
+      "price_date": "2026-11-03",
+      "offer_price_date": "2026-11-03",
       "price_status": "Confirmed",
       "returns": {
-        "ret_ytd": -6.43756,
-        "ret_1m": 0.72955,
-        "ret_3m": -4.54321,
-        "ret_6m": 2.22105,
-        "ret_1y": -10.09302,
-        "ret_3y_ann": 3.23335,
-        "ret_3y_cum": 10.02,
-        "ret_5y_ann": 2.24384,
-        "ret_5y_cum": 11.73,
-        "ret_10y_ann": 5.59969,
-        "ret_10y_cum": 72.44,
-        "ret_si_ann": 3.65,
-        "ret_si_cum": 103.47
+        "ret_ytd": -4.69506,
+        "ret_1m": 2.60552,
+        "ret_3m": -4.23152,
+        "ret_6m": 4.1248,
+        "ret_1y": -9.38794,
+        "ret_3y_ann": 3.98879,
+        "ret_3y_cum": 12.45,
+        "ret_5y_ann": 2.52722,
+        "ret_5y_cum": 13.29,
+        "ret_10y_ann": 5.82308,
+        "ret_10y_cum": 76.12,
+        "ret_si_ann": 3.75,
+        "ret_si_cum": 107.26
       },
-      "returns_as_at": "2026-11-02",
+      "returns_as_at": "2026-11-03",
       "benchmark_name": "MSCI India NR SGD",
       "factsheet_returns": {
         "ret_3m": -2.32,
@@ -4565,7 +4565,7 @@
         "semi_annual_report_url": "https://doc.morningstar.com/Document/b88514fb7d2066c36b51f67606d0ebf3.msdoc/?key=023d247708a47993ed8467e955ed1f06d56f71215c0d4940cfd29d8eacbd50f5"
       },
       "sources": {
-        "fetched_at": "2026-11-03T23:21:15+00:00",
+        "fetched_at": "2026-11-05T02:19:08+00:00",
         "returns": "Fund Centre screener",
         "eligibility": "Fund Centre screener (FundingSource)",
         "facts": "Fund Centre detail (v4/funds)",
@@ -4576,14 +4576,14 @@
         "benchmark_returns": "fact sheet PDF (as at 2026-09-30)"
       },
       "nav_check": {
-        "as_of": "2026-11-02",
-        "total_return_index": 203.47368,
+        "as_of": "2026-11-03",
+        "total_return_index": 207.26316,
         "diff_pp": {
-          "ret_ytd": 0.002,
-          "ret_1y": -0.003,
-          "ret_3y_ann": 0.003,
-          "ret_5y_ann": 0.004,
-          "ret_10y_ann": -0.0
+          "ret_ytd": 0.005,
+          "ret_1y": 0.002,
+          "ret_3y_ann": -0.001,
+          "ret_5y_ann": -0.003,
+          "ret_10y_ann": 0.003
         },
         "at_factsheet_date": {
           "ret_1y": {
@@ -4642,13 +4642,13 @@
       },
       "bid_price": 2.958,
       "offer_price": 3.114,
-      "price_date": "2026-11-02",
-      "offer_price_date": "2026-11-02",
+      "price_date": "2026-11-03",
+      "offer_price_date": "2026-11-03",
       "price_status": "Confirmed",
       "returns": {
         "ret_ytd": 15.68244,
         "ret_1m": -4.36469,
-        "ret_3m": -1.92308,
+        "ret_3m": -0.87131,
         "ret_6m": 5.11727,
         "ret_1y": 17.80167,
         "ret_3y_ann": 22.52855,
@@ -4660,7 +4660,7 @@
         "ret_si_ann": 5.9,
         "ret_si_cum": 211.37
       },
-      "returns_as_at": "2026-11-02",
+      "returns_as_at": "2026-11-03",
       "benchmark_name": "TOPIX SGD Hedged TR SGD",
       "factsheet_returns": {
         "ret_3m": 2.31,
@@ -4776,7 +4776,7 @@
         "semi_annual_report_url": "https://doc.morningstar.com/Document/b88514fb7d2066c36b51f67606d0ebf3.msdoc/?key=023d247708a47993ed8467e955ed1f06d56f71215c0d4940cfd29d8eacbd50f5"
       },
       "sources": {
-        "fetched_at": "2026-11-03T23:21:15+00:00",
+        "fetched_at": "2026-11-05T02:19:08+00:00",
         "returns": "Fund Centre screener",
         "eligibility": "Fund Centre screener (FundingSource)",
         "facts": "Fund Centre detail (v4/funds)",
@@ -4787,7 +4787,7 @@
         "benchmark_returns": "fact sheet PDF (as at 2026-09-30)"
       },
       "nav_check": {
-        "as_of": "2026-11-02",
+        "as_of": "2026-11-03",
         "total_return_index": 311.36842,
         "diff_pp": {
           "ret_ytd": 0.002,
@@ -4851,27 +4851,27 @@
         "cpf_sa": false,
         "srs": true
       },
-      "bid_price": 1.206,
-      "offer_price": 1.27,
-      "price_date": "2026-11-02",
-      "offer_price_date": "2026-11-02",
+      "bid_price": 1.214,
+      "offer_price": 1.278,
+      "price_date": "2026-11-03",
+      "offer_price_date": "2026-11-03",
       "price_status": "Confirmed",
       "returns": {
-        "ret_ytd": -9.04977,
-        "ret_1m": -2.34818,
-        "ret_3m": -3.52,
-        "ret_6m": -9.86547,
-        "ret_1y": -6.14786,
-        "ret_3y_ann": 6.26585,
-        "ret_3y_cum": 20.0,
-        "ret_5y_ann": -3.32286,
-        "ret_5y_cum": -15.55,
-        "ret_10y_ann": 7.33864,
-        "ret_10y_cum": 103.03,
-        "ret_si_ann": 1.28,
-        "ret_si_cum": 26.95
+        "ret_ytd": -8.44646,
+        "ret_1m": -1.7004,
+        "ret_3m": -4.78431,
+        "ret_6m": -9.26756,
+        "ret_1y": -3.65079,
+        "ret_3y_ann": 6.60648,
+        "ret_3y_cum": 21.16,
+        "ret_5y_ann": -3.14061,
+        "ret_5y_cum": -14.75,
+        "ret_10y_ann": 7.40963,
+        "ret_10y_cum": 104.38,
+        "ret_si_ann": 1.32,
+        "ret_si_cum": 27.79
       },
-      "returns_as_at": "2026-11-02",
+      "returns_as_at": "2026-11-03",
       "benchmark_name": "FTSE Vietnam TR USD",
       "factsheet_returns": {
         "ret_3m": -6.99,
@@ -4975,7 +4975,7 @@
         "semi_annual_report_url": "https://doc.morningstar.com/Document/b88514fb7d2066c36b51f67606d0ebf3.msdoc/?key=023d247708a47993ed8467e955ed1f06d56f71215c0d4940cfd29d8eacbd50f5"
       },
       "sources": {
-        "fetched_at": "2026-11-03T23:21:15+00:00",
+        "fetched_at": "2026-11-05T02:19:08+00:00",
         "returns": "Fund Centre screener",
         "eligibility": "Fund Centre screener (FundingSource)",
         "facts": "Fund Centre detail (v4/funds)",
@@ -4987,14 +4987,14 @@
         "underlying_fund": "fact sheet PDF"
       },
       "nav_check": {
-        "as_of": "2026-11-02",
-        "total_return_index": 126.94737,
+        "as_of": "2026-11-03",
+        "total_return_index": 127.78947,
         "diff_pp": {
-          "ret_ytd": 0.0,
-          "ret_1y": 0.002,
+          "ret_ytd": 0.004,
+          "ret_1y": -0.001,
           "ret_3y_ann": -0.004,
-          "ret_5y_ann": -0.003,
-          "ret_10y_ann": -0.001
+          "ret_5y_ann": -0.001,
+          "ret_10y_ann": -0.0
         },
         "at_factsheet_date": {
           "ret_1y": {
@@ -5051,27 +5051,27 @@
         "cpf_sa": false,
         "srs": true
       },
-      "bid_price": 4.075,
-      "offer_price": 4.29,
-      "price_date": "2026-11-02",
-      "offer_price_date": "2026-11-02",
+      "bid_price": 4.044,
+      "offer_price": 4.257,
+      "price_date": "2026-11-03",
+      "offer_price_date": "2026-11-03",
       "price_status": "Confirmed",
       "returns": {
-        "ret_ytd": 3.68957,
-        "ret_1m": -6.4079,
-        "ret_3m": -8.44754,
-        "ret_6m": -3.22964,
-        "ret_1y": 7.29331,
-        "ret_3y_ann": 18.0821,
-        "ret_3y_cum": 64.65,
-        "ret_5y_ann": 9.47931,
-        "ret_5y_cum": 57.28,
-        "ret_10y_ann": 8.24632,
-        "ret_10y_cum": 120.87,
-        "ret_si_ann": 6.1,
-        "ret_si_cum": 328.95
+        "ret_ytd": 2.90076,
+        "ret_1m": -7.11989,
+        "ret_3m": -9.18482,
+        "ret_6m": -3.9658,
+        "ret_1y": 6.25328,
+        "ret_3y_ann": 16.95298,
+        "ret_3y_cum": 59.97,
+        "ret_5y_ann": 9.37986,
+        "ret_5y_cum": 56.56,
+        "ret_10y_ann": 8.17542,
+        "ret_10y_cum": 119.42,
+        "ret_si_ann": 6.06,
+        "ret_si_cum": 325.68
       },
-      "returns_as_at": "2026-11-02",
+      "returns_as_at": "2026-11-03",
       "benchmark_name": "FTSE ST All Share TR SGD",
       "factsheet_returns": {
         "ret_3m": 5.27,
@@ -5213,7 +5213,7 @@
         "semi_annual_report_url": "https://doc.morningstar.com/Document/b88514fb7d2066c36b51f67606d0ebf3.msdoc/?key=023d247708a47993ed8467e955ed1f06d56f71215c0d4940cfd29d8eacbd50f5"
       },
       "sources": {
-        "fetched_at": "2026-11-03T23:21:15+00:00",
+        "fetched_at": "2026-11-05T02:19:08+00:00",
         "returns": "Fund Centre screener",
         "eligibility": "Fund Centre screener (FundingSource)",
         "facts": "Fund Centre detail (v4/funds)",
@@ -5224,14 +5224,14 @@
         "benchmark_returns": "fact sheet PDF (as at 2026-09-30)"
       },
       "nav_check": {
-        "as_of": "2026-11-02",
-        "total_return_index": 428.94737,
+        "as_of": "2026-11-03",
+        "total_return_index": 425.68421,
         "diff_pp": {
-          "ret_ytd": -0.0,
+          "ret_ytd": 0.001,
           "ret_1y": 0.003,
-          "ret_3y_ann": 0.002,
-          "ret_5y_ann": -0.001,
-          "ret_10y_ann": -0.004
+          "ret_3y_ann": 0.003,
+          "ret_5y_ann": -0.0,
+          "ret_10y_ann": -0.005
         },
         "at_factsheet_date": {
           "ret_1y": {
@@ -5288,27 +5288,27 @@
         "cpf_sa": false,
         "srs": true
       },
-      "bid_price": 1.633,
-      "offer_price": 1.719,
-      "price_date": "2026-11-02",
-      "offer_price_date": "2026-11-02",
+      "bid_price": 1.624,
+      "offer_price": 1.71,
+      "price_date": "2026-11-03",
+      "offer_price_date": "2026-11-03",
       "price_status": "Confirmed",
       "returns": {
-        "ret_ytd": 6.24593,
-        "ret_1m": -2.27409,
-        "ret_3m": -2.03959,
-        "ret_6m": 1.42857,
-        "ret_1y": 6.24593,
-        "ret_3y_ann": 13.49523,
-        "ret_3y_cum": 46.2,
-        "ret_5y_ann": 5.47409,
-        "ret_5y_cum": 30.54,
+        "ret_ytd": 5.66038,
+        "ret_1m": -2.81269,
+        "ret_3m": -2.87081,
+        "ret_6m": 0.86957,
+        "ret_1y": 5.18135,
+        "ret_3y_ann": 13.05068,
+        "ret_3y_cum": 44.48,
+        "ret_5y_ann": 5.35757,
+        "ret_5y_cum": 29.82,
         "ret_10y_ann": null,
         "ret_10y_cum": null,
-        "ret_si_ann": 7.45,
-        "ret_si_cum": 71.89
+        "ret_si_ann": 7.36,
+        "ret_si_cum": 70.95
       },
-      "returns_as_at": "2026-11-02",
+      "returns_as_at": "2026-11-03",
       "benchmark_name": null,
       "factsheet_returns": {
         "ret_3m": -1.01,
@@ -5452,7 +5452,7 @@
         "semi_annual_report_url": "https://doc.morningstar.com/Document/b88514fb7d2066c36b51f67606d0ebf3.msdoc/?key=023d247708a47993ed8467e955ed1f06d56f71215c0d4940cfd29d8eacbd50f5"
       },
       "sources": {
-        "fetched_at": "2026-11-03T23:21:15+00:00",
+        "fetched_at": "2026-11-05T02:19:08+00:00",
         "returns": "Fund Centre screener",
         "eligibility": "Fund Centre screener (FundingSource)",
         "facts": "Fund Centre detail (v4/funds)",
@@ -5463,13 +5463,13 @@
         "benchmark_returns": "fact sheet PDF (as at 2026-09-30)"
       },
       "nav_check": {
-        "as_of": "2026-11-02",
-        "total_return_index": 171.89474,
+        "as_of": "2026-11-03",
+        "total_return_index": 170.94737,
         "diff_pp": {
-          "ret_ytd": -0.004,
-          "ret_1y": -0.004,
-          "ret_3y_ann": -0.005,
-          "ret_5y_ann": 0.004
+          "ret_ytd": 0.0,
+          "ret_1y": 0.001,
+          "ret_3y_ann": 0.001,
+          "ret_5y_ann": -0.002
         },
         "at_factsheet_date": {
           "ret_1y": {
@@ -5524,27 +5524,27 @@
         "cpf_sa": false,
         "srs": true
       },
-      "bid_price": 0.983,
-      "offer_price": 1.035,
-      "price_date": "2026-11-02",
-      "offer_price_date": "2026-11-02",
+      "bid_price": 0.984,
+      "offer_price": 1.036,
+      "price_date": "2026-11-03",
+      "offer_price_date": "2026-11-03",
       "price_status": "Confirmed",
       "returns": {
-        "ret_ytd": 4.13136,
-        "ret_1m": -1.50301,
-        "ret_3m": -1.10664,
-        "ret_6m": 1.54959,
-        "ret_1y": 2.82427,
+        "ret_ytd": 4.23729,
+        "ret_1m": -1.40281,
+        "ret_3m": -1.40281,
+        "ret_6m": 1.65289,
+        "ret_1y": 2.60688,
         "ret_3y_ann": null,
         "ret_3y_cum": null,
         "ret_5y_ann": null,
         "ret_5y_cum": null,
         "ret_10y_ann": null,
         "ret_10y_cum": null,
-        "ret_si_ann": 3.31,
-        "ret_si_cum": 3.47
+        "ret_si_ann": 3.4,
+        "ret_si_cum": 3.58
       },
-      "returns_as_at": "2026-11-02",
+      "returns_as_at": "2026-11-03",
       "benchmark_name": "60.00% MSCI ACWI NR SGD + 20.00% JPM Singapore Government Bond TR SGD + 20.00% Bloomberg Glb Agg 50% SGD Hedged TR SGD",
       "factsheet_returns": {
         "ret_3m": -1.29,
@@ -5725,7 +5725,7 @@
         "semi_annual_report_url": "https://doc.morningstar.com/Document/b88514fb7d2066c36b51f67606d0ebf3.msdoc/?key=023d247708a47993ed8467e955ed1f06d56f71215c0d4940cfd29d8eacbd50f5"
       },
       "sources": {
-        "fetched_at": "2026-11-03T23:21:15+00:00",
+        "fetched_at": "2026-11-05T02:19:08+00:00",
         "returns": "Fund Centre screener",
         "eligibility": "Fund Centre screener (FundingSource)",
         "facts": "Fund Centre detail (v4/funds)",
@@ -5736,11 +5736,11 @@
         "benchmark_returns": "fact sheet PDF (as at 2026-09-30)"
       },
       "nav_check": {
-        "as_of": "2026-11-02",
-        "total_return_index": 103.47368,
+        "as_of": "2026-11-03",
+        "total_return_index": 103.57895,
         "diff_pp": {
-          "ret_ytd": 0.001,
-          "ret_1y": 0.004
+          "ret_ytd": -0.003,
+          "ret_1y": -0.003
         },
         "at_factsheet_date": {
           "ret_si_cum": {
@@ -5781,27 +5781,27 @@
         "cpf_sa": false,
         "srs": true
       },
-      "bid_price": 0.998,
-      "offer_price": 1.051,
-      "price_date": "2026-11-02",
-      "offer_price_date": "2026-11-02",
+      "bid_price": 1.0,
+      "offer_price": 1.053,
+      "price_date": "2026-11-03",
+      "offer_price_date": "2026-11-03",
       "price_status": "Confirmed",
       "returns": {
-        "ret_ytd": 5.49683,
-        "ret_1m": -2.44379,
-        "ret_3m": -1.48075,
-        "ret_6m": 2.35897,
-        "ret_1y": 4.06674,
+        "ret_ytd": 5.70825,
+        "ret_1m": -2.24829,
+        "ret_3m": -1.76817,
+        "ret_6m": 2.5641,
+        "ret_1y": 3.84216,
         "ret_3y_ann": null,
         "ret_3y_cum": null,
         "ret_5y_ann": null,
         "ret_5y_cum": null,
         "ret_10y_ann": null,
         "ret_10y_cum": null,
-        "ret_si_ann": 4.81,
-        "ret_si_cum": 5.05
+        "ret_si_ann": 5.0,
+        "ret_si_cum": 5.26
       },
-      "returns_as_at": "2026-11-02",
+      "returns_as_at": "2026-11-03",
       "benchmark_name": "80.00% MSCI ACWI NR SGD + 10.00% JPM Singapore Government Bond TR SGD + 10.00% Bloomberg Glb Agg 50% SGD Hedged TR SGD",
       "factsheet_returns": {
         "ret_3m": -0.88,
@@ -5982,7 +5982,7 @@
         "semi_annual_report_url": "https://doc.morningstar.com/Document/b88514fb7d2066c36b51f67606d0ebf3.msdoc/?key=023d247708a47993ed8467e955ed1f06d56f71215c0d4940cfd29d8eacbd50f5"
       },
       "sources": {
-        "fetched_at": "2026-11-03T23:21:15+00:00",
+        "fetched_at": "2026-11-05T02:19:08+00:00",
         "returns": "Fund Centre screener",
         "eligibility": "Fund Centre screener (FundingSource)",
         "facts": "Fund Centre detail (v4/funds)",
@@ -5993,11 +5993,11 @@
         "benchmark_returns": "fact sheet PDF (as at 2026-09-30)"
       },
       "nav_check": {
-        "as_of": "2026-11-02",
-        "total_return_index": 105.05263,
+        "as_of": "2026-11-03",
+        "total_return_index": 105.26316,
         "diff_pp": {
-          "ret_ytd": -0.003,
-          "ret_1y": -0.003
+          "ret_ytd": -0.002,
+          "ret_1y": 0.002
         },
         "at_factsheet_date": {
           "ret_si_cum": {
@@ -6040,15 +6040,15 @@
       },
       "bid_price": 0.949,
       "offer_price": 0.999,
-      "price_date": "2026-11-02",
-      "offer_price_date": "2026-11-02",
+      "price_date": "2026-11-03",
+      "offer_price_date": "2026-11-03",
       "price_status": "Confirmed",
       "returns": {
         "ret_ytd": 0.7431,
         "ret_1m": 0.21119,
-        "ret_3m": -0.62827,
+        "ret_3m": -0.83595,
         "ret_6m": -0.31513,
-        "ret_1y": -0.41973,
+        "ret_1y": -0.62827,
         "ret_3y_ann": null,
         "ret_3y_cum": null,
         "ret_5y_ann": null,
@@ -6058,7 +6058,7 @@
         "ret_si_ann": 0.0,
         "ret_si_cum": 0.0
       },
-      "returns_as_at": "2026-11-02",
+      "returns_as_at": "2026-11-03",
       "benchmark_name": "20.00% MSCI ACWI NR SGD + 40.00% JPM Singapore Government Bond TR SGD + 40.00% Bloomberg Glb Agg 50% SGD Hedged TR SGD",
       "factsheet_returns": {
         "ret_3m": -2.68,
@@ -6231,7 +6231,7 @@
         "semi_annual_report_url": "https://doc.morningstar.com/Document/b88514fb7d2066c36b51f67606d0ebf3.msdoc/?key=023d247708a47993ed8467e955ed1f06d56f71215c0d4940cfd29d8eacbd50f5"
       },
       "sources": {
-        "fetched_at": "2026-11-03T23:21:15+00:00",
+        "fetched_at": "2026-11-05T02:19:08+00:00",
         "returns": "Fund Centre screener",
         "eligibility": "Fund Centre screener (FundingSource)",
         "facts": "Fund Centre detail (v4/funds)",
@@ -6242,11 +6242,11 @@
         "benchmark_returns": "fact sheet PDF (as at 2026-09-30)"
       },
       "nav_check": {
-        "as_of": "2026-11-02",
+        "as_of": "2026-11-03",
         "total_return_index": 100.0,
         "diff_pp": {
           "ret_ytd": 0.003,
-          "ret_1y": 0.0
+          "ret_1y": 0.002
         },
         "at_factsheet_date": {
           "ret_si_cum": {
@@ -6288,27 +6288,27 @@
         "cpf_sa": true,
         "srs": true
       },
-      "bid_price": 2.472,
-      "offer_price": 2.603,
-      "price_date": "2026-11-02",
-      "offer_price_date": "2026-11-02",
+      "bid_price": 2.473,
+      "offer_price": 2.604,
+      "price_date": "2026-11-03",
+      "offer_price_date": "2026-11-03",
       "price_status": "Confirmed",
       "returns": {
-        "ret_ytd": 2.61519,
-        "ret_1m": -0.76275,
-        "ret_3m": -1.19904,
-        "ret_6m": 1.31148,
-        "ret_1y": 1.93814,
-        "ret_3y_ann": 9.49627,
-        "ret_3y_cum": 31.28,
-        "ret_5y_ann": 2.05445,
-        "ret_5y_cum": 10.7,
-        "ret_10y_ann": 4.6909,
-        "ret_10y_cum": 58.16,
+        "ret_ytd": 2.6567,
+        "ret_1m": -0.7226,
+        "ret_3m": -1.70906,
+        "ret_6m": 1.35246,
+        "ret_1y": 1.68586,
+        "ret_3y_ann": 9.35639,
+        "ret_3y_cum": 30.78,
+        "ret_5y_ann": 2.00795,
+        "ret_5y_cum": 10.45,
+        "ret_10y_ann": 4.70854,
+        "ret_10y_cum": 58.42,
         "ret_si_ann": 3.56,
-        "ret_si_cum": 160.21
+        "ret_si_cum": 160.32
       },
-      "returns_as_at": "2026-11-02",
+      "returns_as_at": "2026-11-03",
       "benchmark_name": "50.00% MSCI World NR USD + 50.00% FTSE WGBI USD",
       "factsheet_returns": {
         "ret_3m": -2.05,
@@ -6344,15 +6344,15 @@
       "allocation_asset": [
         {
           "label": "Stock",
-          "pct": 49.41
+          "pct": 51.32
         },
         {
           "label": "Bond",
-          "pct": 40.45
+          "pct": 45.04
         },
         {
           "label": "Cash",
-          "pct": 10.12
+          "pct": 3.62
         },
         {
           "label": "Other",
@@ -6362,131 +6362,131 @@
       "allocation_geo": [
         {
           "label": "United States",
-          "pct": 67.23
-        },
-        {
-          "label": "Japan",
-          "pct": 4.42
+          "pct": 66.77
         },
         {
           "label": "Canada",
-          "pct": 3.97
+          "pct": 4.47
+        },
+        {
+          "label": "Japan",
+          "pct": 4.21
         },
         {
           "label": "Netherlands",
-          "pct": 3.34
+          "pct": 3.19
         },
         {
           "label": "United Kingdom",
-          "pct": 2.78
-        },
-        {
-          "label": "Taiwan",
-          "pct": 2.66
+          "pct": 2.63
         },
         {
           "label": "France",
-          "pct": 2.61
+          "pct": 2.5
+        },
+        {
+          "label": "Taiwan",
+          "pct": 2.5
         },
         {
           "label": "Switzerland",
-          "pct": 1.96
+          "pct": 2.47
         },
         {
-          "label": "South Korea",
-          "pct": 1.59
+          "label": "Germany",
+          "pct": 1.68
         },
         {
           "label": "Others",
-          "pct": 9.44
+          "pct": 9.57
         }
       ],
       "allocation_sector": [
         {
           "label": "Technology",
-          "pct": 36.45
+          "pct": 35.09
         },
         {
           "label": "Financial Services",
-          "pct": 12.49
-        },
-        {
-          "label": "Industrials",
-          "pct": 10.63
+          "pct": 14.08
         },
         {
           "label": "Healthcare",
-          "pct": 10.32
+          "pct": 10.9
+        },
+        {
+          "label": "Industrials",
+          "pct": 10.3
         },
         {
           "label": "Communication Services",
-          "pct": 9.21
+          "pct": 8.7
         },
         {
           "label": "Consumer Cyclical",
-          "pct": 8.42
+          "pct": 8.33
         },
         {
           "label": "Energy",
-          "pct": 4.07
+          "pct": 3.81
         },
         {
           "label": "Consumer Defensive",
-          "pct": 3.09
+          "pct": 3.48
         },
         {
           "label": "Basic Materials",
-          "pct": 2.73
+          "pct": 2.76
         },
         {
           "label": "Real Estate",
-          "pct": 1.76
+          "pct": 1.66
         },
         {
           "label": "Utilities",
-          "pct": 0.83
+          "pct": 0.9
         }
       ],
       "top_holdings": [
         {
           "name": "Capital Group Newpers Lux Zl",
-          "pct": 17.98
+          "pct": 17.41
         },
         {
           "name": "Nvidia Corp",
-          "pct": 2.24
+          "pct": 2.17
         },
         {
           "name": "United Kingdom Of Great Britain And Northern Ireland 4.375%",
-          "pct": 1.45
+          "pct": 1.4
         },
         {
           "name": "United States Treasury Notes 4.625%",
-          "pct": 1.35
+          "pct": 1.3
         },
         {
           "name": "Germany (Federal Republic Of)",
-          "pct": 1.25
+          "pct": 1.21
         },
         {
           "name": "China (People'S Republic Of) 2.75%",
-          "pct": 1.21
+          "pct": 1.17
         },
         {
           "name": "Apple Inc",
-          "pct": 1.21
+          "pct": 1.17
         },
         {
           "name": "Alphabet Inc Class A",
-          "pct": 1.04
+          "pct": 1.0
         },
         {
           "name": "European Union 3.125%",
-          "pct": 0.99
+          "pct": 0.96
         },
         {
           "name": "United States Treasury Notes 1.125%",
-          "pct": 0.95
+          "pct": 0.92
         }
       ],
       "objective": "To maximise total returns in S$ terms over the longer term by investing in a balanced but diversified portfolio of equities and debt securities of the major stock & bond markets around the world.",
@@ -6500,7 +6500,7 @@
         "semi_annual_report_url": "https://doc.morningstar.com/Document/b88514fb7d2066c36b51f67606d0ebf3.msdoc/?key=023d247708a47993ed8467e955ed1f06d56f71215c0d4940cfd29d8eacbd50f5"
       },
       "sources": {
-        "fetched_at": "2026-11-03T23:21:15+00:00",
+        "fetched_at": "2026-11-05T02:19:08+00:00",
         "returns": "Fund Centre screener",
         "eligibility": "Fund Centre screener (FundingSource)",
         "facts": "Fund Centre detail (v4/funds)",
@@ -6511,14 +6511,14 @@
         "benchmark_returns": "fact sheet PDF (as at 2026-09-30)"
       },
       "nav_check": {
-        "as_of": "2026-11-02",
-        "total_return_index": 260.21053,
+        "as_of": "2026-11-03",
+        "total_return_index": 260.31579,
         "diff_pp": {
-          "ret_ytd": -0.005,
-          "ret_1y": -0.002,
+          "ret_ytd": -0.003,
+          "ret_1y": -0.004,
           "ret_3y_ann": -0.004,
-          "ret_5y_ann": 0.004,
-          "ret_10y_ann": 0.001
+          "ret_5y_ann": -0.002,
+          "ret_10y_ann": -0.001
         },
         "at_factsheet_date": {
           "ret_1y": {
@@ -6575,27 +6575,27 @@
         "cpf_sa": false,
         "srs": true
       },
-      "bid_price": 0.792,
-      "offer_price": 0.834,
-      "price_date": "2026-11-02",
-      "offer_price_date": "2026-11-02",
+      "bid_price": 0.789,
+      "offer_price": 0.831,
+      "price_date": "2026-11-03",
+      "offer_price_date": "2026-11-03",
       "price_status": "Confirmed",
       "returns": {
-        "ret_ytd": 2.6723,
-        "ret_1m": -1.49254,
-        "ret_3m": -2.10136,
-        "ret_6m": -0.97213,
-        "ret_1y": 3.32039,
-        "ret_3y_ann": 9.12809,
-        "ret_3y_cum": 29.96,
-        "ret_5y_ann": 2.60495,
-        "ret_5y_cum": 13.72,
-        "ret_10y_ann": 3.85129,
-        "ret_10y_cum": 45.92,
-        "ret_si_ann": 1.63,
-        "ret_si_cum": 36.66
+        "ret_ytd": 2.28339,
+        "ret_1m": -1.86567,
+        "ret_3m": -2.35149,
+        "ret_6m": -1.34723,
+        "ret_1y": 2.80053,
+        "ret_3y_ann": 8.62561,
+        "ret_3y_cum": 28.17,
+        "ret_5y_ann": 2.5271,
+        "ret_5y_cum": 13.29,
+        "ret_10y_ann": 3.83681,
+        "ret_10y_cum": 45.72,
+        "ret_si_ann": 1.61,
+        "ret_si_cum": 36.14
       },
-      "returns_as_at": "2026-11-02",
+      "returns_as_at": "2026-11-03",
       "benchmark_name": null,
       "factsheet_returns": {
         "ret_3m": -0.86,
@@ -6761,7 +6761,7 @@
         "semi_annual_report_url": "https://doc.morningstar.com/Document/b88514fb7d2066c36b51f67606d0ebf3.msdoc/?key=023d247708a47993ed8467e955ed1f06d56f71215c0d4940cfd29d8eacbd50f5"
       },
       "sources": {
-        "fetched_at": "2026-11-03T23:21:15+00:00",
+        "fetched_at": "2026-11-05T02:19:08+00:00",
         "returns": "Fund Centre screener",
         "eligibility": "Fund Centre screener (FundingSource)",
         "facts": "Fund Centre detail (v4/funds)",
@@ -6772,14 +6772,14 @@
         "benchmark_returns": "fact sheet PDF (as at 2026-09-30)"
       },
       "nav_check": {
-        "as_of": "2026-11-02",
-        "total_return_index": 136.65579,
+        "as_of": "2026-11-03",
+        "total_return_index": 136.13789,
         "diff_pp": {
-          "ret_ytd": 0.002,
-          "ret_1y": 0.0,
-          "ret_3y_ann": -0.002,
-          "ret_5y_ann": 0.005,
-          "ret_10y_ann": 0.001
+          "ret_ytd": 0.003,
+          "ret_1y": 0.001,
+          "ret_3y_ann": -0.004,
+          "ret_5y_ann": -0.003,
+          "ret_10y_ann": -0.003
         },
         "at_factsheet_date": {
           "ret_1y": {
@@ -6836,27 +6836,27 @@
         "cpf_sa": true,
         "srs": true
       },
-      "bid_price": 2.588,
-      "offer_price": 2.725,
-      "price_date": "2026-11-02",
-      "offer_price_date": "2026-11-02",
+      "bid_price": 2.579,
+      "offer_price": 2.715,
+      "price_date": "2026-11-03",
+      "offer_price_date": "2026-11-03",
       "price_status": "Confirmed",
       "returns": {
-        "ret_ytd": 4.65022,
-        "ret_1m": -3.28849,
-        "ret_3m": -2.77986,
-        "ret_6m": -0.72881,
-        "ret_1y": 4.39693,
-        "ret_3y_ann": 11.42008,
-        "ret_3y_cum": 38.32,
-        "ret_5y_ann": 2.30764,
-        "ret_5y_cum": 12.08,
-        "ret_10y_ann": 5.66218,
-        "ret_10y_cum": 73.46,
-        "ret_si_ann": 4.16,
-        "ret_si_cum": 172.42
+        "ret_ytd": 4.28629,
+        "ret_1m": -3.62481,
+        "ret_3m": -3.40824,
+        "ret_6m": -1.07403,
+        "ret_1y": 3.49117,
+        "ret_3y_ann": 11.0342,
+        "ret_3y_cum": 36.89,
+        "ret_5y_ann": 2.23638,
+        "ret_5y_cum": 11.69,
+        "ret_10y_ann": 5.63954,
+        "ret_10y_cum": 73.09,
+        "ret_si_ann": 4.14,
+        "ret_si_cum": 171.47
       },
-      "returns_as_at": "2026-11-02",
+      "returns_as_at": "2026-11-03",
       "benchmark_name": null,
       "factsheet_returns": {
         "ret_3m": -2.95,
@@ -7032,7 +7032,7 @@
         "semi_annual_report_url": "https://doc.morningstar.com/Document/b88514fb7d2066c36b51f67606d0ebf3.msdoc/?key=023d247708a47993ed8467e955ed1f06d56f71215c0d4940cfd29d8eacbd50f5"
       },
       "sources": {
-        "fetched_at": "2026-11-03T23:21:15+00:00",
+        "fetched_at": "2026-11-05T02:19:08+00:00",
         "returns": "Fund Centre screener",
         "eligibility": "Fund Centre screener (FundingSource)",
         "facts": "Fund Centre detail (v4/funds)",
@@ -7043,14 +7043,14 @@
         "benchmark_returns": "fact sheet PDF (as at 2026-09-30)"
       },
       "nav_check": {
-        "as_of": "2026-11-02",
-        "total_return_index": 272.42105,
+        "as_of": "2026-11-03",
+        "total_return_index": 271.47368,
         "diff_pp": {
-          "ret_ytd": 0.0,
-          "ret_1y": -0.003,
-          "ret_3y_ann": 0.0,
-          "ret_5y_ann": -0.002,
-          "ret_10y_ann": 0.002
+          "ret_ytd": -0.004,
+          "ret_1y": 0.001,
+          "ret_3y_ann": 0.004,
+          "ret_5y_ann": -0.004,
+          "ret_10y_ann": -0.0
         },
         "at_factsheet_date": {
           "ret_1y": {
@@ -7107,27 +7107,27 @@
         "cpf_sa": false,
         "srs": true
       },
-      "bid_price": 2.914,
-      "offer_price": 3.068,
-      "price_date": "2026-11-02",
-      "offer_price_date": "2026-11-02",
+      "bid_price": 2.898,
+      "offer_price": 3.051,
+      "price_date": "2026-11-03",
+      "offer_price_date": "2026-11-03",
       "price_status": "Confirmed",
       "returns": {
-        "ret_ytd": 5.38879,
-        "ret_1m": -5.45101,
-        "ret_3m": -3.79663,
-        "ret_6m": -1.55405,
-        "ret_1y": 5.19856,
-        "ret_3y_ann": 13.90099,
-        "ret_3y_cum": 47.77,
-        "ret_5y_ann": 3.17001,
-        "ret_5y_cum": 16.89,
-        "ret_10y_ann": 7.18471,
-        "ret_10y_cum": 100.14,
-        "ret_si_ann": 4.66,
-        "ret_si_cum": 206.74
+        "ret_ytd": 4.81013,
+        "ret_1m": -5.97015,
+        "ret_3m": -4.60829,
+        "ret_6m": -2.09459,
+        "ret_1y": 3.90821,
+        "ret_3y_ann": 13.3673,
+        "ret_3y_cum": 45.7,
+        "ret_5y_ann": 3.05646,
+        "ret_5y_cum": 16.25,
+        "ret_10y_ann": 7.14781,
+        "ret_10y_cum": 99.45,
+        "ret_si_ann": 4.64,
+        "ret_si_cum": 205.05
       },
-      "returns_as_at": "2026-11-02",
+      "returns_as_at": "2026-11-03",
       "benchmark_name": null,
       "factsheet_returns": {
         "ret_3m": -3.1,
@@ -7299,7 +7299,7 @@
         "semi_annual_report_url": "https://doc.morningstar.com/Document/b88514fb7d2066c36b51f67606d0ebf3.msdoc/?key=023d247708a47993ed8467e955ed1f06d56f71215c0d4940cfd29d8eacbd50f5"
       },
       "sources": {
-        "fetched_at": "2026-11-03T23:21:15+00:00",
+        "fetched_at": "2026-11-05T02:19:08+00:00",
         "returns": "Fund Centre screener",
         "eligibility": "Fund Centre screener (FundingSource)",
         "facts": "Fund Centre detail (v4/funds)",
@@ -7310,14 +7310,14 @@
         "benchmark_returns": "fact sheet PDF (as at 2026-09-30)"
       },
       "nav_check": {
-        "as_of": "2026-11-02",
-        "total_return_index": 306.73684,
+        "as_of": "2026-11-03",
+        "total_return_index": 305.05263,
         "diff_pp": {
-          "ret_ytd": -0.001,
-          "ret_1y": -0.001,
-          "ret_3y_ann": 0.001,
-          "ret_5y_ann": 0.0,
-          "ret_10y_ann": 0.005
+          "ret_ytd": 0.0,
+          "ret_1y": -0.002,
+          "ret_3y_ann": -0.003,
+          "ret_5y_ann": -0.004,
+          "ret_10y_ann": -0.002
         },
         "at_factsheet_date": {
           "ret_1y": {
@@ -7374,27 +7374,27 @@
         "cpf_sa": true,
         "srs": true
       },
-      "bid_price": 2.048,
-      "offer_price": 2.156,
-      "price_date": "2026-11-02",
-      "offer_price_date": "2026-11-02",
+      "bid_price": 2.044,
+      "offer_price": 2.152,
+      "price_date": "2026-11-03",
+      "offer_price_date": "2026-11-03",
       "price_status": "Confirmed",
       "returns": {
-        "ret_ytd": 0.58939,
-        "ret_1m": 0.04885,
-        "ret_3m": -1.34875,
-        "ret_6m": -0.53424,
-        "ret_1y": 0.09775,
-        "ret_3y_ann": 5.52228,
-        "ret_3y_cum": 17.5,
-        "ret_5y_ann": 0.35532,
-        "ret_5y_cum": 1.79,
-        "ret_10y_ann": 2.37839,
-        "ret_10y_cum": 26.5,
-        "ret_si_ann": 3.17,
-        "ret_si_cum": 115.58
+        "ret_ytd": 0.39293,
+        "ret_1m": -0.14656,
+        "ret_3m": -1.63619,
+        "ret_6m": -0.72851,
+        "ret_1y": -0.38986,
+        "ret_3y_ann": 5.31274,
+        "ret_3y_cum": 16.8,
+        "ret_5y_ann": 0.32606,
+        "ret_5y_cum": 1.64,
+        "ret_10y_ann": 2.3647,
+        "ret_10y_cum": 26.33,
+        "ret_si_ann": 3.16,
+        "ret_si_cum": 115.16
       },
-      "returns_as_at": "2026-11-02",
+      "returns_as_at": "2026-11-03",
       "benchmark_name": null,
       "factsheet_returns": {
         "ret_3m": -2.85,
@@ -7566,7 +7566,7 @@
         "semi_annual_report_url": "https://doc.morningstar.com/Document/b88514fb7d2066c36b51f67606d0ebf3.msdoc/?key=023d247708a47993ed8467e955ed1f06d56f71215c0d4940cfd29d8eacbd50f5"
       },
       "sources": {
-        "fetched_at": "2026-11-03T23:21:15+00:00",
+        "fetched_at": "2026-11-05T02:19:08+00:00",
         "returns": "Fund Centre screener",
         "eligibility": "Fund Centre screener (FundingSource)",
         "facts": "Fund Centre detail (v4/funds)",
@@ -7577,14 +7577,14 @@
         "benchmark_returns": "fact sheet PDF (as at 2026-09-30)"
       },
       "nav_check": {
-        "as_of": "2026-11-02",
-        "total_return_index": 215.57895,
+        "as_of": "2026-11-03",
+        "total_return_index": 215.15789,
         "diff_pp": {
-          "ret_ytd": -0.001,
-          "ret_1y": -0.002,
-          "ret_3y_ann": 0.002,
-          "ret_5y_ann": -0.005,
-          "ret_10y_ann": -0.002
+          "ret_ytd": 0.003,
+          "ret_1y": 0.0,
+          "ret_3y_ann": 0.003,
+          "ret_5y_ann": -0.004,
+          "ret_10y_ann": 0.005
         },
         "at_factsheet_date": {
           "ret_1y": {
@@ -7641,27 +7641,27 @@
         "cpf_sa": true,
         "srs": true
       },
-      "bid_price": 2.194,
-      "offer_price": 2.31,
-      "price_date": "2026-11-02",
-      "offer_price_date": "2026-11-02",
+      "bid_price": 2.187,
+      "offer_price": 2.303,
+      "price_date": "2026-11-03",
+      "offer_price_date": "2026-11-03",
       "price_status": "Confirmed",
       "returns": {
-        "ret_ytd": 1.66821,
-        "ret_1m": -1.61435,
-        "ret_3m": -2.14095,
-        "ret_6m": -0.72398,
-        "ret_1y": 0.96641,
-        "ret_3y_ann": 8.2214,
-        "ret_3y_cum": 26.75,
-        "ret_5y_ann": 1.27822,
-        "ret_5y_cum": 6.56,
-        "ret_10y_ann": 3.94534,
-        "ret_10y_cum": 47.25,
-        "ret_si_ann": 3.46,
-        "ret_si_cum": 130.95
+        "ret_ytd": 1.34384,
+        "ret_1m": -1.92825,
+        "ret_3m": -2.49666,
+        "ret_6m": -1.04072,
+        "ret_1y": 0.2751,
+        "ret_3y_ann": 7.91947,
+        "ret_3y_cum": 25.69,
+        "ret_5y_ann": 1.22334,
+        "ret_5y_cum": 6.27,
+        "ret_10y_ann": 3.93308,
+        "ret_10y_cum": 47.07,
+        "ret_si_ann": 3.45,
+        "ret_si_cum": 130.21
       },
-      "returns_as_at": "2026-11-02",
+      "returns_as_at": "2026-11-03",
       "benchmark_name": null,
       "factsheet_returns": {
         "ret_3m": -2.62,
@@ -7833,7 +7833,7 @@
         "semi_annual_report_url": "https://doc.morningstar.com/Document/b88514fb7d2066c36b51f67606d0ebf3.msdoc/?key=023d247708a47993ed8467e955ed1f06d56f71215c0d4940cfd29d8eacbd50f5"
       },
       "sources": {
-        "fetched_at": "2026-11-03T23:21:15+00:00",
+        "fetched_at": "2026-11-05T02:19:08+00:00",
         "returns": "Fund Centre screener",
         "eligibility": "Fund Centre screener (FundingSource)",
         "facts": "Fund Centre detail (v4/funds)",
@@ -7844,14 +7844,14 @@
         "benchmark_returns": "fact sheet PDF (as at 2026-09-30)"
       },
       "nav_check": {
-        "as_of": "2026-11-02",
-        "total_return_index": 230.94737,
+        "as_of": "2026-11-03",
+        "total_return_index": 230.21053,
         "diff_pp": {
-          "ret_ytd": -0.002,
-          "ret_1y": -0.004,
-          "ret_3y_ann": 0.001,
-          "ret_5y_ann": -0.002,
-          "ret_10y_ann": -0.005
+          "ret_ytd": 0.004,
+          "ret_1y": -0.005,
+          "ret_3y_ann": -0.001,
+          "ret_5y_ann": 0.003,
+          "ret_10y_ann": 0.003
         },
         "at_factsheet_date": {
           "ret_1y": {
@@ -7908,27 +7908,27 @@
         "cpf_sa": true,
         "srs": true
       },
-      "bid_price": 1.573,
-      "offer_price": 1.656,
-      "price_date": "2026-11-02",
-      "offer_price_date": "2026-11-02",
+      "bid_price": 1.565,
+      "offer_price": 1.648,
+      "price_date": "2026-11-03",
+      "offer_price_date": "2026-11-03",
       "price_status": "Confirmed",
       "returns": {
-        "ret_ytd": 5.35834,
-        "ret_1m": -3.79205,
-        "ret_3m": -3.37838,
-        "ret_6m": -1.87149,
-        "ret_1y": 3.6915,
-        "ret_3y_ann": 11.10196,
-        "ret_3y_cum": 37.14,
-        "ret_5y_ann": 2.8923,
-        "ret_5y_cum": 15.32,
-        "ret_10y_ann": 4.68647,
-        "ret_10y_cum": 58.09,
-        "ret_si_ann": 2.73,
-        "ret_si_cum": 65.58
+        "ret_ytd": 4.82251,
+        "ret_1m": -4.28135,
+        "ret_3m": -3.27565,
+        "ret_6m": -2.37056,
+        "ret_1y": 2.28758,
+        "ret_3y_ann": 10.6247,
+        "ret_3y_cum": 35.38,
+        "ret_5y_ann": 2.8176,
+        "ret_5y_cum": 14.9,
+        "ret_10y_ann": 4.65416,
+        "ret_10y_cum": 57.6,
+        "ret_si_ann": 2.7,
+        "ret_si_cum": 64.74
       },
-      "returns_as_at": "2026-11-02",
+      "returns_as_at": "2026-11-03",
       "benchmark_name": "50.00% JPM Singapore Govt TR USD + 50.00% MSCI AC Asia Pac Ex JPN NR USD",
       "factsheet_returns": {
         "ret_3m": -3.03,
@@ -8090,7 +8090,7 @@
         "semi_annual_report_url": "https://doc.morningstar.com/Document/b88514fb7d2066c36b51f67606d0ebf3.msdoc/?key=023d247708a47993ed8467e955ed1f06d56f71215c0d4940cfd29d8eacbd50f5"
       },
       "sources": {
-        "fetched_at": "2026-11-03T23:21:15+00:00",
+        "fetched_at": "2026-11-05T02:19:08+00:00",
         "returns": "Fund Centre screener",
         "eligibility": "Fund Centre screener (FundingSource)",
         "facts": "Fund Centre detail (v4/funds)",
@@ -8101,14 +8101,14 @@
         "benchmark_returns": "fact sheet PDF (as at 2026-09-30)"
       },
       "nav_check": {
-        "as_of": "2026-11-02",
-        "total_return_index": 165.57895,
+        "as_of": "2026-11-03",
+        "total_return_index": 164.73684,
         "diff_pp": {
-          "ret_ytd": -0.002,
-          "ret_1y": 0.002,
-          "ret_3y_ann": 0.002,
-          "ret_5y_ann": 0.002,
-          "ret_10y_ann": -0.004
+          "ret_ytd": 0.003,
+          "ret_1y": -0.002,
+          "ret_3y_ann": 0.005,
+          "ret_5y_ann": -0.002,
+          "ret_10y_ann": 0.004
         },
         "at_factsheet_date": {
           "ret_1y": {
@@ -8165,27 +8165,27 @@
         "cpf_sa": false,
         "srs": true
       },
-      "bid_price": 0.947,
-      "offer_price": 0.997,
-      "price_date": "2026-11-02",
-      "offer_price_date": "2026-11-02",
+      "bid_price": 0.944,
+      "offer_price": 0.994,
+      "price_date": "2026-11-03",
+      "offer_price_date": "2026-11-03",
       "price_status": "Confirmed",
       "returns": {
-        "ret_ytd": 0.06125,
-        "ret_1m": -2.67215,
-        "ret_3m": -3.25349,
-        "ret_6m": -2.83779,
-        "ret_1y": -0.48707,
-        "ret_3y_ann": 8.18077,
-        "ret_3y_cum": 26.6,
+        "ret_ytd": 0.48055,
+        "ret_1m": -2.98047,
+        "ret_3m": -3.94728,
+        "ret_6m": -3.14559,
+        "ret_1y": -0.70526,
+        "ret_3y_ann": 7.6405,
+        "ret_3y_cum": 24.72,
         "ret_5y_ann": null,
         "ret_5y_cum": null,
         "ret_10y_ann": null,
         "ret_10y_cum": null,
-        "ret_si_ann": 7.28,
-        "ret_si_cum": 28.01
+        "ret_si_ann": 7.17,
+        "ret_si_cum": 27.6
       },
-      "returns_as_at": "2026-11-02",
+      "returns_as_at": "2026-11-03",
       "benchmark_name": null,
       "factsheet_returns": {
         "ret_3m": -3.55,
@@ -8231,7 +8231,7 @@
         },
         {
           "label": "Canada",
-          "pct": 0.64
+          "pct": 0.65
         },
         {
           "label": "Japan",
@@ -8250,11 +8250,11 @@
           "pct": 0.02
         },
         {
-          "label": "Mexico",
+          "label": "Italy",
           "pct": 0.02
         },
         {
-          "label": "Italy",
+          "label": "Mexico",
           "pct": 0.02
         },
         {
@@ -8265,7 +8265,7 @@
       "allocation_sector": [
         {
           "label": "Technology",
-          "pct": 40.62
+          "pct": 40.63
         },
         {
           "label": "Healthcare",
@@ -8273,7 +8273,7 @@
         },
         {
           "label": "Financial Services",
-          "pct": 11.55
+          "pct": 11.54
         },
         {
           "label": "Industrials",
@@ -8281,11 +8281,11 @@
         },
         {
           "label": "Consumer Cyclical",
-          "pct": 8.85
+          "pct": 8.84
         },
         {
           "label": "Communication Services",
-          "pct": 4.69
+          "pct": 4.7
         },
         {
           "label": "Energy",
@@ -8301,7 +8301,7 @@
         },
         {
           "label": "Utilities",
-          "pct": 2.4
+          "pct": 2.39
         },
         {
           "label": "Basic Materials",
@@ -8329,7 +8329,7 @@
         "semi_annual_report_url": "https://doc.morningstar.com/Document/b88514fb7d2066c36b51f67606d0ebf3.msdoc/?key=023d247708a47993ed8467e955ed1f06d56f71215c0d4940cfd29d8eacbd50f5"
       },
       "sources": {
-        "fetched_at": "2026-11-03T23:21:15+00:00",
+        "fetched_at": "2026-11-05T02:19:08+00:00",
         "returns": "Fund Centre screener",
         "eligibility": "Fund Centre screener (FundingSource)",
         "facts": "Fund Centre detail (v4/funds)",
@@ -8340,11 +8340,11 @@
         "benchmark_returns": "fact sheet PDF (as at 2026-09-30)"
       },
       "nav_check": {
-        "as_of": "2026-11-02",
-        "total_return_index": 128.00632,
+        "as_of": "2026-11-03",
+        "total_return_index": 127.60105,
         "diff_pp": {
-          "ret_ytd": 0.001,
-          "ret_1y": 0.003,
+          "ret_ytd": 0.741,
+          "ret_1y": 0.005,
           "ret_3y_ann": 0.001
         },
         "at_factsheet_date": {
@@ -8398,15 +8398,15 @@
       },
       "bid_price": 1.517,
       "offer_price": 1.597,
-      "price_date": "2026-11-02",
-      "offer_price_date": "2026-11-02",
+      "price_date": "2026-11-03",
+      "offer_price_date": "2026-11-03",
       "price_status": "Confirmed",
       "returns": {
         "ret_ytd": 1.06596,
         "ret_1m": 0.13201,
-        "ret_3m": 0.26438,
+        "ret_3m": 0.19815,
         "ret_6m": 0.53015,
-        "ret_1y": 1.26836,
+        "ret_1y": 1.2008,
         "ret_3y_ann": 2.49237,
         "ret_3y_cum": 7.67,
         "ret_5y_ann": 2.37519,
@@ -8416,7 +8416,7 @@
         "ret_si_ann": 1.55,
         "ret_si_cum": 59.68
       },
-      "returns_as_at": "2026-11-02",
+      "returns_as_at": "2026-11-03",
       "benchmark_name": "3-Month SORA TR SGD",
       "factsheet_returns": {
         "ret_3m": 0.2,
@@ -8584,7 +8584,7 @@
         "semi_annual_report_url": "https://doc.morningstar.com/Document/b88514fb7d2066c36b51f67606d0ebf3.msdoc/?key=023d247708a47993ed8467e955ed1f06d56f71215c0d4940cfd29d8eacbd50f5"
       },
       "sources": {
-        "fetched_at": "2026-11-03T23:21:15+00:00",
+        "fetched_at": "2026-11-05T02:19:08+00:00",
         "returns": "Fund Centre screener",
         "eligibility": "Fund Centre screener (FundingSource)",
         "facts": "Fund Centre detail (v4/funds)",
@@ -8595,11 +8595,11 @@
         "benchmark_returns": "fact sheet PDF (as at 2026-09-30)"
       },
       "nav_check": {
-        "as_of": "2026-11-02",
+        "as_of": "2026-11-03",
         "total_return_index": 159.68421,
         "diff_pp": {
           "ret_ytd": -0.004,
-          "ret_1y": -0.002,
+          "ret_1y": 0.001,
           "ret_3y_ann": 0.002,
           "ret_5y_ann": -0.005,
           "ret_10y_ann": -0.001
@@ -8659,27 +8659,27 @@
         "cpf_sa": true,
         "srs": true
       },
-      "bid_price": 1.591,
-      "offer_price": 1.675,
-      "price_date": "2026-11-02",
-      "offer_price_date": "2026-11-02",
+      "bid_price": 1.589,
+      "offer_price": 1.673,
+      "price_date": "2026-11-03",
+      "offer_price_date": "2026-11-03",
       "price_status": "Confirmed",
       "returns": {
-        "ret_ytd": -2.39264,
-        "ret_1m": 1.98718,
-        "ret_3m": -0.7486,
-        "ret_6m": -1.30273,
-        "ret_1y": -2.86935,
-        "ret_3y_ann": 1.93737,
-        "ret_3y_cum": 5.93,
-        "ret_5y_ann": -2.20901,
-        "ret_5y_cum": -10.57,
-        "ret_10y_ann": -0.13104,
-        "ret_10y_cum": -1.3,
+        "ret_ytd": -2.51534,
+        "ret_1m": 1.85897,
+        "ret_3m": -1.18159,
+        "ret_6m": -1.4268,
+        "ret_1y": -3.05064,
+        "ret_3y_ann": 1.75932,
+        "ret_3y_cum": 5.37,
+        "ret_5y_ann": -2.22261,
+        "ret_5y_cum": -10.63,
+        "ret_10y_ann": -0.1436,
+        "ret_10y_cum": -1.43,
         "ret_si_ann": 2.1,
-        "ret_si_cum": 67.47
+        "ret_si_cum": 67.26
       },
-      "returns_as_at": "2026-11-02",
+      "returns_as_at": "2026-11-03",
       "benchmark_name": "BBgBarc Gbl Agg 50% Hdg SGD",
       "factsheet_returns": {
         "ret_3m": -4.24,
@@ -8715,11 +8715,11 @@
       "allocation_asset": [
         {
           "label": "Bond",
-          "pct": 94.45
+          "pct": 91.59
         },
         {
           "label": "Cash",
-          "pct": 5.56
+          "pct": 8.42
         },
         {
           "label": "Other",
@@ -8729,195 +8729,199 @@
       "allocation_geo": [
         {
           "label": "United States",
-          "pct": 33.08
+          "pct": 31.84
         },
         {
           "label": "United Kingdom",
-          "pct": 10.45
+          "pct": 10.78
         },
         {
           "label": "Other Countries",
-          "pct": 8.93
-        },
-        {
-          "label": "Italy",
-          "pct": 7.39
+          "pct": 9.68
         },
         {
           "label": "China",
-          "pct": 7.15
+          "pct": 7.71
+        },
+        {
+          "label": "Italy",
+          "pct": 7.01
         },
         {
           "label": "Germany",
-          "pct": 5.63
+          "pct": 5.61
         },
         {
           "label": "Spain",
-          "pct": 4.93
+          "pct": 4.85
         },
         {
           "label": "France",
-          "pct": 3.32
+          "pct": 3.31
         },
         {
           "label": "Ireland",
-          "pct": 2.99
+          "pct": 3.15
         },
         {
           "label": "Others",
-          "pct": 16.13
+          "pct": 16.06
         }
       ],
       "allocation_sector": [
         {
           "label": "Derivative",
-          "pct": 69.17
+          "pct": 66.76
         },
         {
           "label": "Government China",
-          "pct": 14.72
+          "pct": 15.53
         },
         {
           "label": "Government",
-          "pct": 14.34
+          "pct": 14.95
         },
         {
           "label": "Securitized",
-          "pct": 12.48
+          "pct": 12.23
         },
         {
           "label": "Government Italy",
-          "pct": 10.58
+          "pct": 9.58
         },
         {
           "label": "Government America United States Of",
-          "pct": 10.16
+          "pct": 9.21
         },
         {
           "label": "Government United Kingdom",
-          "pct": 8.65
+          "pct": 9.04
         },
         {
           "label": "Government Spain",
-          "pct": 7.04
+          "pct": 6.38
         },
         {
           "label": "Government Japan",
-          "pct": 6.03
-        },
-        {
-          "label": "Government Germany",
-          "pct": 5.42
+          "pct": 5.46
         },
         {
           "label": "Government Switzerland",
-          "pct": 4.73
+          "pct": 5.39
         },
         {
-          "label": "Government Australia",
-          "pct": 4.14
+          "label": "Government Germany",
+          "pct": 4.91
         },
         {
           "label": "Corporate",
-          "pct": 3.62
+          "pct": 4.01
         },
         {
-          "label": "Government Austria",
-          "pct": 1.77
-        },
-        {
-          "label": "Government Belgium",
-          "pct": 1.62
-        },
-        {
-          "label": "Government Korea Republic Of",
-          "pct": 1.45
-        },
-        {
-          "label": "Government France",
-          "pct": 1.42
-        },
-        {
-          "label": "Government Finland",
-          "pct": 1.11
-        },
-        {
-          "label": "Government Canada",
-          "pct": 0.76
-        },
-        {
-          "label": "Government Mexico",
-          "pct": 0.74
-        },
-        {
-          "label": "Government Indonesia",
-          "pct": 0.56
-        },
-        {
-          "label": "Government Poland",
-          "pct": 0.56
-        },
-        {
-          "label": "Government Singapore",
-          "pct": 0.48
-        },
-        {
-          "label": "Government Malaysia",
-          "pct": 0.45
+          "label": "Government Australia",
+          "pct": 3.75
         },
         {
           "label": "Cash And Equivalents",
-          "pct": 0.39
+          "pct": 2.05
+        },
+        {
+          "label": "Government France",
+          "pct": 1.78
+        },
+        {
+          "label": "Government Austria",
+          "pct": 1.6
+        },
+        {
+          "label": "Government Belgium",
+          "pct": 1.47
+        },
+        {
+          "label": "Government Korea Republic Of",
+          "pct": 1.31
+        },
+        {
+          "label": "Government Poland",
+          "pct": 1.09
+        },
+        {
+          "label": "Government Finland",
+          "pct": 1.01
+        },
+        {
+          "label": "Government Mexico",
+          "pct": 0.91
+        },
+        {
+          "label": "Government Canada",
+          "pct": 0.69
+        },
+        {
+          "label": "Government Indonesia",
+          "pct": 0.51
+        },
+        {
+          "label": "Government Singapore",
+          "pct": 0.43
+        },
+        {
+          "label": "Government Malaysia",
+          "pct": 0.41
+        },
+        {
+          "label": "Government Norway",
+          "pct": 0.28
         },
         {
           "label": "Government Sweden",
-          "pct": 0.29
+          "pct": 0.26
         },
         {
           "label": "Government Ireland",
-          "pct": 0.16
+          "pct": 0.15
         }
       ],
       "top_holdings": [
         {
           "name": "Federal National Mortgage Association 4.5%",
-          "pct": 9.05
+          "pct": 8.08
         },
         {
           "name": "Federal National Mortgage Association",
-          "pct": 4.73
+          "pct": 4.22
         },
         {
           "name": "China (People'S Republic Of) 2.75%",
-          "pct": 3.24
+          "pct": 2.89
         },
         {
           "name": "Federal National Mortgage Association",
-          "pct": 2.65
+          "pct": 2.37
         },
         {
           "name": "United Kingdom Of Great Britain And Northern Ireland 4.125%",
-          "pct": 2.29
+          "pct": 2.04
         },
         {
           "name": "Federal National Mortgage Association 5.5%",
-          "pct": 1.82
-        },
-        {
-          "name": "Federal National Mortgage Association",
           "pct": 1.62
         },
         {
+          "name": "Federal National Mortgage Association",
+          "pct": 1.44
+        },
+        {
           "name": "China (People'S Republic Of) 1.83%",
-          "pct": 1.61
+          "pct": 1.44
         },
         {
           "name": "Italy (Republic Of) 3.3%",
-          "pct": 1.53
+          "pct": 1.36
         },
         {
           "name": "United Kingdom Of Great Britain And Northern Ireland",
-          "pct": 1.28
+          "pct": 1.14
         }
       ],
       "objective": "To achieve excess return relative to the index while minimising volatility of return relative to the index.",
@@ -8931,7 +8935,7 @@
         "semi_annual_report_url": "https://doc.morningstar.com/Document/b88514fb7d2066c36b51f67606d0ebf3.msdoc/?key=023d247708a47993ed8467e955ed1f06d56f71215c0d4940cfd29d8eacbd50f5"
       },
       "sources": {
-        "fetched_at": "2026-11-03T23:21:15+00:00",
+        "fetched_at": "2026-11-05T02:19:08+00:00",
         "returns": "Fund Centre screener",
         "eligibility": "Fund Centre screener (FundingSource)",
         "facts": "Fund Centre detail (v4/funds)",
@@ -8942,14 +8946,14 @@
         "benchmark_returns": "fact sheet PDF (as at 2026-09-30)"
       },
       "nav_check": {
-        "as_of": "2026-11-02",
-        "total_return_index": 167.47368,
+        "as_of": "2026-11-03",
+        "total_return_index": 167.26316,
         "diff_pp": {
-          "ret_ytd": -0.003,
-          "ret_1y": 0.001,
-          "ret_3y_ann": -0.003,
-          "ret_5y_ann": 0.001,
-          "ret_10y_ann": -0.001
+          "ret_ytd": 0.005,
+          "ret_1y": -0.001,
+          "ret_3y_ann": -0.001,
+          "ret_5y_ann": -0.003,
+          "ret_10y_ann": -0.004
         },
         "at_factsheet_date": {
           "ret_1y": {
@@ -9008,25 +9012,25 @@
       },
       "bid_price": 0.747,
       "offer_price": 0.787,
-      "price_date": "2026-11-02",
-      "offer_price_date": "2026-11-02",
+      "price_date": "2026-11-03",
+      "offer_price_date": "2026-11-03",
       "price_status": "Confirmed",
       "returns": {
         "ret_ytd": -1.53976,
         "ret_1m": 0.6773,
-        "ret_3m": -1.04781,
+        "ret_3m": -1.17767,
         "ret_6m": -1.13436,
-        "ret_1y": -0.90159,
-        "ret_3y_ann": 3.50078,
-        "ret_3y_cum": 10.87,
-        "ret_5y_ann": 0.13665,
-        "ret_5y_cum": 0.68,
+        "ret_1y": -1.02847,
+        "ret_3y_ann": 3.32434,
+        "ret_3y_cum": 10.31,
+        "ret_5y_ann": 0.10269,
+        "ret_5y_cum": 0.51,
         "ret_10y_ann": null,
         "ret_10y_cum": null,
         "ret_si_ann": 0.13,
         "ret_si_cum": 0.74
       },
-      "returns_as_at": "2026-11-02",
+      "returns_as_at": "2026-11-03",
       "benchmark_name": "BBgBarc US Agg Bond Hdg TR SGD",
       "factsheet_returns": {
         "ret_3m": -2.23,
@@ -9196,7 +9200,7 @@
         "semi_annual_report_url": "https://doc.morningstar.com/Document/b88514fb7d2066c36b51f67606d0ebf3.msdoc/?key=023d247708a47993ed8467e955ed1f06d56f71215c0d4940cfd29d8eacbd50f5"
       },
       "sources": {
-        "fetched_at": "2026-11-03T23:21:15+00:00",
+        "fetched_at": "2026-11-05T02:19:08+00:00",
         "returns": "Fund Centre screener",
         "eligibility": "Fund Centre screener (FundingSource)",
         "facts": "Fund Centre detail (v4/funds)",
@@ -9207,13 +9211,13 @@
         "benchmark_returns": "fact sheet PDF (as at 2026-09-30)"
       },
       "nav_check": {
-        "as_of": "2026-11-02",
+        "as_of": "2026-11-03",
         "total_return_index": 100.74211,
         "diff_pp": {
           "ret_ytd": 0.0,
-          "ret_1y": -0.002,
-          "ret_3y_ann": 0.001,
-          "ret_5y_ann": -0.003
+          "ret_1y": 0.002,
+          "ret_3y_ann": 0.004,
+          "ret_5y_ann": 0.003
         },
         "at_factsheet_date": {
           "ret_1y": {
@@ -9267,27 +9271,27 @@
         "cpf_sa": false,
         "srs": true
       },
-      "bid_price": 0.846,
-      "offer_price": 0.891,
-      "price_date": "2026-11-02",
-      "offer_price_date": "2026-11-02",
+      "bid_price": 0.843,
+      "offer_price": 0.888,
+      "price_date": "2026-11-03",
+      "offer_price_date": "2026-11-03",
       "price_status": "Confirmed",
       "returns": {
-        "ret_ytd": -3.9122,
-        "ret_1m": 1.80505,
-        "ret_3m": -2.08747,
-        "ret_6m": -3.0146,
-        "ret_1y": -3.50925,
+        "ret_ytd": -4.25293,
+        "ret_1m": 1.44404,
+        "ret_3m": -2.86283,
+        "ret_6m": -3.35852,
+        "ret_1y": -3.85141,
         "ret_3y_ann": null,
         "ret_3y_cum": null,
         "ret_5y_ann": null,
         "ret_5y_cum": null,
         "ret_10y_ann": null,
         "ret_10y_cum": null,
-        "ret_si_ann": 1.74,
-        "ret_si_cum": 4.46
+        "ret_si_ann": 1.6,
+        "ret_si_cum": 4.09
       },
-      "returns_as_at": "2026-11-02",
+      "returns_as_at": "2026-11-03",
       "benchmark_name": "Bloomberg US Aggregate Hdg TR SGD",
       "factsheet_returns": {
         "ret_3m": -4.95,
@@ -9522,7 +9526,7 @@
         "semi_annual_report_url": "https://doc.morningstar.com/Document/b88514fb7d2066c36b51f67606d0ebf3.msdoc/?key=023d247708a47993ed8467e955ed1f06d56f71215c0d4940cfd29d8eacbd50f5"
       },
       "sources": {
-        "fetched_at": "2026-11-03T23:21:15+00:00",
+        "fetched_at": "2026-11-05T02:19:08+00:00",
         "returns": "Fund Centre screener",
         "eligibility": "Fund Centre screener (FundingSource)",
         "facts": "Fund Centre detail (v4/funds)",
@@ -9533,11 +9537,11 @@
         "benchmark_returns": "fact sheet PDF (as at 2026-09-30)"
       },
       "nav_check": {
-        "as_of": "2026-11-02",
-        "total_return_index": 104.46316,
+        "as_of": "2026-11-03",
+        "total_return_index": 104.09263,
         "diff_pp": {
-          "ret_ytd": -0.002,
-          "ret_1y": 0.001
+          "ret_ytd": -0.003,
+          "ret_1y": -0.001
         },
         "at_factsheet_date": {
           "ret_1y": {
@@ -9583,27 +9587,27 @@
         "cpf_sa": true,
         "srs": true
       },
-      "bid_price": 1.7,
-      "offer_price": 1.79,
-      "price_date": "2026-11-02",
-      "offer_price_date": "2026-11-02",
+      "bid_price": 1.699,
+      "offer_price": 1.789,
+      "price_date": "2026-11-03",
+      "offer_price_date": "2026-11-03",
       "price_status": "Confirmed",
       "returns": {
-        "ret_ytd": 0.11779,
-        "ret_1m": -0.17616,
-        "ret_3m": -0.8168,
-        "ret_6m": -0.29326,
-        "ret_1y": 0.17678,
-        "ret_3y_ann": 3.68749,
-        "ret_3y_cum": 11.48,
-        "ret_5y_ann": 1.90412,
-        "ret_5y_cum": 9.89,
-        "ret_10y_ann": 2.18909,
-        "ret_10y_cum": 24.18,
+        "ret_ytd": 0.05889,
+        "ret_1m": -0.23488,
+        "ret_3m": -0.75935,
+        "ret_6m": -0.35191,
+        "ret_1y": 0.0,
+        "ret_3y_ann": 3.6445,
+        "ret_3y_cum": 11.34,
+        "ret_5y_ann": 1.89212,
+        "ret_5y_cum": 9.83,
+        "ret_10y_ann": 2.19802,
+        "ret_10y_cum": 24.29,
         "ret_si_ann": 2.39,
-        "ret_si_cum": 78.95
+        "ret_si_cum": 78.84
       },
-      "returns_as_at": "2026-11-02",
+      "returns_as_at": "2026-11-03",
       "benchmark_name": "3M SORA + 0.35%",
       "factsheet_returns": {
         "ret_3m": -0.58,
@@ -9743,7 +9747,7 @@
         "semi_annual_report_url": "https://doc.morningstar.com/Document/b88514fb7d2066c36b51f67606d0ebf3.msdoc/?key=023d247708a47993ed8467e955ed1f06d56f71215c0d4940cfd29d8eacbd50f5"
       },
       "sources": {
-        "fetched_at": "2026-11-03T23:21:15+00:00",
+        "fetched_at": "2026-11-05T02:19:08+00:00",
         "returns": "Fund Centre screener",
         "eligibility": "Fund Centre screener (FundingSource)",
         "facts": "Fund Centre detail (v4/funds)",
@@ -9754,14 +9758,14 @@
         "benchmark_returns": "fact sheet PDF (as at 2026-09-30)"
       },
       "nav_check": {
-        "as_of": "2026-11-02",
-        "total_return_index": 178.94737,
+        "as_of": "2026-11-03",
+        "total_return_index": 178.84211,
         "diff_pp": {
-          "ret_ytd": -0.002,
-          "ret_1y": -0.003,
-          "ret_3y_ann": -0.003,
-          "ret_5y_ann": 0.004,
-          "ret_10y_ann": -0.001
+          "ret_ytd": -0.001,
+          "ret_1y": 0.0,
+          "ret_3y_ann": 0.004,
+          "ret_5y_ann": 0.002,
+          "ret_10y_ann": -0.002
         },
         "at_factsheet_date": {
           "ret_1y": {
@@ -9818,16 +9822,16 @@
         "cpf_sa": false,
         "srs": true
       },
-      "bid_price": 0.717,
-      "offer_price": 0.755,
-      "price_date": "2026-11-02",
-      "offer_price_date": "2026-11-02",
+      "bid_price": 0.719,
+      "offer_price": 0.757,
+      "price_date": "2026-11-03",
+      "offer_price_date": "2026-11-03",
       "price_status": "Confirmed",
       "returns": {
         "ret_ytd": null,
-        "ret_1m": -7.00389,
-        "ret_3m": -4.27236,
-        "ret_6m": -16.04215,
+        "ret_1m": -6.74449,
+        "ret_3m": -3.87701,
+        "ret_6m": -15.80796,
         "ret_1y": null,
         "ret_3y_ann": null,
         "ret_3y_cum": null,
@@ -9836,9 +9840,9 @@
         "ret_10y_ann": null,
         "ret_10y_cum": null,
         "ret_si_ann": null,
-        "ret_si_cum": -24.53
+        "ret_si_cum": -24.32
       },
-      "returns_as_at": "2026-11-02",
+      "returns_as_at": "2026-11-03",
       "benchmark_name": "LBMA Gold Price AM TR SGD",
       "factsheet_returns": {
         "ret_3m": 2.67,
@@ -9902,7 +9906,7 @@
         "semi_annual_report_url": "https://doc.morningstar.com/Document/b88514fb7d2066c36b51f67606d0ebf3.msdoc/?key=023d247708a47993ed8467e955ed1f06d56f71215c0d4940cfd29d8eacbd50f5"
       },
       "sources": {
-        "fetched_at": "2026-11-03T23:21:15+00:00",
+        "fetched_at": "2026-11-05T02:19:08+00:00",
         "returns": "Fund Centre screener",
         "eligibility": "Fund Centre screener (FundingSource)",
         "facts": "Fund Centre detail (v4/funds)",
@@ -9913,8 +9917,8 @@
         "benchmark_returns": "fact sheet PDF (as at 2026-09-30)"
       },
       "nav_check": {
-        "as_of": "2026-11-02",
-        "total_return_index": 75.47368,
+        "as_of": "2026-11-03",
+        "total_return_index": 75.68421,
         "diff_pp": {},
         "at_factsheet_date": {
           "ret_si_cum": {
