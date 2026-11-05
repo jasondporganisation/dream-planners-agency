@@ -24,6 +24,8 @@ Welcome! These 90 days are about building **knowledge, habits and confidence**, 
 | `module-f-daily-routine-and-tracking.md` | Time-blocking, the activity funnel and tracking |
 | `coach-checklist.md` | What the team leader checks at Day 7, 30, 60 and 90 |
 | `sources.md` | Every official source cited, with links |
+| [`../objection-handling-playbook.md`](../objection-handling-playbook.md) | **Extension to Module C:** 30 common objections in first meetings and reviews, with compliant responses, never-say lines and role-play prompts |
+| [`../objection-cheatsheet.md`](../objection-cheatsheet.md) | One-page printable objection cheat sheet |
 
 Each module has learning goals, a 20-minute talk outline, a role-play script and a 10-question quiz with answers.
 
