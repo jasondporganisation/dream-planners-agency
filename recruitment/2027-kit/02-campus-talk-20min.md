@@ -61,7 +61,7 @@
 **Speaker notes:**
 - "Most of your early weeks are learning. Then you start meeting people with your mentor in the room."
 - "Rejection is normal. Many people you approach will say no or not now, and that's fine."
-- "Some people leave in the first year. We don't have a Singapore figure for how many; overseas regulators' data shows a large share of new agents don't stay past 13 months." Optional: "One Korean regulator figure put 13-month retention at life insurers at about 41.5% in 2021. That's not Singapore, but it shows the pattern." [S24]
+- "Some people leave in the first year. We don't have a Singapore figure for how many; one overseas regulator's data shows a large share of new agents don't stay past 13 months." Optional: "One Korean regulator figure put 13-month retention at life insurers at about 41.5% in 2021. That's not Singapore, but it shows the pattern." [S24]
 - "That's why we'd rather you decide carefully now."
 
 ### Slide 5: Costs and how income works (2.5 min)
@@ -92,7 +92,7 @@
 
 **Speaker notes:**
 - Prepared answers:
-  - *"Is it MLM?"* "No. Representatives are appointed by a licensed insurer and registered with MAS. Our income comes from advising clients, not from recruiting people." (Confirm the team's structure is described accurately before saying this.)
+  - *"Is it MLM?"* "No. Representatives are appointed by a licensed insurer and must be on the MAS register before advising. Nobody earns anything just for bringing in a recruit; a representative's income comes from advising clients. If you'd like to know how team leaders are paid, we'll explain it from the principal's written terms." (Do not deny that leaders may earn on their team's business if the principal's scheme provides for it; confirm the wording with the principal before use.)
   - *"Do I have to sell to my friends?"* "Many people start with people they know, but you never have to pressure anyone, and 'no' is a fine answer."
   - *"Can I do this part-time?"* "Ask us in the career conversation; it depends on the principal's rules."
 - Close: "Thanks. If it's not for you, I hope you now know a bit more about how financial planning works."

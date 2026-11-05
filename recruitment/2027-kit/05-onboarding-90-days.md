@@ -20,7 +20,7 @@
 | L8 | Ongoing: at least 30 h structured CPD a year (6 h ethics/rules/CPF) | From appointment | [S11] |
 
 - **Estimate:** 4–8 weeks from offer to appointment for a focused full-time recruit. Part-time recruits take longer. (Research file, section 4.)
-- Exams run daily on weekdays at the Singapore College of Insurance; results are given immediately. M8/M8A are needed only if the principal requires unit-trust licensing.
+- Exams run daily on weekdays at the Singapore College of Insurance; results are given immediately (SCI registration policies; research file, section 4). M8/M8A are needed only if the principal requires unit-trust licensing (research file, section 4).
 - **Budget for resits.** RES5 Part II (80%) is the usual stumbling block. Planning estimate S$700–900 per recruit including resits. Fees and reimbursement terms: see `06-honest-career-preview.md` and the principal's written scheme.
 - A RES5 pass lapses if the person doesn't start advising within 3 years. [S5]
 
@@ -39,13 +39,13 @@
 | 1 | 4–9 Jan | Module A (conduct basics); Module F part 1 (calendar) | Confirm exam status; book any outstanding modules; start appointment paperwork | Welcome; meet mentor; systems access; PDPA and DNC briefing [S20]. **Day 7 check** (coach checklist) |
 | 2 | 11–16 Jan | Module B (fact-find); Module D part 1 (warm list, *list-building only*) | Study blocks ~2 h/day; target RES5 sat by end of week (estimate) | Daily 15-min huddle; role-play fact-find with peers |
 | 3 | 18–23 Jan | Module E (CPF, MediShield Life, CareShield Life) | M9/M9A sittings | If appointed: first honest approaches to A-list after DNC checks **(after appointment)**. If not: keep practising |
-| 4 | 25–30 Jan | Module F (full); Module A refresher quiz | HI sitting; resits booked if needed | **Day 30 check (Tue 2 Feb)** led together with someone without recruitment targets [S9]. Review exam status; if any module still outstanding, agree a dated resit plan |
+| 4 | 25–30 Jan | Module F (full); Module A refresher quiz | HI sitting; resits booked if needed | Review exam status; if any module still outstanding, agree a dated resit plan |
 
 ## Phase 2: Supervised practice (Weeks 5–9, Days 31–60)
 
 | Week | Dates | Training pack | Licensing | Onboarding / people actions |
 |---|---|---|---|---|
-| 5 | 1–6 Feb | Module C (objections) | Chase appointment; check MAS register [S6] | First joint appointments with mentor in the room **(after appointment)** |
+| 5 | 1–6 Feb | Module C (objections) | Chase appointment; check MAS register [S6] | **Day 30 check (Tue 2 Feb)** led together with someone without recruitment targets [S9]. First joint appointments with mentor in the room **(after appointment)** |
 | 6 | 8–13 Feb (CNY) | Module D part 3 (referrals) | — | Short week; wellbeing check at huddle |
 | 7 | 15–20 Feb | Module A + B revisit (disclosures, reasonable basis) | — | First recommendations, mentor reviews every file before submission **(after appointment)** |
 | 8 | 22–27 Feb | Module F refresh; quality deep-dive | — | Mentor file review: suitability, disclosures, records |

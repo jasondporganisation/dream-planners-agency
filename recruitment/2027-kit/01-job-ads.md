@@ -46,7 +46,7 @@ Some people want a career where they help families make better money decisions, 
 - You'll need to pass the CMFAS exams and be appointed before advising anyone.
 
 **Requirements**
-- Meet MAS minimum requirements to be appointed: at least 21 years old at appointment, and A Level (3 H2 + 2 H1 passes), IB Diploma, polytechnic diploma, degree or equivalent [S5]
+- Meet MAS minimum requirements to be appointed: at least 21 years old at appointment, and A Level (3 H2 + 2 H1 passes), IB Diploma, polytechnic diploma, degree or equivalent [S5][S11]
 - Meet MAS fit and proper criteria (honesty, integrity, financial soundness) [S16]
 - Comfortable starting conversations, and patient with people
 
@@ -78,9 +78,9 @@ Responsibilities:
 5. Attend weekly coaching and team training.
 
 Requirements:
-1. Meet MAS FAA-N26 minimums: age 21 or above at appointment; A Level (3 H2 + 2 H1), IB Diploma, polytechnic diploma, degree or equivalent. [S5]
+1. Meet MAS FAA-N26 minimums: age 21 or above at appointment; A Level (3 H2 + 2 H1), IB Diploma, polytechnic diploma, degree or equivalent. [S5][S11]
 2. Meet MAS fit and proper criteria. [S16]
-3. Good spoken and written English; other languages are useful but not required.
+3. Good spoken and written English, because client documents, disclosures and compliance records are in English; other languages are useful but not required.
 
 About pay: this is a **commission-based** role. Income is variable and not guaranteed. Details of any support scheme are explained in person from the principal's current written terms.
 

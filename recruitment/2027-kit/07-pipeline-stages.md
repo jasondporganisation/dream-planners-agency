@@ -10,7 +10,7 @@ Template: `07-pipeline-tracker.csv`. **Keep the live tracker only in the firm's 
 | 02-Conversation | Career conversation | 20-min conversation done; honest career preview given | Wants to apply → 03; not interested → 99 |
 | 03-Applied | Applied | Application received | Eligibility checked → 04 |
 | 04-Eligibility | Eligibility check | Age-21-by-appointment and education confirmed from documents [S5] | Eligible → 05; not yet (e.g. under 21) → 10-Internship or 98 |
-| 05-Interview1 | Interview 1 | Structured interview, two scorecards | Score ≥ 36 and no Q5/Q7 red flag → 06 or 07; else 98/99 |
+| 05-Interview1 | Interview 1 | Structured interview, two scorecards | 48–60 and no Q5/Q7 red flag → 07; 36–47 or a Q5/Q7 red flag → 06; below 36 → 98 (see `03-interview-guide.md` decision guide) |
 | 06-Interview2 | Second conversation | Needed for 36–47 or a red flag; led by person without recruitment targets [S9] | → 07 or 98 |
 | 07-Offer | Offer discussion | Principal's written terms shown; supervision capacity confirmed [S8] | Accepted → 08; declined → 99 |
 | 08-PreLicensing | Pre-licensing | Terms signed as read; exams booked | All required modules passed → 09 |

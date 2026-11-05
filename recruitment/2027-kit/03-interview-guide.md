@@ -111,6 +111,6 @@ Each question below gives what a **1**, **3** and **5** look like. 2 and 4 sit i
 |---|---|
 | 48–60 and no 🔴 on Q5/Q7 | Proceed to offer discussion (written terms, honest career preview signed as read) |
 | 36–47 | Second conversation; agree specific gaps to test |
-| Below 36, or any score of 1 on Q4–Q7 | Do not proceed this intake; thank the candidate and offer feedback |
+| Below 36, a score of 1 on Q4 or Q6, or a 🔴 on Q5/Q7 confirmed at the second interview | Do not proceed this intake; thank the candidate and offer feedback |
 
 Final decisions also depend on: the principal's fit and proper checks [S16], MAS minimums [S5], and **supervision capacity** (don't exceed what the team can supervise) [S8].
