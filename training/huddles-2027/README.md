@@ -1,7 +1,7 @@
 # Weekly Team Huddles 2027
 
 **For:** Heron (people) and Spectre (sales) directors, running Jason Ng's Dream Planners team huddles.
-**Status:** Draft for Jason's review. Not yet checked by Great Eastern compliance.
+**Status:** Draft for Jason's review. Not yet checked by our principal's compliance team.
 
 52 huddles, one every Tuesday from 5 Jan to 28 Dec 2027. There is one file per month. If a Tuesday is a public holiday, hold the huddle on the next working day. Check the MOM public holiday list for 2027 before you print the month.
 
@@ -37,4 +37,38 @@ The topics rotate through: prospecting, fact-finding, client reviews, referrals,
 
 | Month | File | Focus |
 |---|---|---|
-| January | [01-january.md](01-january.md) | New-year rules, 1 Jan 2027 changes, fact-finding basics |
+| January | [01-january.md](01-january.md) | Weeks 1–4: 1 Jan 2027 changes, weekly rhythm, fact-finding, pre-CNY reconnect |
+| February | [02-february.md](02-february.md) | Weeks 5–8: stall objections, CNY week, referrals, Budget: verify before quoting |
+| March | [03-march.md](03-march.md) | Weeks 9–13: annual reviews, tax season, Fair Dealing, "guaranteed returns", Q1 review |
+| April | [04-april.md](04-april.md) | Weeks 14–17: MediShield Life (1 Apr changes), prospecting block, dependants, cost objections |
+| May | [05-may.md](05-may.md) | Weeks 18–21: FSG-03 social media, rejection, claims support, centres of influence |
+| June | [06-june.md](06-june.md) | Weeks 22–26: CPF LIFE and retirement ages, trust objections, CRM hygiene, legacy basics, mid-year review |
+| July | [07-july.md](07-july.md) | Weeks 27–30: risk attitude vs capacity, talks and events, young and single objections, titles and the Register |
+| August | [08-august.md](08-august.md) | Weeks 31–35: life-event reviews, National Day purpose, cashflow, review-to-referral, energy |
+| September | [09-september.md](09-september.md) | Weeks 36–39: compare and switch objections, inflation, PDPA, Q3 review |
+| October | [10-october.md](10-october.md) | Weeks 40–43: year-end CPF top-ups, year-end invitations, sandwich generation, time objections |
+| November | [11-november.md](11-november.md) | Weeks 44–48: complaints and ethics, review sprint, year-end pressure, thank-yous, cancellation requests |
+| December | [12-december.md](12-december.md) | Weeks 49–52: top-ups and nominations, documentation close-out, rest, 2027 review |
+
+## Rotation check (52 weeks)
+
+| Topic | Weeks |
+|---|---|
+| Prospecting | 4, 15, 28, 41 |
+| Fact-finding | 3, 16, 27, 42 |
+| Client reviews | 9, 20, 31, 45 |
+| Referrals | 7, 21, 34, 47 |
+| Objection handling | 5, 12, 17, 23, 29, 36, 43, 48 |
+| Compliance (Fair Dealing, documentation, conduct) | 1, 8, 11, 18, 30, 38, 44, 50 |
+| Time management | 2, 13, 24, 26, 35, 39, 50, 52 |
+| Mindset | 6, 13, 19, 26, 32, 39, 46, 51, 52 |
+| Product-neutral planning concepts | 1, 8, 10, 14, 22, 25, 33, 37, 40, 49 |
+
+Some weeks combine two topics, so they appear twice.
+
+## Known gaps for Jason or compliance to confirm
+
+- Tax relief caps and the year-end CPF top-up cut-off are **not in the fact pack**. Weeks 10, 40 and 49 tell advisers to refer clients to cpf.gov.sg and iras.gov.sg instead of quoting figures. Add them to the pack once they have been verified.
+- MediShield Life deductibles from 1 Apr 2027 are UNVERIFIED in the pack. Week 14 tells advisers not to quote them.
+- Public holiday dates for 2027, apart from Chinese New Year, are not confirmed here. Check MOM's list and move any Tuesday huddle that falls on a holiday.
+- The objection playbook card numbers (#2, #3 and so on) follow the PR #16 branch. Re-check them if the playbook is renumbered before it merges.
