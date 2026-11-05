@@ -1,6 +1,6 @@
 # Dream Planners Agency
 
-Working repo for **Jason Ng's Dream Planners**, a Great Eastern (Singapore) adviser team. Packs and tools here are drafted by Claude cloud sessions and reviewed by AI directors before Jason signs off.
+Working repo for **Jason Ng's Dream Planners**, a Great Eastern (Singapore) adviser team. Packs and tools here are drafted by Claude cloud sessions and reviewed by AI directors (see **Who approves what** under House rules).
 
 - **Every document on `main`, with a one-line summary:** [`docs/INDEX.md`](docs/INDEX.md)
 - **Opening a PR?** The [PR template](.github/pull_request_template.md) checklist is mandatory.
@@ -64,7 +64,12 @@ Newer drafts (for example [#22](https://github.com/jasondporganisation/dream-pla
 2. **No client data in this repo.** No names, NRIC, contact details, policy or health information. Use placeholders only.
 3. **Figures come from the fact pack** ([`compliance/sg-fact-pack-2026-11.md`](compliance/sg-fact-pack-2026-11.md)) or from an official source with a checked date. Anything unchecked is marked **UNVERIFIED**.
 4. **GitHub Actions are pinned to full commit SHAs**, never tags.
-5. **Nothing is spent or sent without Jason's approval.**
+5. **Who approves what** (Jason, 2–4 Nov 2026):
+   - **Instagram reels, podcast episodes and Career DNA:** a Brand Guardian pass is the approval. No Jason or GE pre-approval step.
+   - **LinkedIn posts:** Brand Guardian, then Albert. No Jason or GE pre-approval step.
+   - **Client newsletters and recruitment ads:** still need GE approval before use.
+   - **Messages to clients or prospects:** Jason reviews each one before it goes out.
+6. **Nothing is spent, signed up for or installed without Jason's approval.**
 
 ---
 
