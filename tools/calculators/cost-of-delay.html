@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en-SG">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self' file:; style-src 'self' file:; connect-src 'none'; img-src 'none'; form-action 'none'; base-uri 'none'">
+<meta name="referrer" content="no-referrer">
+<meta name="robots" content="noindex">
+<link rel="stylesheet" href="style.css">
+<title>Cost of delay illustration | Dream Planners</title>
+</head>
+<body><main>
+<h1>Cost of delay</h1>
+<p>Compares saving the same amount every month starting now with starting a few years later, ending on the same date. You enter the rate.</p>
+<p class="notice"><strong>Illustration only.</strong> This is not a projection or a guarantee. It uses the rates you type in, held steady every year, which real life never does. Actual results will be different.</p>
+<form id="f" class="card" novalidate>
+  <label for="monthly">Amount saved each month ($)</label>
+  <input id="monthly" type="number" inputmode="decimal" min="0" step="any">
+  <label for="rate">Yearly return to assume (%)<span class="hint">You choose this. Enter 0 to see the effect of fewer months of saving on its own. Returns are not guaranteed and can be negative.</span></label>
+  <input id="rate" type="number" inputmode="decimal" step="any">
+  <label for="horizon">Years from now until the end date</label>
+  <input id="horizon" type="number" inputmode="decimal" min="0" step="any">
+  <label for="delay">Years you wait before starting</label>
+  <input id="delay" type="number" inputmode="decimal" min="0" step="any">
+  <button type="submit">Show illustration</button>
+</form>
+<section id="out" class="card result" aria-live="polite"><p>Fill in every box and press Show illustration.</p></section>
+<h2>Assumptions</h2>
+<div class="card">
+<ul>
+<li>The same amount is saved at the end of every month, and both cases stop on the same end date.</li>
+<li>The yearly return you entered is turned into an equal monthly rate and applied every month, without change.</li>
+<li>No fees, taxes, withdrawals or missed months. Periods are rounded to whole months.</li>
+<li>The difference shows the effect of saving for fewer months, plus the growth those months would have had at your assumed rate.</li>
+</ul>
+</div>
+<footer>
+  <p class="disclaimer">For general information only; it does not consider your specific objectives, financial situation or needs. Jason Ng, Representative, Dream Planners.</p>
+  <p>This is an educational tool, not financial advice. Nothing you type is stored or sent anywhere: the page has no server, no cookies, no tracking and no external scripts.</p>
+  <p>Reference figures are from the Dream Planners fact pack (<code>compliance/sg-fact-pack-2026-11.md</code>, figures checked 3 Nov 2026). Government figures change, often in January; check the official source before relying on them.</p>
+  <p><a href="index.html">All calculators</a></p>
+</footer>
+</main>
+<script src="calc.js"></script>
+<script src="ui.js"></script>
+<script src="cost-of-delay.js"></script>
+</body>
+</html>

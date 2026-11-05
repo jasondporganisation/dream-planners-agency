@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en-SG">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self' file:; style-src 'self' file:; connect-src 'none'; img-src 'none'; form-action 'none'; base-uri 'none'">
+<meta name="referrer" content="no-referrer">
+<meta name="robots" content="noindex">
+<link rel="stylesheet" href="style.css">
+<title>CPF Retirement Sums reference | Dream Planners</title>
+</head>
+<body><main>
+<h1>CPF Retirement Sums</h1>
+<p>CPF sets three Retirement Sums each year: Basic (BRS), Full (FRS) and Enhanced (ERS). The figure that applies to you depends on the year you turn 55. Enter a Retirement Account balance to see how far it is from each.</p>
+<div class="card">
+<table>
+<thead><tr><th>Member turns 55 in</th><th class="n">Basic (BRS)</th><th class="n">Full (FRS)</th><th class="n">Enhanced (ERS)</th></tr></thead>
+<tbody>
+<tr><td>2026</td><td class="n">$110,200</td><td class="n">$220,400</td><td class="n">$440,800</td></tr>
+<tr><td>2027</td><td class="n">$114,100</td><td class="n">$228,200</td><td class="n">$456,400</td></tr>
+</tbody>
+</table>
+<p class="hint">Source: <a href="https://www.cpf.gov.sg/member/infohub/educational-resources/what-is-the-cpf-retirement-sum" rel="noreferrer">What is the CPF retirement sum, cpf.gov.sg</a> (checked 3 Nov 2026). Since 2025 the ERS is 4 times the BRS.</p>
+</div>
+<form id="f" class="card" novalidate>
+  <label for="year">Year you turn (or turned) 55</label>
+  <select id="year"><option value="2026">2026</option><option value="2027">2027</option></select>
+  <label for="ra">Retirement Account balance ($)<span class="hint">Check your own balance on the CPF website or app. This page does not connect to CPF.</span></label>
+  <input id="ra" type="number" inputmode="decimal" min="0" step="any">
+  <button type="submit">Compare</button>
+</form>
+<section id="out" class="card result" aria-live="polite"><p>Enter a balance and press Compare.</p></section>
+<h2>Good to know</h2>
+<div class="card">
+<ul>
+<li>The Retirement Sums are CPF benchmarks for how much is set aside in the Retirement Account. They are <strong>not</strong> a measure of how much any one person needs to retire.</li>
+<li>CPF's own estimates for someone turning 55 in 2026, Standard Plan, payouts from 65, assuming 4% interest: BRS about $950 a month, FRS about $1,780 a month, ERS about $3,440 a month. These are estimates, not guaranteed amounts; actual payouts depend on your plan, cohort and interest. (<a href="https://www.cpf.gov.sg/member/infohub/educational-resources/what-is-the-cpf-retirement-sum" rel="noreferrer">cpf.gov.sg</a>)</li>
+<li>This page only compares numbers. It does not check what you can withdraw, property pledges or any other CPF rule.</li>
+</ul>
+</div>
+<footer>
+  <p class="disclaimer">For general information only; it does not consider your specific objectives, financial situation or needs. Jason Ng, Representative, Dream Planners.</p>
+  <p>This is an educational tool, not financial advice. Nothing you type is stored or sent anywhere: the page has no server, no cookies, no tracking and no external scripts.</p>
+  <p>Reference figures are from the Dream Planners fact pack (<code>compliance/sg-fact-pack-2026-11.md</code>, figures checked 3 Nov 2026). Government figures change, often in January; check the official source before relying on them.</p>
+  <p><a href="index.html">All calculators</a></p>
+</footer>
+</main>
+<script src="calc.js"></script>
+<script src="ui.js"></script>
+<script src="cpf-retirement-sums.js"></script>
+</body>
+</html>
