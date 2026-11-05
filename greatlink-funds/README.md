@@ -108,45 +108,74 @@ present, online link answering); opens the dashboard in a headless browser,
 fails on any script error and saves screenshots to `verify/`. Add fund names to
 check others: `python verify.py "GreatLink Lion India Fund"`.
 
-Parser and return-maths unit tests: `python -m unittest discover tests -v` (46 tests, including a check that the committed `data/funds.json` has no empty or stale fund).
+Unit tests: `python -m unittest discover tests -v` (70 tests: parsers and
+return maths, the check that the committed `data/funds.json` has no empty or
+stale fund, the dashboard's "n/a, launched …" / region / missing-holdings
+labels, and its sort, filter and compare logic). The sort/filter tests run the
+dashboard's own JavaScript through Node.js; they are skipped with a message if
+`node` is not installed.
+
+## Automatic weekly refresh (GitHub Actions, free)
+
+`.github/workflows/greatlink-refresh.yml` runs every **Monday 06:00 Singapore
+time** on GitHub's free hosted runners. It runs `python refresh.py` against the
+same public Great Eastern pages, runs the unit tests (including the "no empty
+fund" check on the new data), and then **opens a pull request** called
+"GreatLink fund data as at …". It never changes `main` itself: someone glances
+at `data/refresh_report.md` in the PR and merges it, and Vercel publishes
+`main` as before. No secrets or paid services are involved.
+
+- **If a run fails** (a fund came back empty, the GE site was down, a test
+  failed) nothing is published; GitHub emails the failure and the previous data
+  stays live. Re-run it from the **Actions** tab → *GreatLink weekly data
+  refresh* → **Run workflow**, which also works for an on-demand refresh.
+- **One-time setting** (repo owner): Settings → Actions → General → Workflow
+  permissions → tick **Allow GitHub Actions to create and approve pull
+  requests**. Without it the run still pushes the new data to a
+  `data-refresh/…` branch and says so in its log, but you open the PR by hand.
+- GitHub pauses scheduled workflows in a repository with no activity for 60
+  days; merging the weekly PRs counts as activity.
 
 ## Using the dashboard
 
-Double-click `dashboard.html`. The header shows two dates: **returns & prices
-as at** (daily, from the Fund Centre) and **fact sheets as at** (monthly).
+Open `dashboard.html` (or the Vercel link). The yellow strip at the top shows
+**Data as at** (the returns and prices date) and the plain disclaimer: past
+performance is not indicative of future performance, and this is not advice.
+The header also shows the fact sheets' as-at date.
 
-- **Overview** — every fund with YTD / 1Y / 3Y / 5Y / 10Y / since-inception
-  returns, bid price, size and fee. Click a column heading to sort (default:
-  YTD, best first); the rank badge follows the current sort. Filter by
-  category chips, risk level, CPF-OA / CPF-SA / SRS, or free-text search.
-  "Category leaders" shows the best YTD and best 5Y fund in each category.
-- **Compare** — tick 2–5 funds, press **Compare**: grouped bar chart,
+- **On a phone** each fund is a card with YTD / 1Y / 3Y / 5Y returns, risk
+  class, fee, a fact sheet link and a **Compare** tick box. Tap the fund name
+  for the detail view. On a laptop or iPad you get the full table instead.
+- **Sort** with the *Sort by* menu (1-, 3- or 5-year return, YTD, 10-year,
+  risk class, fee, name), or click a column heading on the wide table. Funds
+  without a figure for that period always go to the bottom.
+- **Filter** by category chips, risk class, region, asset class, CPF-OA /
+  CPF-SA / SRS, free-text search, and **Return at least … % over 1 / 3 / 5
+  years** (funds without that figure are hidden while it is set). Region comes
+  from the fund's name / mandate; funds that don't name one are "Global /
+  multi-region". **Reset** clears everything.
+- **Compare** — tick 2 or 3 funds, press **Compare**: grouped bar chart,
   key-facts and calendar-year table, asset allocations. **Copy table** puts a
   clean text table (with the disclaimer) on the clipboard for WhatsApp /
   email; **Print / Save as PDF** prints just the comparison with the full
-  disclaimer (1–2 A4 pages).
-- **Fund detail** — click a fund name: objective, key facts (manager,
-  underlying fund, size, fee, bid/offer, CPF/SRS, benchmark), full returns
-  (trailing and cumulative), the official **fund-vs-benchmark table as printed
-  on the fact sheet** (with its own as-at date), calendar-year returns,
-  allocations, top-10 holdings, and the **Open Fund Fact Sheet** button plus
-  Product Highlights Sheet, Prospectus and Great Eastern site links.
-- **Fact sheets: Local folder / Online links** (top right) — "Local folder"
-  opens the PDFs saved in `factsheets/` next to the dashboard (works offline).
-  "Online links" opens the Great Eastern / Morningstar copies instead. The
-  dashboard picks "Local folder" automatically while it sits in the folder it
-  was built in, and "Online links" when the file has been moved, copied or
-  emailed on its own; your choice is remembered once you change it.
-- **Client view** hides the internal columns (IDs, data sources, missing-field
-  notes) before you turn the screen to a client.
-- A yellow banner appears automatically if the data is more than 45 days old.
+  disclaimer.
+- **Fund detail** — click a fund name: objective, key facts, a **performance
+  chart** (trailing returns and the last six calendar years), full returns
+  (trailing and cumulative), the official fund-vs-benchmark table from the
+  fact sheet, calendar-year returns, allocations, top-10 holdings, and links to
+  the fact sheet, Product Highlights Sheet, prospectus and Great Eastern site.
+- **Missing figures** are never estimated. A fund too young for a period shows
+  "n/a, launched MMM YYYY" (e.g. the Singapore Physical Gold Fund, launched Jan
+  2026, has no YTD or 1-year figure yet); a fund whose top holdings were not
+  published says so and points to its fact sheet.
+- A banner appears automatically if the data is more than 45 days old.
 
 ## Sharing with a colleague
 
 - **Full experience:** AirDrop or zip the whole `greatlink-funds` folder
   (they only need `dashboard.html` + `factsheets/`; the rest is optional).
 - **Just the dashboard:** send `dashboard.html` on its own — all data is
-  embedded; switch "Fact sheets" to **Online links** (internet needed for the PDFs).
+  embedded; the fact sheet buttons open the online copies (internet needed).
 
 ## If something breaks
 
