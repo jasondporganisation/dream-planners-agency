@@ -8,7 +8,7 @@
 3. Score only the evidence in the answer. Don't reward polish, accent, school prestige, or being "a good fit like us".
 4. If scores differ by 2+ points on any criterion, discuss and record the agreed score and the reason.
 5. Record scores and short reasons in the score sheet. Keep it with the selection records (PDPA retention: see [`07-pdpa-consent.md`](07-pdpa-consent.md)).
-6. **Eligibility (Section B) is pass/fail, not scored.** "Not sure" on right to work = help them check; don't reject on that alone.
+6. **Eligibility (Section B) is pass/fail, not scored.** These are the principal programme's conditions. Before an offer, the programme lead **sights ID to confirm each shortlisted applicant is 21+ by the cut-off** and records only "age checked: yes, date, by whom". If an applicant is unsure about a condition, help them check; don't reject on "unsure" alone.
 
 ## Stage 1 — Written application (max 20 points)
 
@@ -45,9 +45,9 @@ Use the questions in [`05-interview-guide.md`](05-interview-guide.md). Score eac
 
 ## Final decision
 - **Total = Stage 1 (20) + Stage 2 (20) = 40.**
-- Offer to the highest totals, up to the cohort cap (2–4 per supervisor).
+- Offer to the highest totals, up to the cohort cap (8 interns in total, and 2–4 per buddy/supervisor).
 - Keep a short reserve list in case someone declines.
-- **Not considered at any stage:** age, gender, race, religion, nationality (beyond the yes/no right-to-work check), marital or family status, disability, appearance, school ranking, grades, family connections, social-media following, interest in a future adviser career, or ability to bring contacts.
+- **Not considered at any stage:** age (beyond the yes/no 21+ programme condition), gender, race, religion, nationality (beyond the yes/no SC/PR programme condition), marital or family status, disability, appearance, school ranking, grades, family connections, social-media following, interest in a future adviser career, or ability to bring contacts.
 
 ## Score sheet template
 

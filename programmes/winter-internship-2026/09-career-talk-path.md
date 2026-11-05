@@ -4,12 +4,11 @@
 > Consistent with [`research/recruitment-2027.md`](../../research/recruitment-2027.md) recommendations 3 (no income figures), 4 (honest cost table), 6 (RES5 study track for 21+) and 8 (someone without recruitment targets in the loop). LIA's Good Recruitment Practices say hiring assessments should involve someone who "should not have sales and recruitment targets" ([LIA, 6 May 2024](https://www.lia.org.sg/media/4208/good-recruitment-practices-in-the-hiring-of-financial-advisory-representatives-6-may-2024.pdf)). MAS expects "structured recruitment policies and processes, approved by senior management" ([MAS thematic review, Dec 2025](https://www.mas.gov.sg/publications/monographs-or-information-paper/2025/thematic-review-of-financial-institutions-recruitment-and-onboarding-training-of-representatives)).
 
 ## Who it's for
-- Interns who **are 21 or older**, or will turn 21 before the talk, **and** who ticked the optional box in the intern PDPA notice. MAS Notice FAA-N26 requires representatives to "be at least 21 years old" ([MAS FAA-N26](https://www.mas.gov.sg/-/media/mas-media-library/regulation/notices/cmg/notice-faa-n26/faa-n26-notice-on-competency-requirements-for-representatives-of-financial-advisers-1.pdf)).
-- Interns under 21 get no invitation and no follow-up. The written handout (below) tells them they are welcome to contact us themselves after their 21st birthday, if they want to.
-- Age is **self-declared by the intern** by ticking the box. The team does not check ages to decide whom to invite.
+- Interns who **are 21 or older** (in the default programme all are, because 21+ is a programme condition checked at selection) **and** who ticked the optional box in the intern PDPA notice. MAS Notice FAA-N26 requires representatives to "be at least 21 years old" ([MAS FAA-N26](https://www.mas.gov.sg/-/media/mas-media-library/regulation/notices/cmg/notice-faa-n26/faa-n26-notice-on-competency-requirements-for-representatives-of-financial-advisers-1.pdf)).
+- Extended stand-alone version only: interns under 21 get no invitation and no follow-up. The written handout (below) tells them they are welcome to contact us themselves after their 21st birthday, if they want to. Use the age-check record made at selection; never infer age.
 
 ## The rules
-1. **Nothing during the internship.** No talk, no sign-up sheet, no "who's interested?" in the room. The only thing during the internship is the written handout given to **every** intern on Wed 23 Dec, whatever their age.
+1. **Nothing during the internship.** No talk, no sign-up sheet, no "who's interested?" in the room. The only thing during the internship is the written handout given to **every** intern on the last day (Fri 11 Dec; Wed 23 Dec in the extended version).
 2. **One message only**, sent after the internship ends (not before **Mon 4 Jan 2027**), only to interns who ticked the box. If they don't reply, there is no follow-up.
 3. **No link to the internship.** Allowance, certificate and reference are already done. Going or not going changes nothing.
 4. **No income figures, ranges, "up to" amounts, or lifestyle images.** Not in the talk, slides, handout or follow-up messages. Explain how pay is structured (allowance schemes if any, commission, the risk of variable income), not how much.
@@ -20,7 +19,7 @@
 9. **The talk is free** and held in office hours or online.
 10. **Approved first.** The handout, the January message and the talk slides go through the principal insurer's ad-approval process before use (research recommendation 3).
 
-## Written handout (given to all interns on Wed 23 Dec)
+## Written handout (given to all interns on the last day)
 
 > **After the internship — what happens next?**
 > Nothing, unless you want it to. Thank you for taking part.
@@ -59,7 +58,9 @@
 | HI | S$109.00 |
 | **Total, first-time passes** | **S$588.60** |
 
-Source: Singapore College of Insurance exam pages, via [`research/recruitment-2027.md`](../../research/recruitment-2027.md) section 4. **Re-check the fees on the SCI website before each talk.** Resits cost the same as first attempts; plan for the possibility. Whether any of these costs is reimbursed depends on the principal insurer's policy: [JASON: confirm the exam reimbursement policy and its conditions before the talk, and show the conditions in writing].
+Source: Singapore College of Insurance exam pages, via [`research/recruitment-2027.md`](../../research/recruitment-2027.md) section 4. **Re-check the fees on the SCI website before each talk.** Resits cost the same as first attempts; plan for the possibility. Whether any of these costs is reimbursed depends on the principal insurer's policy: [JASON: confirm the exam reimbursement policy and its conditions before the talk (the principal's 30 Oct update describes one sitting each of RES5, M9, M9A and HI for programme interns, exam window to 28 Feb 2027, reimbursed through the mentor, not to the intern; confirm the receipt deadline), and show the conditions in writing].
+
+**Also disclose in writing:** the principal's programme rules say a mentor may contract only interns under their own mentorship, and interns may not join another mentor within 1 year after the programme. Interns are not bonded. Say this plainly in the talk so nobody learns it later.
 
 ### Never say (talk, slides, chat, socials)
 - Any income figure, range, average, "top earners make…", "six figures", "up to $X", "unlimited income".

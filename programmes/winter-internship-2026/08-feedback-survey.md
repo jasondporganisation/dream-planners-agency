@@ -1,12 +1,12 @@
 # End-of-Internship Feedback Survey
 
-> Run on the last day (Thu 24 Dec), 15 minutes, **anonymous by default**. Supervisors leave the room. Results go to Jason and Heron as totals only; with a cohort of 2–4, don't report any group of answers that could identify one person.
+> Run on the last day (Fri 11 Dec; Thu 24 Dec in the extended version), 15 minutes, **anonymous by default**. Supervisors leave the room. Results go to Jason and Heron as totals only; with a small cohort, don't report any group of answers that could identify one person.
 > Scale: 1 = strongly disagree, 5 = strongly agree, plus "N/A".
 
 ---
 
 **Intro text:**
-> Thanks for spending three weeks with us. This survey is anonymous unless you choose to add your name at the end. Your answers won't affect your certificate, allowance or reference. Please be honest — we'll use this to improve the next programme.
+> Thanks for spending the programme with us. This survey is anonymous unless you choose to add your name at the end. Your answers won't affect your certificate, allowance or reference. Please be honest — we'll use this to improve the next programme.
 
 ## A. Learning
 1. The internship met the learning goals I set in week 1.
@@ -39,6 +39,7 @@
    - [ ] See client names or personal details
    - [ ] Share contacts of friends or family, or invite people to meet an adviser
    - [ ] Post about financial products on my social media
+   - [ ] Register for licensing exams, or sign anything about becoming a representative
    - [ ] None of these
 15. Did I ever feel pressured to sign up for a career talk, exams or an adviser role? (No / A little / Yes)
 16. If you ticked anything in 14 or answered "A little" / "Yes" to 15, please tell us what happened (optional; you can also tell the welfare contact or your school privately).

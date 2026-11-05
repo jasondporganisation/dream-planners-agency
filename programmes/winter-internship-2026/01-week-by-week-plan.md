@@ -1,7 +1,30 @@
 # Week-by-Week Plan
 
-> Default: **3 weeks, Mon 7 Dec – Thu 24 Dec 2026** (14 working days). A 2-week and a 4-week version are at the end.
+> **Default: the principal's 5-day programme, Mon 7 – Fri 11 Dec 2026** (next section). The 3-week plan further down is the **optional extended version**: run it only with the principal's written OK and a separate allowance decision by Jason. 2-week and 4-week variants are at the end.
 > Every day follows the rules in the README, section 4: internal meetings only, no clients, no advice, no products.
+
+## Default 5-day plan (principal's programme)
+
+The principal sets the content of its own days. The agency's job is to supervise, buddy and keep its own days non-advising. Under **Option 1** the principal runs all 5 days and the agency provides buddies and the Day 3 (Agency Day) content. Under **Option 2** the agency also runs Days 2–4 itself and submits attendance.
+
+| Day | Principal's schedule (per 1 Oct briefing) | Agency's part |
+|---|---|---|
+| **Mon 7 Dec** | Day 1 (compulsory): launch, orientation, team bonding, money-skills session | Buddies attend. Walk through the "may / may not" table; each intern signs that they've read it. PDPA and confidentiality briefing. |
+| **Tue 8 Dec** | Day 2: profiling tool | Option 2: **Workshop 1** (budgeting) and **Workshop 5** (scams). Learning log. |
+| **Wed 9 Dec** | Day 3: **Agency Day** (marketing plan preparation) | Internal shadowing only (team huddle, training) and an **anonymised client-needs case study** built on a fictional persona: interns describe needs in general terms; nobody quotes, compares or recommends a product. Talk: "What an adviser actually does" (licensing, 21+ rule, supervision). Any "marketing plan" work is general education content, checked with the Workshop 6 checklist; no products, prices or income claims. |
+| **Thu 10 Dec** | Day 4: plan submission by 12pm, then sports activity | Option 2: **Workshop 6** (talking about money fairly) as the self-check before submission. Buddy review. |
+| **Fri 11 Dec** | Day 5 (compulsory): Top 5 presentations, graduation, conferment night | Buddies attend. Feedback survey (anonymous). Written handout about what happens next (see `09-career-talk-path.md`); nobody is asked to sign up in the room. |
+
+Notes:
+- Workshops 2–4 (debt and credit, CPF, insurance concepts) can be given as optional reading or used in the extended version.
+- Anything interns produce stays internal unless it passes the principal's ad-approval process and the intern agrees in writing.
+- Exam talk: interns may hear in general terms what the licensing exams are. Nobody is asked to register for exams during the programme; any exam-reimbursement scheme is explained in writing after Day 5, to those who ask.
+
+---
+
+# Optional extended version (3 weeks)
+
+> **3 weeks, Mon 7 Dec – Thu 24 Dec 2026** (14 working days). Needs the principal's written OK, full written KETs (18 calendar days) and Jason's allowance decision.
 
 ## Daily rhythm
 
@@ -62,7 +85,7 @@ Teams of 2 (or individually if the cohort is small) make a short **education** c
 |---|---|---|
 | **Mon 21 Dec** | **Workshop 6: Talking about money fairly — honest content and the rules behind it.** | Interns run a self-check of their capstone with the Workshop 6 checklist. Submit by 5pm. |
 | **Tue 22 Dec** | Compliance review session: Jason goes through each draft with the team, explains each change. | Revise drafts. |
-| **Wed 23 Dec** | Final revisions; rehearse the showcase. | Career conversation (general, any career): CVs, interviews, how to use the internship. Information about the optional 21+ career talk is given **in writing** to everyone; nobody is asked to sign up in the room. |
+| **Wed 23 Dec** | Final revisions; rehearse the showcase. | Career conversation (general, any career): CVs, interviews, how to use the internship. Information about the optional career talk (21+ only) is given **in writing** to everyone; nobody is asked to sign up in the room. |
 | **Thu 24 Dec** | **Capstone showcase** (internal; family may join online if interns wish). | Feedback survey (anonymous). Certificates. Close by 1pm (Christmas Eve). |
 
 ---

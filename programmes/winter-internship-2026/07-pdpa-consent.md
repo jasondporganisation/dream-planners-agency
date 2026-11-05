@@ -1,7 +1,7 @@
 # PDPA Notice and Consent Text
 
 > **Template, not legal advice.** Built around the PDPA obligations PDPC describes: tell people the purpose **before** collecting (Notification), get consent for that purpose (Consent), use data only for purposes "a reasonable person would consider appropriate in the circumstances" (Purpose Limitation), and stop keeping it once the purpose is served (Retention Limitation) ([PDPC, Advisory Guidelines on Key Concepts in the PDPA](https://www.pdpc.gov.sg/-/media/files/pdpc/pdf-files/advisory-guidelines/ag-on-key-concepts/advisory-guidelines-on-key-concepts-in-the-pdpa-17-may-2022.pdf)).
-> **Minors:** PDPC accepts that young people aged 13 to 17 can give valid consent where the policies are "readily understandable by them"; parental consent is needed under 13 ([PDPC, Advisory Guidelines on Children's Personal Data, Mar 2024](https://www.pdpc.gov.sg/-/media/files/pdpc/pdf-files/advisory-guidelines/advisory-guidelines-on-the-pdpa-for-children's-personal-data-in-the-digital-environment_mar24.pdf)). The text below is written in plain English for that reason. No applicant will be under 13.
+> **Minors:** in the default programme every intern is 21+, so minors' consent rules apply only to the extended stand-alone version. PDPC "considers that a child between 13 and 17 may give valid consent" where the policies are "readily understandable by them", and consent must come from a parent or guardian under 13 ([PDPC, Advisory Guidelines on Children's Personal Data, Mar 2024](https://www.pdpc.gov.sg/-/media/files/pdpc/pdf-files/advisory-guidelines/advisory-guidelines-on-the-pdpa-for-children's-personal-data-in-the-digital-environment_mar24.pdf)). The text below is written in plain English for that reason. No applicant will be under 13.
 > **NRIC:** not collected at application. Collected after acceptance only if required for payroll/CPF ([PDPC NRIC guidelines](https://www.pdpc.gov.sg/-/media/files/pdpc/pdf-files/advisory-guidelines/advisory-guidelines-for-nric-numbers---310818.pdf)).
 > Fill in: [JASON: organisation name], [JASON: Data Protection Officer name and email].
 
@@ -16,13 +16,14 @@
 **What we collect.** Your name, email, mobile number, institution and course, your answers on eligibility and availability, your short answers, and your CV if you choose to upload one. If you're interviewed, the interviewers' notes and scores.
 
 **Why we collect it.** Only to:
-1. check you are eligible,
-2. assess your application and interview fairly, and
-3. contact you about this application.
+1. check you are eligible (including that you are 21 or older on the programme's cut-off date: we look at your ID but do not copy or record the number),
+2. assess your application and interview fairly,
+3. contact you about this application, and
+4. if you are selected, register you with our principal insurer's internship programme.
 
 We will **not** use it for marketing, to sell you anything, or to offer you financial products or advice. We will **not** add you to any mailing list or pass your details to anyone to contact you.
 
-**Who sees it.** Only the selection panel ([JASON: names/roles]) and the service that stores the form ([JASON: tool]). We don't sell or share it. We may share it if the law requires.
+**Who sees it.** The selection panel ([JASON: names/roles]) and the service that stores the form ([JASON: tool]). **If you are selected**, we pass your name, contact details, university and course, and your eligibility answers to our principal insurer so it can register you for its internship programme; the principal's own forms and privacy notice then also apply to you. We don't sell your data or share it with anyone else, except where the law requires.
 
 **How long we keep it.**
 - If you're **not selected**: deleted by **15 January 2027**.
@@ -45,14 +46,14 @@ We will **not** use it for marketing, to sell you anything, or to offer you fina
 
 **What we collect after you accept.**
 - Contact details and an emergency contact.
-- One yes/no answer: whether you will be 18 or older on 7 Dec 2026 (only to know if a parent/guardian should countersign).
-- Payroll details: bank account, and NRIC/FIN only if needed for payroll and CPF as required by law.
+- A record that your age (21+ on the cut-off date) and other eligibility conditions were checked: "yes", the date and who checked. Not your ID number.
+- Payment details: your PayNow mobile number or bank account. NRIC/FIN only if it is needed for payroll and CPF as required by law. If the principal's registration form asks for your NRIC, you give it on the principal's form; we don't keep a copy.
 - Your learning log, capstone, attendance, supervisor feedback and your feedback-survey answers (the survey is anonymous unless you choose to add your name).
 - Photos at the showcase **only if you opt in below**.
 
 **Why.** To run the internship, pay you, keep you safe, give you a certificate and reference, and improve the programme. **Not** for marketing or to offer you financial products or advice.
 
-**Who sees it.** Your supervisor, buddy, Jason (programme lead), the welfare contact, and whoever runs payroll ([JASON: name/role or provider]). Your school's career office only if you ask us to share it with them.
+**Who sees it.** Your supervisor, buddy, Jason (programme lead), the welfare contact, and whoever makes the allowance payment ([JASON: name/role]). Your registration details and attendance go to our principal insurer, which runs the programme with us. Your school's career office only if you ask us to share it with them.
 
 **How long we keep it.**
 | Data | Kept until |
@@ -61,7 +62,7 @@ We will **not** use it for marketing, to sell you anything, or to offer you fina
 | Signed offer letter | Same as payroll records |
 | Learning log, supervisor notes | 12 months after the internship (so we can write references), then deleted |
 | Capstone | You keep it. We keep an internal copy for training unless you ask us to delete it |
-| Emergency contact, age yes/no | Deleted by 31 January 2027 |
+| Emergency contact, eligibility-check record | Deleted by 31 January 2027 |
 | Showcase photos | Only if you opted in; deleted on request |
 
 **Your choices.** Same as Part 1: email [DPO EMAIL] to see, correct or withdraw. Withdrawing consent for optional items (photos, keeping your capstone) has no effect on your internship. You can't withdraw consent for payroll records the law requires us to keep.
@@ -69,7 +70,7 @@ We will **not** use it for marketing, to sell you anything, or to offer you fina
 **Optional consents (separate ticks; saying no changes nothing)**
 - [ ] Photos of me at the showcase may be used **inside the team only**.
 - [ ] Photos of me at the showcase may be used **in public posts** (each post checked with me first).
-- [ ] After the internship, you may send me **one** message with information about the optional career talk for people aged 21+. *(Only tick if you are or will be 21+ and are interested. If you don't tick it, we won't send it. See `09-career-talk-path.md`.)*
+- [ ] After the internship, you may send me **one** message with information about the optional career talk. *(Only tick if you are interested. If you don't tick it, we won't send it. See `09-career-talk-path.md`.)*
 
 Signed: ______________________ Date: __________
 

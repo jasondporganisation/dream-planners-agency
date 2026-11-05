@@ -14,7 +14,7 @@
 ## Questions (20 min)
 
 **Q1. Learning motivation (3 min)**
-"What do you want to get out of these three weeks? What would make it worthwhile for you?"
+"What do you want to get out of this programme? What would make it worthwhile for you?"
 - Follow-up: "What do you already do to learn about money, if anything?"
 
 **Q2. Explain task (4 min)**
@@ -39,18 +39,18 @@
 
 ## Candidate questions (3 min)
 Answer honestly. Common ones:
-- *"Will I be expected to join as an adviser after?"* → "No. Some interns aged 21 or over choose to come to an optional career talk afterwards. Nobody is asked to. Most interns go on to other things, and that's a good outcome too."
+- *"Will I be expected to join as an adviser after?"* → "No. Some interns choose to come to an optional career talk afterwards. Nobody is asked to. Most interns go on to other things, and that's a good outcome too. You're not bonded. Please do read the principal insurer's participation agreement before you sign: it has its own terms, for example on joining a different team within a year if you later choose this career."
 - *"How much do advisers earn?"* → "We don't discuss earnings in this programme. If you're 21+ and come to the optional career talk later, we'll explain how pay is structured and the costs and risks, without income figures or promises."
-- *"Is the allowance linked to anything?"* → "No. It's fixed, the same for every intern."
+- *"Is the allowance linked to anything?"* → "No. It's S$300 plus a S$100 completion bonus for attending all 5 days and presenting on Day 5, the same for every intern. It isn't linked to sales, leads, exams or joining."
 
 ## Do not ask (TAFEP and Workplace Fairness Act)
 
 | Don't ask | Ask instead (if relevant) |
 |---|---|
-| "How old are you?" / "What year were you born?" | Nothing. Eligibility is already checked. |
+| "How old are you?" / "What year were you born?" | Nothing. The 21+ condition is a yes/no on the form and is checked separately by sighting ID, outside the interview. |
 | "Where are you from?" / "What's your race/religion?" | Nothing. |
 | "Are you married? Do you have a boyfriend/girlfriend? Plan to have kids?" | "Can you attend all programme days?" (already on the form) |
-| "Have you done NS? When do you enlist?" | "Can you attend all programme days?" |
+| "Have you done NS? When do you enlist?" | Nothing. The NS condition is a yes/no on the form. |
 | "Do you have any health conditions?" | "Do you need any adjustments to take part?" |
 | "What do your parents do?" / "Do your parents have insurance?" | Nothing. |
 | "Do you know many people who'd want financial planning?" / "How big is your network?" | Never ask. Not a lead-generation programme. |
