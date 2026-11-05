@@ -53,9 +53,9 @@ These use figures that take effect on 1 Jan 2027. Re-check each against cpf.gov.
 | 85 | Year-end bonus and the CPF ceilings | 2027 ceilings (unchanged from 2026) |
 | 86 | Working past 65? CPF still contributes | 2027 rate table for 65+ bands (unchanged) |
 
-## ⚠ On hold
+## Fixed at compliance review (5 Nov 2026)
 
-- **63 · Ward class and your deductible** quotes 2026 MediShield Life deductibles. The second phase of increases takes effect 1 Apr 2027 and the new amounts were not published when this was written. Replace the figures with MOH's current table, or don't post it.
+- **63 · Ward class and your deductible**: the 2026 deductible amounts were removed at compliance review (5 Nov 2026), because the second phase of increases takes effect 1 Apr 2027 and the new amounts were not published. It now describes the ward-class order only.
 
 ## Notes for Brand Guardian / reviewers
 
@@ -66,7 +66,7 @@ These use figures that take effect on 1 Jan 2027. Re-check each against cpf.gov.
 
 ## Date-sensitive (not 1 Jan 2027)
 
-- MediShield Life deductibles: a second phase of increases takes effect on **1 Apr 2027**; the new amounts were not published when this bank was written. Post **14** (February) quotes the 2026 B2 deductible and is fine to post before 1 Apr 2027; post **63** is on hold; post **96** quotes no amounts.
+- MediShield Life deductibles: a second phase of increases takes effect on **1 Apr 2027**; the new amounts were not published when this bank was written. Post **14** (February) quotes the 2026 B2 deductible and is fine to post before 1 Apr 2027; post **63** quotes no amounts (figures removed 5 Nov 2026); post **96** quotes no amounts.
 - MediShield Life claim limits apply from 1 Jun 2026; MOH updates them from time to time.
 - SingStat statistics (population, life expectancy, income) are replaced each year.
 

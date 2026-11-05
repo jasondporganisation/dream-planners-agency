@@ -215,7 +215,7 @@ The day-to-day is less about products and more about:
 • Listening. Most first conversations are about people's worries, not their policies.
 • Explaining. CPF, MediShield Life and estate planning are confusing. Making them clear is a big part of the job.
 • Following up. Reviews, reminders, and being there when someone needs to make a claim.
-• Staying within the rules. Everything I share publicly is checked against the rules before it goes out.
+• Staying within the rules. I check everything I share publicly against the rules before it goes out.
 
 It's not for everyone. It takes patience and a lot of learning. But on the days a family tells me they finally feel sorted, it's very meaningful work.
 

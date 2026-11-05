@@ -186,7 +186,7 @@ Safe travels to everyone heading off this month.
 
 Looking back on the year, a few things stand out.
 
-• **The rules kept changing.** CPF rates, hospital rider rules, digital advertising guidelines. Keeping up was a big part of the work.
+• **The rules kept changing.** CPF rates for older workers in January, MediShield Life deductibles in April, new rules on reporting adviser misconduct. Keeping up was a big part of the work.
 • **The meaningful moments were quiet.** Helping a family make sense of a hospital bill. A family who finally sorted their documents.
 • **Mistakes happened.** I missed a follow-up or two. I apologised, fixed them and improved my system.
 • **The team mattered more than ever.** We helped each other through hard weeks.
