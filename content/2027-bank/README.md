@@ -66,7 +66,7 @@ These use figures that take effect on 1 Jan 2027. Re-check each against cpf.gov.
 
 ## Date-sensitive (not 1 Jan 2027)
 
-- MediShield Life deductibles: a second phase of increases takes effect on **1 Apr 2027**; the new amounts were not published when this bank was written. Posts quoting 2026 deductibles say so, and must be updated or held after 1 Apr 2027.
+- MediShield Life deductibles: a second phase of increases takes effect on **1 Apr 2027**; the new amounts were not published when this bank was written. Post **14** (February) quotes the 2026 B2 deductible and is fine to post before 1 Apr 2027; post **63** is on hold; post **96** quotes no amounts.
 - MediShield Life claim limits apply from 1 Jun 2026; MOH updates them from time to time.
 - SingStat statistics (population, life expectancy, income) are replaced each year.
 
