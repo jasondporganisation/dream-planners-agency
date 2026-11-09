@@ -1,8 +1,8 @@
 # Refresh report
 
-- Run started: 2026-11-05T02:19:05+00:00
-- Run finished: 2026-11-05T02:20:50+00:00
-- Returns / prices as at: **2026-11-03**
+- Run started: 2026-11-09T01:18:02+00:00
+- Run finished: 2026-11-09T01:19:46+00:00
+- Returns / prices as at: **2026-11-05**
 - Fact sheets as at: **2026-09-30**
 - Funds processed: 40
 - Fact sheets on disk: 40/40
@@ -13,7 +13,7 @@
 
 ## Discrepancies (> 0.1 pp or price/fee mismatch)
 
-- DISCREPANCY GreatLink US Income and Growth Fund (Dis) ret_ytd: screener 0.48 vs NAV-derived -0.26 (kept screener)
+- none
 
 ## Missing fields per fund
 
